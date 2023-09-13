@@ -1,0 +1,8 @@
+.DS_Store
+.env
+**/*.pyc
+Dockerfile.local
+docker-compose.local.yml
+__pycache__
+tmp/
+tmp
