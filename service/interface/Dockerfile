@@ -1,5 +1,5 @@
 FROM bitnami/minideb:latest
-LABEL maintainer="Service"
+LABEL service="interface"
 
 ## pre-requisite
 RUN install_packages \
@@ -27,10 +27,10 @@ RUN pip install -r requirements.txt --break-system-packages
 COPY . /app
 WORKDIR /app
 
-RUN mkdir -p /etc/tattletale.d
-COPY run.sh /etc/tattletale.d/run.sh
-RUN chmod +x /etc/tattletale.d/run.sh
+RUN mkdir -p /etc/interface.d
+COPY run.sh /etc/interface.d/run.sh
+RUN chmod +x /etc/interface.d/run.sh
 
 EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD curl --fail http://127.0.0.1:8000/ || exit 1
-CMD ["/etc/tattletale.d/run.sh"]
+CMD ["/etc/interface.d/run.sh"]
