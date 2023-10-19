@@ -43,11 +43,11 @@
     #     state: latest
     #     update_cache: true
 
-    - name: Update apt and install docker-compose
-      apt:
-        name: docker-compose
-        state: latest
-        update_cache: true
+    # - name: Update apt and install docker-compose
+    #   apt:
+    #     name: docker-compose
+    #     state: latest
+    #     update_cache: true
 
     # - name: Install Docker Module for Python
     #   pip:
@@ -57,12 +57,13 @@
       git:
         repo: https://github.com/mbiskho/tamlops.git
         dest: /root/TA
+        clone: yes
         update: yes
-      become: yes
 
-    - name: Go to the folder and execute command
-      command: chdir=/root/TA/service/interface/ ls
+    # - name: Go to the folder and execute command
+    #   command: chdir=/root/TA/service/interface/ ls
 
     - name: Run docker-compose up
-      command: docker-compose up -d
-      become: yes
+      shell:
+        cmd: docker-compose up -d
+        chdir: /root/TA/service/interface/
