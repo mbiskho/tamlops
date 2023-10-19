@@ -1,5 +1,4 @@
 .DS_Store
-.env
 **/*.pyc
 Dockerfile.local
 docker-compose.local.yml
