@@ -1,0 +1,2 @@
+[web]
+proxy ansible_host=35.222.18.158 ansible_user=root

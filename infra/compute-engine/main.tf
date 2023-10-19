@@ -5,7 +5,7 @@ provider "google" {
 
 resource "google_compute_instance" "default" {
   name         = "interface-proxy"
-  machine_type = "n1-standard-2" 
+  machine_type = "e2-standard-2" 
   zone         = "us-central1-a"
 
   boot_disk {
@@ -18,19 +18,6 @@ resource "google_compute_instance" "default" {
     network = "default"
     access_config {}
   }
-}
-
-# Define a firewall rule to allow incoming SSH (port 22) and HTTP (port 80) traffic
-resource "google_compute_firewall" "allow_ssh_http" {
-  name    = "allow-ssh-http"
-  network = "default"
-
-  allow {
-    protocol = "tcp"
-    ports    = ["22", "80"]
-  }
-
-  source_ranges = ["0.0.0.0/0"]
 }
 
 

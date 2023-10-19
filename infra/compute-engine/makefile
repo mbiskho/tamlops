@@ -6,4 +6,5 @@ destroy:
 	terraform destroy
 output:
 	terraform output instance_ips > ip.txt
-# build:
+build:
+	ansible-playbook -i inventory.yml playbook.yml
