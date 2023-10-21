@@ -1,0 +1,38 @@
+[
+    {
+        "type": "text",
+        "text": "Write a poem inspired by nature and the changing seasons."
+    },
+    {
+        "type": "image",
+        "text": "Design a poster for a music festival featuring a tropical theme."
+    },
+    {
+        "type": "audio",
+        "text": "Produce a jingle for a new soft drink commercial."
+    },
+    {
+        "type": "text",
+        "text": "Create a product description for a high-tech smartwatch."
+    },
+    {
+        "type": "image",
+        "text": "Illustrate a futuristic cityscape for a science fiction book cover."
+    },
+    {
+        "type": "audio",
+        "text": "Compose a background score for a suspenseful movie scene."
+    },
+    {
+        "type": "text",
+        "text": "Draft a short biography for an influential historical figure."
+    },
+    {
+        "type": "image",
+        "text": "Design a logo for a new eco-friendly restaurant."
+    },
+    {
+        "type": "audio",
+        "text": "Create a podcast intro for a technology-themed show."
+    }
+]
