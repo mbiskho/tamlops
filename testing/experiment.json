@@ -1,0 +1,9 @@
+{
+    "title": "tamlops-chaos-load-experiment",
+    "description": "N/A",
+    "tags": [],
+    "steady-state-hypothesis": {
+        "title": "Load Testing in Normal Condition",
+        "probes": []
+    }
+}
