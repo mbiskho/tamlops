@@ -3,7 +3,39 @@
     "description": "N/A",
     "tags": [],
     "steady-state-hypothesis": {
-        "title": "Load Testing in Normal Condition",
-        "probes": []
-    }
+        "title": "Normal Load Testing Checking",
+        "probes": [
+            {
+                "type": "probe",
+                "name": "load-testing-log-must-exists",
+                "tolerance": true,
+                "provider": {
+                    "type": "python",
+                    "module": "os.path",
+                    "func": "exists",
+                    "arguments": {
+                        "path": "log/load-testing-steadystate.log"
+                    }
+                }
+            }
+        ]
+    },
+    "method": [
+        {
+            "name": "Retrieve all incidents repeatedly.",
+            "type": "action",
+            "provider": {
+                "type": "python",
+                "module": "chaosk6.actions",
+                "func": "stress_endpoint",
+                "arguments": {
+                    "endpoint": "https://status.cloud.google.com/incidents.json",
+                    "vus": 10,
+                    "duration": "5s",
+                    "log_file": "log/k6.log"
+                }
+            }
+        }
+    ],
+    "rollbacks": []
 }

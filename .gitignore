@@ -3,3 +3,6 @@ env
 .env
 testing/env
 testing/.env
+
+# local log
+testing/chaostoolkit.log
