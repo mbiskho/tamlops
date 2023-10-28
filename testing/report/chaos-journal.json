@@ -1,0 +1,107 @@
+{
+  "chaoslib-version": "1.39.0",
+  "platform": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+  "node": "LAPTOP-A8CQJ1B2",
+  "experiment": {
+    "title": "tamlops-chaos-load-experiment",
+    "description": "N/A",
+    "tags": [],
+    "steady-state-hypothesis": {
+      "title": "Normal Load Testing Check",
+      "probes": [
+        {
+          "type": "probe",
+          "name": "normal-load-testing-log-must-exists",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/load-testing-steadystate.log"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "name": "Retrieve all incidents repeatedly.",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "stress_endpoint",
+          "arguments": {
+            "endpoint": "https://status.cloud.google.com/incidents.json",
+            "vus": 10,
+            "duration": "5s",
+            "log_file": "log/k6.log"
+          }
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-10-28T12:58:48.531637",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "normal-load-testing-log-must-exists",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-10-28T12:58:48.533076",
+          "status": "succeeded",
+          "end": "2023-10-28T12:58:48.533471",
+          "duration": 0.000395,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "name": "Retrieve all incidents repeatedly.",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "stress_endpoint",
+          "arguments": {
+            "endpoint": "https://status.cloud.google.com/incidents.json",
+            "vus": 10,
+            "duration": "5s",
+            "log_file": "log/k6.log"
+          }
+        }
+      },
+      "output": true,
+      "start": "2023-10-28T12:58:48.534319",
+      "status": "succeeded",
+      "end": "2023-10-28T12:59:28.016460",
+      "duration": 39.482141
+    }
+  ],
+  "rollbacks": [],
+  "end": "2023-10-28T12:59:28.017404",
+  "duration": 39.51540470123291
+}
