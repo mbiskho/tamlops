@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request,  Header, Form
 from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from modules.pipeline import train_text, train_audio, train_image
+from modules.pipeline import train_text, train_image
 from modules.database import get_data
 
 app = FastAPI(docs_url=None, openapi_url=None)
