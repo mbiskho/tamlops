@@ -1,6 +1,14 @@
 FROM bitnami/minideb:latest
 LABEL service="interface"
 
+ARG DB=""
+ARG TRAIN=""
+ARG INFERENCE=""
+
+ENV DB="${DB}"
+ENV TRAIN="${TRAIN}"
+ENV INFERENCE="${INFERENCE}"
+
 ## pre-requisite
 RUN install_packages \
       ca-certificates \

@@ -1,37 +1,36 @@
-FROM bitnami/minideb:latest
+FROM ubuntu:latest
 LABEL service="inference"
 
-## pre-requisite
-RUN install_packages \
-      ca-certificates \
-      curl \
-      git \
-      gnupg \
-      jq \
-      make \
-      openssh-client \
-      python3 \
-      python3-distutils \
-      unzip \
-      wget
+#ARG
+ARG REGISTRY_URI=""
 
-RUN wget -q "https://bootstrap.pypa.io/get-pip.py" -O /tmp/get-pip.py \
-      && python3 /tmp/get-pip.py --break-system-packages \
-      && pip install netaddr --break-system-packages
+#ENV
+ENV REGISTRY_URI="${REGISTRY_URI}"
+
+# Install necessary packages and Prometheus
+# RUN apt-get update -y && apt-get install -y python3-pip prometheus
+
+RUN apt-get update -y && apt-get install -y python3-pip
 
 # requirement lib
 COPY requirements.txt /
-RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-RUN pip install -r requirements.txt --break-system-packages
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+RUN pip3 install -r requirements.txt 
 
 # ## final configure
 COPY . /app
 WORKDIR /app
+
+# Copy your Prometheus configuration file
+# COPY prometheus.yml /etc/prometheus/prometheus.yml
 
 RUN mkdir -p /etc/inference.d
 COPY run.sh /etc/inference.d/run.sh
 RUN chmod +x /etc/inference.d/run.sh
 
 EXPOSE 8000
+# EXPOSE 9100 
+
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD curl --fail http://127.0.0.1:8000/ || exit 1
 CMD ["/etc/inference.d/run.sh"]
+# CMD ["/etc/inference.d/run.sh", "--config.file=/etc/prometheus/prometheus.yml"]

@@ -1,27 +1,20 @@
-FROM bitnami/minideb:latest
+FROM ubuntu:latest
 LABEL service="pipeline"
 
-## pre-requisite
-RUN install_packages \
-      ca-certificates \
-      curl \
-      git \
-      gnupg \
-      jq \
-      make \
-      openssh-client \
-      python3 \
-      python3-distutils \
-      unzip \
-      wget
+#ARG
+ARG REGISTRY_URI=""
+ARG DB_HOST=""
 
-RUN wget -q "https://bootstrap.pypa.io/get-pip.py" -O /tmp/get-pip.py \
-      && python3 /tmp/get-pip.py --break-system-packages \
-      && pip install netaddr --break-system-packages
+#ENV
+ENV REGISTRY_URI="${REGISTRY_URI}"
+ENV DB_HOST="${DB_HOST}"
+
+RUN apt-get update -y && apt-get install -y python3-pip
 
 # requirement lib
 COPY requirements.txt /
-RUN pip install -r requirements.txt --break-system-packages
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+RUN pip3 install -r requirements.txt 
 
 # ## final configure
 COPY . /app
