@@ -1,0 +1,140 @@
+{
+  "chaoslib-version": "1.39.0",
+  "platform": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+  "node": "LAPTOP-A8CQJ1B2",
+  "experiment": {
+    "title": "Proxy Server is Offline",
+    "description": "This experiment is to test the performance & find the errors when the proxy server is turn off (offline)",
+    "tags": [],
+    "steady-state-hypothesis": {
+      "title": "Normal Load Testing Check",
+      "probes": [
+        {
+          "type": "probe",
+          "name": "Normal load testing log must exists",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "name": "Retrieve all incidents repeatedly",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "stress_endpoint",
+          "arguments": {
+            "endpoint": "https://status.cloud.google.com/incidents.json",
+            "vus": 2,
+            "duration": "5s",
+            "log_file": "log/running/k6.log"
+          }
+        }
+      },
+      {
+        "name": "Run load testing when interface is off",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "run_script",
+          "arguments": {
+            "script_path": "load-testing.js",
+            "duration": "10s"
+          }
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-10-29T09:04:09.193974",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "Normal load testing log must exists",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-10-29T09:04:09.195427",
+          "status": "succeeded",
+          "end": "2023-10-29T09:04:09.195788",
+          "duration": 0.000361,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "name": "Retrieve all incidents repeatedly",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "stress_endpoint",
+          "arguments": {
+            "endpoint": "https://status.cloud.google.com/incidents.json",
+            "vus": 2,
+            "duration": "5s",
+            "log_file": "log/running/k6.log"
+          }
+        }
+      },
+      "output": true,
+      "start": "2023-10-29T09:04:09.196660",
+      "status": "succeeded",
+      "end": "2023-10-29T09:04:19.743663",
+      "duration": 10.547003
+    },
+    {
+      "activity": {
+        "name": "Run load testing when interface is off",
+        "type": "action",
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "run_script",
+          "arguments": {
+            "script_path": "load-testing.js",
+            "duration": "10s"
+          }
+        }
+      },
+      "output": null,
+      "start": "2023-10-29T09:04:19.744204",
+      "status": "succeeded",
+      "end": "2023-10-29T09:05:03.004235",
+      "duration": 43.260031
+    }
+  ],
+  "rollbacks": [],
+  "end": "2023-10-29T09:05:03.005295",
+  "duration": 53.8881356716156
+}

@@ -1,0 +1,21 @@
+time="2023-10-29T16:36:54+07:00" level=info msg="Status: 200 OK" source=console
+time="2023-10-29T16:36:56+07:00" level=info msg="Status: 200 OK" source=console
+
+     data_received..................: 6.9 MB 844 kB/s
+     data_sent......................: 15 kB  1.8 kB/s
+   ✓ failures.......................: 0.00%  ✓ 0       ✗ 2  
+     http_req_blocked...............: avg=356.32ms min=353.18ms med=356.32ms max=359.46ms p(90)=358.83ms p(95)=359.14ms
+     http_req_connecting............: avg=72.49ms  min=72.22ms  med=72.49ms  max=72.75ms  p(90)=72.7ms   p(95)=72.73ms 
+     http_req_duration..............: avg=7.11s    min=6.46s    med=7.11s    max=7.77s    p(90)=7.64s    p(95)=7.7s    
+       { expected_response:true }...: avg=7.11s    min=6.46s    med=7.11s    max=7.77s    p(90)=7.64s    p(95)=7.7s    
+     http_req_failed................: 0.00%  ✓ 0       ✗ 2  
+     http_req_receiving.............: avg=7.01s    min=6.36s    med=7.01s    max=7.66s    p(90)=7.53s    p(95)=7.6s    
+     http_req_sending...............: avg=3.24ms   min=3.24ms   med=3.24ms   max=3.25ms   p(90)=3.25ms   p(95)=3.25ms  
+     http_req_tls_handshaking.......: avg=88.51ms  min=88.24ms  med=88.51ms  max=88.77ms  p(90)=88.72ms  p(95)=88.74ms 
+     http_req_waiting...............: avg=97.15ms  min=90.48ms  med=97.15ms  max=103.83ms p(90)=102.49ms p(95)=103.16ms
+     http_reqs......................: 2      0.24558/s
+     iteration_duration.............: avg=7.49s    min=6.85s    med=7.49s    max=8.13s    p(90)=8.01s    p(95)=8.07s   
+     iterations.....................: 2      0.24558/s
+     vus............................: 1      min=1     max=2
+     vus_max........................: 2      min=2     max=2
+
