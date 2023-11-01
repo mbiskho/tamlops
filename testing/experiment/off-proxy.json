@@ -1,9 +1,9 @@
 {
-    "title": "Proxy Server is Offline",
-    "description": "This experiment is to test the performance & find the errors when the proxy server is turn off (offline)",
+    "title": "Chaos Offline Proxy Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when proxy server is offline (offline)",
     "tags": [],
     "steady-state-hypothesis": {
-        "title": "Normal Load Testing Check",
+        "title": "Make sure that load testing has been done & able to prompt every types to server",
         "probes": [
             {
                 "name": "Normal load testing log must exists",
@@ -68,19 +68,6 @@
         ]
     },
     "method": [
-        {
-            "name": "Normal load testing log must exists",
-            "type": "probe",
-            "tolerance": false,
-            "provider": {
-                "type": "python",
-                "module": "os.path",
-                "func": "exists",
-                "arguments": {
-                    "path": "log/running/load-testing-steadystate.log"
-                }
-            }
-        },
         {
             "type": "action",
             "name": "Turn off interface-proxy VM on Google Cloud Platform",

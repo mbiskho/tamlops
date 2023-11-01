@@ -1,0 +1,277 @@
+{
+  "chaoslib-version": "1.39.0",
+  "platform": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+  "node": "LAPTOP-A8CQJ1B2",
+  "experiment": {
+    "title": "Chaos Load Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when one of the deployment is offline (offline)",
+    "tags": [],
+    "steady-state-hypothesis": {
+      "title": "Make sure that load testing has been done & able to prompt every types to server",
+      "probes": [
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          },
+          "controls": [
+            {
+              "name": "Change CHAOS_TYPE env value to steadystate",
+              "scope": "before",
+              "provider": {
+                "type": "process",
+                "path": "export",
+                "arguments": "CHAOS_TYPE=steadystate"
+              }
+            }
+          ]
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://138.197.231.156:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://138.197.231.156:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "name": "Normal load testing log must exists",
+        "type": "probe",
+        "tolerance": false,
+        "provider": {
+          "type": "python",
+          "module": "os.path",
+          "func": "exists",
+          "arguments": {
+            "path": "log/running/load-testing-steadystate.log"
+          }
+        }
+      },
+      {
+        "type": "action",
+        "name": "Turn off interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances stop interface-proxy"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-proxy",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-proxy"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "run_script",
+          "arguments": {
+            "script_path": "load-testing.js",
+            "duration": "1m30s"
+          }
+        }
+      },
+      {
+        "type": "action",
+        "name": "Turn on interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances start interface-proxy"
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-11-01T02:24:14.148832",
+  "status": "failed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": false,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            },
+            "controls": [
+              {
+                "name": "Change CHAOS_TYPE env value to steadystate",
+                "scope": "before",
+                "provider": {
+                  "type": "process",
+                  "path": "export",
+                  "arguments": "CHAOS_TYPE=steadystate"
+                }
+              }
+            ]
+          },
+          "output": true,
+          "start": "2023-11-01T02:24:14.149499",
+          "status": "succeeded",
+          "end": "2023-11-01T02:24:14.149742",
+          "duration": 0.000243,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request text",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 20,
+              "url": "http://138.197.231.156:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "text",
+                "text": "What german name of apple"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Wed, 01 Nov 2023 02:24:12 GMT",
+              "server": "uvicorn",
+              "content-length": "49",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": "Output has been made"
+            }
+          },
+          "start": "2023-11-01T02:24:14.149996",
+          "status": "succeeded",
+          "end": "2023-11-01T02:24:19.025857",
+          "duration": 4.875861,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request image",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 60,
+              "url": "http://138.197.231.156:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "image",
+                "text": "Make me an image of a cat with hat"
+              }
+            }
+          },
+          "output": null,
+          "start": "2023-11-01T02:24:19.026111",
+          "status": "failed",
+          "exception": [
+            "Traceback (most recent call last):\n",
+            "  File \"/usr/lib/python3/dist-packages/urllib3/connectionpool.py\", line 421, in _make_request\n    six.raise_from(e, None)\n",
+            "  File \"<string>\", line 3, in raise_from\n",
+            "  File \"/usr/lib/python3/dist-packages/urllib3/connectionpool.py\", line 416, in _make_request\n    httplib_response = conn.getresponse()\n",
+            "  File \"/usr/lib/python3.8/http/client.py\", line 1348, in getresponse\n    response.begin()\n",
+            "  File \"/usr/lib/python3.8/http/client.py\", line 316, in begin\n    version, status, reason = self._read_status()\n",
+            "  File \"/usr/lib/python3.8/http/client.py\", line 277, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n",
+            "  File \"/usr/lib/python3.8/socket.py\", line 669, in readinto\n    return self._sock.recv_into(b)\n",
+            "socket.timeout: timed out\n",
+            "\nDuring handling of the above exception, another exception occurred:\n\n",
+            "Traceback (most recent call last):\n",
+            "  File \"/home/muhammad_kik/.local/lib/python3.8/site-packages/requests/adapters.py\", line 489, in send\n    resp = conn.urlopen(\n",
+            "  File \"/usr/lib/python3/dist-packages/urllib3/connectionpool.py\", line 719, in urlopen\n    retries = retries.increment(\n",
+            "  File \"/usr/lib/python3/dist-packages/urllib3/util/retry.py\", line 400, in increment\n    raise six.reraise(type(error), error, _stacktrace)\n",
+            "  File \"/usr/lib/python3/dist-packages/six.py\", line 703, in reraise\n    raise value\n",
+            "  File \"/usr/lib/python3/dist-packages/urllib3/connectionpool.py\", line 665, in urlopen\n    httplib_response = self._make_request(\n",
+            "  File \"/usr/lib/python3/dist-packages/urllib3/connectionpool.py\", line 423, in _make_request\n    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)\n",
+            "  File \"/usr/lib/python3/dist-packages/urllib3/connectionpool.py\", line 330, in _raise_timeout\n    raise ReadTimeoutError(\n",
+            "urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='138.197.231.156', port=8000): Read timed out. (read timeout=60)\n",
+            "\nDuring handling of the above exception, another exception occurred:\n\n",
+            "Traceback (most recent call last):\n",
+            "  File \"/home/muhammad_kik/.local/lib/python3.8/site-packages/chaoslib/provider/http.py\", line 59, in run_http_activity\n    r = s.request(\n",
+            "  File \"/home/muhammad_kik/.local/lib/python3.8/site-packages/requests/sessions.py\", line 587, in request\n    resp = self.send(prep, **send_kwargs)\n",
+            "  File \"/home/muhammad_kik/.local/lib/python3.8/site-packages/requests/sessions.py\", line 701, in send\n    r = adapter.send(request, **kwargs)\n",
+            "  File \"/home/muhammad_kik/.local/lib/python3.8/site-packages/requests/adapters.py\", line 578, in send\n    raise ReadTimeout(e, request=request)\n",
+            "requests.exceptions.ReadTimeout: HTTPConnectionPool(host='138.197.231.156', port=8000): Read timed out. (read timeout=60)\n",
+            "\nDuring handling of the above exception, another exception occurred:\n\n",
+            "chaoslib.exceptions.ActivityFailed: activity took too long to complete\n"
+          ],
+          "end": "2023-11-01T02:25:19.117432",
+          "duration": 60.091321,
+          "tolerance_met": false
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [],
+  "rollbacks": [],
+  "end": "2023-11-01T02:25:19.117698",
+  "duration": 65.0293641090393
+}

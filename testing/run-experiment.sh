@@ -31,7 +31,7 @@ k6 run load-testing.js
 mkdir "${CHAOS_REPORT_LOG_DIR}"
 
 # Run chaos experiment: turn off interface-proxy
-chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILES_DIR}" run experiment.json --journal-path "${CHAOS_PROXY_REPORT_FILES_DIR}" --hypothesis-strategy before-method-only
+chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILES_DIR}" run experiment/off-proxy.json --journal-path "${CHAOS_PROXY_REPORT_FILES_DIR}" --hypothesis-strategy before-method-only
 # Run chaos experiment: turn off event-receiver
 # Run chaos experiment: turn off MaaS
 # Run chaos experiment: turn off ML Pipeline
