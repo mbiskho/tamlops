@@ -8,7 +8,8 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 import shutil
 from datasets import load_dataset, concatenate_datasets
 from random import randrange  
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, DataCollatorForSeq2Seq, Seq2SeqTrainer, Seq2SeqTrainingArguments
+from huggingface_hub import HfFolder
 
 def text():
     def preprocess_function(sample,padding="max_length"):
@@ -29,9 +30,6 @@ def text():
     folderExist = os.path.exists(folder_path_text)
     if not folderExist:
         os.makedirs(folder_path_text)
-
-    # tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
-    # model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base")
 
     # # Specify the directory where you want to save the tokenizer and model
     output_dir = "temp/text"
@@ -69,6 +67,56 @@ def text():
     # tokenizer.save_pretrained(output_dir)
     # model.save_pretrained(output_dir)
 
+    # load model from the hub
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_id)
+    # we want to ignore tokenizer pad token in the loss
+    label_pad_token_id = -100
+    # Data collator
+    data_collator = DataCollatorForSeq2Seq(
+        tokenizer,
+        model=model,
+        label_pad_token_id=label_pad_token_id,
+        pad_to_multiple_of=1
+    )
+    # Define training args
+    training_args = Seq2SeqTrainingArguments(
+        output_dir="/root/tamlops/service/pipeline/example/tmp",
+        per_device_train_batch_size=1,
+        per_device_eval_batch_size=1,
+        predict_with_generate=True,
+        fp16=False, # Overflows with fp16
+        # learning_rate=5e-5,
+        num_train_epochs=2,
+        # logging & evaluation strategies
+        # logging_dir=f"{repository_id}/logs",
+        logging_strategy="steps",
+        logging_steps=1,
+        evaluation_strategy="epoch",
+        save_strategy="epoch",
+        save_total_limit=2,
+        load_best_model_at_end=True,
+        # metric_for_best_model="overall_f1",
+        # push to hub parameters
+        report_to="tensorboard",
+        push_to_hub=False,
+        hub_strategy="every_save",
+        # hub_model_id=repository_id,
+        hub_token=HfFolder.get_token(),
+    )
+    # Create Trainer instance
+    trainer = Seq2SeqTrainer(
+        model=model,
+        args=training_args,
+        data_collator=data_collator,
+        train_dataset=tokenized_dataset["train"],
+        eval_dataset=tokenized_dataset["test"],
+        # compute_metrics=compute_metrics,
+    )
+    # Start training
+    trainer.train()
+
+
+    
 
 
 
