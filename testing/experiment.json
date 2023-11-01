@@ -6,8 +6,8 @@
         "title": "Normal Load Testing Check",
         "probes": [
             {
-                "type": "probe",
                 "name": "Normal load testing log must exists",
+                "type": "probe",
                 "tolerance": true,
                 "provider": {
                     "type": "python",
@@ -16,7 +16,18 @@
                     "arguments": {
                         "path": "log/running/load-testing-steadystate.log"
                     }
-                }
+                },
+                "controls": [
+                    {
+                        "name": "Change CHAOS_TYPE env value to steadystate",
+                        "scope": "before",
+                        "provider": {
+                            "type": "process",
+                            "path": "export",
+                            "arguments": "CHAOS_TYPE=steadystate"
+                        }
+                    }
+                ]
             },
             {
                 "type": "probe",
@@ -58,31 +69,59 @@
     },
     "method": [
         {
-            "name": "Retrieve all incidents repeatedly",
-            "type": "action",
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": false,
             "provider": {
                 "type": "python",
-                "module": "chaosk6.actions",
-                "func": "stress_endpoint",
+                "module": "os.path",
+                "func": "exists",
                 "arguments": {
-                    "endpoint": "https://status.cloud.google.com/incidents.json",
-                    "vus": 2,
-                    "duration": "5s",
-                    "log_file": "log/running/k6.log"
+                    "path": "log/running/load-testing-steadystate.log"
                 }
             }
         },
         {
-            "name": "Run load testing when interface is off",
             "type": "action",
+            "name": "Turn off interface-proxy VM on Google Cloud Platform",
+            "provider": {
+                "type": "process",
+                "path": "gcloud",
+                "arguments": "compute instances stop interface-proxy"
+            },
+            "controls": [
+                {
+                    "name": "Change CHAOS_TYPE env value to off-proxy",
+                    "scope": "before",
+                    "provider": {
+                        "type": "process",
+                        "path": "export",
+                        "arguments": "CHAOS_TYPE=off-proxy"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "action",
+            "name": "Run load testing",
+            "background": false,
             "provider": {
                 "type": "python",
                 "module": "chaosk6.actions",
                 "func": "run_script",
                 "arguments": {
                     "script_path": "load-testing.js",
-                    "duration": "10s"
+                    "duration": "1m30s"
                 }
+            }
+        },
+        {
+            "type": "action",
+            "name": "Turn on interface-proxy VM on Google Cloud Platform",
+            "provider": {
+                "type": "process",
+                "path": "gcloud",
+                "arguments": "compute instances start interface-proxy"
             }
         }
     ],

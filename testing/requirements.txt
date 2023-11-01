@@ -1,3 +1,4 @@
+antlr4-python3-runtime==4.10
 attrs==19.3.0
 Automat==0.8.0
 backcall==0.1.0
@@ -18,7 +19,7 @@ chaostoolkit-prometheus==0.6.0
 chaostoolkit-reporting==0.14.3
 chaostoolkit-terraform==0.0.9
 chardet==3.0.4
-charset-normalizer==3.3.1
+charset-normalizer==2.0.12
 click==8.0.0
 click-plugins==1.1.1
 cloud-init==23.1.2
@@ -74,6 +75,7 @@ ipython_genutils==0.2.0
 jedi==0.15.2
 Jinja2==2.10.1
 jsonpatch==1.22
+jsonpath2==0.4.5
 jsonpointer==2.0
 jsonschema==3.2.0
 keyring==18.0.1

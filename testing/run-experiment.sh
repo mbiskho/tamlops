@@ -31,18 +31,9 @@ k6 run load-testing.js
 mkdir "${CHAOS_REPORT_LOG_DIR}"
 
 # Run chaos experiment: turn off interface-proxy
-# gcloud compute instances stop interface-proxy
-# sleep 5
-export CHAOS_TYPE="off-proxy"
-chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILES_DIR}" run experiment/off-proxy.json --journal-path "${CHAOS_PROXY_REPORT_FILES_DIR}" --hypothesis-strategy before-method-only
-# gcloud compute instances start interface-proxy
-# sleep 5
-
+chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILES_DIR}" run experiment.json --journal-path "${CHAOS_PROXY_REPORT_FILES_DIR}" --hypothesis-strategy before-method-only
 # Run chaos experiment: turn off event-receiver
-
 # Run chaos experiment: turn off MaaS
-
-
 # Run chaos experiment: turn off ML Pipeline
 
 # Create reports from chaos experiments

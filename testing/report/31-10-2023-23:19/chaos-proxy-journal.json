@@ -1,0 +1,288 @@
+{
+  "chaoslib-version": "1.39.0",
+  "platform": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+  "node": "LAPTOP-A8CQJ1B2",
+  "experiment": {
+    "title": "Proxy Server is Offline",
+    "description": "This experiment is to test the performance & find the errors when the proxy server is turn off (offline)",
+    "tags": [],
+    "steady-state-hypothesis": {
+      "title": "Normal Load Testing Check",
+      "probes": [
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://138.197.231.156:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://138.197.231.156:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "name": "Normal load testing log must exists",
+        "type": "probe",
+        "tolerance": false,
+        "provider": {
+          "type": "python",
+          "module": "os.path",
+          "func": "exists",
+          "arguments": {
+            "path": "log/running/load-testing-steadystate.log"
+          }
+        }
+      },
+      {
+        "type": "action",
+        "name": "Turn off interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances stop interface-proxy"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-proxy",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-proxy"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "run_script",
+          "arguments": {
+            "script_path": "load-testing.js",
+            "duration": "1m30s"
+          }
+        }
+      },
+      {
+        "type": "action",
+        "name": "Turn on interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances start interface-proxy"
+        }
+      }
+    ],
+    "rollbacks": [
+      {
+        "ref": "Turn on interface-proxy VM on Google Cloud Platform"
+      }
+    ],
+    "dry": null
+  },
+  "start": "2023-10-31T16:21:35.630579",
+  "status": "interrupted",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-10-31T16:21:35.631576",
+          "status": "succeeded",
+          "end": "2023-10-31T16:21:35.631942",
+          "duration": 0.000366,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request text",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 20,
+              "url": "http://138.197.231.156:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "text",
+                "text": "What german name of apple"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Tue, 31 Oct 2023 16:21:34 GMT",
+              "server": "uvicorn",
+              "content-length": "49",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": "Output has been made"
+            }
+          },
+          "start": "2023-10-31T16:21:35.632251",
+          "status": "succeeded",
+          "end": "2023-10-31T16:21:40.793086",
+          "duration": 5.160835,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request image",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 60,
+              "url": "http://138.197.231.156:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "image",
+                "text": "Make me an image of a cat with hat"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Tue, 31 Oct 2023 16:21:40 GMT",
+              "server": "uvicorn",
+              "content-length": "49",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": "Output has been made"
+            }
+          },
+          "start": "2023-10-31T16:21:40.793385",
+          "status": "succeeded",
+          "end": "2023-10-31T16:22:28.075932",
+          "duration": 47.282547,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "name": "Normal load testing log must exists",
+        "type": "probe",
+        "tolerance": false,
+        "provider": {
+          "type": "python",
+          "module": "os.path",
+          "func": "exists",
+          "arguments": {
+            "path": "log/running/load-testing-steadystate.log"
+          }
+        }
+      },
+      "output": true,
+      "start": "2023-10-31T16:22:28.077515",
+      "status": "succeeded",
+      "end": "2023-10-31T16:22:28.078285",
+      "duration": 0.00077
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Turn off interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances stop interface-proxy"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-proxy",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-proxy"
+            }
+          }
+        ]
+      },
+      "output": null,
+      "start": "2023-10-31T16:22:28.078911",
+      "end": "2023-10-31T16:22:54.925248",
+      "duration": 26.846337
+    }
+  ],
+  "rollbacks": [],
+  "end": "2023-10-31T16:22:54.925975",
+  "duration": 79.36796760559082
+}

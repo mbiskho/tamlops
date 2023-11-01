@@ -1,0 +1,320 @@
+{
+  "chaoslib-version": "1.39.0",
+  "platform": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+  "node": "LAPTOP-A8CQJ1B2",
+  "experiment": {
+    "title": "Proxy Server is Offline",
+    "description": "This experiment is to test the performance & find the errors when the proxy server is turn off (offline)",
+    "tags": [],
+    "steady-state-hypothesis": {
+      "title": "Normal Load Testing Check",
+      "probes": [
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://138.197.231.156:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://138.197.231.156:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "Turn off interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances stop interface-proxy"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-proxy",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-proxy"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "run_script",
+          "arguments": {
+            "script_path": "load-testing.js"
+          }
+        }
+      },
+      {
+        "type": "action",
+        "name": "Turn on interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances start interface-proxy"
+        }
+      }
+    ],
+    "rollbacks": [
+      {
+        "ref": "Turn on interface-proxy VM on Google Cloud Platform"
+      }
+    ],
+    "dry": null
+  },
+  "start": "2023-10-31T13:51:15.484061",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-10-31T13:51:15.484440",
+          "status": "succeeded",
+          "end": "2023-10-31T13:51:15.484741",
+          "duration": 0.000301,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request text",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 20,
+              "url": "http://138.197.231.156:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "text",
+                "text": "What german name of apple"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Tue, 31 Oct 2023 13:51:14 GMT",
+              "server": "uvicorn",
+              "content-length": "49",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": "Output has been made"
+            }
+          },
+          "start": "2023-10-31T13:51:15.484936",
+          "status": "succeeded",
+          "end": "2023-10-31T13:51:22.805506",
+          "duration": 7.32057,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request image",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 60,
+              "url": "http://138.197.231.156:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "image",
+                "text": "Make me an image of a cat with hat"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Tue, 31 Oct 2023 13:51:23 GMT",
+              "server": "uvicorn",
+              "content-length": "49",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": "Output has been made"
+            }
+          },
+          "start": "2023-10-31T13:51:22.805877",
+          "status": "succeeded",
+          "end": "2023-10-31T13:52:07.673909",
+          "duration": 44.868032,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "Turn off interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances stop interface-proxy"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-proxy",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-proxy"
+            }
+          }
+        ]
+      },
+      "output": {
+        "status": 0,
+        "stdout": "",
+        "stderr": "Stopping instance(s) interface-proxy...\n.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................done.\nUpdated [https://compute.googleapis.com/compute/v1/projects/mlops-398205/zones/us-central1-a/instances/interface-proxy].\n"
+      },
+      "start": "2023-10-31T13:52:07.674521",
+      "status": "succeeded",
+      "end": "2023-10-31T13:56:36.503922",
+      "duration": 268.829401
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "python",
+          "module": "chaosk6.actions",
+          "func": "run_script",
+          "arguments": {
+            "script_path": "load-testing.js"
+          }
+        }
+      },
+      "output": null,
+      "start": "2023-10-31T13:56:36.504148",
+      "status": "succeeded",
+      "end": "2023-10-31T13:57:08.440456",
+      "duration": 31.936308
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Turn on interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances start interface-proxy"
+        }
+      },
+      "output": {
+        "status": 0,
+        "stdout": "",
+        "stderr": "Starting instance(s) interface-proxy...\n.......................................done.\nUpdated [https://compute.googleapis.com/compute/v1/projects/mlops-398205/zones/us-central1-a/instances/interface-proxy].\nInstance internal IP is 10.128.0.7\nInstance external IP is 34.136.11.63\n"
+      },
+      "start": "2023-10-31T13:57:08.440954",
+      "status": "succeeded",
+      "end": "2023-10-31T13:57:33.631014",
+      "duration": 25.19006
+    }
+  ],
+  "rollbacks": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "Turn on interface-proxy VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances start interface-proxy"
+        }
+      },
+      "output": {
+        "status": 0,
+        "stdout": "",
+        "stderr": "Starting instance(s) interface-proxy...\n...........................done.\nUpdated [https://compute.googleapis.com/compute/v1/projects/mlops-398205/zones/us-central1-a/instances/interface-proxy].\nInstance internal IP is 10.128.0.7\nInstance external IP is 34.136.11.63\n"
+      },
+      "start": "2023-10-31T13:57:33.631550",
+      "status": "succeeded",
+      "end": "2023-10-31T13:57:45.295464",
+      "duration": 11.663914
+    }
+  ],
+  "end": "2023-10-31T13:57:45.295672",
+  "duration": 389.81712222099304
+}
