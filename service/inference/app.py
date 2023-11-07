@@ -21,8 +21,6 @@ async def health_svc():
 async def prompting(requests: Request):
     req = await requests.json()
 
-
-
     return {"error": False, "response": "Output has been made"}
 
 
@@ -34,5 +32,4 @@ async def prompting(requests: Request):
         await inference_image(req['text'])
     if req['type'] == "text":
         await inference_text(req['text'])
-
     return {"error": False, "response": "Output has been made"}
