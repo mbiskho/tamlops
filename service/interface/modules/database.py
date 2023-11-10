@@ -20,6 +20,20 @@ async def text_test_db(req):
     await conn.close()
     return {"message": "Test dataset saved successfully"}
 
+async def image_train_db(req):
+    conn = await asyncpg.connect(DB)
+    for i in req:
+        await conn.execute("INSERT INTO image_train (image, description) VALUES ($1, $2)", i['image'], i['description'])
+    await conn.close()
+    return {"message": "Training dataset saved successfully"}
+
+async def image_test_db(req):
+    conn = await asyncpg.connect(DB)
+    for i in req:
+        await conn.execute("INSERT INTO image_test (image, description) VALUES ($1, $2)", i['image'], i['description'])
+    await conn.close()
+    return {"message": "Test dataset saved successfully"}
+
 async def check_table_count(table_name):
     conn = await asyncpg.connect(DB)
     result = await conn.fetchval(f'SELECT COUNT(*) FROM {table_name}')
