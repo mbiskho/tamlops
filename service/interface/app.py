@@ -20,13 +20,13 @@ async def health_svc():
 @app.post("/text/training", response_class=JSONResponse)
 async def prompting(requests: Request):
     req = await requests.json()
-    await text_train_db(req['prompt'], req['answer'])
+    await text_train_db(req)
 
     return {"error": False, "response": "Success submit request"}
 
 @app.post("/text/test", response_class=JSONResponse)
 async def prompting(requests: Request):
     req = await requests.json()
-    await text_test_db(req['prompt'], req['answer'])
+    await text_test_db(req)
 
     return {"error": False, "response": "Success submit request"}
