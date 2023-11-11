@@ -6,36 +6,8 @@ load_dotenv()
 
 DB = os.environ.get("DB")
 
-async def text_train_db(req):
+async def save_training_db(type, file):
     conn = await asyncpg.connect(DB)
-    for i in req:
-        await conn.execute("INSERT INTO text_train (prompt, answer) VALUES ($1, $2)", i['prompt'], i['answer'])
+    await conn.execute("INSERT INTO training_queue (type, file) VALUES ($1, $2)", type, file)
     await conn.close()
     return {"message": "Training dataset saved successfully"}
-
-async def text_test_db(req):
-    conn = await asyncpg.connect(DB)
-    for i in req:
-        await conn.execute("INSERT INTO text_test (prompt, answer) VALUES ($1, $2)", i['prompt'], i['answer'])
-    await conn.close()
-    return {"message": "Test dataset saved successfully"}
-
-async def image_train_db(req):
-    conn = await asyncpg.connect(DB)
-    for i in req:
-        await conn.execute("INSERT INTO image_train (image, description) VALUES ($1, $2)", i['image'], i['description'])
-    await conn.close()
-    return {"message": "Training dataset saved successfully"}
-
-async def image_test_db(req):
-    conn = await asyncpg.connect(DB)
-    for i in req:
-        await conn.execute("INSERT INTO image_test (image, description) VALUES ($1, $2)", i['image'], i['description'])
-    await conn.close()
-    return {"message": "Test dataset saved successfully"}
-
-async def check_table_count(table_name):
-    conn = await asyncpg.connect(DB)
-    result = await conn.fetchval(f'SELECT COUNT(*) FROM {table_name}')
-    await conn.close()
-    return result
