@@ -17,7 +17,7 @@ async def upload_to_gcs(file):
     )
 
     bucket_name = "training-dataset-tamlops"
-    
+
     name, extension = os.path.splitext(file.filename)
     unique_id = str(uuid.uuid4())
     destination_blob_name = f"{name}_{unique_id}{extension}"
