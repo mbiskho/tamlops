@@ -46,3 +46,6 @@
 
 # # Write the new data to the CSV file
 # write_to_csv(data, 'text.csv')
+
+
+echo -e "yes\nmlops2023" | ssh mlops@152.118.31.57
