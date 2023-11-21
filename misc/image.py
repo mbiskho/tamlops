@@ -341,7 +341,6 @@ def preprocess_function(sample, padding="max_length"):
     inputs = ["summarize: " + item for item in sample["dialogue"]]
     model_inputs = tokenizer(inputs, max_length=max_source_length, padding=padding, truncation=True)
     labels = tokenizer(text_target=sample["summary"], max_length=max_target_length, padding=padding, truncation=True)
-    print(sample)
     if padding == "max_length":
         labels["input_ids"] = [
             [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
@@ -362,7 +361,6 @@ converted = []
 for index, row in df.iterrows():
   cells = {}
   for column_name, cell_value in row.items():
-    print(f"Value at index {index}, column {column_name}: {cell_value}")
     cells[column_name] = cell_value
   # Create a BytesIO object using the byte string
   bytes_io = BytesIO(cells['image']['bytes'])
@@ -424,7 +422,6 @@ if accelerator.is_main_process:
         repo_id = create_repo(
             repo_id=args['hub_model_id'] or Path(args['output_dir']).name, exist_ok=True, token=args['hub_token'],
         ).repo_id
-    print("REPO ID: ", repo_id)
 # Load scheduler, tokenizer and models.
 noise_scheduler = DDPMScheduler.from_pretrained(args['pretrained_model_name_or_path'], subfolder="scheduler")
 tokenizer = CLIPTokenizer.from_pretrained(
@@ -549,7 +546,7 @@ optimizer = optimizer_cls(
 img = [item['image'] for item in converted[:data['param']['num_dataset']]]
 text = [item['text'] for item in converted[:data['param']['num_dataset']]]
 dataset['train'] = Dataset.from_dict({"text": text, "image": img})
-print('Dataset : \n', dataset)
+
 
 
 # Preprocessing the datasets.
