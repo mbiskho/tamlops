@@ -284,12 +284,11 @@ datas = [
 ]
 
 
-# Function to write data to CSV file
 def write_to_csv(data, csv_file_path):
     file_exists = os.path.isfile(csv_file_path)
 
     with open(csv_file_path, mode='a', newline='') as file:
-        fieldnames = ['Name', 'Age', 'City']
+        fieldnames = list(data.keys())
         writer = csv.DictWriter(file, fieldnames=fieldnames)
 
         # If the file doesn't exist, write the header
