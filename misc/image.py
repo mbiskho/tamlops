@@ -86,7 +86,6 @@ import psutil
 data = {
     "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
     "param": {
-      ""
       "resolution": 10, # 512
       "train_batch_size": 1, #6
       "num_train_epochs": 1, #100
