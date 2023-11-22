@@ -86,6 +86,7 @@ import psutil
 data = {
     "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
     "param": {
+      ""
       "resolution": 10, # 512
       "train_batch_size": 1, #6
       "num_train_epochs": 1, #100
@@ -93,7 +94,7 @@ data = {
       "gradient_accumulation_steps": 1,
       "learning_rate": 0.0001,
 
-      "num_dataset": 100
+      "num_dataset": 50
     }
 }
 
@@ -270,7 +271,7 @@ args = {
     "lr_warmup_steps": 500,
     "snr_gamma": None,
     "use_8bit_adam": False,
-    "allow_tf32": False,
+    "allow_tf32": True,
     "use_ema": False,
     "non_ema_revision": None,
     "dataloader_num_workers": 0,
@@ -341,6 +342,7 @@ def preprocess_function(sample, padding="max_length"):
     inputs = ["summarize: " + item for item in sample["dialogue"]]
     model_inputs = tokenizer(inputs, max_length=max_source_length, padding=padding, truncation=True)
     labels = tokenizer(text_target=sample["summary"], max_length=max_target_length, padding=padding, truncation=True)
+    print(sample)
     if padding == "max_length":
         labels["input_ids"] = [
             [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
@@ -361,6 +363,7 @@ converted = []
 for index, row in df.iterrows():
   cells = {}
   for column_name, cell_value in row.items():
+    print(f"Value at index {index}, column {column_name}: {cell_value}")
     cells[column_name] = cell_value
   # Create a BytesIO object using the byte string
   bytes_io = BytesIO(cells['image']['bytes'])
@@ -422,6 +425,7 @@ if accelerator.is_main_process:
         repo_id = create_repo(
             repo_id=args['hub_model_id'] or Path(args['output_dir']).name, exist_ok=True, token=args['hub_token'],
         ).repo_id
+    print("REPO ID: ", repo_id)
 # Load scheduler, tokenizer and models.
 noise_scheduler = DDPMScheduler.from_pretrained(args['pretrained_model_name_or_path'], subfolder="scheduler")
 tokenizer = CLIPTokenizer.from_pretrained(
@@ -543,10 +547,11 @@ optimizer = optimizer_cls(
 )
 
 # Get The Dataset
+dataset = {}
 img = [item['image'] for item in converted[:data['param']['num_dataset']]]
 text = [item['text'] for item in converted[:data['param']['num_dataset']]]
 dataset['train'] = Dataset.from_dict({"text": text, "image": img})
-
+print('Dataset : \n', dataset)
 
 
 # Preprocessing the datasets.
@@ -641,19 +646,25 @@ lr_scheduler = get_scheduler(
     num_training_steps=args['max_train_steps'] * accelerator.num_processes,
 )
 
-if torch.cuda.is_available():
-  weight_dtype = torch.float32
-  torch.device("cuda")
-else:
-  weight_dtype = torch.float32
-  torch.device("cpu")
-
+# if torch.cuda.is_available():
+#   weight_dtype = torch.float32
+#   torch.device("cuda")
+# else:
+#   weight_dtype = torch.float32
+#   torch.device("cpu")
+unet, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
+        unet, optimizer, train_dataloader, lr_scheduler
+    )
+weight_dtype = torch.float32
 if accelerator.mixed_precision == "fp16":
     weight_dtype = torch.float16
     args.mixed_precision = accelerator.mixed_precision
 elif accelerator.mixed_precision == "bf16":
     weight_dtype = torch.bfloat16
     args.mixed_precision = accelerator.mixed_precision
+
+text_encoder.to(accelerator.device, dtype=weight_dtype)
+vae.to(accelerator.device, dtype=weight_dtype)
 
 num_update_steps_per_epoch = math.ceil(len(train_dataloader) / args['gradient_accumulation_steps'])
 if overrode_max_train_steps:
@@ -713,6 +724,8 @@ progress_bar = tqdm(
     disable=not accelerator.is_local_main_process,
 )
 
+print(accelerator.device)
+print(accelerator.sync_gradients)
 
 # Start The Epocs
 for epoch in range(first_epoch, args['num_train_epochs']):
@@ -870,6 +883,6 @@ to_logs = {
     'learning_rate': data['param']['learning_rate'],
     'gradient_accumulation_steps':  data['param']['gradient_accumulation_steps'],
     'num_dataset': data['param']['num_dataset']
-} 
+}
 
 write_to_csv(to_logs, 'image.csv')
