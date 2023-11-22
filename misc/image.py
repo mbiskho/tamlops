@@ -846,14 +846,14 @@ if accelerator.is_main_process:
     )
     pipeline.save_pretrained(args['output_dir'])
 
-save_model_card(args, repo_id, [], repo_folder=args['output_dir'])
-upload_folder(
-    repo_id=repo_id,
-    folder_path=args['output_dir'],
-    commit_message="End of training",
-    ignore_patterns=["step_*", "epoch_*"],
-    token=args['hub_token']
-)
+# save_model_card(args, repo_id, [], repo_folder=args['output_dir'])
+# upload_folder(
+#     repo_id=repo_id,
+#     folder_path=args['output_dir'],
+#     commit_message="End of training",
+#     ignore_patterns=["step_*", "epoch_*"],
+#     token=args['hub_token']
+# )
 print("[!] Uploaded to Registry")
 accelerator.end_training()
 # End Time of All
