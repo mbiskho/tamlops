@@ -342,7 +342,7 @@ def preprocess_function(sample, padding="max_length"):
     inputs = ["summarize: " + item for item in sample["dialogue"]]
     model_inputs = tokenizer(inputs, max_length=max_source_length, padding=padding, truncation=True)
     labels = tokenizer(text_target=sample["summary"], max_length=max_target_length, padding=padding, truncation=True)
-    print(sample)
+    # print(sample)
     if padding == "max_length":
         labels["input_ids"] = [
             [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
@@ -363,7 +363,6 @@ converted = []
 for index, row in df.iterrows():
   cells = {}
   for column_name, cell_value in row.items():
-    print(f"Value at index {index}, column {column_name}: {cell_value}")
     cells[column_name] = cell_value
   # Create a BytesIO object using the byte string
   bytes_io = BytesIO(cells['image']['bytes'])
@@ -551,7 +550,7 @@ dataset = {}
 img = [item['image'] for item in converted[:data['param']['num_dataset']]]
 text = [item['text'] for item in converted[:data['param']['num_dataset']]]
 dataset['train'] = Dataset.from_dict({"text": text, "image": img})
-print('Dataset : \n', dataset)
+# print('Dataset : \n', dataset)
 
 
 # Preprocessing the datasets.
@@ -886,3 +885,4 @@ to_logs = {
 }
 
 write_to_csv(to_logs, 'image.csv')
+torch.cuda.empty_cache()

@@ -485,7 +485,6 @@ def log_validation(vae, text_encoder, tokenizer, unet, args, accelerator, weight
     return images
 
 for data in datas:
-
     args = {
         "input_perturbation": 0.0,
         "pretrained_model_name_or_path": "stabilityai/stable-diffusion-2-1",
@@ -514,7 +513,7 @@ for data in datas:
         "lr_warmup_steps": 500,
         "snr_gamma": None,
         "use_8bit_adam": False,
-        "allow_tf32": False,
+        "allow_tf32": True,
         "use_ema": False,
         "non_ema_revision": None,
         "dataloader_num_workers": 0,
@@ -585,6 +584,7 @@ for data in datas:
         inputs = ["summarize: " + item for item in sample["dialogue"]]
         model_inputs = tokenizer(inputs, max_length=max_source_length, padding=padding, truncation=True)
         labels = tokenizer(text_target=sample["summary"], max_length=max_target_length, padding=padding, truncation=True)
+        # print(sample)
         if padding == "max_length":
             labels["input_ids"] = [
                 [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
@@ -592,9 +592,6 @@ for data in datas:
 
         model_inputs["labels"] = labels["input_ids"]
         return model_inputs
-
-
-
 
     folder = './image_data'
 
@@ -607,10 +604,10 @@ for data in datas:
     converted = []
     for index, row in df.iterrows():
         cells = {}
-        for column_name, cell_value in row.items():
-            cells[column_name] = cell_value
-        # Create a BytesIO object using the byte string
-        bytes_io = BytesIO(cells['image']['bytes'])
+    for column_name, cell_value in row.items():
+        cells[column_name] = cell_value
+    # Create a BytesIO object using the byte string
+    bytes_io = BytesIO(cells['image']['bytes'])
 
     # Open the BytesIO object as an image using PIL
     image = Image.open(bytes_io)
@@ -791,9 +788,11 @@ for data in datas:
     )
 
     # Get The Dataset
+    dataset = {}
     img = [item['image'] for item in converted[:data['param']['num_dataset']]]
     text = [item['text'] for item in converted[:data['param']['num_dataset']]]
     dataset['train'] = Dataset.from_dict({"text": text, "image": img})
+    # print('Dataset : \n', dataset)
 
 
     # Preprocessing the datasets.
@@ -888,19 +887,25 @@ for data in datas:
         num_training_steps=args['max_train_steps'] * accelerator.num_processes,
     )
 
-    if torch.cuda.is_available():
-        weight_dtype = torch.float32
-        torch.device("cuda")
-    else:
-        weight_dtype = torch.float32
-        torch.device("cpu")
-
+    # if torch.cuda.is_available():
+    #   weight_dtype = torch.float32
+    #   torch.device("cuda")
+    # else:
+    #   weight_dtype = torch.float32
+    #   torch.device("cpu")
+    unet, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
+            unet, optimizer, train_dataloader, lr_scheduler
+        )
+    weight_dtype = torch.float32
     if accelerator.mixed_precision == "fp16":
         weight_dtype = torch.float16
         args.mixed_precision = accelerator.mixed_precision
     elif accelerator.mixed_precision == "bf16":
         weight_dtype = torch.bfloat16
         args.mixed_precision = accelerator.mixed_precision
+
+    text_encoder.to(accelerator.device, dtype=weight_dtype)
+    vae.to(accelerator.device, dtype=weight_dtype)
 
     num_update_steps_per_epoch = math.ceil(len(train_dataloader) / args['gradient_accumulation_steps'])
     if overrode_max_train_steps:
@@ -960,6 +965,8 @@ for data in datas:
         disable=not accelerator.is_local_main_process,
     )
 
+    print(accelerator.device)
+    print(accelerator.sync_gradients)
 
     # Start The Epocs
     for epoch in range(first_epoch, args['num_train_epochs']):
@@ -1081,15 +1088,15 @@ for data in datas:
         )
         pipeline.save_pretrained(args['output_dir'])
 
-    save_model_card(args, repo_id, [], repo_folder=args['output_dir'])
-    upload_folder(
-        repo_id=repo_id,
-        folder_path=args['output_dir'],
-        commit_message="End of training",
-        ignore_patterns=["step_*", "epoch_*"],
-        token=args['hub_token']
-    )
-    print("[!] Uploaded to Registry")
+    # save_model_card(args, repo_id, [], repo_folder=args['output_dir'])
+    # upload_folder(
+    #     repo_id=repo_id,
+    #     folder_path=args['output_dir'],
+    #     commit_message="End of training",
+    #     ignore_patterns=["step_*", "epoch_*"],
+    #     token=args['hub_token']
+    # )
+    # print("[!] Uploaded to Registry")
     accelerator.end_training()
     # End Time of All
     end_all = (datetime.now() - start_all)
@@ -1117,6 +1124,7 @@ for data in datas:
         'learning_rate': data['param']['learning_rate'],
         'gradient_accumulation_steps':  data['param']['gradient_accumulation_steps'],
         'num_dataset': data['param']['num_dataset']
-    } 
+    }
 
     write_to_csv(to_logs, 'image.csv')
+    torch.cuda.empty_cache()
