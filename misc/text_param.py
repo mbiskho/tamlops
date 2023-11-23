@@ -275,7 +275,7 @@ def main(learning_rate, train_size, batch_size, epoch, num_dataset):
     end_trainning = (datetime.now() - start_trainning)
 
     print("[!] Time Trainnig: ", end_trainning)
-    trainer.push_to_hub()
+    # trainer.push_to_hub()
 
 
     # End Time of All
