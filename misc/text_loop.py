@@ -83,205 +83,23 @@ import os
 import psutil
 
 
-# data = {
-#     "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-#     "param": {
-#       "per_device_train_batch_size": 2,
-#       "per_device_eval_batch_size": 2,
-#       "learning_rate": 0.0001,
-#       "num_train_epochs": 2, # Best is 10,
-#       "num_dataset": 50
-#     }
-# }
+datas = []
 
-datas = [
-        # -----
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 2,
-        "per_device_eval_batch_size": 2,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 2, # Best is 10,
-        "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 2,
-        "per_device_eval_batch_size": 2,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 2, # Best is 10,
-        "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 2,
-        "per_device_eval_batch_size": 2,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 2, # Best is 10,
-        "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 2,
-        "per_device_eval_batch_size": 2,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 2, # Best is 10,
-        "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 2,
-        "per_device_eval_batch_size": 2,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 2, # Best is 10,
-        "num_dataset": 800
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 2,
-        "per_device_eval_batch_size": 2,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 2, # Best is 10,
-        "num_dataset": 1600
-        }
-    },
-
-    # -----
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 4,
-        "per_device_eval_batch_size": 4,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 10, # Best is 10,
-        "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 4,
-        "per_device_eval_batch_size": 4,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 10, # Best is 10,
-        "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 4,
-        "per_device_eval_batch_size": 4,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 10, # Best is 10,
-        "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 4,
-        "per_device_eval_batch_size": 4,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 10, # Best is 10,
-        "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 4,
-        "per_device_eval_batch_size": 4,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 10, # Best is 10,
-        "num_dataset": 800
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 4,
-        "per_device_eval_batch_size": 4,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 10, # Best is 10,
-        "num_dataset": 1600
-        }
-    },
-
-    # -----
-        {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 8,
-        "per_device_eval_batch_size": 8,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 50, # Best is 10,
-        "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 8,
-        "per_device_eval_batch_size": 8,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 50, # Best is 10,
-        "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 8,
-        "per_device_eval_batch_size": 8,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 50, # Best is 10,
-        "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 8,
-        "per_device_eval_batch_size": 8,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 50, # Best is 10,
-        "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 8,
-        "per_device_eval_batch_size": 8,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 50, # Best is 10,
-        "num_dataset": 800
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-        "param": {
-        "per_device_train_batch_size": 8,
-        "per_device_eval_batch_size": 8,
-        "learning_rate": 0.0001,
-        "num_train_epochs": 50, # Best is 10,
-        "num_dataset": 1600
-        }
-    },
-    
-]
+for learning in [0.0001, 0.001, 0.01, 0.1]:
+    for dataset in [50, 100, 200, 400, 800, 1600]:
+        for train_size in [2, 4, 8 ,16]: 
+            for batch_size in [2,4, 8, 16]:
+                for epoch in [2, 6 ,10]:
+                    datas.append({
+                    "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
+                    "param": {
+                    "per_device_train_batch_size": train_size,
+                    "per_device_eval_batch_size": batch_size,
+                    "learning_rate": learning,
+                    "num_train_epochs": epoch,
+                    "num_dataset": dataset
+                    }
+                })
 
 
 def write_to_csv(data, csv_file_path):
@@ -491,3 +309,4 @@ for data in datas:
     } 
 
     write_to_csv(to_logs, 'text.csv')
+    torch.cuda.empty_cache()
