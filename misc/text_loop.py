@@ -15,6 +15,7 @@ from pathlib import Path
 import accelerate
 import datasets
 import numpy as np
+import gc
 
 # Numpy Error
 def dummy_npwarn_decorator_factory():
@@ -309,4 +310,9 @@ for data in datas:
     } 
 
     write_to_csv(to_logs, 'text.csv')
+    
+    del model
+    del trainer
     torch.cuda.empty_cache()
+    gc.collect()
+
