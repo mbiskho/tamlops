@@ -201,17 +201,20 @@ def main(learning_rate, train_size, batch_size, epoch, num_dataset):
     start_trainning = datetime.now()
 
     model_id = "google/flan-t5-base"
+    global tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_id)
 
     # The maximum total input sequence length after tokenization.
     # Sequences longer than this will be truncated, sequences shorter will be padded.
     tokenized_inputs = concatenate_datasets([dataset['train'], dataset['test']]).map(lambda x: tokenizer(x["dialogue"], truncation=True), batched=True, remove_columns=["dialogue", "summary"])
+    global max_source_length
     max_source_length = max([len(x) for x in tokenized_inputs["input_ids"]])
     print(f"Max source length: {max_source_length}")
 
     # The maximum total sequence length for target text after tokenization.
     # Sequences longer than this will be truncated, sequences shorter will be padded."
     tokenized_targets = concatenate_datasets([dataset['train'], dataset['test']]).map(lambda x: tokenizer(x["summary"], truncation=True), batched=True, remove_columns=["dialogue", "summary"])
+    global max_target_length
     max_target_length = max([len(x) for x in tokenized_targets["input_ids"]])
     print(f"Max target length: {max_target_length}")
 
