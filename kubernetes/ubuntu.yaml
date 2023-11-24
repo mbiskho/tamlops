@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-gpu
+  labels:
+    app: ubuntu
+spec:
+  containers:
+  - name: ubuntu-gpu
+    image: ubuntu:latest
+    securityContext:
+      runAsUser: 0
+    command:
+      - "/bin/bash"
+      - "-c"
+    resources:
+      limits:
+        nvidia.com/gpu: 2
+
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ubuntu-gpu-deployment
+  labels:
+    app: ubuntu-gpu
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ubuntu-gpu
+  template:
+    metadata:
+      labels:
+        app: ubuntu-gpu
+    spec:
+      containers:
+      - name: ubuntu-gpu
+        image: ubuntu:latest
+        securityContext:
+          runAsUser: 0
+        command:
+          - "/bin/bash"
+          - "-c"
+          - "while true; do sleep 3600; done"  # Replace with your command
+        resources:
+          limits:
+            nvidia.com/gpu: 2

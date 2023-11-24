@@ -24,12 +24,17 @@ async def prompting(requests: Request):
     return {"error": False, "response": "Output has been made"}
 
 
-@app.post("/inference", response_class=JSONResponse)
-async def prompting(requests: Request):
+@app.post("/inference/text", response_class=JSONResponse)
+async def text(requests: Request):
     req = await requests.json()
+    text = req["text"]
+    resp = inference_text(text)
+    return {"error": False, "response": resp}
 
-    if req['type'] == "image":
-        await inference_image(req['text'])
-    if req['type'] == "text":
-        await inference_text(req['text'])
-    return {"error": False, "response": "Output has been made"}
+
+@app.post("/inference/image", response_class=JSONResponse)
+async def image(requests: Request):
+    req = await requests.json()
+    text = req["text"]
+    resp = inference_image(text)
+    return {"error": False, "response": resp}

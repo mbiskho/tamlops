@@ -1,46 +1,40 @@
-from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler, AutoencoderKL
+from diffusers import StableDiffusionPipeline, EulerDiscreteScheduler
 import torch
 import random
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 import time
+import io
+from accelerate import Accelerator
+from accelerate.logging import get_logger
+from accelerate.state import AcceleratorState
+from accelerate.utils import ProjectConfiguration, set_seed
+from PIL import Image
 
-async def inference_image(req):
-    pipe = DiffusionPipeline.from_pretrained(
-        "prompthero/openjourney", 
-        torch_dtype=torch.float32
-    )
-    pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
-    pipe.vae = AutoencoderKL.from_pretrained("stabilityai/sd-vae-ft-mse", torch_dtype=torch.float32)
-
+async def inference_image(text):
     try:
-        target_runtime = random.uniform(15, 30)  # in seconds
+        model_id = "stabilityai/stable-diffusion-2-1-base"
 
-        start_time = time.time()
-        prompt = req
-        num_steps = 1
-        num_variations = 1
-        prompt_guidance = 9
-        dimensions = (400, 600)  # (width, height) tuple
-        random_seeds = [random.randint(0, 65000) for _ in range(num_variations)]
-        images = pipe(
-            prompt=num_variations * [prompt],
-            num_inference_steps=num_steps,
-            guidance_scale=prompt_guidance,
-            height=dimensions[0],
-            width=dimensions[1],
-            generator=[torch.Generator().manual_seed(i) for i in random_seeds]
-        )
-        print("Image has been generated")
+        scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
+        pipe = StableDiffusionPipeline.from_pretrained(model_id, scheduler=scheduler, torch_dtype=torch.float16)
+        pipe = pipe.to("cuda")
+
+        prompt = text
+        image = pipe(prompt).images[0]  
+
+        byte_stream = io.BytesIO()
+        image.save(byte_stream, format='PNG')  
+        image_bytes = byte_stream.getvalue()
+        return image_bytes
     except:
         print("Error occured happen")
-        # return "Error Occured Happen"
+        return None
 
-async def inference_text(req):
+async def inference_text(text):
     tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
-    model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base")
+    model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base", device_map="auto")
 
-    input_text = req
-    input_ids = tokenizer(input_text, return_tensors="pt").input_ids
+    input_text = text
+    input_ids = tokenizer(input_text, return_tensors="pt").input_ids.to("cuda")
 
     try:
         outputs = model.generate(input_ids)
@@ -48,5 +42,5 @@ async def inference_text(req):
         print("[!] Text has been generated")
         return out
     except:
-        print("Error occured")
+        print("Error occurred")
         return ""

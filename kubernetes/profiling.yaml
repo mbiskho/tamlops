@@ -1,9 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: python-ubuntu-pod
+  name: cuda-vector-add
 spec:
   containers:
-  - name: python-container
-    image: ubuntu:latest
-    command: ["/bin/bash", "-c", "apt update && apt install -y python3 python3-pip git && tail -f /dev/null"]
+  - name: cuda-vector-add
+    image: "k8s.gcr.io/cuda-vector-add:v0.1"
+    resources:
+      limits:
+        nvidia.com/gpu: 1 # requesting 1 GPU
