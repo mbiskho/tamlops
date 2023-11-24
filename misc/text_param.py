@@ -1,3 +1,4 @@
+import argparse
 import joblib
 import os
 from google.cloud import storage
@@ -15,7 +16,6 @@ from pathlib import Path
 import accelerate
 import datasets
 import numpy as np
-import gc
 
 # Numpy Error
 def dummy_npwarn_decorator_factory():
@@ -82,25 +82,6 @@ import time
 import csv
 import os
 import psutil
-
-
-datas = []
-
-for learning in [0.0001, 0.001, 0.01, 0.1]:
-    for dataset in [50, 100, 200, 400, 800, 1600]:
-        for train_size in [2, 4, 8 ,16]: 
-            for batch_size in [2,4, 8, 16]:
-                for epoch in [2, 6 ,10]:
-                    datas.append({
-                    "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
-                    "param": {
-                    "per_device_train_batch_size": train_size,
-                    "per_device_eval_batch_size": batch_size,
-                    "learning_rate": learning,
-                    "num_train_epochs": epoch,
-                    "num_dataset": dataset
-                    }
-                })
 
 
 def write_to_csv(data, csv_file_path):
@@ -171,13 +152,23 @@ def preprocess_function(sample, padding="max_length"):
     model_inputs["labels"] = labels["input_ids"]
     return model_inputs
 
-
-for data in datas:
-    print("")
-    folder = './text_data'
-    
+def main(learning_rate, train_size, batch_size, epoch, num_dataset):
     # Start Time of All
     start_all = datetime.now()
+    print(f"Parameters: Learning Rate - {learning_rate}, Train Size - {train_size}, Batch Size - {batch_size}, Epoch - {epoch}, Num Dataset - {num_dataset}")
+    data = {
+    "file": "https://storage.googleapis.com/training-dataset-tamlops/test_fa9a2823-e86d-4630-9878-33adde1dd4e8.json",
+    "param": {
+      "per_device_train_batch_size": train_size,
+      "per_device_eval_batch_size": batch_size,
+      "learning_rate": learning_rate,
+      "num_train_epochs": epoch,
+      "num_dataset": num_dataset
+    }
+    }
+
+    folder = './text_data'
+
     downloaded_file_path = download_data(data['file'], folder)
 
     # Open the JSON file and load its content into a dictionary
@@ -210,17 +201,20 @@ for data in datas:
     start_trainning = datetime.now()
 
     model_id = "google/flan-t5-base"
+    global tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_id)
 
     # The maximum total input sequence length after tokenization.
     # Sequences longer than this will be truncated, sequences shorter will be padded.
     tokenized_inputs = concatenate_datasets([dataset['train'], dataset['test']]).map(lambda x: tokenizer(x["dialogue"], truncation=True), batched=True, remove_columns=["dialogue", "summary"])
+    global max_source_length
     max_source_length = max([len(x) for x in tokenized_inputs["input_ids"]])
     print(f"Max source length: {max_source_length}")
 
     # The maximum total sequence length for target text after tokenization.
     # Sequences longer than this will be truncated, sequences shorter will be padded."
     tokenized_targets = concatenate_datasets([dataset['train'], dataset['test']]).map(lambda x: tokenizer(x["summary"], truncation=True), batched=True, remove_columns=["dialogue", "summary"])
+    global max_target_length
     max_target_length = max([len(x) for x in tokenized_targets["input_ids"]])
     print(f"Max target length: {max_target_length}")
 
@@ -281,7 +275,7 @@ for data in datas:
     end_trainning = (datetime.now() - start_trainning)
 
     print("[!] Time Trainnig: ", end_trainning)
-    trainer.push_to_hub()
+    # trainer.push_to_hub()
 
 
     # End Time of All
@@ -310,9 +304,15 @@ for data in datas:
     } 
 
     write_to_csv(to_logs, 'text.csv')
-    
-    del model
-    del trainer
-    torch.cuda.empty_cache()
-    gc.collect()
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Train Text-to-Text')
+    parser.add_argument('--learning_rate', type=float, help='Learning rate parameter')
+    parser.add_argument('--train_size', type=int, help='Train size parameter')
+    parser.add_argument('--batch_size', type=int, help='Batch size parameter')
+    parser.add_argument('--epoch', type=int, help='Epoch parameter')
+    parser.add_argument('--num_dataset', type=int, help='Num dataset parameter')
+
+    args = parser.parse_args()
+
+    main(args.learning_rate, args.train_size, args.batch_size, args.epoch, args.num_dataset)
