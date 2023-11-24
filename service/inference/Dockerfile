@@ -14,7 +14,7 @@ RUN apt-get update -y && apt-get install -y python3-pip
 
 # requirement lib
 COPY requirements.txt /
-RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 RUN pip3 install -r requirements.txt 
 
 # ## final configure
