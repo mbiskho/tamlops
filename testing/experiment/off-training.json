@@ -1,0 +1,105 @@
+{
+    "title": "Chaos Offline Proxy Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when interface is offline (offline)",
+    "tags": [],
+    "steady-state-hypothesis": {
+        "title": "Make sure that load testing has been done & able to prompt every types to server",
+        "probes": [
+            {
+                "name": "Normal load testing log must exists",
+                "type": "probe",
+                "tolerance": true,
+                "provider": {
+                    "type": "python",
+                    "module": "os.path",
+                    "func": "exists",
+                    "arguments": {
+                        "path": "log/running/load-testing-steadystate.log"
+                    }
+                },
+                "controls": [
+                    {
+                        "name": "Change CHAOS_TYPE env value to steadystate",
+                        "scope": "before",
+                        "provider": {
+                            "type": "process",
+                            "path": "export",
+                            "arguments": "CHAOS_TYPE=steadystate"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "probe",
+                "name": "We can request text",
+                "tolerance": 200,
+                "provider": {
+                    "type": "http",
+                    "timeout": 20,
+                    "url": "http://138.197.231.156:8000/inference",
+                    "method": "POST",
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "arguments": {
+                        "type": "text",
+                        "text": "What german name of apple"
+                    }
+                }
+            },
+            {
+                "type": "probe",
+                "name": "We can request image",
+                "tolerance": 200,
+                "provider": {
+                    "type": "http",
+                    "timeout": 60,
+                    "url": "http://138.197.231.156:8000/inference",
+                    "method": "POST",
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "arguments": {
+                        "type": "image",
+                        "text": "Make me an image of a cat with hat"
+                    }
+                }
+            }
+        ]
+    },
+    "method": [
+        {
+            "type": "action",
+            "name": "Turn off interface VM on Google Cloud Platform",
+            "provider": {
+                "type": "process",
+                "path": "gcloud",
+                "arguments": "compute instances stop interface"
+            }
+        },
+        {
+            "type": "action",
+            "name": "Run load testing",
+            "background": false,
+            "provider": {
+                "type": "python",
+                "module": "chaosk6.actions",
+                "func": "run_script",
+                "arguments": {
+                    "script_path": "load-testing.js --out experiment/load-off-training.csv",
+                    "duration": "3m"
+                }
+            }
+        },
+        {
+            "type": "action",
+            "name": "Turn on interface VM on Google Cloud Platform",
+            "provider": {
+                "type": "process",
+                "path": "gcloud",
+                "arguments": "compute instances start interface"
+            }
+        }
+    ],
+    "rollbacks": []
+}

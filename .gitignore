@@ -9,3 +9,7 @@ chaostoolkit
 testing/chaostoolkit
 chaostoolkit.log
 testing/chaostoolkit.log
+
+# dataset
+/testing/dataset
+/testing/dataset/*

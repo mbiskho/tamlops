@@ -1,6 +1,6 @@
 {
-    "title": "Chaos Offline Proxy Server Experiment",
-    "description": "This experiment is to test the load testing performance & find the errors when proxy server is offline (offline)",
+    "title": "Chaos Offline ML Training Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Inference is offline (offline)",
     "tags": [],
     "steady-state-hypothesis": {
         "title": "Make sure that load testing has been done & able to prompt every types to server",
@@ -16,18 +16,7 @@
                     "arguments": {
                         "path": "log/running/load-testing-steadystate.log"
                     }
-                },
-                "controls": [
-                    {
-                        "name": "Change CHAOS_TYPE env value to steadystate",
-                        "scope": "before",
-                        "provider": {
-                            "type": "process",
-                            "path": "export",
-                            "arguments": "CHAOS_TYPE=steadystate"
-                        }
-                    }
-                ]
+                }
             },
             {
                 "type": "probe",
@@ -70,23 +59,13 @@
     "method": [
         {
             "type": "action",
-            "name": "Turn off interface-proxy VM on Google Cloud Platform",
+            "name": "Sleep to give time for turning off the Training pod",
+            "background": false,
             "provider": {
                 "type": "process",
-                "path": "gcloud",
-                "arguments": "compute instances stop interface-proxy"
-            },
-            "controls": [
-                {
-                    "name": "Change CHAOS_TYPE env value to off-proxy",
-                    "scope": "before",
-                    "provider": {
-                        "type": "process",
-                        "path": "export",
-                        "arguments": "CHAOS_TYPE=off-proxy"
-                    }
-                }
-            ]
+                "path": "sleep",
+                "arguments": "60"
+            }
         },
         {
             "type": "action",
@@ -98,17 +77,42 @@
                 "func": "run_script",
                 "arguments": {
                     "script_path": "load-testing.js",
-                    "duration": "1m30s"
+                    "duration": "3m"
                 }
             }
         },
         {
             "type": "action",
-            "name": "Turn on interface-proxy VM on Google Cloud Platform",
+            "name": "Sleep to give time for turning off the other Training pod",
+            "background": false,
             "provider": {
                 "type": "process",
-                "path": "gcloud",
-                "arguments": "compute instances start interface-proxy"
+                "path": "sleep",
+                "arguments": "60"
+            }
+        },
+        {
+            "type": "action",
+            "name": "Run load testing",
+            "background": false,
+            "provider": {
+                "type": "python",
+                "module": "chaosk6.actions",
+                "func": "run_script",
+                "arguments": {
+                    "script_path": "load-testing.js",
+                    "duration": "3m"
+                }
+            }
+        },
+        {
+            "type": "action",
+            "name": "Sleep to give time for turning on all Training pods",
+            "background": false,
+            "provider": {
+                "type": "process",
+                "path": "sleep",
+                "arguments": "60"
             }
         }
     ],
