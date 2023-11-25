@@ -10,7 +10,7 @@ ENV REGISTRY_URI="${REGISTRY_URI}"
 ENV DB_HOST="${DB_HOST}"
 
 RUN apt-get update -y && apt-get install -y python3-pip
-RUN apt-get install git
+RUN apt-get install -y git
 
 # requirement lib
 COPY requirements.txt /

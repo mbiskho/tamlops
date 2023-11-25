@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: trainning-pod
+spec:
+  containers:
+  - name: trainning-container
+    image: mbiskho/tamlops-trainning
+    ports:
+    - containerPort: 8000
+    resources:
+      limits:
+        nvidia.com/gpu: 2
