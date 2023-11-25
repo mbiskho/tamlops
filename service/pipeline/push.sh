@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker mbiskho/tamlops-trainning
+docker push mbiskho/tamlops-trainning

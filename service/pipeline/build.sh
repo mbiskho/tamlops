@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t mbiskho/tamlops-trainning . 
+docker build -t mbiskho/tamlops-trainning .
