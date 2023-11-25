@@ -19,7 +19,6 @@ datasets
 langchain
 sentence-transformers
 pyarrow
-sklearn
 pandas
 transformers
 diffusers
