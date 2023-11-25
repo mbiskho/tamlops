@@ -35,4 +35,3 @@ async def training(file: UploadFile = File(...), type: str = Form(...), params: 
 async def schedule():
     await schedule_logic()
     return {"error": False, "response": "Scheduling Finished"}
-

@@ -2,7 +2,8 @@ from modules.database import get_from_db
 import pickle
 import pandas as pd
 import numpy as np
-import json
+import json 
+from modules.request import send_get_request
 
 async def schedule_logic():
     tasks = await get_from_db()
@@ -37,5 +38,7 @@ async def schedule_logic():
     # Sort tasks based on estimated time (from least to longest)
     sorted_tasks = sorted(tasks_with_times, key=lambda x: x['estimated_time'])
     print(sorted_tasks)
+
+    send_get_request("http://127.0.0.1:5000/check-gpu")
 
     return sorted_tasks
