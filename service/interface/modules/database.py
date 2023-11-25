@@ -1,11 +1,8 @@
 import asyncpg
-from dotenv import load_dotenv
 import os
 import json
 
-load_dotenv()
-
-DB = os.environ.get("DB")
+DB = "postgres://postgres.obxofwxgpggksbvuzzfn:tamlops123!@aws-0-us-east-1.pooler.supabase.com:6543/postgres"
 
 async def save_training_db(type, file, size, params):
     print(DB)
