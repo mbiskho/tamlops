@@ -1,3 +1,4 @@
+
 import joblib
 import os
 from google.cloud import storage
@@ -23,7 +24,6 @@ def dummy_npwarn_decorator_factory():
   return npwarn_decorator
 np._no_nep50_warning = getattr(np, '_no_nep50_warning', dummy_npwarn_decorator_factory)
 
-
 import torch
 import torch.nn.functional as F
 import torch.utils.checkpoint
@@ -43,7 +43,7 @@ from transformers.utils import ContextManagers
 import diffusers
 from diffusers import AutoencoderKL, DDPMScheduler, StableDiffusionPipeline, UNet2DConditionModel
 from diffusers.optimization import get_scheduler
-from diffusers.training_utils import EMAModel
+from diffusers.training_utils import EMAModel, compute_snr
 from diffusers.utils import check_min_version, deprecate, is_wandb_available, make_image_grid
 from diffusers.utils.import_utils import is_xformers_available
 
@@ -81,410 +81,164 @@ import time
 import csv
 import os
 import psutil
+import wandb
 
-
-# data = {
-#     "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-#     "param": {
-#       ""
-#       "resolution": 10, # 512
-#       "train_batch_size": 1, #6
-#       "num_train_epochs": 1, #100
-#       "max_train_steps": 10,
-#       "gradient_accumulation_steps": 1,
-#       "learning_rate": 0.0001,
-
-#       "num_dataset": 100
-#     }
-# }
-
-
-datas = [
-    # ------
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
+def train_image(req):
+    data = {
+        "file": req['file'],
         "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 10
+            "resolution": req['param']['resolution'], # 512
+            "train_batch_size": req['param']['train_batch_size'], #6
+            "num_train_epochs": req['param']['num_train_epochs'], #100
+            "max_train_steps": req['param']['max_train_steps'],
+            "gradient_accumulation_steps": req['param']['gradient_accumulation_steps'],
+            "learning_rate": req['param']['learning_rate']
         }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+    }
 
-                "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+    logger = get_logger(__name__, log_level="INFO")
+    # Start Time of All
+    start_all = datetime.now()
 
-                "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+    def write_to_csv(data, csv_file_path):
+        file_exists = os.path.isfile(csv_file_path)
 
-                "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        with open(csv_file_path, mode='a', newline='') as file:
+            fieldnames = list(data.keys())
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
 
-                "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+            # If the file doesn't exist, write the header
+            if not file_exists:
+                writer.writeheader()
 
-                "num_dataset": 800
-        }
-    },
+            # Write the data to the CSV file
+            writer.writerow(data)
 
-    # ------
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+    def save_model_card(
+        args,
+        repo_id: str,
+        images=None,
+        repo_folder=None,
+    ):
+        img_str = ""
+        if len(images) > 0:
+            image_grid = make_image_grid(images, 1, len(args['validation_prompts']))
+            image_grid.save(os.path.join(repo_folder, "val_imgs_grid.png"))
+            img_str += "![val_imgs_grid](./val_imgs_grid.png)\n"
 
-                "num_dataset": 10
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        yaml = f"""
+        ---
+        license: creativeml-openrail-m
+        base_model: {args['pretrained_model_name_or_path']}
+        datasets:
+        - {args['dataset_name']}
+        tags:
+        - stable-diffusion
+        - stable-diffusion-diffusers
+        - text-to-image
+        - diffusers
+        inference: true
+        ---
+        """
+        model_card = f"""
+        # Text-to-image finetuning - {repo_id}
 
-                "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        ## Pipeline usage
 
-                "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        You can use the pipeline like so:
 
-                "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        ```python
+        from diffusers import DiffusionPipeline
+        import torch
 
-                "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        pipeline = DiffusionPipeline.from_pretrained("{repo_id}", torch_dtype=torch.float16)
+        image = pipeline(prompt).images[0]
+        image.save("my_image.png")
+        ```
 
-                "num_dataset": 800
-        }
-    },
-    # ------
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        ## Training info
 
-                "num_dataset": 10
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        These are the key hyperparameters used during training:
 
-                "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        * Epochs: {args['num_train_epochs']}
+        * Learning rate: {args['learning_rate']}
+        * Batch size: {args['train_batch_size']}
+        * Gradient accumulation steps: {args['gradient_accumulation_steps']}
+        * Image resolution: {args['resolution']}
+        * Mixed-precision: {args['mixed_precision']}
 
-                "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        """
 
-                "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+        with open(os.path.join(repo_folder, "README.md"), "w") as f:
+            f.write(yaml + model_card)
 
-                "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
+    def write_to_csv(data, csv_file_path):
+        file_exists = os.path.isfile(csv_file_path)
 
-                "num_dataset": 800
-        }
-    },
+        with open(csv_file_path, mode='a', newline='') as file:
+            fieldnames = list(data.keys())
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
 
-]
+            # If the file doesn't exist, write the header
+            if not file_exists:
+                writer.writeheader()
 
+            # Write the data to the CSV file
+            writer.writerow(data)
 
-logger = get_logger(__name__, log_level="INFO")
-# Start Time of All
-start_all = datetime.now()
+    def log_validation(vae, text_encoder, tokenizer, unet, args, accelerator, weight_dtype, epoch):
+        logger.info("Running validation... ")
 
-def write_to_csv(data, csv_file_path):
-    file_exists = os.path.isfile(csv_file_path)
+        pipeline = StableDiffusionPipeline.from_pretrained(
+            args['pretrained_model_name_or_path'],
+            vae=accelerator.unwrap_model(vae),
+            text_encoder=accelerator.unwrap_model(text_encoder),
+            tokenizer=tokenizer,
+            unet=accelerator.unwrap_model(unet),
+            safety_checker=None,
+            revision=args['revision'],
+            torch_dtype=weight_dtype,
+        )
+        pipeline = pipeline.to(accelerator.device)
+        pipeline.set_progress_bar_config(disable=True)
 
-    with open(csv_file_path, mode='a', newline='') as file:
-        fieldnames = list(data.keys())
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        if args['enable_xformers_memory_efficient_attention']:
+            pipeline.enable_xformers_memory_efficient_attention()
 
-        # If the file doesn't exist, write the header
-        if not file_exists:
-            writer.writeheader()
-
-        # Write the data to the CSV file
-        writer.writerow(data)
-
-def save_model_card(
-    args,
-    repo_id: str,
-    images=None,
-    repo_folder=None,
-):
-    img_str = ""
-    if len(images) > 0:
-        image_grid = make_image_grid(images, 1, len(args['validation_prompts']))
-        image_grid.save(os.path.join(repo_folder, "val_imgs_grid.png"))
-        img_str += "![val_imgs_grid](./val_imgs_grid.png)\n"
-
-    yaml = f"""
-    ---
-    license: creativeml-openrail-m
-    base_model: {args['pretrained_model_name_or_path']}
-    datasets:
-    - {args['dataset_name']}
-    tags:
-    - stable-diffusion
-    - stable-diffusion-diffusers
-    - text-to-image
-    - diffusers
-    inference: true
-    ---
-    """
-    model_card = f"""
-    # Text-to-image finetuning - {repo_id}
-
-    ## Pipeline usage
-
-    You can use the pipeline like so:
-
-    ```python
-    from diffusers import DiffusionPipeline
-    import torch
-
-    pipeline = DiffusionPipeline.from_pretrained("{repo_id}", torch_dtype=torch.float16)
-    image = pipeline(prompt).images[0]
-    image.save("my_image.png")
-    ```
-
-    ## Training info
-
-    These are the key hyperparameters used during training:
-
-    * Epochs: {args['num_train_epochs']}
-    * Learning rate: {args['learning_rate']}
-    * Batch size: {args['train_batch_size']}
-    * Gradient accumulation steps: {args['gradient_accumulation_steps']}
-    * Image resolution: {args['resolution']}
-    * Mixed-precision: {args['mixed_precision']}
-
-    """
-
-    with open(os.path.join(repo_folder, "README.md"), "w") as f:
-        f.write(yaml + model_card)
-
-def write_to_csv(data, csv_file_path):
-    file_exists = os.path.isfile(csv_file_path)
-
-    with open(csv_file_path, mode='a', newline='') as file:
-        fieldnames = list(data.keys())
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
-
-        # If the file doesn't exist, write the header
-        if not file_exists:
-            writer.writeheader()
-
-        # Write the data to the CSV file
-        writer.writerow(data)
-
-def log_validation(vae, text_encoder, tokenizer, unet, args, accelerator, weight_dtype, epoch):
-    logger.info("Running validation... ")
-
-    pipeline = StableDiffusionPipeline.from_pretrained(
-        args['pretrained_model_name_or_path'],
-        vae=accelerator.unwrap_model(vae),
-        text_encoder=accelerator.unwrap_model(text_encoder),
-        tokenizer=tokenizer,
-        unet=accelerator.unwrap_model(unet),
-        safety_checker=None,
-        revision=args['revision'],
-        torch_dtype=weight_dtype,
-    )
-    pipeline = pipeline.to(accelerator.device)
-    pipeline.set_progress_bar_config(disable=True)
-
-    if args['enable_xformers_memory_efficient_attention']:
-        pipeline.enable_xformers_memory_efficient_attention()
-
-    if args['seed'] is None:
-        generator = None
-    else:
-        generator = torch.Generator(device=accelerator.device).manual_seed(args['seed'])
-
-    images = []
-    for i in range(len(args['validation_prompts'])):
-        with torch.autocast("cuda"):
-            image = pipeline(args['validation_prompts[i]'], num_inference_steps=20, generator=generator).images[0]
-
-        images.append(image)
-
-    for tracker in accelerator.trackers:
-        if tracker.name == "tensorboard":
-            np_images = np.stack([np.asarray(img) for img in images])
-            tracker.writer.add_images("validation", np_images, epoch, dataformats="NHWC")
-        elif tracker.name == "wandb":
-            tracker.log(
-                {
-                    "validation": [
-                        wandb.Image(image, caption=f"{i}: {args['validation_prompts[i]']}")
-                        for i, image in enumerate(images)
-                    ]
-                }
-            )
+        if args['seed'] is None:
+            generator = None
         else:
-            logger.warn(f"image logging not implemented for {tracker.name}")
+            generator = torch.Generator(device=accelerator.device).manual_seed(args['seed'])
 
-    del pipeline
-    torch.cuda.empty_cache()
+        images = []
+        for i in range(len(args['validation_prompts'])):
+            with torch.autocast("cuda"):
+                image = pipeline(args['validation_prompts[i]'], num_inference_steps=20, generator=generator).images[0]
 
-    return images
+            images.append(image)
 
-for data in datas:
+        for tracker in accelerator.trackers:
+            if tracker.name == "tensorboard":
+                np_images = np.stack([np.asarray(img) for img in images])
+                tracker.writer.add_images("validation", np_images, epoch, dataformats="NHWC")
+            elif tracker.name == "wandb":
+                tracker.log(
+                    {
+                        "validation": [
+                            wandb.Image(image, caption=f"{i}: {args['validation_prompts[i]']}")
+                            for i, image in enumerate(images)
+                        ]
+                    }
+                )
+            else:
+                logger.warn(f"image logging not implemented for {tracker.name}")
+
+        del pipeline
+        torch.cuda.empty_cache()
+
+        return images
+
+
     args = {
         "input_perturbation": 0.0,
         "pretrained_model_name_or_path": "stabilityai/stable-diffusion-2-1-base",
@@ -584,7 +338,7 @@ for data in datas:
         inputs = ["summarize: " + item for item in sample["dialogue"]]
         model_inputs = tokenizer(inputs, max_length=max_source_length, padding=padding, truncation=True)
         labels = tokenizer(text_target=sample["summary"], max_length=max_target_length, padding=padding, truncation=True)
-        # print(sample)
+        print(sample)
         if padding == "max_length":
             labels["input_ids"] = [
                 [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
@@ -605,6 +359,7 @@ for data in datas:
     for index, row in df.iterrows():
         cells = {}
     for column_name, cell_value in row.items():
+        print(f"Value at index {index}, column {column_name}: {cell_value}")
         cells[column_name] = cell_value
     # Create a BytesIO object using the byte string
     bytes_io = BytesIO(cells['image']['bytes'])
@@ -792,7 +547,7 @@ for data in datas:
     img = [item['image'] for item in converted[:data['param']['num_dataset']]]
     text = [item['text'] for item in converted[:data['param']['num_dataset']]]
     dataset['train'] = Dataset.from_dict({"text": text, "image": img})
-    # print('Dataset : \n', dataset)
+    print('Dataset : \n', dataset)
 
 
     # Preprocessing the datasets.
@@ -1088,43 +843,20 @@ for data in datas:
         )
         pipeline.save_pretrained(args['output_dir'])
 
-    # save_model_card(args, repo_id, [], repo_folder=args['output_dir'])
-    # upload_folder(
-    #     repo_id=repo_id,
-    #     folder_path=args['output_dir'],
-    #     commit_message="End of training",
-    #     ignore_patterns=["step_*", "epoch_*"],
-    #     token=args['hub_token']
-    # )
-    # print("[!] Uploaded to Registry")
+    save_model_card(args, repo_id, [], repo_folder=args['output_dir'])
+    upload_folder(
+        repo_id=repo_id,
+        folder_path=args['output_dir'],
+        commit_message="End of training",
+        ignore_patterns=["step_*", "epoch_*"],
+        token=args['hub_token']
+    )
+    print("[!] Uploaded to Registry")
     accelerator.end_training()
     # End Time of All
     end_all = (datetime.now() - start_all)
     print("[!] Time Overall: ", end_all)
 
 
-    # ------------- TLDR ---------------
-    cpu_usage = psutil.cpu_percent(interval=1)
-    print(f"CPU Usage: {cpu_usage}%")
-
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    gpu_usage = torch.cuda.memory_allocated(device) / (1024 ** 3)
-    gpu_memory = torch.cuda.memory_reserved(device) / (1024 ** 3)
-    print(f"GPU Usage: {gpu_usage:.2f}GB / {gpu_memory:.2f}GB")
-
-    to_logs = {
-        'train_execution': end_trainning,
-        'overall_execution': end_all,
-        'cpu_usage': cpu_usage,
-        'gpu_usage': gpu_usage,
-        'resolution': data['param']['num_train_epochs'],
-        'train_batch_size': data['param']['learning_rate'],
-        'num_train_epochs': data['param']['num_train_epochs'],
-        'max_train_steps': data['param']['max_train_steps'],
-        'learning_rate': data['param']['learning_rate'],
-        'gradient_accumulation_steps':  data['param']['gradient_accumulation_steps'],
-        'num_dataset': data['param']['num_dataset']
-    }
-
-    write_to_csv(to_logs, 'image.csv')
-    torch.cuda.empty_cache()
+def train_text(req):
+    print("")
