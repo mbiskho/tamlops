@@ -21,9 +21,7 @@ async def health_svc():
 @app.post("/training")
 async def training(file: UploadFile = File(...), type: str = Form(...), params: str = Form(...)):
 
-    print('test')
     file_url = await upload_to_gcs(file)
-    print('aa')
 
     file.file.seek(0, 2)
     file_size = file.file.tell()

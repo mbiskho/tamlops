@@ -1,21 +1,16 @@
 from google.cloud import storage
-from dotenv import load_dotenv
 import os
 from google.oauth2 import service_account
 import uuid
-
-load_dotenv()
-
-GCS = os.environ.get("GCS")
 
 def get_gcs_url(bucket_name, object_path):
     return f"https://storage.googleapis.com/{bucket_name}/{object_path}"
 
 async def upload_to_gcs(file):
-    print('eee')
+    current_directory = os.getcwd()
 
     credentials = service_account.Credentials.from_service_account_file(
-        GCS, scopes=["https://www.googleapis.com/auth/cloud-platform"]
+       f'{current_directory}/modules/mlops-398205-ae400302eb1c.json', scopes=["https://www.googleapis.com/auth/cloud-platform"]
     )
 
     bucket_name = "training-dataset-tamlops"
