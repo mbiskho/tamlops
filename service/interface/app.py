@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from modules.database import save_training_db, get_from_db
 from modules.gcp import upload_to_gcs
+from modules.schedule import schedule_logic
 
 app = FastAPI(docs_url=None, openapi_url=None)
 app.add_middleware(
@@ -20,7 +21,9 @@ async def health_svc():
 @app.post("/training")
 async def training(file: UploadFile = File(...), type: str = Form(...), params: str = Form(...)):
 
+    print('test')
     file_url = await upload_to_gcs(file)
+    print('aa')
 
     file.file.seek(0, 2)
     file_size = file.file.tell()
@@ -32,5 +35,6 @@ async def training(file: UploadFile = File(...), type: str = Form(...), params: 
 
 @app.get('/schedule', response_class=JSONResponse)
 async def schedule():
-    await get_from_db()
-    return {"error": False, "response": "Schedule Started"}
+    await schedule_logic()
+    return {"error": False, "response": "Scheduling Finished"}
+

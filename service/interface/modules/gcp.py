@@ -12,6 +12,8 @@ def get_gcs_url(bucket_name, object_path):
     return f"https://storage.googleapis.com/{bucket_name}/{object_path}"
 
 async def upload_to_gcs(file):
+    print('eee')
+
     credentials = service_account.Credentials.from_service_account_file(
         GCS, scopes=["https://www.googleapis.com/auth/cloud-platform"]
     )

@@ -16,14 +16,14 @@ async def save_training_db(type, file, size, params):
 
 async def get_from_db():
     conn = await asyncpg.connect(DB)
+    fetched_rows = []  # To store fetched rows
 
     try:
         async with conn.transaction():
-            # Execute the query and fetch results
             rows = await conn.fetch("SELECT * FROM training_queue")
             for row in rows:
-                print(row)
+                fetched_rows.append(dict(row))
 
     finally:
         await conn.close()
-    return {"message": "Get all command success"}
+    return fetched_rows
