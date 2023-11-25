@@ -11,6 +11,7 @@ ENV REGISTRY_URI="${REGISTRY_URI}"
 # RUN apt-get update -y && apt-get install -y python3-pip prometheus
 
 RUN apt-get update -y && apt-get install -y python3-pip
+RUN apt-get git
 
 # requirement lib
 COPY requirements.txt /
