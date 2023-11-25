@@ -16,7 +16,7 @@ RUN apt-get update -y && apt-get install -y python3-pip
 COPY requirements.txt /
 RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 RUN pip3 install -r requirements.txt 
-RUN pip install git+https://github.com/huggingface/diffusers
+RUN python3 -m pip install git+https://github.com/huggingface/transformers
 RUN pip3 install scikit-learn
 RUN wandb login a00aa0dc4d721e8bd21428774471713f7a9c9141
 
