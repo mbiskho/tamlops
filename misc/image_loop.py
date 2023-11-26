@@ -83,263 +83,28 @@ import os
 import psutil
 
 
-# data = {
-#     "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-#     "param": {
-#       ""
-#       "resolution": 10, # 512
-#       "train_batch_size": 1, #6
-#       "num_train_epochs": 1, #100
-#       "max_train_steps": 10,
-#       "gradient_accumulation_steps": 1,
-#       "learning_rate": 0.0001,
+datas = []
 
-#       "num_dataset": 100
-#     }
-# }
-
-
-datas = [
-    # ------
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 10
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 1, #6
-                "num_train_epochs": 1, #100
-                "max_train_steps": 10,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 800
-        }
-    },
-
-    # ------
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 10
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 50, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 10, # 512
-                "train_batch_size": 3, #6
-                "num_train_epochs": 3, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 800
-        }
-    },
-    # ------
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 10
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 50
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 100
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 200
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 400
-        }
-    },
-    {
-        "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-        "param": {
-                "resolution": 256, # 512
-                "train_batch_size": 6, #6
-                "num_train_epochs": 6, #100
-                "max_train_steps": 100,
-                "gradient_accumulation_steps": 1,
-                "learning_rate": 0.0001,
-
-                "num_dataset": 800
-        }
-    },
-
-]
+for learning in [0.0001, 0.001, 0.01, 0.1]:
+    for dataset in [50, 100, 200, 400, 800, 1600]:
+        for train_size in [2, 4, 8 ,16]: 
+            for batch_size in [2,4, 8, 16]:
+                for epoch in [2, 6 ,10]:
+                    for resolution in [256, 512, 1024]:
+                        for max_train_steps in [100, 500, 1000]:
+                            for gradient_accumulation_steps in [1,2,4]:
+                                datas.append({
+                                    "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
+                                    "param": {
+                                            "resolution": resolution, # 512
+                                            "train_batch_size": train_size, #6
+                                            "num_train_epochs": epoch, #100
+                                            "max_train_steps": max_train_steps,
+                                            "gradient_accumulation_steps": gradient_accumulation_steps,
+                                            "learning_rate": learning,
+                                            "num_dataset": dataset
+                                    }
+                                })
 
 
 logger = get_logger(__name__, log_level="INFO")
