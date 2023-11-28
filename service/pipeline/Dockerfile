@@ -47,7 +47,7 @@ RUN apt-get install -y git
 
 # requirement lib
 COPY requirements.txt /
-RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+# RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 RUN pip3 install -r requirements.txt 
 RUN pip3 install git+https://github.com/huggingface/diffusers
 RUN pip3 install scikit-learn
