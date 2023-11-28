@@ -81,178 +81,170 @@ import time
 import csv
 import os
 import psutil
+import argparse
 
 
-datas = []
+def main(resolution, train_batch_size, num_train_epochs, max_train_steps, gradient_accumulation_steps, learning_rate, num_dataset):
+    data = {
+    "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
+    "param": {
+      ""
+      "resolution": resolution,
+      "train_batch_size": train_batch_size,
+      "num_train_epochs": num_train_epochs,
+      "max_train_steps": max_train_steps,
+      "gradient_accumulation_steps": gradient_accumulation_steps,
+      "learning_rate": learning_rate,
+      "num_dataset": num_dataset
+    }
+    }
 
-for learning in [0.0001, 0.001, 0.01, 0.1]:
-    for dataset in [50, 100, 200, 400, 800, 1600]:
-        for train_size in [2, 4, 8 ,16]: 
-            for batch_size in [2,4, 8, 16]:
-                for epoch in [2, 6 ,10]:
-                    for resolution in [256, 512, 1024]:
-                        for max_train_steps in [100, 500, 1000]:
-                            for gradient_accumulation_steps in [1,2,4]:
-                                datas.append({
-                                    "file": "https://storage.googleapis.com/training-dataset-tamlops/train-00000-of-00001-566cc9b19d7203f8.parquet",
-                                    "param": {
-                                            "resolution": resolution, # 512
-                                            "train_batch_size": train_size, #6
-                                            "num_train_epochs": epoch, #100
-                                            "max_train_steps": max_train_steps,
-                                            "gradient_accumulation_steps": gradient_accumulation_steps,
-                                            "learning_rate": learning,
-                                            "num_dataset": dataset
-                                    }
-                                })
+    logger = get_logger(__name__, log_level="INFO")
+    # Start Time of All
+    start_all = datetime.now()
 
+    def write_to_csv(data, csv_file_path):
+        file_exists = os.path.isfile(csv_file_path)
 
-logger = get_logger(__name__, log_level="INFO")
-# Start Time of All
-start_all = datetime.now()
+        with open(csv_file_path, mode='a', newline='') as file:
+            fieldnames = list(data.keys())
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
 
-def write_to_csv(data, csv_file_path):
-    file_exists = os.path.isfile(csv_file_path)
+            # If the file doesn't exist, write the header
+            if not file_exists:
+                writer.writeheader()
 
-    with open(csv_file_path, mode='a', newline='') as file:
-        fieldnames = list(data.keys())
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
+            # Write the data to the CSV file
+            writer.writerow(data)
 
-        # If the file doesn't exist, write the header
-        if not file_exists:
-            writer.writeheader()
+    def save_model_card(
+        args,
+        repo_id: str,
+        images=None,
+        repo_folder=None,
+    ):
+        img_str = ""
+        if len(images) > 0:
+            image_grid = make_image_grid(images, 1, len(args['validation_prompts']))
+            image_grid.save(os.path.join(repo_folder, "val_imgs_grid.png"))
+            img_str += "![val_imgs_grid](./val_imgs_grid.png)\n"
 
-        # Write the data to the CSV file
-        writer.writerow(data)
+        yaml = f"""
+        ---
+        license: creativeml-openrail-m
+        base_model: {args['pretrained_model_name_or_path']}
+        datasets:
+        - {args['dataset_name']}
+        tags:
+        - stable-diffusion
+        - stable-diffusion-diffusers
+        - text-to-image
+        - diffusers
+        inference: true
+        ---
+        """
+        model_card = f"""
+        # Text-to-image finetuning - {repo_id}
 
-def save_model_card(
-    args,
-    repo_id: str,
-    images=None,
-    repo_folder=None,
-):
-    img_str = ""
-    if len(images) > 0:
-        image_grid = make_image_grid(images, 1, len(args['validation_prompts']))
-        image_grid.save(os.path.join(repo_folder, "val_imgs_grid.png"))
-        img_str += "![val_imgs_grid](./val_imgs_grid.png)\n"
+        ## Pipeline usage
 
-    yaml = f"""
-    ---
-    license: creativeml-openrail-m
-    base_model: {args['pretrained_model_name_or_path']}
-    datasets:
-    - {args['dataset_name']}
-    tags:
-    - stable-diffusion
-    - stable-diffusion-diffusers
-    - text-to-image
-    - diffusers
-    inference: true
-    ---
-    """
-    model_card = f"""
-    # Text-to-image finetuning - {repo_id}
+        You can use the pipeline like so:
 
-    ## Pipeline usage
+        ```python
+        from diffusers import DiffusionPipeline
+        import torch
 
-    You can use the pipeline like so:
+        pipeline = DiffusionPipeline.from_pretrained("{repo_id}", torch_dtype=torch.float16)
+        image = pipeline(prompt).images[0]
+        image.save("my_image.png")
+        ```
 
-    ```python
-    from diffusers import DiffusionPipeline
-    import torch
+        ## Training info
 
-    pipeline = DiffusionPipeline.from_pretrained("{repo_id}", torch_dtype=torch.float16)
-    image = pipeline(prompt).images[0]
-    image.save("my_image.png")
-    ```
+        These are the key hyperparameters used during training:
 
-    ## Training info
+        * Epochs: {args['num_train_epochs']}
+        * Learning rate: {args['learning_rate']}
+        * Batch size: {args['train_batch_size']}
+        * Gradient accumulation steps: {args['gradient_accumulation_steps']}
+        * Image resolution: {args['resolution']}
+        * Mixed-precision: {args['mixed_precision']}
 
-    These are the key hyperparameters used during training:
+        """
 
-    * Epochs: {args['num_train_epochs']}
-    * Learning rate: {args['learning_rate']}
-    * Batch size: {args['train_batch_size']}
-    * Gradient accumulation steps: {args['gradient_accumulation_steps']}
-    * Image resolution: {args['resolution']}
-    * Mixed-precision: {args['mixed_precision']}
+        with open(os.path.join(repo_folder, "README.md"), "w") as f:
+            f.write(yaml + model_card)
 
-    """
+    def write_to_csv(data, csv_file_path):
+        file_exists = os.path.isfile(csv_file_path)
 
-    with open(os.path.join(repo_folder, "README.md"), "w") as f:
-        f.write(yaml + model_card)
+        with open(csv_file_path, mode='a', newline='') as file:
+            fieldnames = list(data.keys())
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
 
-def write_to_csv(data, csv_file_path):
-    file_exists = os.path.isfile(csv_file_path)
+            # If the file doesn't exist, write the header
+            if not file_exists:
+                writer.writeheader()
 
-    with open(csv_file_path, mode='a', newline='') as file:
-        fieldnames = list(data.keys())
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
+            # Write the data to the CSV file
+            writer.writerow(data)
 
-        # If the file doesn't exist, write the header
-        if not file_exists:
-            writer.writeheader()
+    def log_validation(vae, text_encoder, tokenizer, unet, args, accelerator, weight_dtype, epoch):
+        logger.info("Running validation... ")
 
-        # Write the data to the CSV file
-        writer.writerow(data)
+        pipeline = StableDiffusionPipeline.from_pretrained(
+            args['pretrained_model_name_or_path'],
+            vae=accelerator.unwrap_model(vae),
+            text_encoder=accelerator.unwrap_model(text_encoder),
+            tokenizer=tokenizer,
+            unet=accelerator.unwrap_model(unet),
+            safety_checker=None,
+            revision=args['revision'],
+            torch_dtype=weight_dtype,
+        )
+        pipeline = pipeline.to(accelerator.device)
+        pipeline.set_progress_bar_config(disable=True)
 
-def log_validation(vae, text_encoder, tokenizer, unet, args, accelerator, weight_dtype, epoch):
-    logger.info("Running validation... ")
+        if args['enable_xformers_memory_efficient_attention']:
+            pipeline.enable_xformers_memory_efficient_attention()
 
-    pipeline = StableDiffusionPipeline.from_pretrained(
-        args['pretrained_model_name_or_path'],
-        vae=accelerator.unwrap_model(vae),
-        text_encoder=accelerator.unwrap_model(text_encoder),
-        tokenizer=tokenizer,
-        unet=accelerator.unwrap_model(unet),
-        safety_checker=None,
-        revision=args['revision'],
-        torch_dtype=weight_dtype,
-    )
-    pipeline = pipeline.to(accelerator.device)
-    pipeline.set_progress_bar_config(disable=True)
-
-    if args['enable_xformers_memory_efficient_attention']:
-        pipeline.enable_xformers_memory_efficient_attention()
-
-    if args['seed'] is None:
-        generator = None
-    else:
-        generator = torch.Generator(device=accelerator.device).manual_seed(args['seed'])
-
-    images = []
-    for i in range(len(args['validation_prompts'])):
-        with torch.autocast("cuda"):
-            image = pipeline(args['validation_prompts[i]'], num_inference_steps=20, generator=generator).images[0]
-
-        images.append(image)
-
-    for tracker in accelerator.trackers:
-        if tracker.name == "tensorboard":
-            np_images = np.stack([np.asarray(img) for img in images])
-            tracker.writer.add_images("validation", np_images, epoch, dataformats="NHWC")
-        elif tracker.name == "wandb":
-            tracker.log(
-                {
-                    "validation": [
-                        wandb.Image(image, caption=f"{i}: {args['validation_prompts[i]']}")
-                        for i, image in enumerate(images)
-                    ]
-                }
-            )
+        if args['seed'] is None:
+            generator = None
         else:
-            logger.warn(f"image logging not implemented for {tracker.name}")
+            generator = torch.Generator(device=accelerator.device).manual_seed(args['seed'])
 
-    del pipeline
-    torch.cuda.empty_cache()
+        images = []
+        for i in range(len(args['validation_prompts'])):
+            with torch.autocast("cuda"):
+                image = pipeline(args['validation_prompts[i]'], num_inference_steps=20, generator=generator).images[0]
 
-    return images
+            images.append(image)
 
-for data in datas:
+        for tracker in accelerator.trackers:
+            if tracker.name == "tensorboard":
+                np_images = np.stack([np.asarray(img) for img in images])
+                tracker.writer.add_images("validation", np_images, epoch, dataformats="NHWC")
+            elif tracker.name == "wandb":
+                tracker.log(
+                    {
+                        "validation": [
+                            wandb.Image(image, caption=f"{i}: {args['validation_prompts[i]']}")
+                            for i, image in enumerate(images)
+                        ]
+                    }
+                )
+            else:
+                logger.warn(f"image logging not implemented for {tracker.name}")
+
+        del pipeline
+        torch.cuda.empty_cache()
+
+        return images
+
+
     args = {
         "input_perturbation": 0.0,
-        "pretrained_model_name_or_path": "stabilityai/stable-diffusion-2-1-base",
+        "pretrained_model_name_or_path": "stabilityai/stable-diffusion-2-1",
         "revision": None,
         "dataset_name": "lambdalabs/pokemon-blip-captions",
         "dataset_config_name": None,
@@ -369,15 +361,15 @@ for data in datas:
     converted = []
     for index, row in df.iterrows():
         cells = {}
-    for column_name, cell_value in row.items():
-        cells[column_name] = cell_value
-    # Create a BytesIO object using the byte string
-    bytes_io = BytesIO(cells['image']['bytes'])
+        for column_name, cell_value in row.items():
+            cells[column_name] = cell_value
+        # Create a BytesIO object using the byte string
+        bytes_io = BytesIO(cells['image']['bytes'])
 
-    # Open the BytesIO object as an image using PIL
-    image = Image.open(bytes_io)
-    cells['image'] = image
-    converted.append(cells)
+        # Open the BytesIO object as an image using PIL
+        image = Image.open(bytes_io)
+        cells['image'] = image
+        converted.append(cells)
 
 
     if args['non_ema_revision'] is not None:
@@ -448,15 +440,6 @@ for data in datas:
 
         return [deepspeed_plugin.zero3_init_context_manager(enable=False)]
 
-    # Currently Accelerate doesn't know how to handle multiple models under Deepspeed ZeRO stage 3.
-    # For this to work properly all models must be run through `accelerate.prepare`. But accelerate
-    # will try to assign the same optimizer with the same weights to all models during
-    # `deepspeed.initialize`, which of course doesn't work.
-    #
-    # For now the following workaround will partially support Deepspeed ZeRO-3, by excluding the 2
-    # frozen models from being partitioned during `zero.Init` which gets called during
-    # `from_pretrained` So CLIPTextModel and AutoencoderKL will not enjoy the parameter sharding
-    # across multiple gpus and only UNet2DConditionModel will get ZeRO sharded.
     with ContextManagers(deepspeed_zero_init_disabled_context_manager()):
         text_encoder = CLIPTextModel.from_pretrained(
             args['pretrained_model_name_or_path'], subfolder="text_encoder", revision=args['revision']
@@ -652,12 +635,6 @@ for data in datas:
         num_training_steps=args['max_train_steps'] * accelerator.num_processes,
     )
 
-    # if torch.cuda.is_available():
-    #   weight_dtype = torch.float32
-    #   torch.device("cuda")
-    # else:
-    #   weight_dtype = torch.float32
-    #   torch.device("cpu")
     unet, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
             unet, optimizer, train_dataloader, lr_scheduler
         )
@@ -853,15 +830,7 @@ for data in datas:
         )
         pipeline.save_pretrained(args['output_dir'])
 
-    # save_model_card(args, repo_id, [], repo_folder=args['output_dir'])
-    # upload_folder(
-    #     repo_id=repo_id,
-    #     folder_path=args['output_dir'],
-    #     commit_message="End of training",
-    #     ignore_patterns=["step_*", "epoch_*"],
-    #     token=args['hub_token']
-    # )
-    # print("[!] Uploaded to Registry")
+    print("[!] Uploaded to Registry")
     accelerator.end_training()
     # End Time of All
     end_all = (datetime.now() - start_all)
@@ -893,3 +862,17 @@ for data in datas:
 
     write_to_csv(to_logs, 'image.csv')
     torch.cuda.empty_cache()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Train Text-to-Image')
+    parser.add_argument('--resolution', type=int, default=512, help='Resolution parameter')
+    parser.add_argument('--train_batch_size', type=int, default=6, help='Training batch size')
+    parser.add_argument('--num_train_epochs', type=int, default=100, help='Number of training epochs')
+    parser.add_argument('--max_train_steps', type=int, default=10, help='Maximum training steps')
+    parser.add_argument('--gradient_accumulation_steps', type=int, default=1, help='Gradient accumulation steps')
+    parser.add_argument('--learning_rate', type=float, default=0.0001, help='Learning rate')
+    parser.add_argument('--num_dataset', type=int, default=50, help='Number of datasets')
+
+    args = parser.parse_args()
+
+    main(args.resolution, args.train_batch_size, args.num_train_epochs, args.max_train_steps, args.gradient_accumulation_steps, args.learning_rate, args.num_dataset)

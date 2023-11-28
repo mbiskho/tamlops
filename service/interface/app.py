@@ -33,6 +33,5 @@ async def training(file: UploadFile = File(...), type: str = Form(...), params: 
 
 @app.get('/schedule', response_class=JSONResponse)
 async def schedule():
-    await schedule_logic()
-    return {"error": False, "response": "Scheduling Finished"}
-
+    tasks, gpu = await schedule_logic()
+    return {"error": False, "response": "Scheduling Finished", "tasks": tasks, "gpu": gpu}
