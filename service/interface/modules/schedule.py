@@ -39,6 +39,6 @@ async def schedule_logic():
     sorted_tasks = sorted(tasks_with_times, key=lambda x: x['estimated_time'])
     print(sorted_tasks)
 
-    send_get_request("http://127.0.0.1:5000/check-gpu")
+    check_gpu = send_get_request("http://127.0.0.1:5000/check-gpu")
 
-    return sorted_tasks
+    return sorted_tasks, check_gpu
