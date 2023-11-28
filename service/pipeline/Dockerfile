@@ -47,23 +47,22 @@ RUN apt-get install -y git
 
 # requirement lib
 COPY requirements.txt /
-
-# # RUN pip3 install torch torchvision torchaudio --indegx-url https://download.pytorch.org/whl/cpu
+# RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 RUN pip3 install -r requirements.txt 
-# RUN pip3 install git+https://github.com/huggingface/diffusers
-# RUN pip3 install scikit-learn
-# RUN wandb login a00aa0dc4d721e8bd21428774471713f7a9c9141
+RUN pip3 install git+https://github.com/huggingface/diffusers
+RUN pip3 install scikit-learn
+RUN wandb login a00aa0dc4d721e8bd21428774471713f7a9c9141
 
-# # ## final configure
-# COPY . /app
-# WORKDIR /app
+# ## final configure
+COPY . /app
+WORKDIR /app
 
-# RUN mkdir -p /etc/pipeline.d
-# COPY run.sh /etc/pipeline.d/run.sh
-# RUN chmod +x /etc/pipeline.d/run.sh
+RUN mkdir -p /etc/pipeline.d
+COPY run.sh /etc/pipeline.d/run.sh
+RUN chmod +x /etc/pipeline.d/run.sh
 
-# EXPOSE 8000
-# HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD curl --fail http://127.0.0.1:8000/ || exit 1
-# CMD ["/etc/pipeline.d/run.sh"]
+EXPOSE 8000
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD curl --fail http://127.0.0.1:8000/ || exit 1
+CMD ["/etc/pipeline.d/run.sh"]
 
 
