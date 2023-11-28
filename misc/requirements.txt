@@ -20,7 +20,7 @@ git+https://github.com/huggingface/diffusers
 langchain
 sentence-transformers
 pyarrow
-sklearn
+scikit-learn
 pandas
 transformers
 diffusers
