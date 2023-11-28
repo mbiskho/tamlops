@@ -1,6 +1,6 @@
 import requests
 
-def send_get_request(url, params=None):
+async def send_get_request(url, params=None):
     try:
         response = requests.get(url, params=params)
 
