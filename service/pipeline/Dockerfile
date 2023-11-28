@@ -47,9 +47,9 @@ RUN apt-get install -y git
 
 # requirement lib
 COPY requirements.txt /
-RUN ls
+
 # # RUN pip3 install torch torchvision torchaudio --indegx-url https://download.pytorch.org/whl/cpu
-# RUN pip3 install -r requirements.txt 
+RUN pip3 install -r requirements.txt 
 # RUN pip3 install git+https://github.com/huggingface/diffusers
 # RUN pip3 install scikit-learn
 # RUN wandb login a00aa0dc4d721e8bd21428774471713f7a9c9141
