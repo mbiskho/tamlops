@@ -17,7 +17,7 @@ for lr in "${learning_rates[@]}"; do
                 for res in "${resolution[@]}"; do
                     for mts in "${max_train_steps[@]}"; do
                         for gas in "${gradient_accumulation_steps[@]}"; do
-                            CUDA_VISIBLE_DEVICES=0 python image_param.py --learning_rate "$lr" --num_dataset "$ds" --train_batch_size "$ts" --batch_size "$bs" --num_train_epochs "$ep" --resolution "$res" --max_train_steps "$mts" --gradient_accumulation_steps "$gas"
+                            CUDA_VISIBLE_DEVICES=0 python image_param.py --learning_rate "$lr" --num_dataset "$ds" --train_batch_size "$ts" --num_train_epochs "$ep" --resolution "$res" --max_train_steps "$mts" --gradient_accumulation_steps "$gas"
                         done
                     done
                 done
