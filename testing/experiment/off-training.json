@@ -36,7 +36,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": 20,
-                    "url": "http://138.197.231.156:8000/inference",
+                    "url": "http://35.208.32.246:8000/inference",
                     "method": "POST",
                     "headers": {
                         "Content-Type": "application/json"
@@ -54,7 +54,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": 60,
-                    "url": "http://138.197.231.156:8000/inference",
+                    "url": "http://35.208.32.246:8000/inference",
                     "method": "POST",
                     "headers": {
                         "Content-Type": "application/json"
