@@ -36,7 +36,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": 20,
-                    "url": "http://138.197.231.156:8000/inference",
+                    "url": "http://35.208.32.246:8000/inference",
                     "method": "POST",
                     "headers": {
                         "Content-Type": "application/json"
@@ -54,7 +54,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": 60,
-                    "url": "http://138.197.231.156:8000/inference",
+                    "url": "http://35.208.32.246:8000/inference",
                     "method": "POST",
                     "headers": {
                         "Content-Type": "application/json"
@@ -70,11 +70,12 @@
     "method": [
         {
             "type": "action",
-            "name": "Turn off interface VM on Google Cloud Platform",
+            "name": "Sleep to give time for turning off the other Training pod",
+            "background": false,
             "provider": {
                 "type": "process",
-                "path": "gcloud",
-                "arguments": "compute instances stop interface"
+                "path": "sleep",
+                "arguments": "60"
             }
         },
         {
@@ -86,18 +87,19 @@
                 "module": "chaosk6.actions",
                 "func": "run_script",
                 "arguments": {
-                    "script_path": "load-testing.js --out experiment/load-off-training.csv",
+                    "script_path": "load-testing.js",
                     "duration": "3m"
                 }
             }
         },
         {
             "type": "action",
-            "name": "Turn on interface VM on Google Cloud Platform",
+            "name": "Sleep to give time for turning on all Training pods",
+            "background": false,
             "provider": {
                 "type": "process",
-                "path": "gcloud",
-                "arguments": "compute instances start interface"
+                "path": "sleep",
+                "arguments": "60"
             }
         }
     ],

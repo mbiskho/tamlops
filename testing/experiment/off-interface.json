@@ -25,7 +25,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": 20,
-                    "url": "http://138.197.231.156:8000/inference",
+                    "url": "http://35.208.32.246:8000/inference",
                     "method": "POST",
                     "headers": {
                         "Content-Type": "application/json"
@@ -43,7 +43,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": 60,
-                    "url": "http://138.197.231.156:8000/inference",
+                    "url": "http://35.208.32.246:8000/inference",
                     "method": "POST",
                     "headers": {
                         "Content-Type": "application/json"
@@ -59,12 +59,11 @@
     "method": [
         {
             "type": "action",
-            "name": "Sleep to give time for turning off the Training pod",
-            "background": false,
+            "name": "Turn off interface VM on Google Cloud Platform",
             "provider": {
                 "type": "process",
-                "path": "sleep",
-                "arguments": "60"
+                "path": "gcloud",
+                "arguments": "compute instances stop proxy-interaface"
             }
         },
         {
@@ -76,45 +75,21 @@
                 "module": "chaosk6.actions",
                 "func": "run_script",
                 "arguments": {
-                    "script_path": "load-testing.js",
+                    "script_path": "load-testing.js --out experiment/load-off-inteface.csv",
                     "duration": "3m"
                 }
             }
         },
         {
             "type": "action",
-            "name": "Sleep to give time for turning off the other Training pod",
-            "background": false,
+            "name": "Turn on interface VM on Google Cloud Platform",
             "provider": {
                 "type": "process",
-                "path": "sleep",
-                "arguments": "60"
-            }
-        },
-        {
-            "type": "action",
-            "name": "Run load testing",
-            "background": false,
-            "provider": {
-                "type": "python",
-                "module": "chaosk6.actions",
-                "func": "run_script",
-                "arguments": {
-                    "script_path": "load-testing.js",
-                    "duration": "3m"
-                }
-            }
-        },
-        {
-            "type": "action",
-            "name": "Sleep to give time for turning on all Training pods",
-            "background": false,
-            "provider": {
-                "type": "process",
-                "path": "sleep",
-                "arguments": "60"
+                "path": "gcloud",
+                "arguments": "compute instances start proxy-interaface"
             }
         }
+        
     ],
     "rollbacks": []
 }
