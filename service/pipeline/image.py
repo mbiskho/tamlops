@@ -286,12 +286,10 @@ def parse_args():
         required=True,
     )
     args = parser.parse_args()
-    print(args)
     return args
 
 def main():
     inp = parse_args()
-    print(inp)
 
     data = {
         "file": inp.file,
@@ -309,11 +307,13 @@ def main():
     wandb.init(
         project="tamlops-text2image",
         config={
-          "model": "Google Flan T5",
-          "per_device_train_batch_size": inp.per_device_train_batch_size,
-          "per_device_eval_batch_size": inp.per_device_eval_batch_size,
-          "learning_rate": inp.learning_rate,
-          "num_train_epochs": inp.num_train_epochs,
+          "model": "Stable Diffsuion",
+            "resolution": inp.resolution, # 512
+            "train_batch_size": inp.train_batch_size, #6
+            "num_train_epochs": inp.num_train_epochs, #100
+            "max_train_steps": inp.max_train_steps,
+            "gradient_accumulation_steps": inp.gradient_accumulation_steps,
+            "learning_rate": inp.learning_rate,
           "id": inp.id
         }
     )
@@ -386,7 +386,7 @@ def main():
             # Write the content to the file
             with open(file_path, 'wb') as file:
                 file.write(response.content)
-            print(f"Downloaded file '{filename}' to '{folder_path}'")
+            # print(f"Downloaded file '{filename}' to '{folder_path}'")
             return file_path
         else:
             print(f"Failed to download file from {url}")
@@ -416,7 +416,7 @@ def main():
         inputs = ["summarize: " + item for item in sample["dialogue"]]
         model_inputs = tokenizer(inputs, max_length=max_source_length, padding=padding, truncation=True)
         labels = tokenizer(text_target=sample["summary"], max_length=max_target_length, padding=padding, truncation=True)
-        print(sample)
+        # print(sample)
         if padding == "max_length":
             labels["input_ids"] = [
                 [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
@@ -437,7 +437,7 @@ def main():
     for index, row in df.iterrows():
       cells = {}
       for column_name, cell_value in row.items():
-        print(f"Value at index {index}, column {column_name}: {cell_value}")
+        # print(f"Value at index {index}, column {column_name}: {cell_value}")
         cells[column_name] = cell_value
       # Create a BytesIO object using the byte string
       bytes_io = BytesIO(cells['image']['bytes'])
@@ -499,7 +499,7 @@ def main():
             repo_id = create_repo(
                 repo_id=args['hub_model_id'] or Path(args['output_dir']).name, exist_ok=True, token=args['hub_token'],
             ).repo_id
-        print("REPO ID: ", repo_id)
+        # print("REPO ID: ", repo_id)
     # Load scheduler, tokenizer and models.
     noise_scheduler = DDPMScheduler.from_pretrained(args['pretrained_model_name_or_path'], subfolder="scheduler")
     tokenizer = CLIPTokenizer.from_pretrained(
@@ -625,7 +625,7 @@ def main():
     img = [item['image'] for item in converted]
     text = [item['text'] for item in converted]
     dataset['train'] = Dataset.from_dict({"text": text, "image": img})
-    print('Dataset : \n', dataset)
+    # print('Dataset : \n', dataset)
 
 
     # Preprocessing the datasets.
@@ -849,7 +849,7 @@ def main():
 
                 avg_loss = accelerator.gather(loss.repeat(args['train_batch_size'])).mean()
                 train_loss += avg_loss.item() / args['gradient_accumulation_steps']
-                wandb.log({"avg_loss": avg_loss, "train_loss": train_loss, "model_pred": model_pred})
+                # wandb.log({"avg_loss": avg_loss, "train_loss": train_loss, "model_pred": model_pred})
 
                 accelerator.backward(loss)
                 if accelerator.sync_gradients:
