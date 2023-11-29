@@ -13,7 +13,8 @@ spec:
     - name: trainning-pod
       image: "mbiskho/tamlops-trainning"  # Change this (Look up at NGC NVIDIA)
       command: ["/bin/sh"]
-      args: ["-c", "while true; do echo 'bismakhomeini-pod log'; sleep 10; done"]
+      # args: ["-c", "while true; do echo 'bismakhomeini-pod log'; sleep 10; done"]
+      args: ["-c", "python init.py"]
       volumeMounts:
         - mountPath: "/workspace"
           name: bismakhomeini-pv-storage
