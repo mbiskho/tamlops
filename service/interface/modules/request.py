@@ -16,6 +16,7 @@ async def send_get_request(url, params=None):
 def send_post_request(url, data):
     try:
         response = requests.post(url, data=data)
+        print(response)
 
         if response.status_code == 200:
             return response.json()

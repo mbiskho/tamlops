@@ -58,6 +58,8 @@ async def schedule_logic():
     # Allocate it to the right GPU
     allocated_tasks = allocate_gpu(sorted_tasks, check_gpu['response'])
 
+    print(allocated_tasks)
+
     # Send to DGX
     post_response = await send_post_request("http://127.0.0.1:5000/train", allocated_tasks)
 
