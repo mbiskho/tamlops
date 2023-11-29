@@ -19,6 +19,7 @@ async def schedule_logic():
     check_gpu = await send_get_request("http://127.0.0.1:5000/check-gpu")
 
     for task in tasks:
+        print(task)
         # Parse the JSON string to a dictionary
         params_dict = json.loads(task['params'])
 
