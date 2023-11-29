@@ -17,6 +17,7 @@ async def schedule_logic():
     tasks_with_times = []
 
     check_gpu = await send_get_request("http://127.0.0.1:5000/check-gpu")
+    print(check_gpu)
 
     for task in tasks:
         # Parse the JSON string to a dictionary
@@ -37,10 +38,10 @@ async def schedule_logic():
 
         # Append task with its predicted time to the list and restructure it
         tasks_with_times.append({
-            "file": task.file,
-            "type": task.type,
+            "file": task['file'],
+            "type": task['type'],
             "num_gpu": 1,
-            "id": task.id,
+            "id": task['id'],
             "estimated_time": predicted_metric[0][0],
             "gpu_usage": predicted_metric[0][1],
             "param": {
@@ -55,7 +56,7 @@ async def schedule_logic():
     sorted_tasks = sorted(tasks_with_times, key=lambda x: x['estimated_time'])
 
     # Allocate it to the right GPU
-    allocated_tasks = allocate_gpu(sorted_tasks, check_gpu.response)
+    allocated_tasks = allocate_gpu(sorted_tasks, check_gpu['response'])
 
     # Send to DGX
     post_response = await send_post_request("http://127.0.0.1:5000/train", allocated_tasks)
