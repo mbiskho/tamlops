@@ -1,4 +1,4 @@
-FROM kinlian/tamlops-prometheus:latest
+FROM ubuntu:latest
 LABEL service="inference"
 
 #ARG
