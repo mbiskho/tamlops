@@ -19,7 +19,6 @@ async def schedule_logic():
     check_gpu = await send_get_request("http://127.0.0.1:5000/check-gpu")
 
     for task in tasks:
-        print(task)
         # Parse the JSON string to a dictionary
         params_dict = json.loads(task['params'])
 
@@ -38,10 +37,10 @@ async def schedule_logic():
 
         # Append task with its predicted time to the list and restructure it
         tasks_with_times.append({
-            "file": task.file,
-            "type": task.type,
+            "file": task['file'],
+            "type": task['type'],
             "num_gpu": 1,
-            "id": task.id,
+            "id": task['id'],
             "estimated_time": predicted_metric[0][0],
             "gpu_usage": predicted_metric[0][1],
             "param": {
