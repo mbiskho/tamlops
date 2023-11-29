@@ -877,18 +877,18 @@ for data in datas:
     gpu_memory = torch.cuda.memory_reserved(device) / (1024 ** 3)
     print(f"GPU Usage: {gpu_usage:.2f}GB / {gpu_memory:.2f}GB")
 
-   to_logs = {
-        'train_execution': end_trainning,
-        'overall_execution': end_all,
-        'cpu_usage': cpu_usage,
-        'gpu_usage': gpu_usage,
-        'resolution': data['param']['resolution'],
-        'train_batch_size': data['param']['train_batch_size'],
-        'num_train_epochs': data['param']['num_train_epochs'],
-        'max_train_steps': data['param']['max_train_steps'],
-        'learning_rate': data['param']['learning_rate'],
-        'gradient_accumulation_steps':  data['param']['gradient_accumulation_steps'],
-        'num_dataset': data['param']['num_dataset']
+    to_logs = {
+            'train_execution': end_trainning,
+            'overall_execution': end_all,
+            'cpu_usage': cpu_usage,
+            'gpu_usage': gpu_usage,
+            'resolution': data['param']['resolution'],
+            'train_batch_size': data['param']['train_batch_size'],
+            'num_train_epochs': data['param']['num_train_epochs'],
+            'max_train_steps': data['param']['max_train_steps'],
+            'learning_rate': data['param']['learning_rate'],
+            'gradient_accumulation_steps':  data['param']['gradient_accumulation_steps'],
+            'num_dataset': data['param']['num_dataset']
     }
 
     write_to_csv(to_logs, 'image.csv')
