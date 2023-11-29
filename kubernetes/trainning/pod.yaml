@@ -1,33 +1,33 @@
-# apiVersion: v1
-# kind: Pod
-# metadata:
-#   name: trainning-pod
-# spec:
-#   containers:
-  # - name: trainning-container
-  #   image: mbiskho/tamlops-trainning
-  #   ports:
-  #   - containerPort: 8000
-  #   resources:
-  #     limits:
-  #       nvidia.com/gpu: 2
-
-
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pytorch-pod
+  name: trainning-pod
 spec:
-  restartPolicy: Never
-  volumes:
-  - name: bismakhomeini-pv-storage
-    persistentVolumeClaim:
-      claimName: bismakhomeini-pv-claim
   containers:
-  - name: trainning-pod
-    image: mbiskho/tamlops-trainning # Change this (Look up at NGC NVIDIA)
+  - name: trainning-container
+    image: mbiskho/tamlops-trainning
     ports:
     - containerPort: 8000
-    volumeMounts:
-    - mountPath: "/workspace"
-      name: bismakhomeini-pv-storage
+    resources:
+      limits:
+        nvidia.com/gpu: 2
+
+
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: pytorch-pod
+# spec:
+#   restartPolicy: Never
+#   volumes:
+#   - name: bismakhomeini-pv-storage
+#     persistentVolumeClaim:
+#       claimName: bismakhomeini-pv-claim
+#   containers:
+#   - name: trainning-pod
+#     image: mbiskho/tamlops-trainning # Change this (Look up at NGC NVIDIA)
+#     ports:
+#     - containerPort: 8000
+#     volumeMounts:
+#     - mountPath: "/workspace"
+#       name: bismakhomeini-pv-storage
