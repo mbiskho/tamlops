@@ -1,6 +1,5 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
-import { randomItem } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js'
 import { textSummary } from 'https://jslib.k6.io/k6-summary/0.0.4/index.js';
 import exec from 'k6/execution';
 
