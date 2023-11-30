@@ -62,6 +62,6 @@ RUN mkdir -p /etc/pipeline.d
 COPY run.sh /etc/pipeline.d/run.sh
 RUN chmod +x /etc/pipeline.d/run.sh
 
-EXPOSE 8000
+EXPOSE 8000 9090
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD curl --fail http://127.0.0.1:8000/ || exit 1
 CMD ["/etc/pipeline.d/run.sh"]
