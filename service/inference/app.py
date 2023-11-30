@@ -40,11 +40,11 @@ async def text(requests: Request):
     if typ == 'image':
         print("[!] Inference Image")
         print("Text: ", text)
-        response = inference_text(text)
+        response = await inference_text(text)
     else:
         print("[!] Inference Text" )
         print("Text: ", text)
-        response = inference_image(text)
+        response = await inference_image(text)
 
     return {"error": False, "response": response}
 
