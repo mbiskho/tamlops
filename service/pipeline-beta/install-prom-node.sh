@@ -22,14 +22,14 @@ mv promtool /usr/local/bin
 chown prometheus:prometheus /usr/local/bin/prometheus
 chown prometheus:prometheus /usr/local/bin/promtool
 
-sudo mv consoles /etc/prometheus
-sudo mv console_libraries /etc/prometheus
-sudo mv prometheus.yml /etc/prometheus
+mv consoles /etc/prometheus
+mv console_libraries /etc/prometheus
+mv prometheus.yml /etc/prometheus
 
-sudo chown prometheus:prometheus /etc/prometheus
-sudo chown -R prometheus:prometheus /etc/prometheus/consoles
-sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
-sudo chown -R prometheus:prometheus /var/lib/prometheus
+chown prometheus:prometheus /etc/prometheus
+chown -R prometheus:prometheus /etc/prometheus/consoles
+chown -R prometheus:prometheus /etc/prometheus/console_libraries
+chown -R prometheus:prometheus /var/lib/prometheus
 
 touch /etc/systemd/system/prometheus.service 
 echo "[Unit]
@@ -51,7 +51,12 @@ ExecStart=/usr/local/bin/prometheus \
 WantedBy=multi-user.target" >> /etc/systemd/system/prometheus.service
 
 # Install node-exporter
-sudo useradd -rs /bin/false node_exporter
+useradd -rs /bin/false node_exporter
+
+cd /home/muhammad_haqqi01
+wget https://github.com/prometheus/node_exporter/releases/download/v0.18.1/node_exporter-0.18.1.linux-amd64.tar.gz
+tar -xvf node_exporter-0.18.1.linux-amd64.tar.gz
+mv node_exporter-0.18.1.linux-amd64/node_exporter /usr/local/bin/
 
 touch /etc/systemd/system/node_exporter.service
 echo "[Unit]
@@ -77,4 +82,3 @@ systemctl start node_exporter
 # Check if prometheus + node-exporter is active & running
 systemctl status prometheus
 systemctl status node_exporter
-

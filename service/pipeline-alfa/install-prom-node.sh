@@ -82,4 +82,3 @@ systemctl start node_exporter
 # Check if prometheus + node-exporter is active & running
 systemctl status prometheus
 systemctl status node_exporter
-
