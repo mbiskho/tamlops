@@ -1,7 +1,8 @@
 from fastapi import FastAPI, HTTPException, Request,  Header, Form
 from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from modules.inference import *
+from modules.inference import inference_image, inference_text
+from modules.gpu import get_gpu_info
 
 app = FastAPI(docs_url=None, openapi_url=None)
 app.add_middleware(
@@ -20,21 +21,30 @@ async def health_svc():
 @app.get("/pull-model", response_class=JSONResponse)
 async def prompting(requests: Request):
     req = await requests.json()
-
+     # Pulling Model
     return {"error": False, "response": "Output has been made"}
 
+@app.get("/check-gpu", response_class=JSONResponse)
+async def checkgpu(requests: Request):
+    result = get_gpu_info()
+    return {"error": False, "response": result}
 
-@app.post("/inference/text", response_class=JSONResponse)
+@app.post("/inference", response_class=JSONResponse)
 async def text(requests: Request):
     req = await requests.json()
-    text = req["text"]
-    resp = inference_text(text)
-    return {"error": False, "response": resp}
+    typ = req['type']
+    text = req['text']
+    print('Request \n', req)
+    response = None
 
+    if typ == 'image':
+        print("[!] Inference Image")
+        print("Text: ", text)
+        response = inference_text(text)
+    else:
+        print("[!] Inference Text" )
+        print("Text: ", text)
+        response = inference_image(text)
 
-@app.post("/inference/image", response_class=JSONResponse)
-async def image(requests: Request):
-    req = await requests.json()
-    text = req["text"]
-    resp = inference_image(text)
-    return {"error": False, "response": resp}
+    return {"error": False, "response": response}
+
