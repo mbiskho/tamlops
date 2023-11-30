@@ -17,13 +17,6 @@ COPY requirements.txt /
 RUN pip3 install -r requirements.txt 
 RUN pip3 install scikit-learn
 
-# run prometheus + node-exporter
-RUN systemctl daemon-reload
-RUN systemctl enable node_exporter
-RUN systemctl start node_exporter
-RUN systemctl enable prometheus
-RUN systemctl start prometheus
-
 # ## final configure
 COPY . /app
 WORKDIR /app
