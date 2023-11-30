@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 8000  # Port exposed by the service
       targetPort: 8000  # Port on the Pods that traffic will be forwarded to
-  type: ClusterIP  # Service type (can be ClusterIP, NodePort, LoadBalancer, etc.)
+  type: LoadBalancer  # Change the Service type to LoadBalancer
