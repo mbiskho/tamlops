@@ -57,9 +57,6 @@ async def schedule():
     
 @app.get('/schedule/fcfs', response_class=JSONResponse)
 async def schedule():
-    try:
-        post_response = await schedule_logic_fcfs()
-        return post_response
-    except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
+    post_response = await schedule_logic_fcfs()
+    return post_response
 

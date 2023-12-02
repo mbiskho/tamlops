@@ -124,7 +124,7 @@ async def schedule_logic_max_min():
 
 async def schedule_logic_fcfs():
     tasks = await get_from_db()
-    print(task)
+    print(tasks)
     
     for task in tasks:
         send_post_request("http://127.0.0.1:6060/train", {"data": task})
