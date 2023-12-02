@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: trainning-pod
+  name: bismakhomeini-trainning-pod-alfa
 spec:
   restartPolicy: Never
   volumes:
-    - name: bismakhomeini-pv-storage
+    - name: pvol-bismakhomeini
       persistentVolumeClaim:
-        claimName: bismakhomeini-pv-claim
+        claimName: pvclaim-bismakhomeini
   containers:
     - name: bismakhomeini-trainning-pod-alfa
       image: "mbiskho/tamlops-trainning-alfa"  # Change this (Look up at NGC NVIDIA)
@@ -16,7 +16,7 @@ spec:
       args: ["-c", "python init.py"]
       volumeMounts:
         - mountPath: "/workspace"
-          name: bismakhomeini-pv-storage
+          name: pvol-bismakhomeini
 
 -- 
 
@@ -38,4 +38,4 @@ spec:
       args: ["-c", "python init.py"]
       volumeMounts:
         - mountPath: "/workspace"
-          name: bismakhomeini-pv-storage
+          name: pvol-bismakhomeini
