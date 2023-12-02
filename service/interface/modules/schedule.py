@@ -10,6 +10,7 @@ import time
 import requests
 import asyncio
 import aiohttp
+import threading
 
 async def schedule_logic_min_min():
     tasks = await get_from_db()
@@ -126,16 +127,19 @@ async def schedule_logic_max_min():
     return 1
 
 async def schedule_logic_fcfs():
+    payload = ''
+    headers = {
+        'Content-Type': 'application/json'
+        }
+
+    def send_req():
+        requests.post("http://127.0.0.1:6060/train", headers=headers, json=json.loads(payload))
+
     tasks = await get_from_db()
     print(tasks)
 
     for task in tasks:
-        print(task)
         params_dict = json.loads(task['params'])
-        print(task['id'])
-        print(params_dict['per_device_train_batch_size'])
-
-        url = "http://127.0.0.1:6060/train"
 
         payload = json.dumps({
         "data": {
@@ -151,11 +155,8 @@ async def schedule_logic_fcfs():
             }
         }
         })
-        headers = {
-        'Content-Type': 'application/json'
-        }
-
-        requests.post(url, headers=headers, json=json.loads(payload))
+     
+        threading.Thread(target=send_req).start()
 
 
     return {"error": False, "response": "Scheduling Finished"}
