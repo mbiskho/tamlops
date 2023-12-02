@@ -127,7 +127,22 @@ async def schedule_logic_fcfs():
     print(tasks)
     
     for task in tasks:
-        response = await send_post_request("http://127.0.0.1:6060/train", {"data": task})
+        params_dict = json.loads(task['params'])
+        payload = {
+            "data": {
+                "id": task['id'],
+                "gpu": "3",
+                "type": task['type'],
+                "file": task['file'],
+                "param": {
+                    "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+                    "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+                    "learning_rate": params_dict['learning_rate'],
+                    "num_train_epochs": params_dict['num_train_epochs']
+                }
+            }
+        }
+        response = await send_post_request("http://127.0.0.1:6060/train", payload)
         print(response)
 
     return {"error": False, "response": "Scheduling Finished"}
