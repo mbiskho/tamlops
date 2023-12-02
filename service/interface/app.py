@@ -58,6 +58,6 @@ async def schedule():
     
 @app.get('/schedule/fcfs', response_class=JSONResponse)
 async def schedule():
-    schedule_logic_fcfs()
+    await schedule_logic_fcfs()
     return {"error": False, "response": "Schedule Started"}
 
