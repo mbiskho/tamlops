@@ -153,7 +153,7 @@ async def schedule_logic_fcfs():
         'Content-Type': 'application/json'
         }
 
-        response = await requests.request("POST", url, headers=headers, data=payload)
+        response = requests.request("POST", url, headers=headers, data=payload)
         print(response)
 
     return {"error": False, "response": "Scheduling Finished"}
