@@ -64,10 +64,9 @@ RUN chmod +x /etc/pipeline.d/run.sh
 
 # install prometheus + node-exporter
 RUN mkdir -p /scripts
-COPY install-prom-node.sh /scripts
-WORKDIR /scripts
-RUN chmod +x install-prom-node.sh
-RUN ./install-prom-node.sh
+COPY install-prom-node.sh /scripts/install-prom-node.sh
+RUN chmod +x /scripts/install-prom-node.sh
+RUN /scripts/install-prom-node.sh
 
 EXPOSE 8000 9090
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD curl --fail http://127.0.0.1:8000/ || exit 1
