@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bismakhomeini-training-deployment
+spec:
+  replicas: 1  
+  selector:
+    matchLabels:
+      app: bismakhomeini-training
+  template:
+    metadata:
+      labels:
+        app: bismakhomeini-training
+    spec:
+      volumes:
+        - name: pvol-bismakhomeini
+          persistentVolumeClaim:
+            claimName: pvclaim-bismakhomeini
+      containers:
+        - name: bismakhomeini-training
+          image: "mbiskho/tamlops-training" 
+          command: ["/bin/sh"]
+          args: ["-c", "python init.py"]
+          volumeMounts:
+            - mountPath: "/workspace"
+              name: pvol-bismakhomeini
