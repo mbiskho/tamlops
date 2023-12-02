@@ -144,7 +144,7 @@ async def schedule_logic_fcfs():
             print(task['id'])
             print(params_dict['per_device_train_batch_size'])
 
-            url = "http://127.0.0.1:6060/train"
+            url = "https://webhook.site/867e52b5-ecce-4737-a94d-9b90c6526f46"
 
             payload = json.dumps({
             "data": {
