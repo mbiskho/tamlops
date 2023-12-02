@@ -4,7 +4,7 @@ metadata:
   name: trainning-service
 spec:
   selector:
-    app: inference  # Selects pods labeled with 'app: inference'
+    app: bismakhomeini-trainning  # Selects pods labeled with 'app: inference'
   ports:
     - name: port-8000  # Adding name for the first port
       protocol: TCP
