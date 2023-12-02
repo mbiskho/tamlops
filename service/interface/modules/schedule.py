@@ -125,11 +125,19 @@ async def schedule_logic_min_min():
 async def schedule_logic_max_min():
     return 1
 
+async def send_post_request_async(session, url, payload, headers):
+    async with session.post(url, headers=headers, data=payload) as response:
+        if response.status == 200:
+            print(f"Request for {payload['data']['id']} sent successfully")
+
 async def schedule_logic_fcfs():
     tasks = await get_from_db()
     print(tasks)
     
     async with aiohttp.ClientSession() as session:
+        # List to store individual task coroutines
+        post_requests = []
+
         for task in tasks:
             print(task)
             params_dict = json.loads(task['params'])
@@ -156,7 +164,9 @@ async def schedule_logic_fcfs():
             'Content-Type': 'application/json'
             }
 
-            async with session.post(url, json=payload, headers=headers) as response:
-                print(await response)
+            post_requests.append(send_post_request_async(session, url, json.dumps(payload), headers))
+    
+        # Run all POST requests concurrently using asyncio.gather()
+        await asyncio.gather(*post_requests)
 
     return {"error": False, "response": "Scheduling Finished"}
