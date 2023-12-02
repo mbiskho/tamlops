@@ -60,7 +60,7 @@ WORKDIR /app
 
 # install prometheus + node-exporter
 RUN chmod +x install-prom-node.sh
-RUN install-prom-node.sh
+RUN ./install-prom-node.sh
 
 RUN mkdir -p /etc/pipeline.d
 COPY run.sh /etc/pipeline.d/run.sh
