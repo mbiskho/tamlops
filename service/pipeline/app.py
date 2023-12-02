@@ -80,10 +80,11 @@ async def train(requests: Request):
 
 
     value = get_item(gpu)
-    print("Current Process: ", value, " added to be", value + 1)
     if(value == None):
+        print("Current Process: 1")
         set_item(gpu, 1)
     else:
+        print("Current Process: ", str(value), " added to be", str(int(value) + 1))
         value = int(value) + 1
         set_item(gpu, value)
 
