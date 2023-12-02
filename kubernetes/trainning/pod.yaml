@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: trainning-pod
+  name: bismakhomeini-trainning-pod-beta
 spec:
   restartPolicy: Never
   volumes:

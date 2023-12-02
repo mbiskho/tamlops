@@ -10,13 +10,12 @@ spec:
       command: ["/bin/sh"]
       # args: ["-c", "while true; do echo 'bismakhomeini-pod log'; sleep 10; done"]
       args: ["-c", "python init.py"]
-
 ---
 
 apiVersion: v1
 kind: Pod
 metadata:
-  name: trainning-pod
+  name: bismakhomeini-trainning-pod-beta
 spec:
   restartPolicy: Never
   containers:
