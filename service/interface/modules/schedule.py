@@ -8,6 +8,8 @@ from modules.algo import allocate_gpu
 from modules.check_redis import get_redis_item
 import time
 import requests
+import asyncio
+import aiohttp
 
 async def schedule_logic_min_min():
     tasks = await get_from_db()
@@ -127,33 +129,34 @@ async def schedule_logic_fcfs():
     tasks = await get_from_db()
     print(tasks)
     
-    for task in tasks:
-        print(task)
-        params_dict = json.loads(task['params'])
-        print(task['id'])
-        print(params_dict['per_device_train_batch_size'])
+    async with aiohttp.ClientSession() as session:
+        for task in tasks:
+            print(task)
+            params_dict = json.loads(task['params'])
+            print(task['id'])
+            print(params_dict['per_device_train_batch_size'])
 
-        url = "http://127.0.0.1:6060/train"
+            url = "http://127.0.0.1:6060/train"
 
-        payload = json.dumps({
-        "data": {
-            "id": task['id'],
-            "gpu": "3",
-            "type": task['type'],
-            "file": task['file'],
-            "param": {
-            "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
-            "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
-            "learning_rate": params_dict['learning_rate'],
-            "num_train_epochs": params_dict['num_train_epochs']
+            payload = json.dumps({
+            "data": {
+                "id": task['id'],
+                "gpu": "3",
+                "type": task['type'],
+                "file": task['file'],
+                "param": {
+                "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+                "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+                "learning_rate": params_dict['learning_rate'],
+                "num_train_epochs": params_dict['num_train_epochs']
+                }
             }
-        }
-        })
-        headers = {
-        'Content-Type': 'application/json'
-        }
+            })
+            headers = {
+            'Content-Type': 'application/json'
+            }
 
-        response = requests.request("POST", url, headers=headers, data=payload)
-        print(response)
+            async with session.post(url, json=payload, headers=headers) as response:
+                print(await response)
 
     return {"error": False, "response": "Scheduling Finished"}

@@ -5,6 +5,7 @@ from modules.database import save_training_db, get_from_db
 from modules.gcp import upload_to_gcs
 from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs, schedule_logic_max_min
 from modules.request import send_post_request
+import asyncio
 
 app = FastAPI(docs_url=None, openapi_url=None)
 app.add_middleware(
@@ -57,6 +58,6 @@ async def schedule():
     
 @app.get('/schedule/fcfs', response_class=JSONResponse)
 async def schedule():
-    post_response = await schedule_logic_fcfs()
-    return post_response
+    asyncio.run(schedule_logic_fcfs())
+    return {"error": False, "response": "Schedule Started"}
 
