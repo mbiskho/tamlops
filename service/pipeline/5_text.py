@@ -261,7 +261,6 @@ def main():
         inputs = ["summarize: " + item for item in sample["dialogue"]]
         model_inputs = tokenizer(inputs, max_length=max_source_length, padding=padding, truncation=True)
         labels = tokenizer(text_target=sample["summary"], max_length=max_target_length, padding=padding, truncation=True)
-        print(sample)
         if padding == "max_length":
             labels["input_ids"] = [
                 [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
@@ -310,16 +309,13 @@ def main():
     # Sequences longer than this will be truncated, sequences shorter will be padded.
     tokenized_inputs = concatenate_datasets([dataset['train'], dataset['test']]).map(lambda x: tokenizer(x["dialogue"], truncation=True), batched=True, remove_columns=["dialogue", "summary"])
     max_source_length = max([len(x) for x in tokenized_inputs["input_ids"]])
-    print(f"Max source length: {max_source_length}")
 
     # The maximum total sequence length for target text after tokenization.
     # Sequences longer than this will be truncated, sequences shorter will be padded."
     tokenized_targets = concatenate_datasets([dataset['train'], dataset['test']]).map(lambda x: tokenizer(x["summary"], truncation=True), batched=True, remove_columns=["dialogue", "summary"])
     max_target_length = max([len(x) for x in tokenized_targets["input_ids"]])
-    print(f"Max target length: {max_target_length}")
 
     tokenized_dataset = dataset.map(preprocess_function, batched=True, remove_columns=["dialogue", "summary", "id"])
-    print(f"Keys of tokenized dataset: {list(tokenized_dataset['train'].features)}")
 
     # load model from the hub
     model = AutoModelForSeq2SeqLM.from_pretrained(model_id)
