@@ -126,37 +126,54 @@ async def schedule_logic_min_min():
 async def schedule_logic_max_min():
     return 1
 
+async def send_post_request_async(session, url, payload, headers):
+    print(payload)
+    print(json.loads(payload))
+
+    async with session.post(url, headers=headers, data=json.loads(payload)) as response:
+        if response.status == 200:
+            print(f"Sent Success")
+
 async def schedule_logic_fcfs():
-    payload = ''
-    headers = {
-        'Content-Type': 'application/json'
-        }
-
-    def send_req():
-        requests.post("http://127.0.0.1:6060/train", headers=headers, json=json.loads(payload))
-
     tasks = await get_from_db()
     print(tasks)
+    
+    async with aiohttp.ClientSession() as session:
+        # List to store individual task coroutines
+        post_requests = []
 
-    for task in tasks:
-        params_dict = json.loads(task['params'])
+        for task in tasks:
+            print(task)
+            params_dict = json.loads(task['params'])
+            print(task['id'])
+            print(params_dict['per_device_train_batch_size'])
 
-        payload = json.dumps({
-        "data": {
-            "id": task['id'],
-            "gpu": "3",
-            "type": task['type'],
-            "file": task['file'],
-            "param": {
-            "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
-            "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
-            "learning_rate": params_dict['learning_rate'],
-            "num_train_epochs": params_dict['num_train_epochs']
+            url = "http://127.0.0.1:6060/train"
+
+            payload = json.dumps({
+            "data": {
+                "id": task['id'],
+                "gpu": "3",
+                "type": task['type'],
+                "file": task['file'],
+                "param": {
+                "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+                "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+                "learning_rate": params_dict['learning_rate'],
+                "num_train_epochs": params_dict['num_train_epochs']
+                }
             }
-        }
-        })
-     
-        threading.Thread(target=send_req).start()
+            })
+            headers = {
+            'Content-Type': 'application/json'
+            }
 
+            post_requests.append(send_post_request_async(session, url, json.dumps(payload), headers))
+    
+        # Run all POST requests concurrently using asyncio.gather()
+        await asyncio.gather(*post_requests)
 
     return {"error": False, "response": "Scheduling Finished"}
+
+
+
