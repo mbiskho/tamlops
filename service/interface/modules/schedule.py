@@ -69,16 +69,10 @@ async def schedule_logic():
         if current_free_memory > task['gpu_usage']:
             post_response = await send_post_request("http://127.0.0.1:5000/train", {"data": task})
             print(post_response)
-        else:
-            key = ''
-            if gpu['index'] == 3:
-                key = 'process alfa'
-            elif gpu['index'] == 5:
-                key = 'process beta' 
-            
+        else:     
             finished_flag = False
             while finished_flag == False:
-                redis_value = get_redis_item(key)
+                redis_value = get_redis_item(gpu['index'])
                 if redis_value == 0:
                     post_response = await send_post_request("http://127.0.0.1:5000/train", {"data": task})
                     print(post_response)
