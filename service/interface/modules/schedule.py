@@ -167,6 +167,6 @@ async def schedule_logic_fcfs():
             post_requests.append(send_post_request_async(session, url, json.dumps(payload), headers))
     
         # Run all POST requests concurrently using asyncio.gather()
-        await asyncio.gather(post_requests)
+        await asyncio.gather(*post_requests)
 
     return {"error": False, "response": "Scheduling Finished"}
