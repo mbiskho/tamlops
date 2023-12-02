@@ -143,7 +143,7 @@ async def schedule_logic_fcfs():
             }
         }
         print(payload)
-        response = await send_post_request("https://webhook.site/867e52b5-ecce-4737-a94d-9b90c6526f46", payload)
+        response = await send_post_request("https://webhook.site/867e52b5-ecce-4737-a94d-9b90c6526f46", json.dumps(payload))
         print(response)
 
     return {"error": False, "response": "Scheduling Finished"}
