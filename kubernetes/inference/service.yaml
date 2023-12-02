@@ -6,10 +6,12 @@ spec:
   selector:
     app: inference  # Selects pods labeled with 'app: inference'
   ports:
-    - protocol: TCP
+    - name: port-8000  # Adding name for the first port
+      protocol: TCP
       port: 8000  # Port exposed by the service
       targetPort: 8000  # Port on the Pods that traffic will be forwarded to
-    - protocol: TCP
+    - name: port-9090  # Adding name for the second port
+      protocol: TCP
       port: 9090
       targetPort: 9090
   type: LoadBalancer  # Change the Service type to LoadBalancer
