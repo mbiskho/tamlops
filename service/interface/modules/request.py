@@ -1,4 +1,5 @@
 import requests
+import json
 
 async def send_get_request(url, params=None):
     try:
@@ -13,7 +14,7 @@ async def send_get_request(url, params=None):
         print(f"Error during GET request: {e}")
         return None
 
-def send_post_request(url, data):
+async def send_post_request(url, data):
     try:
         response = requests.post(url, data=data)
         print(response)
@@ -25,4 +26,17 @@ def send_post_request(url, data):
             return None
     except requests.RequestException as e:
         print(f"Error during POST request: {e}")
+        return None
+    
+async def send_check_gpu():
+    try:
+        check_gpu_alfa = await requests.get("http://127.0.0.1:5000/check-gpu")
+        check_gpu_beta = await requests.get("http://127.0.0.1:5000/check-gpu")
+        gpu_alfa_list = json.loads(check_gpu_alfa['response'])
+        gpu_beta_list = json.loads(check_gpu_beta['response'])
+        combined_check_gpu = gpu_alfa_list + gpu_beta_list
+        return combined_check_gpu
+
+    except requests.RequestException as e:
+        print(f"Error during GET request: {e}")
         return None

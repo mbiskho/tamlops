@@ -2,7 +2,7 @@
 
 # Install & add user dir before install
 apt update -y
-apt-get install wget tar
+apt-get install -y wget tar systemctl
 adduser --quiet --disabled-password --shell /bin/bash --home /home/muhammad_haqqi01 --gecos "User" muhammad_haqqi01
 
 # Install prometheus
