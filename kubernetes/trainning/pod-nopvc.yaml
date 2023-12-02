@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bismakhomeini-trainning-pod-alfa
+spec:
+  restartPolicy: Never
+  containers:
+    - name: bismakhomeini-trainning-pod-alfa
+      image: "mbiskho/tamlops-trainning-alfa"  # Change this (Look up at NGC NVIDIA)
+      command: ["/bin/sh"]
+      # args: ["-c", "while true; do echo 'bismakhomeini-pod log'; sleep 10; done"]
+      args: ["-c", "python init.py"]
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: trainning-pod
+spec:
+  restartPolicy: Never
+  containers:
+    - name: bismakhomeini-trainning-pod-beta
+      image: "mbiskho/tamlops-trainning-beta"  # Change this (Look up at NGC NVIDIA)
+      command: ["/bin/sh"]
+      # args: ["-c", "while true; do echo 'bismakhomeini-pod log'; sleep 10; done"]
+      args: ["-c", "python init.py"]
