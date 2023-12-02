@@ -128,7 +128,7 @@ async def schedule_logic_max_min():
 async def send_post_request_async(session, url, payload, headers):
     async with session.post(url, headers=headers, data=payload) as response:
         if response.status == 200:
-            print(f"Request for {payload['data']['id']} sent successfully")
+            print(f"Sent Success")
 
 async def schedule_logic_fcfs():
     tasks = await get_from_db()
