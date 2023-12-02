@@ -126,12 +126,10 @@ async def schedule_logic_max_min():
 async def schedule_logic_fcfs():
     tasks = await get_from_db()
     print(tasks)
-
-    tasks_list = json.loads(tasks)
     
-    for task in tasks_list:
-        params_dict = json.loads(task['params'])
+    for task in tasks:
         print(task)
+        params_dict = json.loads(task['params'])
         print(task['id'])
         print(params_dict['per_device_train_batch_size'])
 
