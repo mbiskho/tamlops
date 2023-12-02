@@ -7,6 +7,7 @@ from modules.request import send_get_request, send_post_request, send_check_gpu
 from modules.algo import allocate_gpu
 from modules.check_redis import get_redis_item
 import time
+import requests
 
 async def schedule_logic_min_min():
     tasks = await get_from_db()
@@ -125,25 +126,36 @@ async def schedule_logic_max_min():
 async def schedule_logic_fcfs():
     tasks = await get_from_db()
     print(tasks)
+
+    tasks_list = json.loads(tasks)
     
-    for task in tasks:
+    for task in tasks_list:
         params_dict = json.loads(task['params'])
-        payload = {
-            "data": {
-                "id": task['id'],
-                "gpu": "3",
-                "type": task['type'],
-                "file": task['file'],
-                "param": {
-                    "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
-                    "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
-                    "learning_rate": params_dict['learning_rate'],
-                    "num_train_epochs": params_dict['num_train_epochs']
-                }
+        print(task)
+        print(task['id'])
+        print(params_dict['per_device_train_batch_size'])
+
+        url = "https://webhook.site/867e52b5-ecce-4737-a94d-9b90c6526f46"
+
+        payload = json.dumps({
+        "data": {
+            "id": task['id'],
+            "gpu": "3",
+            "type": task['type'],
+            "file": task['file'],
+            "param": {
+            "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+            "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+            "learning_rate": params_dict['learning_rate'],
+            "num_train_epochs": params_dict['num_train_epochs']
             }
         }
-        print(payload)
-        response = await send_post_request("https://webhook.site/867e52b5-ecce-4737-a94d-9b90c6526f46", json.dumps(payload))
+        })
+        headers = {
+        'Content-Type': 'application/json'
+        }
+
+        response = await requests.request("POST", url, headers=headers, data=payload)
         print(response)
 
     return {"error": False, "response": "Scheduling Finished"}
