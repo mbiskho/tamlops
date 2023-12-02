@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from modules.database import save_training_db, get_from_db
 from modules.gcp import upload_to_gcs
-from modules.schedule import schedule_logic
+from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs, schedule_logic_max_min
 from modules.request import send_post_request
 
 app = FastAPI(docs_url=None, openapi_url=None)
@@ -39,10 +39,26 @@ async def inference(requests: Request):
      return {"error": False, "response": res}
 
 
-@app.get('/schedule', response_class=JSONResponse)
+@app.get('/schedule/min-min', response_class=JSONResponse)
 async def schedule():
     try:
-        post_response = await schedule_logic()
+        post_response = await schedule_logic_min_min()
+        return post_response
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+    
+@app.get('/schedule/max-min', response_class=JSONResponse)
+async def schedule():
+    try:
+        post_response = await schedule_logic_max_min()
+        return post_response
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+    
+@app.get('/schedule/fcfs', response_class=JSONResponse)
+async def schedule():
+    try:
+        post_response = await schedule_logic_fcfs()
         return post_response
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
