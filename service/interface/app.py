@@ -41,6 +41,9 @@ async def inference(requests: Request):
 
 @app.get('/schedule', response_class=JSONResponse)
 async def schedule():
-    tasks, gpu, post_response = await schedule_logic()
-    return {"error": False, "response": "Scheduling Finished", "tasks": tasks, "gpu": gpu, "dgx_response": post_response}
+    try:
+        post_response = await schedule_logic()
+        return post_response
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
 
