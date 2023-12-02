@@ -47,3 +47,4 @@ tzdata==2023.3
 urllib3==1.26.18
 uvicorn==0.13.3
 redis==5.0.1
+aiohttp==3.9.0
