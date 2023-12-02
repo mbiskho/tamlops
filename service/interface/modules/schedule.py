@@ -142,7 +142,8 @@ async def schedule_logic_fcfs():
                 }
             }
         }
-        response = await send_post_request("http://127.0.0.1:6060/train", payload)
+        print(payload)
+        response = await send_post_request("https://webhook.site/867e52b5-ecce-4737-a94d-9b90c6526f46", payload)
         print(response)
 
     return {"error": False, "response": "Scheduling Finished"}
