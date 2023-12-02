@@ -126,7 +126,10 @@ async def schedule_logic_max_min():
     return 1
 
 async def send_post_request_async(session, url, payload, headers):
-    async with session.post(url, headers=headers, data=payload) as response:
+    print(payload)
+    print(json.loads(payload))
+
+    async with session.post(url, headers=headers, data=json.loads(payload)) as response:
         if response.status == 200:
             print(f"Sent Success")
 
