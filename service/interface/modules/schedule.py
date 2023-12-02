@@ -127,6 +127,7 @@ async def schedule_logic_fcfs():
     print(tasks)
     
     for task in tasks:
-        send_post_request("http://127.0.0.1:6060/train", {"data": task})
+        response = await send_post_request("http://127.0.0.1:6060/train", {"data": task})
+        print(response)
 
     return {"error": False, "response": "Scheduling Finished"}
