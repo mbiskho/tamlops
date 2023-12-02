@@ -1,0 +1,20 @@
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: trainning-pod
+spec:
+  restartPolicy: Never
+  volumes:
+    - name: bismakhomeini-pv-storage
+      persistentVolumeClaim:
+        claimName: bismakhomeini-pv-claim
+  containers:
+    - name: bismakhomeini-trainning-pod-beta
+      image: "mbiskho/tamlops-trainning-beta"  # Change this (Look up at NGC NVIDIA)
+      command: ["/bin/sh"]
+      # args: ["-c", "while true; do echo 'bismakhomeini-pod log'; sleep 10; done"]
+      args: ["-c", "python init.py"]
+      volumeMounts:
+        - mountPath: "/workspace"
+          name: bismakhomeini-pv-storage
