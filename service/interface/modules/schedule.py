@@ -112,7 +112,7 @@ async def schedule_logic_min_min():
         current_gpu_state = check_gpu['response']
         current_free_memory = 0
         for gpu in current_gpu_state:
-             if gpu['index'] == task['num_gpu']:
+             if gpu['index'] == task['gpu']:
                  current_free_memory = gpu['memory_free']
         print(current_free_memory)
         print(task['gpu_usage'])
