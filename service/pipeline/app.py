@@ -33,22 +33,22 @@ async def train(requests: Request):
     typ = data['type']
     gpu = data['gpu']
 
-    file = ""
+    used = ""
 
     if typ == 'image':
         print("[!] Train image")
-        file = ""
+        used = ""
 
         if(gpu == "3"):
             print("[!] Using GPU 3")
-            file = "3_image.py"
+            used = "3_image.py"
         else:
             print("[!] Using GPU 5")
-            file = "5_image.py"
+            used = "5_image.py"
 
         command = [
             'python3',
-            file,
+            used,
             f"--resolution={data['param']['resolution']}",
             f"--train_batch_size={data['param']['train_batch_size']}",
             f"--num_train_epochs={data['param']['num_train_epochs']}",
@@ -60,17 +60,17 @@ async def train(requests: Request):
         ]
     else:
         print("[!] Train Text")
-        file = ""
+        used = ""
         if(gpu == "3"):
             print("[!] Using GPU 3")
-            file = "3_text.py"
+            used = "3_text.py"
         else:
             print("[!] Using GPU 5")
-            file = "5_text.py"
+            used = "5_text.py"
 
         command = [
             'python3',
-            file,
+            used,
             f"--per_device_train_batch_size={data['param']['per_device_train_batch_size']}",
             f"--per_device_eval_batch_size={data['param']['per_device_eval_batch_size']}",
             f"--learning_rate={data['param']['learning_rate']}",
@@ -106,58 +106,34 @@ async def train(requests: Request):
     return {"error": False, "response": "Train has been done"}
 
 
-def process_burst(req):
-    data = req['data']
-    typ = data['type']
-    gpu = data['gpu']
-
-    file = ""
-
-    if typ == 'image':
-        print("[!] Train image")
-        file = ""
-
-        if(gpu == "3"):
-            print("[!] Using GPU 3")
-            file = "3_image.py"
-        else:
-            print("[!] Using GPU 5")
-            file = "5_image.py"
-
-        command = [
-            'python3',
-            file,
-            f"--resolution={data['param']['resolution']}",
-            f"--train_batch_size={data['param']['train_batch_size']}",
-            f"--num_train_epochs={data['param']['num_train_epochs']}",
-            f"--max_train_steps={data['param']['max_train_steps']}",
-            f"--learning_rate={data['param']['learning_rate']}",
-            f"--gradient_accumulation_steps={data['param']['gradient_accumulation_steps']}", 
-            f"--file={data['file']}",
-            f"--id={data['id']}"
-        ]
+def process_text(
+        id,
+        gpu, 
+        file,
+        per_device_train_batch_size, 
+        per_device_eval_batch_size, 
+        learning_rate,
+        num_train_epochs
+):
+    used = ""
+    if(gpu == "3"):
+        print("[!] Using GPU 3")
+        used = "3_text.py"
     else:
-        print("[!] Train Text")
-        file = ""
-        if(gpu == "3"):
-            print("[!] Using GPU 3")
-            file = "3_text.py"
-        else:
-            print("[!] Using GPU 5")
-            file = "5_text.py"
-
-        command = [
+        print("[!] Using GPU 5")
+        used = "5_text.py"
+    command = [
             'python3',
-            file,
-            f"--per_device_train_batch_size={data['param']['per_device_train_batch_size']}",
-            f"--per_device_eval_batch_size={data['param']['per_device_eval_batch_size']}",
-            f"--learning_rate={data['param']['learning_rate']}",
-            f"--num_train_epochs={data['param']['num_train_epochs']}",
-            f"--file={data['file']}",
-            f"--id={data['id']}"
-        ]
+            used,
+            f"--per_device_train_batch_size={per_device_train_batch_size}",
+            f"--per_device_eval_batch_size={per_device_eval_batch_size}",
+            f"--learning_rate={learning_rate}",
+            f"--num_train_epochs={num_train_epochs}",
+            f"--file={file}",
+            f"--id={id}"
+    ]
 
-
+    # Run
     value = get_item(gpu)
     if(value == None):
         print("Current Process: 1")
@@ -166,9 +142,6 @@ def process_burst(req):
         print("Current Process: ", str(value), " added to be", str(int(value) + 1))
         value = int(value) + 1
         set_item(gpu, value)
-
-
-    print("[!] Adding num process")
 
     result = subprocess.run(command, capture_output=True, text=True, check=True)
     print("Subprocess output (stdout):", result.stdout)
@@ -182,10 +155,82 @@ def process_burst(req):
     print("Remaining Process: ", value)
     return ""
 
+def process_image(
+        id,
+        gpu, 
+        file,
+        resolution,
+        train_batch_size,
+        num_train_epochs,
+        max_train_steps,
+        gradient_accumulation_steps,
+        learning_rate
+):
+    used = ""
+    if(gpu == "3"):
+        print("[!] Using GPU 3")
+        used = "3_image.py"
+    else:
+        print("[!] Using GPU 5")
+        used = "5_image.py"
+
+    command = [
+            'python3',
+            used,
+            f"--resolution={resolution}",
+            f"--train_batch_size={train_batch_size}",
+            f"--num_train_epochs={num_train_epochs}",
+            f"--max_train_steps={max_train_steps}",
+            f"--learning_rate={learning_rate}",
+            f"--gradient_accumulation_steps={gradient_accumulation_steps}", 
+            f"--file={file}",
+            f"--id={id}"
+    ]
+
+    # Run
+    value = get_item(gpu)
+    if(value == None):
+        print("Current Process: 1")
+        set_item(gpu, 1)
+    else:
+        print("Current Process: ", str(value), " added to be", str(int(value) + 1))
+        value = int(value) + 1
+        set_item(gpu, value)
+
+    result = subprocess.run(command, capture_output=True, text=True, check=True)
+    print("Subprocess output (stdout):", result.stdout)
+    print("Subprocess output (stderr):", result.stderr)
+
+
+    value = get_item(gpu)
+    value = int(value) - 1
+    set_item(gpu, value)
+    print("[!] Release num process")
+    print("Remaining Process: ", value)
+    return ""
 
 @app.post("/train-burst", response_class=JSONResponse)
 async def train(requests: Request):
     req = await requests.json()
-    th = threading.Thread(target=process_burst, args=(req))
+    data = req['data']
+    
+    if data['type'] == 'text':
+        th = threading.Thread(target=process_text, args=(data['id'], 
+                                data['gpu'], data['file'], 
+                                data['param']['per_device_train_batch_size'],
+                                data['param']['per_device_eval_batch_size'],
+                                data['param']['learning_rate'],
+                                data['param']['num_train_epochs'],
+        ))
+    else:
+        th = threading.Thread(target=process_image, args=(data['id'], 
+                                data['gpu'], data['file'], 
+                                data['param']['resolution'],
+                                data['param']['train_batch_size'],
+                                data['param']['num_train_epochs'],
+                                data['param']['max_train_steps'],
+                                data['param']['gradient_accumulation_steps'],
+                                data['param']['learning_rate'],
+        ))
     th.start()
-    return {"error": False, "response": "Train has been done"}
+    return {"error": False, "response": "Iam Healty"}
