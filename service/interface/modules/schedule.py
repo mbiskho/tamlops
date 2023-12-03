@@ -96,27 +96,27 @@ async def schedule_logic_min_min():
     sorted_tasks = sorted(tasks_with_times, key=lambda x: x['estimated_time'])
 
     #Check GPU
-    dgx_gpu = await send_get_request('http://127.0.0.1:6060/')
+    dgx_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
 
     # Allocate it to the right GPU
     allocated_tasks = allocate_gpu(sorted_tasks, dgx_gpu['response'])
 
     # Send to DGX
     for task in allocated_tasks:
-        check_gpu = await send_get_request('http://127.0.0.1:6060/')
+        check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
         current_gpu_state = check_gpu['response']
         current_free_memory = 0
         for gpu in current_gpu_state:
              if gpu['index'] == task['num_gpu']:
                  current_free_memory = gpu['memory_free']
         if current_free_memory > task['gpu_usage']:
-            send_post_request("http://127.0.0.1:6060/train", {"data": task})
+            send_post_request("http://127.0.0.1:6070/train", {"data": task})
         else:     
             finished_flag = False
             while finished_flag == False:
                 redis_value = get_redis_item(gpu['index'])
                 if redis_value == 0:
-                    send_post_request("http://127.0.0.1:6060/train", {"data": task})
+                    send_post_request("http://127.0.0.1:6070/train", {"data": task})
                     finished_flag = True
                     break
                 time.sleep(5)
