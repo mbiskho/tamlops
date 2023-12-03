@@ -268,7 +268,7 @@ async def send_post_request_async(session, url, payload, headers):
         if response.status == 200:
             print(f"Sent Success")
 
-async def schedule_logic_fcfs_burst():
+async def schedule_logic_fcfs_burst(gpu_id):
     tasks = await get_from_db()
     print(tasks)
     
@@ -287,7 +287,7 @@ async def schedule_logic_fcfs_burst():
             payload = json.dumps({
             "data": {
                 "id": task['id'],
-                "gpu": "3",
+                "gpu": gpu_id,
                 "type": task['type'],
                 "file": task['file'],
                 "param": {
@@ -310,7 +310,7 @@ async def schedule_logic_fcfs_burst():
     return {"error": False, "response": "Scheduling Finished"}
 
 
-async def schedule_logic_fcfs_normal():
+async def schedule_logic_fcfs_normal(gpu_id):
     tasks = await get_from_db()
     print(tasks)
 
@@ -325,7 +325,7 @@ async def schedule_logic_fcfs_normal():
         payload = json.dumps({
         "data": {
             "id": task['id'],
-            "gpu": "3",
+            "gpu": gpu_id,
             "type": task['type'],
             "file": task['file'],
             "param": {
