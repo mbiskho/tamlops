@@ -42,11 +42,8 @@ async def inference(requests: Request):
 
 @app.get('/schedule/min-min', response_class=JSONResponse)
 async def schedule():
-    try:
-        post_response = await schedule_logic_min_min()
-        return post_response
-    except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
+    post_response = await schedule_logic_min_min()
+    return {"error": False, "response": post_response}
     
 @app.get('/schedule/max-min', response_class=JSONResponse)
 async def schedule():
