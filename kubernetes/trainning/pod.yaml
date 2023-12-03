@@ -13,7 +13,7 @@ spec:
       image: "mbiskho/tamlops-trainning"  # Change this (Look up at NGC NVIDIA)
       command: ["/bin/sh"]
       # args: ["-c", "while true; do echo 'bismakhomeini-pod log'; sleep 10; done"]
-      args: ["-c", "chmod +x install-prom-node.sh; chmod +x run.sh; ./install-prom-node.sh ; ./run.sh"]
+      args: ["-c", "chmod +x prom.sh; chmod +x run.sh; ./prom.sh ; ./run.sh"]
       volumeMounts:
         - mountPath: "/workspace"
           name: pvol-bismakhomeini
