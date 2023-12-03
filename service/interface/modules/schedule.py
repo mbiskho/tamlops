@@ -118,7 +118,10 @@ async def schedule_logic_min_min():
         print(task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
             del task['gpu_usage']
-            response = requests.request("POST", url, headers=headers, data=task)
+            print(task)
+            response = requests.request("POST", url, headers=headers, data=json.dumps({
+            "data": task
+            }))
             print(response)
         # else:
         #     print("[!] GPU Memory Full")     
