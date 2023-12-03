@@ -116,9 +116,30 @@ def process_text(
         num_train_epochs
 ):
     used = ""
-    if(gpu == "3"):
+    if(gpu == "0"):
+        print("[!] Using GPU 0")
+        used = "0_text.py"
+    elif(gpu == "1"):
+        print("[!] Using GPU 1")
+        used = "1_text.py"
+    elif(gpu == "2"):
+        print("[!] Using GPU 2")
+        used = "2_text.py"
+    elif(gpu == "3"):
         print("[!] Using GPU 3")
         used = "3_text.py"
+    elif(gpu == "4"):
+        print("[!] Using GPU 4")
+        used = "4_text.py"
+    elif(gpu == "5"):
+        print("[!] Using GPU 5")
+        used = "5_text.py"
+    elif(gpu == "6"):
+        print("[!] Using GPU 6")
+        used = "6_text.py"
+    elif(gpu == "7"):
+        print("[!] Using GPU 7")
+        used = "7_text.py"
     else:
         print("[!] Using GPU 5")
         used = "5_text.py"
@@ -167,9 +188,30 @@ def process_image(
         learning_rate
 ):
     used = ""
-    if(gpu == "3"):
+    if(gpu == "0"):
+        print("[!] Using GPU 0")
+        used = "0_image.py"
+    elif(gpu == "1"):
+        print("[!] Using GPU 1")
+        used = "1_image.py"
+    elif(gpu == "2"):
+        print("[!] Using GPU 2")
+        used = "2_image.py"
+    elif(gpu == "3"):
         print("[!] Using GPU 3")
         used = "3_image.py"
+    elif(gpu == "4"):
+        print("[!] Using GPU 4")
+        used = "4_image.py"
+    elif(gpu == "5"):
+        print("[!] Using GPU 5")
+        used = "5_image.py"
+    elif(gpu == "6"):
+        print("[!] Using GPU 6")
+        used = "6_image.py"
+    elif(gpu == "7"):
+        print("[!] Using GPU 7")
+        used = "7_image.py"
     else:
         print("[!] Using GPU 5")
         used = "5_image.py"
