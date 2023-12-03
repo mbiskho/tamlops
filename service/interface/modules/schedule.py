@@ -50,7 +50,7 @@ async def schedule_logic_min_min():
                 "type": task['type'],
                 "id": task['id'],
                 "estimated_time": predicted_metric[0][0],
-                "gpu_usage": predicted_metric[0][1],
+                "gpu_usage": 3000,
                 "param": {
                     "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
                     "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
@@ -80,7 +80,7 @@ async def schedule_logic_min_min():
                     "type": task['type'],
                     "id": task['id'],
                     "estimated_time": predicted_metric[0][0],
-                    "gpu_usage": predicted_metric[0][1],
+                    "gpu_usage": 15000,
                     "param": {
                         'resolution': params_dict['resolution'],
                         'train_batch_size': params_dict['train_batch_size'],
@@ -101,6 +101,11 @@ async def schedule_logic_min_min():
     # Allocate it to the right GPU
     allocated_tasks = allocate_gpu(sorted_tasks, dgx_gpu['response'])
 
+    url = "http://127.0.0.1:6070/train"
+    headers = {
+    'Content-Type': 'application/json'
+    }
+
     # Send to DGX
     for task in allocated_tasks:
         check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
@@ -114,6 +119,8 @@ async def schedule_logic_min_min():
         if current_free_memory > task['gpu_usage']:
             del task['gpu_usage']
             send_post_request("http://127.0.0.1:6070/train", {"data": task})
+            # response = requests.request("POST", url, headers=headers, data=task)
+            # print(response)
         # else:
         #     print("[!] GPU Memory Full")     
         #     finished_flag = False
