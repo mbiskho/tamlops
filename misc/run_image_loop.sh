@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Define parameters for the loop
-resolution=(256 512 1024)
-train_size=(2 4 8 16)
-epoch=(2 6 10)
-max_train_steps=(100 500 1000)
+resolution=(256 384)
+train_size=(2 4)
+epoch=(2 4)
+max_train_steps=(100 250)
 gradient_accumulation_steps=(1 2 4)
-learning_rates=(0.0001 0.001 0.01)
-dataset=(50 100 200 400 800 1600)
+learning_rates=(0.0001 0.001)
+dataset=(50 100 200 400)
 
 # Loop through combinations of parameters
 for lr in "${learning_rates[@]}"; do
