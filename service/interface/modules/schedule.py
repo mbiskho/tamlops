@@ -271,6 +271,7 @@ async def send_post_request_async(session, url, payload, headers):
 async def schedule_logic_fcfs_burst(gpu_id):
     tasks = await get_from_db()
     print(tasks)
+    print("GPU ID", gpu_id)
     
     async with aiohttp.ClientSession() as session:
         # List to store individual task coroutines
@@ -313,6 +314,7 @@ async def schedule_logic_fcfs_burst(gpu_id):
 async def schedule_logic_fcfs_normal(gpu_id):
     tasks = await get_from_db()
     print(tasks)
+    print("GPU ID", gpu_id)
 
     for task in tasks:
         print(task)
