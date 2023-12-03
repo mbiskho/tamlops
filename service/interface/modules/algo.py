@@ -15,7 +15,6 @@ def allocate_gpu(tasks, gpus):
         heapq.heappush(min_heap, (smallest_memory_usage + task['gpu_usage'], gpu))
         task['num_gpu'] = gpu
         del task['estimated_time']
-        del task['gpu_usage']
         task_sorted.append(task)
 
     return task_sorted

@@ -110,12 +110,14 @@ async def schedule_logic_min_min():
              if gpu['index'] == task['num_gpu']:
                  current_free_memory = gpu['memory_free']
         if current_free_memory > task['gpu_usage']:
+            del task['gpu_usage']
             send_post_request("http://127.0.0.1:6070/train", {"data": task})
         else:     
             finished_flag = False
             while finished_flag == False:
                 redis_value = get_redis_item(gpu['index'])
                 if redis_value == 0:
+                    del task['gpu_usage']
                     send_post_request("http://127.0.0.1:6070/train", {"data": task})
                     finished_flag = True
                     break
