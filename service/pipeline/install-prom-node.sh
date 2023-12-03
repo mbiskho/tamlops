@@ -39,7 +39,7 @@ remote_write:
   - url: 'https://prometheus-prod-18-prod-ap-southeast-0.grafana.net/api/prom/push'
     basic_auth:
       username: '1193718'
-      password: 'glc_eyJvIjoiOTQ2OTQwIiwibiI6InN0YWNrLTc0MjkwMS1obS13cml0ZS1ub2RlLWV4cG9ydGVyIiwiayI6IjlkRUZOajg1WUQ2T1cwMjJjVkU2dGk3MiIsIm0iOnsiciI6InByb2QtYXAtc291dGhlYXN0LTAifX0='"  >> /etc/prometheus/prometheus.yml
+      password: 'glc_eyJvIjoiOTQ2OTQwIiwibiI6InN0YWNrLTc0MjkwMS1obS13cml0ZS1ub2RlLWV4cG9ydGVyIiwiayI6IjlkRUZOajg1WUQ2T1cwMjJjVkU2dGk3MiIsIm0iOnsiciI6InByb2QtYXAtc291dGhlYXN0LTAifX0='"  > /etc/prometheus/prometheus.yml
 
 chown prometheus:prometheus /etc/prometheus
 chown -R prometheus:prometheus /etc/prometheus/consoles
