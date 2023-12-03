@@ -148,7 +148,7 @@ async def schedule_logic_fcfs():
             print(task['id'])
             print(params_dict['per_device_train_batch_size'])
 
-            url = "http://127.0.0.1:6060/train"
+            url = "http://127.0.0.1:6070/train-burst"
 
             payload = json.dumps({
             "data": {

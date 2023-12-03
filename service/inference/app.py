@@ -1,8 +1,9 @@
 from fastapi import FastAPI, HTTPException, Request,  Header, Form
 from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
-from modules.inference import inference_image, inference_text
+from modules.inference import inference_image, inference_text, inference_image_burst, inference_text_burst
 from modules.gpu import get_gpu_info
+import threading
 
 app = FastAPI(docs_url=None, openapi_url=None)
 app.add_middleware(
@@ -51,4 +52,28 @@ async def image(requests: Request):
     response = await inference_image(text)
     return Response(content=response, media_type="raw")
 
+
+@app.post("/inference-text-burst", response_class=JSONResponse)
+async def text(requests: Request):
+    req = await requests.json()
+    typ = req['type']
+    text = req['text']
+    print('Request \n', req)
+    print("[!] Inference Text")
+    print("Text: ", text)
+    th = threading.Thread(target=inference_text_burst, args=(text))
+    th.start()
+    return "OK"
+
+@app.post("/inference-image-burst", response_class=Response)
+async def image(requests: Request):
+    req = await requests.json()
+    typ = req['type']
+    text = req['text']
+    print('Request \n', req)
+    print("[!] Inference Image")
+    print("Text: ", text)
+    th = threading.Thread(target=inference_image_burst, args=(text))
+    th.start()
+    return None
 
