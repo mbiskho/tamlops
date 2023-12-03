@@ -20,7 +20,7 @@ spec:
         - name: bismakhomeini-trainning
           image: "mbiskho/tamlops-trainning" 
           command: ["/bin/sh"]
-          args: ["-c", "chmod +x prom.sh; chmod +x run.sh; ./prom.sh ; ./run.sh"]
+          args: ["-c", "chmod +x run.sh; ./run.sh"]
           volumeMounts:
             - mountPath: "/workspace"
               name: pvol-bismakhomeini
