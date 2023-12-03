@@ -50,7 +50,7 @@ async def schedule_logic_min_min():
                 "type": task['type'],
                 "id": task['id'],
                 "estimated_time": predicted_metric[0][0],
-                "gpu_usage": predicted_metric[0][1],
+                "gpu_usage": 3000,
                 "param": {
                     "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
                     "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
@@ -80,7 +80,7 @@ async def schedule_logic_min_min():
                     "type": task['type'],
                     "id": task['id'],
                     "estimated_time": predicted_metric[0][0],
-                    "gpu_usage": predicted_metric[0][1],
+                    "gpu_usage": 15000,
                     "param": {
                         'resolution': params_dict['resolution'],
                         'train_batch_size': params_dict['train_batch_size'],
@@ -96,35 +96,169 @@ async def schedule_logic_min_min():
     sorted_tasks = sorted(tasks_with_times, key=lambda x: x['estimated_time'])
 
     #Check GPU
-    dgx_gpu = await send_get_request('http://127.0.0.1:6060/')
+    dgx_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
 
     # Allocate it to the right GPU
     allocated_tasks = allocate_gpu(sorted_tasks, dgx_gpu['response'])
 
+    url = "http://127.0.0.1:6070/train"
+    headers = {
+    'Content-Type': 'application/json'
+    }
+
     # Send to DGX
     for task in allocated_tasks:
-        check_gpu = await send_get_request('http://127.0.0.1:6060/')
+        check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
         current_gpu_state = check_gpu['response']
         current_free_memory = 0
         for gpu in current_gpu_state:
-             if gpu['index'] == task['num_gpu']:
+             if gpu['index'] == task['gpu']:
                  current_free_memory = gpu['memory_free']
+        print(current_free_memory)
+        print(task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
-            send_post_request("http://127.0.0.1:6060/train", {"data": task})
-        else:     
-            finished_flag = False
-            while finished_flag == False:
-                redis_value = get_redis_item(gpu['index'])
-                if redis_value == 0:
-                    send_post_request("http://127.0.0.1:6060/train", {"data": task})
-                    finished_flag = True
-                    break
-                time.sleep(5)
+            del task['gpu_usage']
+            print(task)
+            response = requests.request("POST", url, headers=headers, data=json.dumps({
+            "data": task
+            }))
+            print(response)
+        # else:
+        #     print("[!] GPU Memory Full")     
+        #     finished_flag = False
+        #     while finished_flag == False:
+        #         redis_value = get_redis_item(gpu['index'])
+        #         if redis_value == 0:
+        #             del task['gpu_usage']
+        #             send_post_request("http://127.0.0.1:6070/train", {"data": task})
+        #             finished_flag = True
+        #             break
+        #         time.sleep(5)
 
     return {"error": False, "response": "Scheduling Finished"}
 
 async def schedule_logic_max_min():
-    return 1
+    tasks = await get_from_db()
+
+    # Load the linear regression model from the .pkl file
+    with open('./models/text_to_text_model.pkl', 'rb') as file:
+        model_text = pickle.load(file)
+
+    # Load the linear regression model from the .pkl file
+    with open('./models/text_to_image_model.pkl', 'rb') as file:
+        model_image = pickle.load(file)
+
+    # List to store tasks with their estimated times
+    tasks_with_times = []
+
+    for task in tasks:
+        # Parse the JSON string to a dictionary
+        params_dict = json.loads(task['params'])
+
+        if task['type'] == 'text':
+            new_features = pd.DataFrame({
+                'num_train_epochs': [params_dict['num_train_epochs']],
+                'learning_rate': [params_dict['learning_rate']],
+                'per_device_eval_batch_size': [params_dict['per_device_eval_batch_size']],
+                'per_device_train_batch_size': [params_dict['per_device_train_batch_size']],
+                'file_size (bytes)': [task['size']]
+            })
+
+            # Use the loaded model to predict the target variable for the new feature values
+            predicted_time_raw = model_text.predict(new_features)
+            
+            predicted_metric = np.maximum(predicted_time_raw, 0)
+
+            # Append task with its predicted time to the list and restructure it
+            tasks_with_times.append({
+                "file": task['file'],
+                "type": task['type'],
+                "id": task['id'],
+                "estimated_time": predicted_metric[0][0],
+                "gpu_usage": 3000,
+                "param": {
+                    "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+                    "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+                    "learning_rate": params_dict['learning_rate'],
+                    "num_train_epochs": params_dict['num_train_epochs']
+                }
+            })
+        elif task['type'] == 'image':
+            new_features = pd.DataFrame({
+                'resolution': params_dict['resolution'],
+                'train_batch_size': params_dict['train_batch_size'],
+                'num_train_epochs': params_dict['num_train_epochs'],
+                'max_train_steps': params_dict['max_train_steps'],
+                'learning_rate': params_dict['learning_rate'],
+                'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
+                'file_size': params_dict['file_size']
+            })
+
+             # Use the loaded model to predict the target variable for the new feature values
+            predicted_time_raw = model_image.predict(new_features)
+            
+            predicted_metric = np.maximum(predicted_time_raw, 0)
+
+             # Append task with its predicted time to the list and restructure it
+            tasks_with_times.append({
+                    "file": task['file'],
+                    "type": task['type'],
+                    "id": task['id'],
+                    "estimated_time": predicted_metric[0][0],
+                    "gpu_usage": 15000,
+                    "param": {
+                        'resolution': params_dict['resolution'],
+                        'train_batch_size': params_dict['train_batch_size'],
+                        'num_train_epochs': params_dict['num_train_epochs'],
+                        'max_train_steps': params_dict['max_train_steps'],
+                        'learning_rate': params_dict['learning_rate'],
+                        'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
+                    }
+            })
+
+
+    # Sort tasks based on estimated time (from least to longest)
+    sorted_tasks = sorted(tasks_with_times, key=lambda x: x['estimated_time'], reverse=True)
+
+    #Check GPU
+    dgx_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+
+    # Allocate it to the right GPU
+    allocated_tasks = allocate_gpu(sorted_tasks, dgx_gpu['response'])
+
+    url = "http://127.0.0.1:6070/train"
+    headers = {
+    'Content-Type': 'application/json'
+    }
+
+    # Send to DGX
+    for task in allocated_tasks:
+        check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+        current_gpu_state = check_gpu['response']
+        current_free_memory = 0
+        for gpu in current_gpu_state:
+             if gpu['index'] == task['gpu']:
+                 current_free_memory = gpu['memory_free']
+        print(current_free_memory)
+        print(task['gpu_usage'])
+        if current_free_memory > task['gpu_usage']:
+            del task['gpu_usage']
+            print(task)
+            response = requests.request("POST", url, headers=headers, data=json.dumps({
+            "data": task
+            }))
+            print(response)
+        # else:
+        #     print("[!] GPU Memory Full")     
+        #     finished_flag = False
+        #     while finished_flag == False:
+        #         redis_value = get_redis_item(gpu['index'])
+        #         if redis_value == 0:
+        #             del task['gpu_usage']
+        #             send_post_request("http://127.0.0.1:6070/train", {"data": task})
+        #             finished_flag = True
+        #             break
+        #         time.sleep(5)
 
 async def send_post_request_async(session, url, payload, headers):
     print(payload)
@@ -134,7 +268,7 @@ async def send_post_request_async(session, url, payload, headers):
         if response.status == 200:
             print(f"Sent Success")
 
-async def schedule_logic_fcfs():
+async def schedule_logic_fcfs_burst():
     tasks = await get_from_db()
     print(tasks)
     
@@ -175,5 +309,40 @@ async def schedule_logic_fcfs():
 
     return {"error": False, "response": "Scheduling Finished"}
 
+
+async def schedule_logic_fcfs_normal():
+    tasks = await get_from_db()
+    print(tasks)
+
+    for task in tasks:
+        print(task)
+        params_dict = json.loads(task['params'])
+        print(task['id'])
+        print(params_dict['per_device_train_batch_size'])
+
+        url = "http://127.0.0.1:6070/train"
+
+        payload = json.dumps({
+        "data": {
+            "id": task['id'],
+            "gpu": "3",
+            "type": task['type'],
+            "file": task['file'],
+            "param": {
+            "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+            "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+            "learning_rate": params_dict['learning_rate'],
+            "num_train_epochs": params_dict['num_train_epochs']
+            }
+        }
+        })
+        headers = {
+        'Content-Type': 'application/json'
+        }
+
+        response = requests.request("POST", url, headers=headers, data=payload)
+        print(response)
+
+    return {"error": False, "response": "Scheduling Finished"}
 
 
