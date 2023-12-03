@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from modules.database import save_training_db, get_from_db
 from modules.gcp import upload_to_gcs
-from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs, schedule_logic_max_min
+from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs_burst, schedule_logic_max_min, schedule_logic_fcfs_normal
 from modules.request import send_post_request
 import asyncio
 
@@ -53,8 +53,13 @@ async def schedule():
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
     
-@app.get('/schedule/fcfs', response_class=JSONResponse)
+@app.get('/schedule/fcfs-burst', response_class=JSONResponse)
 async def schedule():
-    await schedule_logic_fcfs()
+    await schedule_logic_fcfs_burst()
+    return {"error": False, "response": "Schedule Started"}
+
+@app.get('/schedule/fcfs-normal', response_class=JSONResponse)
+async def schedule():
+    await schedule_logic_fcfs_normal()
     return {"error": False, "response": "Schedule Started"}
 

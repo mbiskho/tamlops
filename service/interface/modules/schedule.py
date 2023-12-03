@@ -136,7 +136,7 @@ async def send_post_request_async(session, url, payload, headers):
         if response.status == 200:
             print(f"Sent Success")
 
-async def schedule_logic_fcfs():
+async def schedule_logic_fcfs_burst():
     tasks = await get_from_db()
     print(tasks)
     
@@ -177,5 +177,40 @@ async def schedule_logic_fcfs():
 
     return {"error": False, "response": "Scheduling Finished"}
 
+
+async def schedule_logic_fcfs_normal():
+    tasks = await get_from_db()
+    print(tasks)
+
+    for task in tasks:
+        print(task)
+        params_dict = json.loads(task['params'])
+        print(task['id'])
+        print(params_dict['per_device_train_batch_size'])
+
+        url = "http://127.0.0.1:6070/train"
+
+        payload = json.dumps({
+        "data": {
+            "id": task['id'],
+            "gpu": "3",
+            "type": task['type'],
+            "file": task['file'],
+            "param": {
+            "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+            "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+            "learning_rate": params_dict['learning_rate'],
+            "num_train_epochs": params_dict['num_train_epochs']
+            }
+        }
+        })
+        headers = {
+        'Content-Type': 'application/json'
+        }
+
+        response = requests.request("POST", url, headers=headers, data=payload)
+        print(response)
+
+    return {"error": False, "response": "Scheduling Finished"}
 
 
