@@ -244,15 +244,14 @@ async def schedule_logic_max_min():
         for gpu in current_gpu_state:
              if gpu['index'] == task['gpu']:
                  current_free_memory = gpu['memory_free']
-        print(current_free_memory)
-        print(task['gpu_usage'])
+        print(f"Current GPU {gpu['index']} Free Memory", current_free_memory)
+        print(f"Estimated task {task['id']} GPU {gpu['index']} Usage", task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
             del task['gpu_usage']
-            print(task)
             response = requests.request("POST", url, headers=headers, data=json.dumps({
             "data": task
             }))
-            print(response)
+            print("POST Response", response)
         else:
             print("[!] GPU Memory Full")     
             finished_flag = False
