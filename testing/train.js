@@ -3,8 +3,18 @@ import { check } from 'k6';
 import exec from 'k6/execution';
 
 export const options = {
-  iterations: 1,
-  vus: 10
+  scenarios: {
+    contacts: {
+      executor: 'ramping-arrival-rate',
+      startRate: 1,
+      timeUnit: '30s',
+      preAllocatedVUs: 1,
+      maxVUs: 6,
+      stages: [
+        { target: 21, duration: '180s' },
+      ],
+    },
+  },
 };
 
 const parquets = {
@@ -17,13 +27,13 @@ const parquets = {
 }
 
 export default function () {
-  const { vu } = exec;
+  const { scenario } = exec;
   const learningRate = [0.001, 0.01, 0.0001]
   const resolution = [32, 64, 128]
   const evalBatch = 2 * Math.round(Math.random() * 2 + 2)
   let req = {}
 
-  if (vu.iterationInInstance % 10 < 5) {
+  if (scenario.iterationInTest % 2 === 0) {
     req = {
       type: 'text',
       params: JSON.stringify({
@@ -34,7 +44,6 @@ export default function () {
       }),
       file: http.file(parquets[Math.round(Math.random() * 2)], 'text.json')
     }
-    console.log(req.params)
   }
   else {
     req = {
@@ -47,7 +56,7 @@ export default function () {
         "learning_rate": learningRate[Math.round(Math.random() * 2)],
         "gradient_accumulation_steps": 1 * Math.round(Math.random() * 2 + 1)
       }),
-      file: vu.iterationInInstance < 7 ? http.file(parquets[20], '20_row.parquet') : vu.iterationInInstance < 9 ? http.file(parquets[50], '50_row.parquet') : http.file(parquets[100], '100_row.parquet')
+      file: scenario.iterationInTest < 7 ? http.file(parquets[20], '20_row.parquet') : scenario.iterationInTest < 9 ? http.file(parquets[50], '50_row.parquet') : http.file(parquets[100], '100_row.parquet')
     }
   }
 
