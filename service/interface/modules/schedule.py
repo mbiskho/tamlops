@@ -25,12 +25,12 @@ async def schedule_logic_min_min():
 
     # List to store tasks with their estimated times
     tasks_with_times = []
-    print(tasks)
+    print("Tasks from DB", tasks)
 
     for task in tasks:
         # Parse the JSON string to a dictionary
         params_dict = json.loads(task['params'])
-        print(task)
+        print("Single Task", task)
 
         if task['type'] == 'text':
             new_features = pd.DataFrame({
@@ -108,23 +108,25 @@ async def schedule_logic_min_min():
     'Content-Type': 'application/json'
     }
 
+    print("Allocated Tasks", allocated_tasks)
+
     # Send to DGX
     for task in allocated_tasks:
         check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
         current_gpu_state = check_gpu['response']
+        print("All GPU State", current_gpu_state)
         current_free_memory = 0
         for gpu in current_gpu_state:
              if gpu['index'] == task['gpu']:
                  current_free_memory = gpu['memory_free']
-        print(current_free_memory)
-        print(task['gpu_usage'])
+        print(f"Current GPU {gpu['index']} Free Memory", current_free_memory)
+        print(f"Estimated task {task['id']} GPU {gpu['index']} Usage", task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
             del task['gpu_usage']
-            print(task)
             response = requests.request("POST", url, headers=headers, data=json.dumps({
             "data": task
             }))
-            print(response)
+            print("POST Response", response)
         else:
             print("[!] GPU Memory Full")     
             finished_flag = False
