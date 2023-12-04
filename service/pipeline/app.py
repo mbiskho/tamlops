@@ -119,7 +119,7 @@ def process_text(
     command = [
             'sh', 
             'text.sh', 
-            f'{gpu}'
+            f'{gpu}',
             f'{per_device_train_batch_size}', 
             f'{per_device_eval_batch_size}', 
             f'{learning_rate}', 
@@ -139,7 +139,7 @@ def process_text(
         set_item(gpu, value)
 
     result = subprocess.run(command)
-    
+
     value = get_item(gpu)
     value = int(value) - 1
     set_item(gpu, value)
@@ -162,7 +162,7 @@ def process_image(
     command = [
             'sh', 
             'image.sh', 
-            f'{gpu}'
+            f'{gpu}',
             f'{resolution}', 
             f'{train_batch_size}', 
             f'{num_train_epochs}', 
