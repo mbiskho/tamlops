@@ -1,4 +1,4 @@
-from modules.database import get_from_db
+from modules.database import get_from_db, delete_all_from_table
 import pickle
 import pandas as pd
 import numpy as np
@@ -140,6 +140,8 @@ async def schedule_logic_min_min():
                     break
                 time.sleep(5)
 
+    res = await delete_all_from_table()
+    print(res)
     return {"error": False, "response": "Scheduling Finished"}
 
 async def schedule_logic_max_min():
@@ -190,13 +192,13 @@ async def schedule_logic_max_min():
             })
         elif task['type'] == 'image':
             new_features = pd.DataFrame({
-                'resolution': params_dict['resolution'],
-                'train_batch_size': params_dict['train_batch_size'],
-                'num_train_epochs': params_dict['num_train_epochs'],
-                'max_train_steps': params_dict['max_train_steps'],
-                'learning_rate': params_dict['learning_rate'],
-                'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
-                'file_size': task['size']
+                'resolution': [params_dict['resolution']],
+                'train_batch_size': [params_dict['train_batch_size']],
+                'num_train_epochs': [params_dict['num_train_epochs']],
+                'max_train_steps': [params_dict['max_train_steps']],
+                'learning_rate': [params_dict['learning_rate']],
+                'gradient_accumulation_steps': [params_dict['gradient_accumulation_steps']],
+                'file_size': [task['size']]
             })
 
              # Use the loaded model to predict the target variable for the new feature values
@@ -264,6 +266,10 @@ async def schedule_logic_max_min():
                     finished_flag = True
                     break
                 time.sleep(5)
+    
+    res = await delete_all_from_table()
+    print(res)
+    return {"error": False, "response": "Scheduling Finished"}
 
 async def send_post_request_async(session, url, payload, headers):
     print(payload)
@@ -331,6 +337,8 @@ async def schedule_logic_fcfs_burst(gpu_id):
         # Run all POST requests concurrently using asyncio.gather()
         await asyncio.gather(*post_requests)
 
+    res = await delete_all_from_table()
+    print(res)
     return {"error": False, "response": "Scheduling Finished"}
 
 
@@ -388,6 +396,8 @@ async def schedule_logic_fcfs_normal(gpu_id):
         response = requests.request("POST", url, headers=headers, data=payload)
         print(response)
 
+    res = await delete_all_from_table()
+    print(res)
     return {"error": False, "response": "Scheduling Finished"}
 
 
