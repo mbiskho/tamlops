@@ -115,12 +115,9 @@ async def schedule_logic_min_min():
         check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
         current_gpu_state = check_gpu['response']
         print("All GPU State", current_gpu_state)
-        current_free_memory = 0
-        for gpu in current_gpu_state:
-             if gpu['index'] == task['gpu']:
-                 current_free_memory = gpu['memory_free']
-        print(f"Current GPU {gpu['index']} Free Memory", current_free_memory)
-        print(f"Estimated task {task['id']} GPU {gpu['index']} Usage", task['gpu_usage'])
+        current_free_memory = current_gpu_state[task['gpu']]['memory_free']
+        print(f"Current GPU {task['gpu']} Free Memory", current_free_memory)
+        print(f"Estimated task {task['id']} GPU {task['gpu']} Usage", task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
             del task['gpu_usage']
             response = requests.request("POST", url, headers=headers, data=json.dumps({
@@ -131,11 +128,13 @@ async def schedule_logic_min_min():
             print("[!] GPU Memory Full")     
             finished_flag = False
             while finished_flag == False:
-                redis_value = get_redis_item(gpu['index'])
+                redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
                 if redis_value == 0:
                     del task['gpu_usage']
-                    send_post_request("http://127.0.0.1:6070/train-burst", {"data": task})
+                    response = requests.request("POST", url, headers=headers, data=json.dumps({
+                    "data": task
+                    }))
                     finished_flag = True
                     break
                 time.sleep(5)
@@ -242,12 +241,9 @@ async def schedule_logic_max_min():
     for task in allocated_tasks:
         check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
         current_gpu_state = check_gpu['response']
-        current_free_memory = 0
-        for gpu in current_gpu_state:
-             if gpu['index'] == task['gpu']:
-                 current_free_memory = gpu['memory_free']
-        print(f"Current GPU {gpu['index']} Free Memory", current_free_memory)
-        print(f"Estimated task {task['id']} GPU {gpu['index']} Usage", task['gpu_usage'])
+        current_free_memory = current_gpu_state[task['gpu']]['memory_free']
+        print(f"Current GPU {task['gpu']} Free Memory", current_free_memory)
+        print(f"Estimated task {task['id']} GPU {task['gpu']} Usage", task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
             del task['gpu_usage']
             response = requests.request("POST", url, headers=headers, data=json.dumps({
@@ -258,11 +254,13 @@ async def schedule_logic_max_min():
             print("[!] GPU Memory Full")     
             finished_flag = False
             while finished_flag == False:
-                redis_value = get_redis_item(gpu['index'])
+                redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
                 if redis_value == 0:
                     del task['gpu_usage']
-                    send_post_request("http://127.0.0.1:6070/train-burst", {"data": task})
+                    response = requests.request("POST", url, headers=headers, data=json.dumps({
+                    "data": task
+                    }))
                     finished_flag = True
                     break
                 time.sleep(5)
