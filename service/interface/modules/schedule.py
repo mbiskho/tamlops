@@ -123,17 +123,18 @@ async def schedule_logic_min_min():
             "data": task
             }))
             print(response)
-        # else:
-        #     print("[!] GPU Memory Full")     
-        #     finished_flag = False
-        #     while finished_flag == False:
-        #         redis_value = get_redis_item(gpu['index'])
-        #         if redis_value == 0:
-        #             del task['gpu_usage']
-        #             send_post_request("http://127.0.0.1:6070/train", {"data": task})
-        #             finished_flag = True
-        #             break
-        #         time.sleep(5)
+        else:
+            print("[!] GPU Memory Full")     
+            finished_flag = False
+            while finished_flag == False:
+                redis_value = get_redis_item(gpu['index'])
+                print("Redis Value:" , redis_value)
+                if redis_value == 0:
+                    del task['gpu_usage']
+                    send_post_request("http://127.0.0.1:6070/train", {"data": task})
+                    finished_flag = True
+                    break
+                time.sleep(5)
 
     return {"error": False, "response": "Scheduling Finished"}
 
@@ -248,17 +249,18 @@ async def schedule_logic_max_min():
             "data": task
             }))
             print(response)
-        # else:
-        #     print("[!] GPU Memory Full")     
-        #     finished_flag = False
-        #     while finished_flag == False:
-        #         redis_value = get_redis_item(gpu['index'])
-        #         if redis_value == 0:
-        #             del task['gpu_usage']
-        #             send_post_request("http://127.0.0.1:6070/train", {"data": task})
-        #             finished_flag = True
-        #             break
-        #         time.sleep(5)
+        else:
+            print("[!] GPU Memory Full")     
+            finished_flag = False
+            while finished_flag == False:
+                redis_value = get_redis_item(gpu['index'])
+                print("Redis Value:" , redis_value)
+                if redis_value == 0:
+                    del task['gpu_usage']
+                    send_post_request("http://127.0.0.1:6070/train", {"data": task})
+                    finished_flag = True
+                    break
+                time.sleep(5)
 
 async def send_post_request_async(session, url, payload, headers):
     print(payload)
@@ -285,19 +287,38 @@ async def schedule_logic_fcfs_burst(gpu_id):
 
             url = "http://127.0.0.1:6070/train-burst"
 
-            payload = json.dumps({
-            "data": {
-                "id": task['id'],
-                "gpu": gpu_id,
-                "type": task['type'],
-                "file": task['file'],
-                "param": {
-                "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
-                "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
-                "learning_rate": params_dict['learning_rate'],
-                "num_train_epochs": params_dict['num_train_epochs']
+            payload = ''
+            if task['type'] == 'text':
+                payload = json.dumps({
+                "data": {
+                    "id": task['id'],
+                    "gpu": gpu_id,
+                    "type": task['type'],
+                    "file": task['file'],
+                    "param": {
+                        "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+                        "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+                        "learning_rate": params_dict['learning_rate'],
+                        "num_train_epochs": params_dict['num_train_epochs']
+                    }
                 }
-            }
+            })
+            elif task['type'] == 'image':
+                payload = json.dumps({
+                "data": {
+                    "id": task['id'],
+                    "gpu": gpu_id,
+                    "type": task['type'],
+                    "file": task['file'],
+                    "param": {
+                            'resolution': params_dict['resolution'],
+                            'train_batch_size': params_dict['train_batch_size'],
+                            'num_train_epochs': params_dict['num_train_epochs'],
+                            'max_train_steps': params_dict['max_train_steps'],
+                            'learning_rate': params_dict['learning_rate'],
+                            'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
+                    }
+                }
             })
             headers = {
             'Content-Type': 'application/json'
@@ -324,20 +345,41 @@ async def schedule_logic_fcfs_normal(gpu_id):
 
         url = "http://127.0.0.1:6070/train"
 
-        payload = json.dumps({
-        "data": {
-            "id": task['id'],
-            "gpu": gpu_id,
-            "type": task['type'],
-            "file": task['file'],
-            "param": {
-            "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
-            "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
-            "learning_rate": params_dict['learning_rate'],
-            "num_train_epochs": params_dict['num_train_epochs']
+        payload = ''
+        if task['type'] == 'text':
+            payload = json.dumps({
+            "data": {
+                "id": task['id'],
+                "gpu": gpu_id,
+                "type": task['type'],
+                "file": task['file'],
+                "param": {
+                    "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+                    "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+                    "learning_rate": params_dict['learning_rate'],
+                    "num_train_epochs": params_dict['num_train_epochs']
+                }
             }
-        }
         })
+        elif task['type'] == 'image':
+            payload = json.dumps({
+            "data": {
+                "id": task['id'],
+                "gpu": gpu_id,
+                "type": task['type'],
+                "file": task['file'],
+                "param": {
+                        'resolution': params_dict['resolution'],
+                        'train_batch_size': params_dict['train_batch_size'],
+                        'num_train_epochs': params_dict['num_train_epochs'],
+                        'max_train_steps': params_dict['max_train_steps'],
+                        'learning_rate': params_dict['learning_rate'],
+                        'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
+                }
+            }
+        })
+
+
         headers = {
         'Content-Type': 'application/json'
         }
