@@ -22,10 +22,10 @@ const IMAGE_DATASETS = new SharedArray('image-prompts', function () {
 });
 
 export default function () {
-  const { vu } = exec;
+  const { scenario } = exec;
   let data = {}
 
-  if (vu.iterationInInstance % 600 < 540) {
+  if (scenario.iterationInTest % 600 < 540) {
     let size = TEXT_DATASETS.length
     data = {
       type: 'text',
