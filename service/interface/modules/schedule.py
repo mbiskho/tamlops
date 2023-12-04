@@ -25,10 +25,12 @@ async def schedule_logic_min_min():
 
     # List to store tasks with their estimated times
     tasks_with_times = []
+    print(tasks)
 
     for task in tasks:
         # Parse the JSON string to a dictionary
         params_dict = json.loads(task['params'])
+        print(task)
 
         if task['type'] == 'text':
             new_features = pd.DataFrame({
@@ -60,13 +62,13 @@ async def schedule_logic_min_min():
             })
         elif task['type'] == 'image':
             new_features = pd.DataFrame({
-                'resolution': params_dict['resolution'],
-                'train_batch_size': params_dict['train_batch_size'],
-                'num_train_epochs': params_dict['num_train_epochs'],
-                'max_train_steps': params_dict['max_train_steps'],
-                'learning_rate': params_dict['learning_rate'],
-                'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
-                'file_size': task['size']
+                'resolution': [params_dict['resolution']],
+                'train_batch_size': [params_dict['train_batch_size']],
+                'num_train_epochs': [params_dict['num_train_epochs']],
+                'max_train_steps': [params_dict['max_train_steps']],
+                'learning_rate': [params_dict['learning_rate']],
+                'gradient_accumulation_steps': [params_dict['gradient_accumulation_steps']],
+                'file_size': [task['size']]
             })
 
              # Use the loaded model to predict the target variable for the new feature values
