@@ -1,5 +1,4 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 import argparse
 import numpy as np
@@ -292,7 +291,7 @@ def parse_args():
 
 def main():
     inp = parse_args()
-
+    print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
     data = {
         "file": inp.file,
         "param": {
@@ -922,22 +921,18 @@ def main():
         pipeline.save_pretrained(args['output_dir'])
 
     save_model_card(args, repo_id, [], repo_folder=args['output_dir'])
-    upload_folder(
-        repo_id=repo_id,
-        folder_path=args['output_dir'],
-        commit_message="End of training",
-        ignore_patterns=["step_*", "epoch_*"],
-        token=args['hub_token']
-    )
+    # upload_folder(
+    #     repo_id=repo_id,
+    #     folder_path=args['output_dir'],
+    #     commit_message="End of training",
+    #     ignore_patterns=["step_*", "epoch_*"],
+    #     token=args['hub_token']
+    # )
     print("[!] Uploaded to Registry")
     accelerator.end_training()
     # End Time of All
     end_all = (datetime.now() - start_all)
     print("[!] Time Overall: ", end_all)
-
-    wandb.log({"time_trainning": end_trainning})
-    wandb.log({"time_all": end_all})
-
     wandb.finish()
 
 

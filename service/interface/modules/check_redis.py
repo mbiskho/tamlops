@@ -9,3 +9,7 @@ def set_redis_item(key, value):
 def get_redis_item(key):
     value = r.get(key)
     return value.decode('utf-8') if value else None
+
+def is_gpus_empty(gpu1, gpu2):
+    gpu1_state = r.get(gpu1)
+    gpu2_state = r.get(gpu2)

@@ -61,6 +61,8 @@ WORKDIR /app
 RUN mkdir -p /etc/pipeline.d
 COPY run.sh /etc/pipeline.d/run.sh
 RUN chmod +x /etc/pipeline.d/run.sh
+RUN chmod +x image.sh
+RUN chmod +x text.sh
 
 # install prometheus + node-exporter
 # RUN mkdir -p /scripts

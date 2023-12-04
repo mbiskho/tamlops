@@ -1,11 +1,11 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "5"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 import argparse
-import evaluate
-import nltk
+# import evaluate
+# import nltk
 import numpy as np
-from nltk.tokenize import sent_tokenize
+# from nltk.tokenize import sent_tokenize
 import joblib
 from google.cloud import storage
 from transformers import T5Tokenizer, T5ForConditionalGeneration
@@ -89,7 +89,7 @@ import csv
 import os
 import psutil
 import wandb
-nltk.download("punkt")
+# nltk.download("punkt")
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Simple example of a training script.")
@@ -143,20 +143,10 @@ def parse_args():
 
 def main():
     # Metric
-    metric = evaluate.load("rouge")
+    # metric = evaluate.load("rouge")
 
     # Input from args
     inp = parse_args()
-
-    data = {
-        "file": inp.file,
-        "param": {
-        "per_device_train_batch_size": inp.per_device_train_batch_size,
-        "per_device_eval_batch_size": inp.per_device_eval_batch_size,
-        "learning_rate": inp.learning_rate,
-        "num_train_epochs": inp.num_train_epochs,
-        }
-    }
 
     wandb.init(
         project="tamlops-text2text",
@@ -169,38 +159,49 @@ def main():
         "id": inp.id
         }
     )
+    print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
+
+    data = {
+        "file": inp.file,
+        "param": {
+        "per_device_train_batch_size": inp.per_device_train_batch_size,
+        "per_device_eval_batch_size": inp.per_device_eval_batch_size,
+        "learning_rate": inp.learning_rate,
+        "num_train_epochs": inp.num_train_epochs,
+        }
+    }
 
     # Start Time of All
     start_all = datetime.now()
 
-    # helper function to postprocess text
-    def postprocess_text(preds, labels):
-        preds = [pred.strip() for pred in preds]
-        labels = [label.strip() for label in labels]
+    # # helper function to postprocess text
+    # def postprocess_text(preds, labels):
+    #     preds = [pred.strip() for pred in preds]
+    #     labels = [label.strip() for label in labels]
 
-        # rougeLSum expects newline after each sentence
-        preds = ["\n".join(sent_tokenize(pred)) for pred in preds]
-        labels = ["\n".join(sent_tokenize(label)) for label in labels]
+    #     # rougeLSum expects newline after each sentence
+    #     preds = ["\n".join(sent_tokenize(pred)) for pred in preds]
+    #     labels = ["\n".join(sent_tokenize(label)) for label in labels]
 
-        return preds, labels
+    #     return preds, labels
 
-    def compute_metrics(eval_preds):
-        preds, labels = eval_preds
-        if isinstance(preds, tuple):
-            preds = preds[0]
-        decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
-        # Replace -100 in the labels as we can't decode them.
-        labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
-        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+    # def compute_metrics(eval_preds):
+    #     preds, labels = eval_preds
+    #     if isinstance(preds, tuple):
+    #         preds = preds[0]
+    #     decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+    #     # Replace -100 in the labels as we can't decode them.
+    #     labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+    #     decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
 
-        # Some simple post-processing
-        decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
+    #     # Some simple post-processing
+    #     decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
-        result = metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
-        result = {k: round(v * 100, 4) for k, v in result.items()}
-        prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in preds]
-        result["gen_len"] = np.mean(prediction_lens)
-        return result
+    #     result = metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
+    #     result = {k: round(v * 100, 4) for k, v in result.items()}
+    #     prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in preds]
+    #     result["gen_len"] = np.mean(prediction_lens)
+    #     return result
 
     def write_to_csv(data, csv_file_path):
         file_exists = os.path.isfile(csv_file_path)
@@ -261,7 +262,6 @@ def main():
         inputs = ["summarize: " + item for item in sample["dialogue"]]
         model_inputs = tokenizer(inputs, max_length=max_source_length, padding=padding, truncation=True)
         labels = tokenizer(text_target=sample["summary"], max_length=max_target_length, padding=padding, truncation=True)
-        print(sample)
         if padding == "max_length":
             labels["input_ids"] = [
                 [(l if l != tokenizer.pad_token_id else -100) for l in label] for label in labels["input_ids"]
@@ -310,16 +310,13 @@ def main():
     # Sequences longer than this will be truncated, sequences shorter will be padded.
     tokenized_inputs = concatenate_datasets([dataset['train'], dataset['test']]).map(lambda x: tokenizer(x["dialogue"], truncation=True), batched=True, remove_columns=["dialogue", "summary"])
     max_source_length = max([len(x) for x in tokenized_inputs["input_ids"]])
-    print(f"Max source length: {max_source_length}")
 
     # The maximum total sequence length for target text after tokenization.
     # Sequences longer than this will be truncated, sequences shorter will be padded."
     tokenized_targets = concatenate_datasets([dataset['train'], dataset['test']]).map(lambda x: tokenizer(x["summary"], truncation=True), batched=True, remove_columns=["dialogue", "summary"])
     max_target_length = max([len(x) for x in tokenized_targets["input_ids"]])
-    print(f"Max target length: {max_target_length}")
 
     tokenized_dataset = dataset.map(preprocess_function, batched=True, remove_columns=["dialogue", "summary", "id"])
-    print(f"Keys of tokenized dataset: {list(tokenized_dataset['train'].features)}")
 
     # load model from the hub
     model = AutoModelForSeq2SeqLM.from_pretrained(model_id)
@@ -349,9 +346,10 @@ def main():
         save_total_limit=2,
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
+        use_cpu=False,
 
         # push to hub parameters
-        report_to="tensorboard",
+        # report_to="tensorboard",
         push_to_hub=False,
         hub_strategy="every_save",
         hub_model_id=repository_id,
@@ -365,7 +363,7 @@ def main():
         data_collator=data_collator,
         train_dataset=tokenized_dataset["train"],
         eval_dataset=tokenized_dataset["test"],
-        compute_metrics=compute_metrics,
+        # compute_metrics=compute_metrics,
     )
 
     # Start training
@@ -374,7 +372,7 @@ def main():
     end_trainning = (datetime.now() - start_trainning)
 
     print("[!] Time Trainnig: ", end_trainning)
-    trainer.push_to_hub()
+    # trainer.push_to_hub()
 
 
     # End Time of All
@@ -382,14 +380,10 @@ def main():
 
     result = trainer.evaluate()
     print("Metric \n", result)
-    result['time_trainning'] = end_trainning
-    result['time_all'] = end_all
+    print(result)
     wandb.log(result)
 
     wandb.finish()
 
 
-try:
-    main()
-except:
-    print("Error")
+main()
