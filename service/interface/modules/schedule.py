@@ -190,13 +190,13 @@ async def schedule_logic_max_min():
             })
         elif task['type'] == 'image':
             new_features = pd.DataFrame({
-                'resolution': params_dict['resolution'],
-                'train_batch_size': params_dict['train_batch_size'],
-                'num_train_epochs': params_dict['num_train_epochs'],
-                'max_train_steps': params_dict['max_train_steps'],
-                'learning_rate': params_dict['learning_rate'],
-                'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
-                'file_size': task['size']
+                'resolution': [params_dict['resolution']],
+                'train_batch_size': [params_dict['train_batch_size']],
+                'num_train_epochs': [params_dict['num_train_epochs']],
+                'max_train_steps': [params_dict['max_train_steps']],
+                'learning_rate': [params_dict['learning_rate']],
+                'gradient_accumulation_steps': [params_dict['gradient_accumulation_steps']],
+                'file_size': [task['size']]
             })
 
              # Use the loaded model to predict the target variable for the new feature values
