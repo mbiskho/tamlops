@@ -101,7 +101,7 @@ async def schedule_logic_min_min():
     # Allocate it to the right GPU
     allocated_tasks = allocate_gpu(sorted_tasks, dgx_gpu['response'])
 
-    url = "http://127.0.0.1:6070/train"
+    url = "http://127.0.0.1:6070/train-burst"
     headers = {
     'Content-Type': 'application/json'
     }
@@ -131,7 +131,7 @@ async def schedule_logic_min_min():
                 print("Redis Value:" , redis_value)
                 if redis_value == 0:
                     del task['gpu_usage']
-                    send_post_request("http://127.0.0.1:6070/train", {"data": task})
+                    send_post_request("http://127.0.0.1:6070/train-burst", {"data": task})
                     finished_flag = True
                     break
                 time.sleep(5)
@@ -227,7 +227,7 @@ async def schedule_logic_max_min():
     # Allocate it to the right GPU
     allocated_tasks = allocate_gpu(sorted_tasks, dgx_gpu['response'])
 
-    url = "http://127.0.0.1:6070/train"
+    url = "http://127.0.0.1:6070/train-burst"
     headers = {
     'Content-Type': 'application/json'
     }
@@ -257,7 +257,7 @@ async def schedule_logic_max_min():
                 print("Redis Value:" , redis_value)
                 if redis_value == 0:
                     del task['gpu_usage']
-                    send_post_request("http://127.0.0.1:6070/train", {"data": task})
+                    send_post_request("http://127.0.0.1:6070/train-burst", {"data": task})
                     finished_flag = True
                     break
                 time.sleep(5)

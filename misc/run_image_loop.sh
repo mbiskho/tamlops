@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define parameters for the loop
-resolution=(256 384)
+resolution=(64 384)
 train_size=(2 4)
 epoch=(2 4)
 max_train_steps=(100 250)
