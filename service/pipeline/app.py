@@ -138,11 +138,8 @@ def process_text(
         value = int(value) + 1
         set_item(gpu, value)
 
-    result = subprocess.run(command, capture_output=True, text=True, check=True)
-    print("Subprocess output (stdout):", result.stdout)
-    print("Subprocess output (stderr):", result.stderr)
-
-
+    result = subprocess.run(command)
+    
     value = get_item(gpu)
     value = int(value) - 1
     set_item(gpu, value)
@@ -185,10 +182,7 @@ def process_image(
         value = int(value) + 1
         set_item(gpu, value)
 
-    result = subprocess.run(command, capture_output=True, text=True, check=True)
-    print("Subprocess output (stdout):", result.stdout)
-    print("Subprocess output (stderr):", result.stderr)
-
+    result = subprocess.run(command)
 
     value = get_item(gpu)
     value = int(value) - 1
