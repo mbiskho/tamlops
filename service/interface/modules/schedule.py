@@ -283,7 +283,6 @@ async def schedule_logic_fcfs_burst(gpu_id):
             print(task)
             params_dict = json.loads(task['params'])
             print(task['id'])
-            print(params_dict['per_device_train_batch_size'])
 
             url = "http://127.0.0.1:6070/train-burst"
 
