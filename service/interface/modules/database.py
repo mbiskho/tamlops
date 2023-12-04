@@ -24,3 +24,15 @@ async def get_from_db():
     finally:
         await conn.close()
     return fetched_rows
+
+async def delete_all_from_table():
+    print(DB)
+    conn = await asyncpg.connect(DB)
+    try:
+        await conn.execute("DELETE FROM training_queue")  # Replace 'your_table_name' with your actual table name
+        return {"message": "All items deleted from the table successfully"}
+    except asyncpg.PostgresError as e:
+        return {"error": f"Error deleting items: {e}"}
+    finally:
+        await conn.close()
+        return {"message": "Data has been deleted"}
