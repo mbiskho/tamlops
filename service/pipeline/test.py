@@ -1,13 +1,13 @@
 import subprocess
 
 command = [
-            'sh', 
-            'text.sh', 
-            f'5'
+            'sh',
+            'text.sh',
+            f'2',
             f'1', 
             f'1', 
             f'0.0001', 
-            f'10', 
+            f'4', 
             f'https://storage.googleapis.com/training-dataset-tamlops/small.json', 
             f'8012'
 ]
@@ -26,8 +26,6 @@ command = [
 #             f'11293'
 # ]
 
-result = subprocess.run(command, capture_output=True, text=True, check=True)
-print("Subprocess output (stdout):", result.stdout)
-print("Subprocess output (stderr):", result.stderr)
+result = subprocess.run(command)
 
 
