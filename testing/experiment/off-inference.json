@@ -64,7 +64,7 @@
             "provider": {
                 "type": "process",
                 "path": "sleep",
-                "arguments": "60"
+                "arguments": "30"
             }
         },
         {
@@ -83,36 +83,12 @@
         },
         {
             "type": "action",
-            "name": "Sleep to give time for turning off the other Inference pod",
+            "name": "Sleep to give time for turning on the Inference pods",
             "background": false,
             "provider": {
                 "type": "process",
                 "path": "sleep",
-                "arguments": "60"
-            }
-        },
-        {
-            "type": "action",
-            "name": "Run load testing",
-            "background": false,
-            "provider": {
-                "type": "python",
-                "module": "chaosk6.actions",
-                "func": "run_script",
-                "arguments": {
-                    "script_path": "load-testing.js",
-                    "duration": "3m"
-                }
-            }
-        },
-        {
-            "type": "action",
-            "name": "Sleep to give time for turning on all Inference pods",
-            "background": false,
-            "provider": {
-                "type": "process",
-                "path": "sleep",
-                "arguments": "60"
+                "arguments": "30"
             }
         }
     ],

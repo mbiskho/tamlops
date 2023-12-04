@@ -70,12 +70,12 @@
     "method": [
         {
             "type": "action",
-            "name": "Sleep to give time for turning off the other Training pod",
+            "name": "Sleep to give time for turning off the Training pod",
             "background": false,
             "provider": {
                 "type": "process",
                 "path": "sleep",
-                "arguments": "60"
+                "arguments": "30"
             }
         },
         {
@@ -99,7 +99,7 @@
             "provider": {
                 "type": "process",
                 "path": "sleep",
-                "arguments": "60"
+                "arguments": "30"
             }
         }
     ],
