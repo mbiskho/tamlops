@@ -115,43 +115,17 @@ def process_text(
         learning_rate,
         num_train_epochs
 ):
-    used = ""
-    if(gpu == "0"):
-        print("[!] Using GPU 0")
-        used = "0_text.py"
-    elif(gpu == "1"):
-        print("[!] Using GPU 1")
-        used = "1_text.py"
-    elif(gpu == "2"):
-        print("[!] Using GPU 2")
-        used = "2_text.py"
-    elif(gpu == "3"):
-        print("[!] Using GPU 3")
-        used = "3_text.py"
-    elif(gpu == "4"):
-        print("[!] Using GPU 4")
-        used = "4_text.py"
-    elif(gpu == "5"):
-        print("[!] Using GPU 5")
-        used = "5_text.py"
-    elif(gpu == "6"):
-        print("[!] Using GPU 6")
-        used = "6_text.py"
-    elif(gpu == "7"):
-        print("[!] Using GPU 7")
-        used = "7_text.py"
-    else:
-        print("[!] Using GPU 5")
-        used = "5_text.py"
+    print(f"[!] Using GPU {gpu}")
     command = [
-            'python3',
-            used,
-            f"--per_device_train_batch_size={per_device_train_batch_size}",
-            f"--per_device_eval_batch_size={per_device_eval_batch_size}",
-            f"--learning_rate={learning_rate}",
-            f"--num_train_epochs={num_train_epochs}",
-            f"--file={file}",
-            f"--id={id}"
+            'sh', 
+            'text.sh', 
+            f'{gpu}'
+            f'{per_device_train_batch_size}', 
+            f'{per_device_eval_batch_size}', 
+            f'{learning_rate}', 
+            f'{num_train_epochs}', 
+            f'{file}', 
+            f'{id}'
     ]
 
     # Run
@@ -187,48 +161,20 @@ def process_image(
         gradient_accumulation_steps,
         learning_rate
 ):
-    used = ""
-    if(gpu == "0"):
-        print("[!] Using GPU 0")
-        used = "0_image.py"
-    elif(gpu == "1"):
-        print("[!] Using GPU 1")
-        used = "1_image.py"
-    elif(gpu == "2"):
-        print("[!] Using GPU 2")
-        used = "2_image.py"
-    elif(gpu == "3"):
-        print("[!] Using GPU 3")
-        used = "3_image.py"
-    elif(gpu == "4"):
-        print("[!] Using GPU 4")
-        used = "4_image.py"
-    elif(gpu == "5"):
-        print("[!] Using GPU 5")
-        used = "5_image.py"
-    elif(gpu == "6"):
-        print("[!] Using GPU 6")
-        used = "6_image.py"
-    elif(gpu == "7"):
-        print("[!] Using GPU 7")
-        used = "7_image.py"
-    else:
-        print("[!] Using GPU 5")
-        used = "5_image.py"
-
+    print(f"[!] Using GPU {gpu}")
     command = [
-            'python3',
-            used,
-            f"--resolution={resolution}",
-            f"--train_batch_size={train_batch_size}",
-            f"--num_train_epochs={num_train_epochs}",
-            f"--max_train_steps={max_train_steps}",
-            f"--learning_rate={learning_rate}",
-            f"--gradient_accumulation_steps={gradient_accumulation_steps}", 
-            f"--file={file}",
-            f"--id={id}"
+            'sh', 
+            'image.sh', 
+            f'{gpu}'
+            f'{resolution}', 
+            f'{train_batch_size}', 
+            f'{num_train_epochs}', 
+            f'{max_train_steps}', 
+            f'{learning_rate}', 
+            f'{gradient_accumulation_steps}', 
+            f'{file}',
+            f'{id}'
     ]
-
     # Run
     value = get_item(gpu)
     if(value == None):

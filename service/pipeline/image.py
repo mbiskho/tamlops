@@ -1,5 +1,4 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "6"
 
 import argparse
 import numpy as np
@@ -292,7 +291,7 @@ def parse_args():
 
 def main():
     inp = parse_args()
-
+    print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
     data = {
         "file": inp.file,
         "param": {
@@ -934,10 +933,6 @@ def main():
     # End Time of All
     end_all = (datetime.now() - start_all)
     print("[!] Time Overall: ", end_all)
-
-    wandb.log({"time_trainning": end_trainning})
-    wandb.log({"time_all": end_all})
-
     wandb.finish()
 
 

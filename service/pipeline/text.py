@@ -1,11 +1,11 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 import argparse
-import evaluate
-import nltk
+# import evaluate
+# import nltk
 import numpy as np
-from nltk.tokenize import sent_tokenize
+# from nltk.tokenize import sent_tokenize
 import joblib
 from google.cloud import storage
 from transformers import T5Tokenizer, T5ForConditionalGeneration
@@ -89,7 +89,7 @@ import csv
 import os
 import psutil
 import wandb
-nltk.download("punkt")
+# nltk.download("punkt")
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Simple example of a training script.")
@@ -143,20 +143,10 @@ def parse_args():
 
 def main():
     # Metric
-    metric = evaluate.load("rouge")
+    # metric = evaluate.load("rouge")
 
     # Input from args
     inp = parse_args()
-
-    data = {
-        "file": inp.file,
-        "param": {
-        "per_device_train_batch_size": inp.per_device_train_batch_size,
-        "per_device_eval_batch_size": inp.per_device_eval_batch_size,
-        "learning_rate": inp.learning_rate,
-        "num_train_epochs": inp.num_train_epochs,
-        }
-    }
 
     wandb.init(
         project="tamlops-text2text",
@@ -169,38 +159,49 @@ def main():
         "id": inp.id
         }
     )
+    print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
+
+    data = {
+        "file": inp.file,
+        "param": {
+        "per_device_train_batch_size": inp.per_device_train_batch_size,
+        "per_device_eval_batch_size": inp.per_device_eval_batch_size,
+        "learning_rate": inp.learning_rate,
+        "num_train_epochs": inp.num_train_epochs,
+        }
+    }
 
     # Start Time of All
     start_all = datetime.now()
 
-    # helper function to postprocess text
-    def postprocess_text(preds, labels):
-        preds = [pred.strip() for pred in preds]
-        labels = [label.strip() for label in labels]
+    # # helper function to postprocess text
+    # def postprocess_text(preds, labels):
+    #     preds = [pred.strip() for pred in preds]
+    #     labels = [label.strip() for label in labels]
 
-        # rougeLSum expects newline after each sentence
-        preds = ["\n".join(sent_tokenize(pred)) for pred in preds]
-        labels = ["\n".join(sent_tokenize(label)) for label in labels]
+    #     # rougeLSum expects newline after each sentence
+    #     preds = ["\n".join(sent_tokenize(pred)) for pred in preds]
+    #     labels = ["\n".join(sent_tokenize(label)) for label in labels]
 
-        return preds, labels
+    #     return preds, labels
 
-    def compute_metrics(eval_preds):
-        preds, labels = eval_preds
-        if isinstance(preds, tuple):
-            preds = preds[0]
-        decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
-        # Replace -100 in the labels as we can't decode them.
-        labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
-        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+    # def compute_metrics(eval_preds):
+    #     preds, labels = eval_preds
+    #     if isinstance(preds, tuple):
+    #         preds = preds[0]
+    #     decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+    #     # Replace -100 in the labels as we can't decode them.
+    #     labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+    #     decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
 
-        # Some simple post-processing
-        decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
+    #     # Some simple post-processing
+    #     decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
-        result = metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
-        result = {k: round(v * 100, 4) for k, v in result.items()}
-        prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in preds]
-        result["gen_len"] = np.mean(prediction_lens)
-        return result
+    #     result = metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
+    #     result = {k: round(v * 100, 4) for k, v in result.items()}
+    #     prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in preds]
+    #     result["gen_len"] = np.mean(prediction_lens)
+    #     return result
 
     def write_to_csv(data, csv_file_path):
         file_exists = os.path.isfile(csv_file_path)
@@ -345,9 +346,10 @@ def main():
         save_total_limit=2,
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
+        use_cpu=False,
 
         # push to hub parameters
-        report_to="tensorboard",
+        # report_to="tensorboard",
         push_to_hub=False,
         hub_strategy="every_save",
         hub_model_id=repository_id,
@@ -361,7 +363,7 @@ def main():
         data_collator=data_collator,
         train_dataset=tokenized_dataset["train"],
         eval_dataset=tokenized_dataset["test"],
-        compute_metrics=compute_metrics,
+        # compute_metrics=compute_metrics,
     )
 
     # Start training
@@ -378,14 +380,10 @@ def main():
 
     result = trainer.evaluate()
     print("Metric \n", result)
-    result['time_trainning'] = end_trainning
-    result['time_all'] = end_all
+    print(result)
     wandb.log(result)
 
     wandb.finish()
 
 
-try:
-    main()
-except:
-    print("Error")
+main()
