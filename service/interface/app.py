@@ -49,9 +49,9 @@ async def inference(requ: Request):
     }
 
     if typ == "image":
-        URL = "http://127.0.0.1:6065/inference-image"
+        URL = "http://127.0.0.1:6070/inference-image"
     else:
-        URL = "http://127.0.0.1:6065/inference-text"
+        URL = "http://127.0.0.1:6070/inference-text"
 
     response = requests.request("POST", URL, headers=headers, data=payload) 
     res = response.text
@@ -73,9 +73,9 @@ async def inference_burst(requ: Request):
     }
 
     if typ == "image":
-        URL = "http://127.0.0.1:6065/inference-image-burst"
+        URL = "http://127.0.0.1:6070/inference-image-burst"
     else:
-        URL = "http://127.0.0.1:6065/inference-text-burst"
+        URL = "http://127.0.0.1:6070/inference-text-burst"
 
     response = requests.request("POST", URL, headers=headers, data=payload) 
     res = response.text
