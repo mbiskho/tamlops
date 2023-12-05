@@ -61,7 +61,7 @@ async def text(requests: Request):
     print('Request \n', req)
     print("[!] Inference Text")
     print("Text: ", text)
-    th = threading.Thread(target=inference_text_burst, args=(text))
+    th = threading.Thread(target=inference_text_burst, args=(text, ""))
     th.start()
     return "OK"
 
@@ -73,7 +73,7 @@ async def image(requests: Request):
     print('Request \n', req)
     print("[!] Inference Image")
     print("Text: ", text)
-    th = threading.Thread(target=inference_image_burst, args=(text))
+    th = threading.Thread(target=inference_image_burst, args=(text, ""))
     th.start()
     return None
 
