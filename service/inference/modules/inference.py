@@ -44,7 +44,7 @@ async def inference_text(text):
         print("Error occurred")
         return ""
     
-def inference_image_burst(text):
+def inference_image_burst(text, pp):
     model_id = "stabilityai/stable-diffusion-2-1-base"
     scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
     pipe = StableDiffusionPipeline.from_pretrained(model_id, scheduler=scheduler, torch_dtype=torch.float16)
@@ -56,7 +56,7 @@ def inference_image_burst(text):
     image_bytes = byte_stream.getvalue()
     return image_bytes
 
-def inference_text_burst(text):
+def inference_text_burst(text, pp):
     tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
     model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base", device_map="auto")
 

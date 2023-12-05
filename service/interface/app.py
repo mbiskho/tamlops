@@ -22,16 +22,23 @@ async def health_svc():
     return {"error": False, "response": "Iam Healty"}
 
 @app.post("/training")
-async def training(file: UploadFile = File(...), type: str = Form(...), params: str = Form(...)):  
-    file_url = await upload_to_gcs(file)
+async def training(file: UploadFile = File(...), type: str = Form(...), params: str = Form(...)):
+    try:
+        file_url = await upload_to_gcs(file)
 
-    file.file.seek(0, 2)
-    file_size = file.file.tell()
-    file.file.seek(0)
+        file.file.seek(0, 2)
+        file_size = file.file.tell()
+        file.file.seek(0)
 
-    await save_training_db(type, file_url, file_size, params)
-  
-    return {"error": False, "response": f"Training submitted successfully", "fileURL": file_url}
+        await save_training_db(type, file_url, file_size, params)
+        
+        return {
+            "error": False,
+            "response": f"Training submitted successfully",
+            "fileURL": file_url
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/inference", response_class=JSONResponse)
 async def inference(requ: Request):

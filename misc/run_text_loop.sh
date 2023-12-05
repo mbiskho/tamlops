@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Define parameters for the loop
+# Mendefinisikan parameter
 learning_rates=(0.0001 0.001 0.01)
 train_sizes=(2 4 8 16)
 batch_sizes=(2 4 8 16)
 epochs=(2 6 10)
 num_datasets=(50 100 200 400 800)
 
-# Loop through combinations of parameters
+# Looping Training
 for lr in "${learning_rates[@]}"; do
     for ts in "${train_sizes[@]}"; do
         for bs in "${batch_sizes[@]}"; do
