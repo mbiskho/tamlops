@@ -7,9 +7,9 @@ import { SharedArray } from 'k6/data';
 export const options = {
   vus: 0,
   stages: [
-    { duration: '30s', target: 600 },
+    { duration: '60s', target: 600 },
     { duration: '120s', target: 600 },
-    { duration: '30s', target: 0 }
+    { duration: '60s', target: 0 }
   ],
 };
 
