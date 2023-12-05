@@ -64,7 +64,7 @@
             "provider": {
                 "type": "process",
                 "path": "sleep",
-                "arguments": "30"
+                "arguments": "60"
             }
         },
         {
@@ -77,7 +77,7 @@
                 "func": "run_script",
                 "arguments": {
                     "script_path": "load-testing.js",
-                    "duration": "4m"
+                    "duration": "25m"
                 }
             },
             "controls": [
@@ -99,7 +99,7 @@
             "provider": {
                 "type": "process",
                 "path": "sleep",
-                "arguments": "30"
+                "arguments": "60"
             }
         }
     ],

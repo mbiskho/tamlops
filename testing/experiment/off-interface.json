@@ -76,7 +76,7 @@
                 "func": "run_script",
                 "arguments": {
                     "script_path": "load-testing.js --out experiment/load-off-inteface.csv",
-                    "duration": "4m"
+                    "duration": "25m"
                 }
             },
             "controls": [
