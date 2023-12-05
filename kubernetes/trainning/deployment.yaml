@@ -19,14 +19,20 @@ spec:
       containers:
         - name: bismakhomeini-trainning
           image: "mbiskho/tamlops-trainning" 
-          livenessProbe:
-            initialDelaySeconds: 2
-            periodSeconds: 5
-            httpGet:
-              path: /health
-              port: 8000
           command: ["/bin/sh"]
           args: ["-c", "chmod +x run.sh; ./run.sh"]
           volumeMounts:
             - mountPath: "/workspace"
               name: pvol-bismakhomeini
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            initialDelaySeconds: 15
+            periodSeconds: 20
