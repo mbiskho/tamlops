@@ -25,7 +25,7 @@ export default function () {
   const { scenario } = exec;
   let data = {}
 
-  if (scenario.iterationInTest % 600 < 543) {
+  if (scenario.iterationInTest % 19 < 17) {
     let size = TEXT_DATASETS.length
     data = {
       type: 'text',
