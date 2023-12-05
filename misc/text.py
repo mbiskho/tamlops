@@ -4,7 +4,7 @@ data = {
       "per_device_train_batch_size": 2,
       "per_device_eval_batch_size": 2,
       "learning_rate": 0.0001,
-      "num_train_epochs": 2, # Best is 10,
+      "num_train_epochs": 3, # Best is 10,
       "num_dataset": 50
     }
 }
