@@ -17,6 +17,9 @@ spec:
         image: mbiskho/tamlops-inference
         ports:
         - containerPort: 8000
+        resources:
+          limits:
+            nvidia.com/gpu: 1
         readinessProbe:
           httpGet:
             path: /health
@@ -29,10 +32,6 @@ spec:
             port: 8000
           initialDelaySeconds: 15
           periodSeconds: 20
-        resources:
-          limits:
-            nvidia.com/gpu: 1
-
 ---
 
 apiVersion: autoscaling/v2beta2
