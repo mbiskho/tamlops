@@ -291,7 +291,6 @@ def parse_args():
 
 def main():
     inp = parse_args()
-    print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
     data = {
         "file": inp.file,
         "param": {
@@ -318,7 +317,7 @@ def main():
           "id": inp.id
         }
     )
-
+    print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
     args = {
         "input_perturbation": 0.0,
         "pretrained_model_name_or_path": "stabilityai/stable-diffusion-2-1-base",
@@ -936,7 +935,4 @@ def main():
     wandb.finish()
 
 
-try:
-    main()
-except:
-    print("Error")
+main()
