@@ -79,7 +79,18 @@
                     "script_path": "load-testing.js",
                     "duration": "3m"
                 }
-            }
+            },
+            "controls": [
+                {
+                    "name": "Change CHAOS_TYPE env value to off-inference",
+                    "scope": "before",
+                    "provider": {
+                        "type": "process",
+                        "path": "export",
+                        "arguments": "CHAOS_TYPE=off-inference"
+                    }
+                }
+            ]
         },
         {
             "type": "action",

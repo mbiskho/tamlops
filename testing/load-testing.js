@@ -33,10 +33,12 @@ export default function () {
     }
   }
   else {
+    let size = IMAGE_DATASETS.length
     data = {
       type: 'image',
       text: IMAGE_DATASETS[Math.round(Math.random() * size)].text
     }
+    console.log(data)
   }
 
   const res = http.post('http://35.208.32.246:8000/inference', JSON.stringify(data))

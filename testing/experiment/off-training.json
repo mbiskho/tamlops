@@ -16,18 +16,7 @@
                     "arguments": {
                         "path": "log/running/load-testing-steadystate.log"
                     }
-                },
-                "controls": [
-                    {
-                        "name": "Change CHAOS_TYPE env value to steadystate",
-                        "scope": "before",
-                        "provider": {
-                            "type": "process",
-                            "path": "export",
-                            "arguments": "CHAOS_TYPE=steadystate"
-                        }
-                    }
-                ]
+                }
             },
             {
                 "type": "probe",
@@ -90,7 +79,18 @@
                     "script_path": "load-testing.js",
                     "duration": "3m"
                 }
-            }
+            },
+            "controls": [
+                {
+                    "name": "Change CHAOS_TYPE env value to off-training",
+                    "scope": "before",
+                    "provider": {
+                        "type": "process",
+                        "path": "export",
+                        "arguments": "CHAOS_TYPE=off-training"
+                    }
+                }
+            ]
         },
         {
             "type": "action",

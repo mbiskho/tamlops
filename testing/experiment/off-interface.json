@@ -78,7 +78,18 @@
                     "script_path": "load-testing.js --out experiment/load-off-inteface.csv",
                     "duration": "3m"
                 }
-            }
+            },
+            "controls": [
+                {
+                    "name": "Change CHAOS_TYPE env value to off-interface",
+                    "scope": "before",
+                    "provider": {
+                        "type": "process",
+                        "path": "export",
+                        "arguments": "CHAOS_TYPE=off-interface"
+                    }
+                }
+            ]
         },
         {
             "type": "action",

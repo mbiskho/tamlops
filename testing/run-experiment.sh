@@ -33,6 +33,7 @@ rm -r "${CHAOS_RUNNING_LOG_DIR}"
 mkdir "${CHAOS_RUNNING_LOG_DIR}"
 
 # Run load testing
+export CHAOS_TYPE="steadystate"
 k6 run load-testing.js
 
 # Init commands before chaos experiment
