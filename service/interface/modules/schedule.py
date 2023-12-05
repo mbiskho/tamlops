@@ -271,8 +271,6 @@ async def schedule_logic_max_min():
                     break
                 time.sleep(5)
     
-    res = await delete_all_from_table()
-    print(res)
     return {"error": False, "response": "Scheduling Finished"}
 
 async def send_post_request_async(session, url, payload, headers):
@@ -287,6 +285,9 @@ async def schedule_logic_fcfs_burst(gpu_id):
     tasks = await get_from_db()
     print(tasks)
     print("GPU ID", gpu_id)
+
+    res = await delete_all_from_table()
+    print(res)
     
     async with aiohttp.ClientSession() as session:
         # List to store individual task coroutines
@@ -341,8 +342,6 @@ async def schedule_logic_fcfs_burst(gpu_id):
         # Run all POST requests concurrently using asyncio.gather()
         await asyncio.gather(*post_requests)
 
-    res = await delete_all_from_table()
-    print(res)
     return {"error": False, "response": "Scheduling Finished"}
 
 
@@ -350,6 +349,9 @@ async def schedule_logic_fcfs_normal(gpu_id):
     tasks = await get_from_db()
     print(tasks)
     print("GPU ID", gpu_id)
+
+    res = await delete_all_from_table()
+    print(res)
 
     for task in tasks:
         print(task)
@@ -400,8 +402,6 @@ async def schedule_logic_fcfs_normal(gpu_id):
         response = requests.request("POST", url, headers=headers, data=payload)
         print(response)
 
-    res = await delete_all_from_table()
-    print(res)
     return {"error": False, "response": "Scheduling Finished"}
 
 
