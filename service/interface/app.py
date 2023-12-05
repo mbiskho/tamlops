@@ -51,17 +51,24 @@ async def inference(requ: Request):
         "type": typ,
         "text": text
     })
+    response = ""
     headers = {
         'Content-Type': 'application/json'
     }
 
     if typ == "image":
-        URL = "http://127.0.0.1:6070/inference-image"
+        URL = "http://127.0.0.1:5060/inference-image"
     else:
-        URL = "http://127.0.0.1:6070/inference-text"
+        URL = "http://127.0.0.1:5060/inference-text"
 
-    response = requests.request("POST", URL, headers=headers, data=payload) 
-    res = response.text
+    try:
+        response = requests.request("POST", URL, headers=headers, data=payload) 
+        res = response.text
+    except requests.exceptions.Timeout:
+        print("Request timed out")
+    except requests.exceptions.RequestException as e:
+        print("Request exception:", e)
+
     return {"error": False, "response": res}
 
 @app.post("/inference-burst", response_class=JSONResponse)
@@ -80,9 +87,10 @@ async def inference_burst(requ: Request):
     }
 
     if typ == "image":
-        URL = "http://127.0.0.1:6070/inference-image-burst"
+        URL = "http://127.0.0.1:5060/inference-image-burst"
     else:
-        URL = "http://127.0.0.1:6070/inference-text-burst"
+        URL = "http://127.0.0.1:5065/inference-text-burst"
+
 
     response = requests.request("POST", URL, headers=headers, data=payload) 
     res = response.text
