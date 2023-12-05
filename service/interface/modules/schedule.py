@@ -27,6 +27,10 @@ async def schedule_logic_min_min():
     tasks_with_times = []
     print("Tasks from DB", tasks)
 
+    # Delete tasks
+    res_delete = await delete_all_from_table()
+    print(res_delete)
+
     for task in tasks:
         # Parse the JSON string to a dictionary
         params_dict = json.loads(task['params'])
@@ -139,8 +143,6 @@ async def schedule_logic_min_min():
                     break
                 time.sleep(5)
 
-    res = await delete_all_from_table()
-    print(res)
     return {"error": False, "response": "Scheduling Finished"}
 
 async def schedule_logic_max_min():
@@ -156,6 +158,10 @@ async def schedule_logic_max_min():
 
     # List to store tasks with their estimated times
     tasks_with_times = []
+
+    # Delete tasks
+    res_delete = await delete_all_from_table()
+    print(res_delete)
 
     for task in tasks:
         # Parse the JSON string to a dictionary
