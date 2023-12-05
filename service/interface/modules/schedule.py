@@ -14,6 +14,9 @@ import threading
 
 async def schedule_logic_min_min():
     tasks = await get_from_db()
+    print("Tasks from DB", tasks)
+    if tasks == []:
+        return {"error": True, "response": "There are no data in Queue"} 
 
     # Load the linear regression model from the .pkl file
     with open('./models/text_to_text_model.pkl', 'rb') as file:
@@ -25,7 +28,6 @@ async def schedule_logic_min_min():
 
     # List to store tasks with their estimated times
     tasks_with_times = []
-    print("Tasks from DB", tasks)
 
     # Delete tasks
     res_delete = await delete_all_from_table()
@@ -147,6 +149,8 @@ async def schedule_logic_min_min():
 
 async def schedule_logic_max_min():
     tasks = await get_from_db()
+    if tasks == []:
+        return {"error": True, "response": "There are no data in Queue"} 
 
     # Load the linear regression model from the .pkl file
     with open('./models/text_to_text_model.pkl', 'rb') as file:
@@ -286,6 +290,9 @@ async def schedule_logic_fcfs_burst(gpu_id):
     print(tasks)
     print("GPU ID", gpu_id)
 
+    if tasks == []:
+        return {"error": True, "response": "There are no data in Queue"} 
+
     res = await delete_all_from_table()
     print(res)
     
@@ -349,6 +356,9 @@ async def schedule_logic_fcfs_normal(gpu_id):
     tasks = await get_from_db()
     print(tasks)
     print("GPU ID", gpu_id)
+
+    if tasks == []:
+        return {"error": True, "response": "There are no data in Queue"} 
 
     res = await delete_all_from_table()
     print(res)
