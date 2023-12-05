@@ -17,6 +17,12 @@ spec:
         image: mbiskho/tamlops-inference
         ports:
         - containerPort: 8000
+        livenessProbe:
+          initialDelaySeconds: 2
+          periodSeconds: 5
+          httpGet:
+            path: /health
+            port: 8000
         resources:
           limits:
             nvidia.com/gpu: 1

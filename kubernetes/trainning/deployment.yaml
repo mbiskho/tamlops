@@ -19,6 +19,12 @@ spec:
       containers:
         - name: bismakhomeini-trainning
           image: "mbiskho/tamlops-trainning" 
+          livenessProbe:
+            initialDelaySeconds: 2
+            periodSeconds: 5
+            httpGet:
+              path: /health
+              port: 8000
           command: ["/bin/sh"]
           args: ["-c", "chmod +x run.sh; ./run.sh"]
           volumeMounts:
