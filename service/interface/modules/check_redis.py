@@ -1,5 +1,4 @@
 from redis import Redis
-import json
 
 r = Redis(host='redis-13388.c292.ap-southeast-1-1.ec2.cloud.redislabs.com', port=13388,password='AuVQAhhAkVRCg3g6yQXD43VNZ0IYNZ67')
 
@@ -9,7 +8,3 @@ def set_redis_item(key, value):
 def get_redis_item(key):
     value = r.get(key)
     return value.decode('utf-8') if value else None
-
-def is_gpus_empty(gpu1, gpu2):
-    gpu1_state = r.get(gpu1)
-    gpu2_state = r.get(gpu2)
