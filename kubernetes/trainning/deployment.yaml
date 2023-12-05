@@ -24,6 +24,8 @@ spec:
           volumeMounts:
             - mountPath: "/workspace"
               name: pvol-bismakhomeini
+          ports:
+            - containerPort: 8000
           readinessProbe:
             httpGet:
               path: /health
