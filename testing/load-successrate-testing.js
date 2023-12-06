@@ -5,6 +5,9 @@ import exec from 'k6/execution';
 import { SharedArray } from 'k6/data';
 
 export const options = {
+  stages: [
+    {}
+  ],
   scenarios: {
     '1-user': {
       executor: 'per-vu-iterations',
@@ -19,7 +22,7 @@ export const options = {
       vus: 2,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '2m',
       gracefulStop: '0s'
     },
     '4-user': {
@@ -27,7 +30,7 @@ export const options = {
       vus: 4,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '3m',
       gracefulStop: '0s'
     },
     '8-user': {
@@ -35,7 +38,7 @@ export const options = {
       vus: 8,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '4m',
       gracefulStop: '0s'
     },
     '16-user': {
@@ -43,7 +46,7 @@ export const options = {
       vus: 16,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '5m',
       gracefulStop: '0s'
     },
     '32-user': {
@@ -51,7 +54,7 @@ export const options = {
       vus: 32,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '6m',
       gracefulStop: '0s'
     },
     '64-user': {
@@ -59,7 +62,7 @@ export const options = {
       vus: 64,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '7m',
       gracefulStop: '0s'
     },
     '128-user': {
@@ -67,7 +70,7 @@ export const options = {
       vus: 128,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '8m',
       gracefulStop: '0s'
     },
     '256-user': {
@@ -75,7 +78,7 @@ export const options = {
       vus: 256,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '9m',
       gracefulStop: '0s'
     },
     '512-user': {
@@ -83,7 +86,7 @@ export const options = {
       vus: 512,
       iterations: 1,
       maxDuration: '1m',
-      startTime: '1m',
+      startTime: '10m',
       gracefulStop: '0s'
     },
   },
