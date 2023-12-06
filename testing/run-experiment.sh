@@ -34,7 +34,9 @@ mkdir "${CHAOS_RUNNING_LOG_DIR}"
 
 # Run load testing
 export CHAOS_TYPE="steadystate"
-k6 run load-testing.js
+K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true k6 run -o experimental-prometheus-rw load-successrate-testing.js
+sleep 60
+K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true k6 run -o experimental-prometheus-rw load-testing.js
 
 # Init commands before chaos experiment
 mkdir "${CHAOS_REPORT_LOG_DIR}"

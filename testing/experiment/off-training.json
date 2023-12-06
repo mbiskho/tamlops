@@ -6,6 +6,19 @@
         "title": "Make sure that load testing has been done & able to prompt every types to server",
         "probes": [
             {
+                "name": "Normal load success rate testing log must exists",
+                "type": "probe",
+                "tolerance": true,
+                "provider": {
+                    "type": "python",
+                    "module": "os.path",
+                    "func": "exists",
+                    "arguments": {
+                        "path": "log/running/load-successrate-testing-steadystate.log"
+                    }
+                }
+            },
+            {
                 "name": "Normal load testing log must exists",
                 "type": "probe",
                 "tolerance": true,
@@ -69,16 +82,33 @@
         },
         {
             "type": "action",
+            "name": "Run load success rate testing",
+            "background": false,
+            "provider": {
+                "type": "process",
+                "path": "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true",
+                "arguments": "k6 run -o experimental-prometheus-rw load-successrate-testing.js"
+            },
+            "controls": [
+                {
+                    "name": "Change CHAOS_TYPE env value to off-interface",
+                    "scope": "before",
+                    "provider": {
+                        "type": "process",
+                        "path": "export",
+                        "arguments": "CHAOS_TYPE=off-interface"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "action",
             "name": "Run load testing",
             "background": false,
             "provider": {
-                "type": "python",
-                "module": "chaosk6.actions",
-                "func": "run_script",
-                "arguments": {
-                    "script_path": "load-testing.js",
-                    "duration": "25m"
-                }
+                "type": "process",
+                "path": "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true",
+                "arguments": "k6 run -o experimental-prometheus-rw load-testing.js"
             },
             "controls": [
                 {

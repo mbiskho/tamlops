@@ -8,7 +8,7 @@ export const options = {
   vus: 0,
   stages: [
     { duration: '5m', target: 600 },
-    { duration: '15m', target: 600 },
+    { duration: '10m', target: 600 },
     { duration: '5m', target: 0 }
   ],
 };
@@ -29,16 +29,15 @@ export default function () {
     let size = TEXT_DATASETS.length
     data = {
       type: 'text',
-      text: TEXT_DATASETS[Math.round(Math.random() * size)].text
+      text: TEXT_DATASETS[Math.floor(Math.random() * size)].text
     }
   }
   else {
     let size = IMAGE_DATASETS.length
     data = {
       type: 'image',
-      text: IMAGE_DATASETS[Math.round(Math.random() * size)].text
+      text: IMAGE_DATASETS[Math.floor(Math.random() * size)].text
     }
-    console.log(data)
   }
 
   const res = http.post('http://35.208.32.246:8000/inference', JSON.stringify(data))
