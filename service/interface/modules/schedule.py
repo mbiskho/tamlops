@@ -138,8 +138,8 @@ async def schedule_logic_real_min_min():
                 redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
                 print("Redis Value Datatype:", type(redis_value))
-                print("Redis Check", redis_value == 0)
-                if redis_value == 0:
+                print("Redis Check", redis_value == "0")
+                if redis_value == "0":
                     del task['gpu_usage']
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
@@ -249,16 +249,17 @@ async def schedule_logic_min_min():
     }
 
     # print("Allocated Tasks", allocated_tasks)
-
+    # current_gpu_state = []
+    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+    current_gpu_state = check_gpu['response']
     # Send to DGX
     for task in allocated_tasks:
-        check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
-        current_gpu_state = check_gpu['response']
         # print("All GPU State", current_gpu_state)
         current_free_memory = current_gpu_state[task['gpu']]['memory_free']
         print(f"Current GPU {task['gpu']} Free Memory", current_free_memory)
         print(f"Task ID: {task['id']} and Estimated Task GPU {task['gpu']} Usage", task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
+            current_gpu_state[task['gpu']]['memory_free'] = current_gpu_state[task['gpu']]['memory_free'] - task['gpu_usage']
             del task['gpu_usage']
             response = requests.request("POST", url, headers=headers, data=json.dumps({
             "data": task
@@ -271,12 +272,16 @@ async def schedule_logic_min_min():
             while finished_flag == False:
                 redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
-                if redis_value == 0:
+                print("Redis Value Datatype:", type(redis_value))
+                print("Redis Check", redis_value == "0")
+                if redis_value == "0":
                     del task['gpu_usage']
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
                     }))
                     finished_flag = True
+                    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+                    current_gpu_state = check_gpu['response']
                     break
                 time.sleep(5)
 
@@ -378,14 +383,16 @@ async def schedule_logic_max_min():
     'Content-Type': 'application/json'
     }
 
+    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+    current_gpu_state = check_gpu['response']
+
     # Send to DGX
     for task in allocated_tasks:
-        check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
-        current_gpu_state = check_gpu['response']
         current_free_memory = current_gpu_state[task['gpu']]['memory_free']
         print(f"Current GPU {task['gpu']} Free Memory", current_free_memory)
         print(f"Estimated task {task['id']} GPU {task['gpu']} Usage", task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
+            current_gpu_state[task['gpu']]['memory_free'] = current_gpu_state[task['gpu']]['memory_free'] - task['gpu_usage']
             del task['gpu_usage']
             response = requests.request("POST", url, headers=headers, data=json.dumps({
             "data": task
@@ -398,11 +405,14 @@ async def schedule_logic_max_min():
             while finished_flag == False:
                 redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
-                if redis_value == 0:
+                print("Redis Check", redis_value == "0")
+                if redis_value == "0":
                     del task['gpu_usage']
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
                     }))
+                    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+                    current_gpu_state = check_gpu['response']
                     finished_flag = True
                     break
                 time.sleep(5)
@@ -417,10 +427,9 @@ async def send_post_request_async(session, url, payload, headers):
         if response.status == 200:
             print(f"Sent Success")
 
-async def schedule_logic_fcfs_burst(gpu_id):
+async def schedule_logic_fcfs_burst():
     tasks = await get_from_db()
     print(tasks)
-    print("GPU ID", gpu_id)
 
     if tasks == []:
         return {"error": True, "response": "There are no data in Queue"} 
@@ -434,14 +443,13 @@ async def schedule_logic_fcfs_burst(gpu_id):
             params_dict = json.loads(task['params'])
             print(task['id'])
 
-            url = "http://127.0.0.1:6070/train-burst"
+            url = "http://127.0.0.1:6070/train-burst-nogpu"
 
             payload = ''
             if task['type'] == 'text':
                 payload = json.dumps({
                 "data": {
                     "id": task['id'],
-                    "gpu": gpu_id,
                     "type": task['type'],
                     "file": task['file'],
                     "param": {
@@ -456,7 +464,6 @@ async def schedule_logic_fcfs_burst(gpu_id):
                 payload = json.dumps({
                 "data": {
                     "id": task['id'],
-                    "gpu": gpu_id,
                     "type": task['type'],
                     "file": task['file'],
                     "param": {
@@ -482,10 +489,9 @@ async def schedule_logic_fcfs_burst(gpu_id):
     return {"error": False, "response": "Scheduling Finished"}
 
 
-async def schedule_logic_fcfs_normal(gpu_id):
+async def schedule_logic_fcfs_normal():
     tasks = await get_from_db()
     print(tasks)
-    print("GPU ID", gpu_id)
 
     if tasks == []:
         return {"error": True, "response": "There are no data in Queue"} 
@@ -495,14 +501,13 @@ async def schedule_logic_fcfs_normal(gpu_id):
         params_dict = json.loads(task['params'])
         print(task['id'])
 
-        url = "http://127.0.0.1:6070/train"
+        url = "http://127.0.0.1:6070/train-nogpu"
 
         payload = ''
         if task['type'] == 'text':
             payload = json.dumps({
             "data": {
                 "id": task['id'],
-                "gpu": gpu_id,
                 "type": task['type'],
                 "file": task['file'],
                 "param": {
@@ -517,9 +522,67 @@ async def schedule_logic_fcfs_normal(gpu_id):
             payload = json.dumps({
             "data": {
                 "id": task['id'],
-                "gpu": gpu_id,
                 "type": task['type'],
                 "file": task['file'],
+                "param": {
+                        'resolution': params_dict['resolution'],
+                        'train_batch_size': params_dict['train_batch_size'],
+                        'num_train_epochs': params_dict['num_train_epochs'],
+                        'max_train_steps': params_dict['max_train_steps'],
+                        'learning_rate': params_dict['learning_rate'],
+                        'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
+                }
+            }
+        })
+
+
+        headers = {
+        'Content-Type': 'application/json'
+        }
+
+        response = requests.request("POST", url, headers=headers, data=payload)
+        print(response)
+        await delete_row_by_id("training_queue", task['id'])
+
+    return {"error": False, "response": "Scheduling Finished"}
+
+async def schedule_logic_fcfs_normal_gpu(gpu_id):
+    tasks = await get_from_db()
+    print(tasks)
+
+    if tasks == []:
+        return {"error": True, "response": "There are no data in Queue"} 
+
+    for task in tasks:
+        print(task)
+        params_dict = json.loads(task['params'])
+        print(task['id'])
+
+        url = "http://127.0.0.1:6070/train-nogpu"
+
+        payload = ''
+        if task['type'] == 'text':
+            payload = json.dumps({
+            "data": {
+                "id": task['id'],
+                "type": task['type'],
+                "file": task['file'],
+                "gpu": gpu_id,
+                "param": {
+                    "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+                    "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+                    "learning_rate": params_dict['learning_rate'],
+                    "num_train_epochs": params_dict['num_train_epochs']
+                }
+            }
+        })
+        elif task['type'] == 'image':
+            payload = json.dumps({
+            "data": {
+                "id": task['id'],
+                "type": task['type'],
+                "file": task['file'],
+                "gpu": gpu_id,
                 "param": {
                         'resolution': params_dict['resolution'],
                         'train_batch_size': params_dict['train_batch_size'],

@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from modules.database import save_training_db, get_from_db
 from modules.gcp import upload_to_gcs
-from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs_burst, schedule_logic_max_min, schedule_logic_fcfs_normal, schedule_logic_real_min_min
+from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs_burst, schedule_logic_max_min, schedule_logic_fcfs_normal, schedule_logic_real_min_min, schedule_logic_fcfs_normal_gpu
 from modules.request import send_post_request
 import json
 import requests
@@ -98,26 +98,31 @@ async def inference_burst(requ: Request):
     return {"error": False, "response": res}
 
 @app.get('/schedule/real-min-min', response_class=JSONResponse)
-async def schedule():
+async def schedule_real_min_min():
     post_response = await schedule_logic_real_min_min()
     return {"error": False, "response": post_response}
 
 @app.get('/schedule/min-min', response_class=JSONResponse)
-async def schedule():
+async def schedule_min_min():
     post_response = await schedule_logic_min_min()
     return {"error": False, "response": post_response}
     
 @app.get('/schedule/max-min', response_class=JSONResponse)
-async def schedule():
+async def schedule_max_min():
     post_response = await schedule_logic_max_min()
     return {"error": False, "response": post_response}
     
-@app.get('/schedule/fcfs-burst/{gpu_id}', response_class=JSONResponse)
-async def schedule(gpu_id: str):
-    await schedule_logic_fcfs_burst(gpu_id)
+@app.get('/schedule/fcfs-burst', response_class=JSONResponse)
+async def schedule_fcfs_burst():
+    await schedule_logic_fcfs_burst()
     return {"error": False, "response": "Schedule Started"}
 
-@app.get('/schedule/fcfs-normal/{param}', response_class=JSONResponse)
-async def schedule(gpu_id: str):
-    await schedule_logic_fcfs_normal(gpu_id)
+@app.get('/schedule/fcfs-normal', response_class=JSONResponse)
+async def schedule_fcfs_normal():
+    await schedule_logic_fcfs_normal()
+    return {"error": False, "response": "Schedule Started"}
+
+@app.get('/schedule/fcfs-normal/{gpu_id}', response_class=JSONResponse)
+async def schedule_fcfs_normal_gpu(gpu_id: str):
+    await schedule_logic_fcfs_normal_gpu(gpu_id)
     return {"error": False, "response": "Schedule Started"}

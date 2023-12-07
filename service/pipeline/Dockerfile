@@ -63,6 +63,8 @@ COPY run.sh /etc/pipeline.d/run.sh
 RUN chmod +x /etc/pipeline.d/run.sh
 RUN chmod +x image.sh
 RUN chmod +x text.sh
+RUN chmod +x gpu_image.sh
+RUN chmod +x gpu_text.sh
 
 # install prometheus + node-exporter
 # RUN mkdir -p /scripts
