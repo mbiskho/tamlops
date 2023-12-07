@@ -4,90 +4,48 @@ import { textSummary } from 'https://jslib.k6.io/k6-summary/0.0.4/index.js';
 import exec from 'k6/execution';
 import { SharedArray } from 'k6/data';
 
+function scenarioTemplate(vu, startTime) {
+  return {
+    executor: 'per-vu-iterations',
+    vus: vu,
+    iterations: 1,
+    maxDuration: '1m',
+    startTime: startTime,
+    gracefulStop: '0s'
+  }
+}
+
 export const options = {
-  stages: [
-    {}
-  ],
   scenarios: {
     '1-user': {
-      executor: 'per-vu-iterations',
-      vus: 1,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '1m',
-      gracefulStop: '0s'
+      ...scenarioTemplate(1, '0m')
     },
-    '2-user': {
-      executor: 'per-vu-iterations',
-      vus: 2,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '2m',
-      gracefulStop: '0s'
+    '2-users': {
+      ...scenarioTemplate(2, '1m')
     },
-    '4-user': {
-      executor: 'per-vu-iterations',
-      vus: 4,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '3m',
-      gracefulStop: '0s'
+    '4-users': {
+      ...scenarioTemplate(4, '2m')
     },
-    '8-user': {
-      executor: 'per-vu-iterations',
-      vus: 8,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '4m',
-      gracefulStop: '0s'
+    '8-users': {
+      ...scenarioTemplate(8, '3m')
     },
-    '16-user': {
-      executor: 'per-vu-iterations',
-      vus: 16,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '5m',
-      gracefulStop: '0s'
+    '16-users': {
+      ...scenarioTemplate(16, '4m')
     },
-    '32-user': {
-      executor: 'per-vu-iterations',
-      vus: 32,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '6m',
-      gracefulStop: '0s'
+    '32-users': {
+      ...scenarioTemplate(32, '5m')
     },
-    '64-user': {
-      executor: 'per-vu-iterations',
-      vus: 64,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '7m',
-      gracefulStop: '0s'
+    '64-users': {
+      ...scenarioTemplate(64, '6m')
     },
-    '128-user': {
-      executor: 'per-vu-iterations',
-      vus: 128,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '8m',
-      gracefulStop: '0s'
+    '128-users': {
+      ...scenarioTemplate(128, '7m')
     },
-    '256-user': {
-      executor: 'per-vu-iterations',
-      vus: 256,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '9m',
-      gracefulStop: '0s'
+    '256-users': {
+      ...scenarioTemplate(256, '8m')
     },
-    '512-user': {
-      executor: 'per-vu-iterations',
-      vus: 512,
-      iterations: 1,
-      maxDuration: '1m',
-      startTime: '10m',
-      gracefulStop: '0s'
+    '512-users': {
+      ...scenarioTemplate(512, '9m')
     },
   },
 };

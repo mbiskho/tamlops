@@ -2,17 +2,35 @@ import http from 'k6/http';
 import { check } from 'k6';
 import exec from 'k6/execution';
 
+function scenarioTemplate(vu, startTime) {
+  return {
+    executor: 'per-vu-iterations',
+    vus: vu,
+    iterations: 1,
+    startTime: startTime,
+    gracefulStop: '1m'
+  }
+}
+
 export const options = {
   scenarios: {
-    contacts: {
-      executor: 'ramping-arrival-rate',
-      startRate: 1,
-      timeUnit: '30s',
-      preAllocatedVUs: 1,
-      maxVUs: 6,
-      stages: [
-        { target: 21, duration: '180s' },
-      ],
+    '1-user': {
+      ...scenarioTemplate(1, '0s')
+    },
+    '2-users': {
+      ...scenarioTemplate(2, '30s')
+    },
+    '3-users': {
+      ...scenarioTemplate(3, '60s')
+    },
+    '4-users': {
+      ...scenarioTemplate(4, '90s')
+    },
+    '5-users': {
+      ...scenarioTemplate(5, '120s')
+    },
+    '6-users': {
+      ...scenarioTemplate(6, '150s')
     },
   },
 };
