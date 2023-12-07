@@ -259,12 +259,12 @@ async def schedule_logic_min_min():
         print(f"Current GPU {task['gpu']} Free Memory", current_free_memory)
         print(f"Task ID: {task['id']} and Estimated Task GPU {task['gpu']} Usage", task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
+            current_gpu_state[task['gpu']]['memory_free'] = current_gpu_state[task['gpu']]['memory_free'] - task['gpu_usage']
             del task['gpu_usage']
             response = requests.request("POST", url, headers=headers, data=json.dumps({
             "data": task
             }))
             print("POST Response", response)
-            current_gpu_state[task['gpu']]['memory_free'] = current_gpu_state[task['gpu']]['memory_free'] - task['gpu_usage']
             await delete_row_by_id("training_queue", task['id'])
         else:
             print("[!] GPU Memory Full")     
@@ -392,12 +392,12 @@ async def schedule_logic_max_min():
         print(f"Current GPU {task['gpu']} Free Memory", current_free_memory)
         print(f"Estimated task {task['id']} GPU {task['gpu']} Usage", task['gpu_usage'])
         if current_free_memory > task['gpu_usage']:
+            current_gpu_state[task['gpu']]['memory_free'] = current_gpu_state[task['gpu']]['memory_free'] - task['gpu_usage']
             del task['gpu_usage']
             response = requests.request("POST", url, headers=headers, data=json.dumps({
             "data": task
             }))
             print("POST Response", response)
-            current_gpu_state[task['gpu']]['memory_free'] = current_gpu_state[task['gpu']]['memory_free'] - task['gpu_usage']
             await delete_row_by_id("training_queue", task['id'])
         else:
             print("[!] GPU Memory Full")     
