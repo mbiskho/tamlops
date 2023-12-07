@@ -25,16 +25,9 @@ async def get_from_db():
     return fetched_rows
     
 async def delete_row_by_id(table_name, row_id):
+    # Establish a connection to the PostgreSQL database
+    conn = await asyncpg.connect(DB)
     try:
-        # Establish a connection to the PostgreSQL database
-        conn = await asyncpg.connect(
-            user='your_username',
-            password='your_password',
-            database='your_db_name',
-            host='your_host',
-            port='your_port'
-        )
-
         # Construct the DELETE query using the provided table name and ID
         delete_query = f"DELETE FROM {table_name} WHERE id = $1;"
         
