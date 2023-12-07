@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from modules.database import save_training_db, get_from_db
 from modules.gcp import upload_to_gcs
-from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs_burst, schedule_logic_max_min, schedule_logic_fcfs_normal, schedule_logic_real_min_min
+from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs_burst, schedule_logic_max_min, schedule_logic_fcfs_normal, schedule_logic_real_min_min, schedule_logic_fcfs_normal_gpu
 from modules.request import send_post_request
 import json
 import requests
@@ -120,4 +120,9 @@ async def schedule_fcfs_burst():
 @app.get('/schedule/fcfs-normal', response_class=JSONResponse)
 async def schedule_fcfs_normal():
     await schedule_logic_fcfs_normal()
+    return {"error": False, "response": "Schedule Started"}
+
+@app.get('/schedule/fcfs-normal/{gpu_id}', response_class=JSONResponse)
+async def schedule_fcfs_normal_gpu(gpu_id: str):
+    await schedule_logic_fcfs_normal_gpu(gpu_id)
     return {"error": False, "response": "Schedule Started"}

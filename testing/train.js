@@ -62,7 +62,7 @@ export default function () {
         "learning_rate": learningRate[Math.round(Math.random() * 2)],
         "gradient_accumulation_steps": 1 * Math.round(Math.random() * 2 + 1)
       }),
-      file: scenario.iterationInTest < 7 ? http.file(parquets[20], '20_row.parquet') : scenario.iterationInTest < 9 ? http.file(parquets[50], '50_row.parquet') : http.file(parquets[100], '100_row.parquet')
+      file: scenario.iterationInTest < 7 ? http.file(parquets[20], '20_row.parquet') : scenario.iterationInTest < 15 ? http.file(parquets[50], '50_row.parquet') : http.file(parquets[100], '100_row.parquet')
     }
   }
 
