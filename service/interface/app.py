@@ -112,12 +112,12 @@ async def schedule():
     post_response = await schedule_logic_max_min()
     return {"error": False, "response": post_response}
     
-@app.get('/schedule/fcfs-burst/{gpu_id}', response_class=JSONResponse)
-async def schedule(gpu_id: str):
-    await schedule_logic_fcfs_burst(gpu_id)
+@app.get('/schedule/fcfs-burst', response_class=JSONResponse)
+async def schedule():
+    await schedule_logic_fcfs_burst()
     return {"error": False, "response": "Schedule Started"}
 
-@app.get('/schedule/fcfs-normal/{gpu_id}', response_class=JSONResponse)
-async def schedule(gpu_id: str):
-    await schedule_logic_fcfs_normal(gpu_id)
+@app.get('/schedule/fcfs-normal', response_class=JSONResponse)
+async def schedule():
+    await schedule_logic_fcfs_normal()
     return {"error": False, "response": "Schedule Started"}
