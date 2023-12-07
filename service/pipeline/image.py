@@ -317,7 +317,12 @@ def main():
           "id": inp.id
         }
     )
-    print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
+    try:
+        print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
+    except:
+        print("NO CUDA_VISIBLE_DEVICES")
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        print("using: ", device)
     args = {
         "input_perturbation": 0.0,
         "pretrained_model_name_or_path": "stabilityai/stable-diffusion-2-1-base",

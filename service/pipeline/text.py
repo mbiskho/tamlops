@@ -159,8 +159,14 @@ def main():
         "id": inp.id
         }
     )
-    print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
 
+    try:
+        print("Using GPU CUDA:", os.environ["CUDA_VISIBLE_DEVICES"])
+    except:
+        print("NO CUDA_VISIBLE_DEVICES")
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        print("using: ", device)
+        
     data = {
         "file": inp.file,
         "param": {
