@@ -14,24 +14,12 @@ function scenarioTemplate(vu, startTime) {
 
 export const options = {
   scenarios: {
-    '1-user': {
-      ...scenarioTemplate(1, '0s')
-    },
-    '2-users': {
-      ...scenarioTemplate(2, '30s')
-    },
-    '3-users': {
-      ...scenarioTemplate(3, '60s')
-    },
-    '4-users': {
-      ...scenarioTemplate(4, '90s')
-    },
-    '5-users': {
-      ...scenarioTemplate(5, '120s')
-    },
-    '6-users': {
-      ...scenarioTemplate(6, '150s')
-    },
+    '1-user':scenarioTemplate(1, '0s'),
+    '2-users': scenarioTemplate(2, '30s'),
+    '3-users': scenarioTemplate(3, '60s'),
+    '4-users': scenarioTemplate(4, '90s'),
+    '5-users': scenarioTemplate(5, '120s'),
+    '6-users': scenarioTemplate(6, '150s')
   },
 };
 

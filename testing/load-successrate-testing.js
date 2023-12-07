@@ -17,36 +17,16 @@ function scenarioTemplate(vu, startTime) {
 
 export const options = {
   scenarios: {
-    '1-user': {
-      ...scenarioTemplate(1, '0m')
-    },
-    '2-users': {
-      ...scenarioTemplate(2, '1m')
-    },
-    '4-users': {
-      ...scenarioTemplate(4, '2m')
-    },
-    '8-users': {
-      ...scenarioTemplate(8, '3m')
-    },
-    '16-users': {
-      ...scenarioTemplate(16, '4m')
-    },
-    '32-users': {
-      ...scenarioTemplate(32, '5m')
-    },
-    '64-users': {
-      ...scenarioTemplate(64, '6m')
-    },
-    '128-users': {
-      ...scenarioTemplate(128, '7m')
-    },
-    '256-users': {
-      ...scenarioTemplate(256, '8m')
-    },
-    '512-users': {
-      ...scenarioTemplate(512, '9m')
-    },
+    '1-user': scenarioTemplate(1, '0m'),
+    '2-users': scenarioTemplate(2, '1m'),
+    '4-users': scenarioTemplate(4, '2m'),
+    '8-users': scenarioTemplate(8, '3m'),
+    '16-users': scenarioTemplate(16, '4m'),
+    '32-users': scenarioTemplate(32, '5m'),
+    '64-users': scenarioTemplate(64, '6m'),
+    '128-users': scenarioTemplate(128, '7m'),
+    '256-users': scenarioTemplate(256, '8m'),
+    '512-users': scenarioTemplate(512, '9m')
   },
 };
 
