@@ -30,7 +30,8 @@ async def training(file: UploadFile = File(...), type: str = Form(...), params: 
         file_size = file.file.tell()
         file.file.seek(0)
 
-        await save_training_db(type, file_url, file_size, params)
+        db_res = await save_training_db(type, file_url, file_size, params)
+        print(db_res)
         
         return {
             "error": False,
