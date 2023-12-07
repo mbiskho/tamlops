@@ -28,6 +28,8 @@ RUN mkdir -p /etc/inference.d
 COPY run.sh /etc/inference.d/run.sh
 RUN chmod +x /etc/inference.d/run.sh
 
+RUN pyhton3 loader.py
+
 EXPOSE 8000 9090 9100
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD curl --fail http://127.0.0.1:8000/ || exit 1
 CMD ["/etc/inference.d/run.sh"]

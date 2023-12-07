@@ -16,9 +16,9 @@ def remove_pad_and_end_tags(text):
     return text.strip()
 
 async def inference_image(text):
-    model_id = "stabilityai/stable-diffusion-2-1-base"
-    scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
-    pipe = StableDiffusionPipeline.from_pretrained(model_id, scheduler=scheduler, torch_dtype=torch.float16)
+    path = "/etc/model/image"
+    scheduler = EulerDiscreteScheduler.from_pretrained(path, subfolder="scheduler")
+    pipe = StableDiffusionPipeline.from_pretrained(path, scheduler=scheduler, torch_dtype=torch.float16)
     pipe = pipe.to("cuda")
     prompt = text
     image = pipe(prompt).images[0]  
@@ -28,8 +28,9 @@ async def inference_image(text):
     return image_bytes
 
 async def inference_text(text):
-    tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
-    model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base", device_map="auto")
+    path = "/etc/model/text"
+    tokenizer = T5Tokenizer.from_pretrained(path)
+    model = T5ForConditionalGeneration.from_pretrained(path, device_map="auto")
 
     input_text = text
     input_ids = tokenizer(input_text, return_tensors="pt").input_ids.to("cuda")
@@ -45,9 +46,9 @@ async def inference_text(text):
         return ""
     
 def inference_image_burst(text, pp):
-    model_id = "stabilityai/stable-diffusion-2-1-base"
-    scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
-    pipe = StableDiffusionPipeline.from_pretrained(model_id, scheduler=scheduler, torch_dtype=torch.float16)
+    path = "/etc/model/image"
+    scheduler = EulerDiscreteScheduler.from_pretrained(path, subfolder="scheduler")
+    pipe = StableDiffusionPipeline.from_pretrained(path, scheduler=scheduler, torch_dtype=torch.float16)
     pipe = pipe.to("cuda")
     prompt = text
     image = pipe(prompt).images[0]  
@@ -57,8 +58,9 @@ def inference_image_burst(text, pp):
     return image_bytes
 
 def inference_text_burst(text, pp):
-    tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
-    model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base", device_map="auto")
+    path = "/etc/model/text"
+    tokenizer = T5Tokenizer.from_pretrained(path)
+    model = T5ForConditionalGeneration.from_pretrained(path, device_map="auto")
 
     input_text = text
     input_ids = tokenizer(input_text, return_tensors="pt").input_ids.to("cuda")
