@@ -2,7 +2,7 @@ import asyncpg
 import os
 import json
 
-DB = "postgres://postgres.obxofwxgpggksbvuzzfn:tamlops123!@aws-0-us-east-1.pooler.supabase.com:6543/postgres"
+DB = "postgres://postgres:pass@localhost:5432/postgres"
 
 async def save_training_db(type, file, size, params):
     conn = await asyncpg.connect(DB)
@@ -23,14 +23,22 @@ async def get_from_db():
     finally:
         await conn.close()
     return fetched_rows
-
-async def delete_all_from_table():
+    
+async def delete_row_by_id(table_name, row_id):
+    # Establish a connection to the PostgreSQL database
     conn = await asyncpg.connect(DB)
     try:
-        await conn.execute("DELETE FROM training_queue")  # Replace 'your_table_name' with your actual table name
-        return {"message": "All items deleted from the table successfully"}
+        # Construct the DELETE query using the provided table name and ID
+        delete_query = f"DELETE FROM {table_name} WHERE id = $1;"
+        
+        # Execute the DELETE query with the specified ID
+        await conn.execute(delete_query, row_id)
+        print(f"Row with ID {row_id} deleted successfully!")
+
     except asyncpg.PostgresError as e:
-        return {"error": f"Error deleting items: {e}"}
+        print("Error:", e)
+    
     finally:
-        await conn.close()
-        return {"message": "Data has been deleted"}
+        # Close the connection
+        if conn:
+            await conn.close()
