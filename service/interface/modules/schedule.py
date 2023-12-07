@@ -249,11 +249,11 @@ async def schedule_logic_min_min():
     }
 
     # print("Allocated Tasks", allocated_tasks)
-
+    # current_gpu_state = []
+    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+    current_gpu_state = check_gpu['response']
     # Send to DGX
     for task in allocated_tasks:
-        check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
-        current_gpu_state = check_gpu['response']
         # print("All GPU State", current_gpu_state)
         current_free_memory = current_gpu_state[task['gpu']]['memory_free']
         print(f"Current GPU {task['gpu']} Free Memory", current_free_memory)
@@ -264,6 +264,7 @@ async def schedule_logic_min_min():
             "data": task
             }))
             print("POST Response", response)
+            current_gpu_state[task['gpu']]['memory_free'] = current_gpu_state[task['gpu']]['memory_free'] - task['gpu_usage']
             await delete_row_by_id("training_queue", task['id'])
         else:
             print("[!] GPU Memory Full")     
@@ -279,6 +280,8 @@ async def schedule_logic_min_min():
                     "data": task
                     }))
                     finished_flag = True
+                    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+                    current_gpu_state = check_gpu['response']
                     break
                 time.sleep(5)
 
@@ -380,10 +383,11 @@ async def schedule_logic_max_min():
     'Content-Type': 'application/json'
     }
 
+    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+    current_gpu_state = check_gpu['response']
+
     # Send to DGX
     for task in allocated_tasks:
-        check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
-        current_gpu_state = check_gpu['response']
         current_free_memory = current_gpu_state[task['gpu']]['memory_free']
         print(f"Current GPU {task['gpu']} Free Memory", current_free_memory)
         print(f"Estimated task {task['id']} GPU {task['gpu']} Usage", task['gpu_usage'])
@@ -393,6 +397,7 @@ async def schedule_logic_max_min():
             "data": task
             }))
             print("POST Response", response)
+            current_gpu_state[task['gpu']]['memory_free'] = current_gpu_state[task['gpu']]['memory_free'] - task['gpu_usage']
             await delete_row_by_id("training_queue", task['id'])
         else:
             print("[!] GPU Memory Full")     
@@ -406,6 +411,8 @@ async def schedule_logic_max_min():
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
                     }))
+                    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+                    current_gpu_state = check_gpu['response']
                     finished_flag = True
                     break
                 time.sleep(5)
