@@ -1,4 +1,4 @@
-from modules.database import get_from_db, delete_all_from_table
+from modules.database import get_from_db, delete_row_by_id
 import pickle
 import pandas as pd
 import numpy as np
@@ -29,10 +29,6 @@ async def schedule_logic_real_min_min():
 
     # List to store tasks with their estimated times
     tasks_with_times = []
-
-    # Delete tasks
-    res_delete = await delete_all_from_table()
-    print(res_delete)
 
     for task in tasks:
         # Parse the JSON string to a dictionary
@@ -134,12 +130,14 @@ async def schedule_logic_real_min_min():
             "data": task
             }))
             print("POST Response", response)
+            await delete_row_by_id("training_queue", task['id'])
         else:
             print("[!] GPU Memory Full")     
             finished_flag = False
             while finished_flag == False:
                 redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
+                print("Redis Value Datatype:", type(redis_value))
                 print("Redis Check", redis_value == 0)
                 if redis_value == 0:
                     del task['gpu_usage']
@@ -168,10 +166,6 @@ async def schedule_logic_min_min():
 
     # List to store tasks with their estimated times
     tasks_with_times = []
-
-    # Delete tasks
-    res_delete = await delete_all_from_table()
-    print(res_delete)
 
     for task in tasks:
         # Parse the JSON string to a dictionary
@@ -270,6 +264,7 @@ async def schedule_logic_min_min():
             "data": task
             }))
             print("POST Response", response)
+            await delete_row_by_id("training_queue", task['id'])
         else:
             print("[!] GPU Memory Full")     
             finished_flag = False
@@ -302,10 +297,6 @@ async def schedule_logic_max_min():
 
     # List to store tasks with their estimated times
     tasks_with_times = []
-
-    # Delete tasks
-    res_delete = await delete_all_from_table()
-    print(res_delete)
 
     for task in tasks:
         # Parse the JSON string to a dictionary
@@ -400,6 +391,7 @@ async def schedule_logic_max_min():
             "data": task
             }))
             print("POST Response", response)
+            await delete_row_by_id("training_queue", task['id'])
         else:
             print("[!] GPU Memory Full")     
             finished_flag = False
@@ -432,9 +424,6 @@ async def schedule_logic_fcfs_burst(gpu_id):
 
     if tasks == []:
         return {"error": True, "response": "There are no data in Queue"} 
-
-    res = await delete_all_from_table()
-    print(res)
     
     async with aiohttp.ClientSession() as session:
         # List to store individual task coroutines
@@ -485,6 +474,7 @@ async def schedule_logic_fcfs_burst(gpu_id):
             }
 
             post_requests.append(send_post_request_async(session, url, json.dumps(payload), headers))
+            await delete_row_by_id("training_queue", task['id'])
     
         # Run all POST requests concurrently using asyncio.gather()
         await asyncio.gather(*post_requests)
@@ -499,9 +489,6 @@ async def schedule_logic_fcfs_normal(gpu_id):
 
     if tasks == []:
         return {"error": True, "response": "There are no data in Queue"} 
-
-    res = await delete_all_from_table()
-    print(res)
 
     for task in tasks:
         print(task)
@@ -551,6 +538,7 @@ async def schedule_logic_fcfs_normal(gpu_id):
 
         response = requests.request("POST", url, headers=headers, data=payload)
         print(response)
+        await delete_row_by_id("training_queue", task['id'])
 
     return {"error": False, "response": "Scheduling Finished"}
 
