@@ -37,36 +37,22 @@ async def train(requests: Request):
 
     if typ == 'image':
         print("[!] Train image")
-        used = ""
-
-        if(gpu == "3"):
-            print("[!] Using GPU 3")
-            used = "3_image.py"
-        else:
-            print("[!] Using GPU 5")
-            used = "5_image.py"
-
+        
         command = [
-            'python3',
-            used,
-            f"--resolution={data['param']['resolution']}",
-            f"--train_batch_size={data['param']['train_batch_size']}",
-            f"--num_train_epochs={data['param']['num_train_epochs']}",
-            f"--max_train_steps={data['param']['max_train_steps']}",
-            f"--learning_rate={data['param']['learning_rate']}",
-            f"--gradient_accumulation_steps={data['param']['gradient_accumulation_steps']}", 
-            f"--file={data['file']}",
-            f"--id={data['id']}"
+            'sh', 
+            'image.sh', 
+            f'{gpu}',
+            f"{data['param']['resolution']}", 
+            f"{data['param']['train_batch_size']}", 
+            f"{data['param']['num_train_epochs']}", 
+            f"{data['param']['max_train_steps']}", 
+            f"{data['param']['learning_rate']}", 
+            f"{data['param']['gradient_accumulation_steps']}", 
+            f"{data['file']}",
+            f"{data['id']}"
         ]
     else:
         print("[!] Train Text")
-        used = ""
-        if(gpu == "3"):
-            print("[!] Using GPU 3")
-            used = "3_text.py"
-        else:
-            print("[!] Using GPU 5")
-            used = "5_text.py"
 
         command = [
             'python3',
@@ -79,7 +65,17 @@ async def train(requests: Request):
             f"--id={data['id']}"
         ]
 
-
+        command = [
+            'sh', 
+            'text.sh', 
+            f'{gpu}',
+            f"{data['param']['per_device_train_batch_size']}", 
+            f"{data['param']['per_device_eval_batch_size']}", 
+            f"{data['param']['learning_rate']}", 
+            f"{data['param']['num_train_epochs']}", 
+            f"{data['file']}", 
+            f"{data['id']}"
+        ]
     value = get_item(gpu)
     if(value == None):
         print("Current Process: 1")
@@ -92,9 +88,7 @@ async def train(requests: Request):
 
     print("[!] Adding num process")
 
-    result = subprocess.run(command, capture_output=True, text=True, check=True)
-    print("Subprocess output (stdout):", result.stdout)
-    print("Subprocess output (stderr):", result.stderr)
+    result = subprocess.run(command)
 
 
     value = get_item(gpu)
