@@ -108,7 +108,7 @@ async def schedule_logic_real_min_min():
     dgx_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
 
     #Sort task using Real Min-Min Algorithm
-    sorted_tasks = real_min_min(tasks, dgx_gpu)
+    sorted_tasks = real_min_min(tasks_with_times, dgx_gpu)
 
     # Allocate it to the right GPU
     allocated_tasks = allocate_gpu(sorted_tasks, dgx_gpu['response'])
