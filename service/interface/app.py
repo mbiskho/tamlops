@@ -117,7 +117,7 @@ async def schedule(gpu_id: str):
     await schedule_logic_fcfs_burst(gpu_id)
     return {"error": False, "response": "Schedule Started"}
 
-@app.get('/schedule/fcfs-normal/{param}', response_class=JSONResponse)
+@app.get('/schedule/fcfs-normal/{gpu_id}', response_class=JSONResponse)
 async def schedule(gpu_id: str):
     await schedule_logic_fcfs_normal(gpu_id)
     return {"error": False, "response": "Schedule Started"}
