@@ -1,0 +1,57 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: train.js
+     output: -
+
+  scenarios: (100.00%) 6 scenarios, 21 max VUs, 13m30s max duration (incl. graceful stop):
+           * 1-user: 1 iterations for each of 1 VUs (maxDuration: 10m0s, gracefulStop: 1m0s)
+           * 2-users: 1 iterations for each of 2 VUs (maxDuration: 10m0s, startTime: 30s, gracefulStop: 1m0s)
+           * 3-users: 1 iterations for each of 3 VUs (maxDuration: 10m0s, startTime: 1m0s, gracefulStop: 1m0s)
+           * 4-users: 1 iterations for each of 4 VUs (maxDuration: 10m0s, startTime: 1m30s, gracefulStop: 1m0s)
+           * 5-users: 1 iterations for each of 5 VUs (maxDuration: 10m0s, startTime: 2m0s, gracefulStop: 1m0s)
+           * 6-users: 1 iterations for each of 6 VUs (maxDuration: 10m0s, startTime: 2m30s, gracefulStop: 1m0s)
+
+WARN[0092] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+WARN[0092] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+WARN[0212] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+WARN[0212] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+WARN[0212] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+WARN[0212] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+WARN[0212] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+WARN[0212] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+
+     ✗ status was 200
+      ↳  61% — ✓ 13 / ✗ 8
+
+     checks.........................: 61.90% ✓ 13       ✗ 8
+     data_received..................: 3.9 kB 19 B/s
+     data_sent......................: 17 MB  81 kB/s
+     http_req_blocked...............: avg=231.4ms  min=221.84ms med=235.17ms max=247.08ms p(90)=238.85ms p(95)=239.12ms
+     http_req_connecting............: avg=230.59ms min=221.67ms med=234.03ms max=246.94ms p(90)=238.68ms p(95)=238.92ms
+     http_req_duration..............: avg=31.72s   min=1.56s    med=39.4s    max=59.79s   p(90)=59.76s   p(95)=59.78s
+       { expected_response:true }...: avg=14.47s   min=1.56s    med=9.41s    max=42.04s   p(90)=39.41s   p(95)=40.46s
+     http_req_failed................: 38.09% ✓ 8        ✗ 13
+     http_req_receiving.............: avg=140.86ms min=0s       med=222.33ms max=237.58ms p(90)=235.47ms p(95)=236.88ms
+     http_req_sending...............: avg=13.5s    min=222.97ms med=707.1ms  max=58.47s   p(90)=58.45s   p(95)=58.46s
+     http_req_tls_handshaking.......: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=18.08s   min=1.12s    med=3.9s     max=59.56s   p(90)=59.28s   p(95)=59.52s
+     http_reqs......................: 21     0.099989/s
+     iteration_duration.............: avg=31.96s   min=1.79s    med=39.62s   max=1m0s     p(90)=1m0s     p(95)=1m0s
+     iterations.....................: 21     0.099989/s
+     vus............................: 6      min=0      max=7
+     vus_max........................: 21     min=21     max=21
+
+
+running (03m30.0s), 00/21 VUs, 21 complete and 0 interrupted iterations
+1-user  ✓ [======================================] 1 VUs  00m01.8s/10m0s  1/1 iters, 1 per VU
+2-users ✓ [======================================] 2 VUs  01m00.0s/10m0s  2/2 iters, 1 per VU
+3-users ✓ [======================================] 3 VUs  00m42.3s/10m0s  3/3 iters, 1 per VU
+4-users ✓ [======================================] 4 VUs  00m13.2s/10m0s  4/4 iters, 1 per VU
+5-users ✓ [======================================] 5 VUs  00m05.6s/10m0s  5/5 iters, 1 per VU
+6-users ✓ [======================================] 6 VUs  01m00.0s/10m0s  6/6 iters, 1 per VU

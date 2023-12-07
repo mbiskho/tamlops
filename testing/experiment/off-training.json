@@ -1,7 +1,7 @@
 {
-    "title": "Chaos Offline Proxy Server Experiment",
-    "description": "This experiment is to test the load testing performance & find the errors when interface is offline (offline)",
-    "tags": [],
+    "title": "Chaos Offline ML Training Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Training is offline (offline)",
+    "tags": ["Kubernetes", "Pod", "DGX-A100", "Training"],
     "steady-state-hypothesis": {
         "title": "Make sure that load testing has been done & able to prompt every types to server",
         "probes": [

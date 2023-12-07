@@ -1,7 +1,7 @@
 {
     "title": "Chaos Offline ML Inference Server Experiment",
     "description": "This experiment is to test the load testing performance & find the errors when ML Inference is offline (offline)",
-    "tags": [],
+    "tags": ["Kubernetes", "Pod", "RTX 2080", "Inference"],
     "steady-state-hypothesis": {
         "title": "Make sure that load testing has been done & able to prompt every types to server",
         "probes": [
