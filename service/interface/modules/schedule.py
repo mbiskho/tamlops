@@ -417,10 +417,9 @@ async def send_post_request_async(session, url, payload, headers):
         if response.status == 200:
             print(f"Sent Success")
 
-async def schedule_logic_fcfs_burst(gpu_id):
+async def schedule_logic_fcfs_burst():
     tasks = await get_from_db()
     print(tasks)
-    print("GPU ID", gpu_id)
 
     if tasks == []:
         return {"error": True, "response": "There are no data in Queue"} 
@@ -434,14 +433,13 @@ async def schedule_logic_fcfs_burst(gpu_id):
             params_dict = json.loads(task['params'])
             print(task['id'])
 
-            url = "http://127.0.0.1:6070/train-burst"
+            url = "http://127.0.0.1:6070/train-burst-nogpu"
 
             payload = ''
             if task['type'] == 'text':
                 payload = json.dumps({
                 "data": {
                     "id": task['id'],
-                    "gpu": gpu_id,
                     "type": task['type'],
                     "file": task['file'],
                     "param": {
@@ -456,7 +454,6 @@ async def schedule_logic_fcfs_burst(gpu_id):
                 payload = json.dumps({
                 "data": {
                     "id": task['id'],
-                    "gpu": gpu_id,
                     "type": task['type'],
                     "file": task['file'],
                     "param": {
@@ -482,10 +479,9 @@ async def schedule_logic_fcfs_burst(gpu_id):
     return {"error": False, "response": "Scheduling Finished"}
 
 
-async def schedule_logic_fcfs_normal(gpu_id):
+async def schedule_logic_fcfs_normal():
     tasks = await get_from_db()
     print(tasks)
-    print("GPU ID", gpu_id)
 
     if tasks == []:
         return {"error": True, "response": "There are no data in Queue"} 
@@ -495,14 +491,13 @@ async def schedule_logic_fcfs_normal(gpu_id):
         params_dict = json.loads(task['params'])
         print(task['id'])
 
-        url = "http://127.0.0.1:6070/train"
+        url = "http://127.0.0.1:6070/train-nogpu"
 
         payload = ''
         if task['type'] == 'text':
             payload = json.dumps({
             "data": {
                 "id": task['id'],
-                "gpu": gpu_id,
                 "type": task['type'],
                 "file": task['file'],
                 "param": {
@@ -517,7 +512,6 @@ async def schedule_logic_fcfs_normal(gpu_id):
             payload = json.dumps({
             "data": {
                 "id": task['id'],
-                "gpu": gpu_id,
                 "type": task['type'],
                 "file": task['file'],
                 "param": {

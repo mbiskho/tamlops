@@ -98,26 +98,26 @@ async def inference_burst(requ: Request):
     return {"error": False, "response": res}
 
 @app.get('/schedule/real-min-min', response_class=JSONResponse)
-async def schedule():
+async def schedule_real_min_min():
     post_response = await schedule_logic_real_min_min()
     return {"error": False, "response": post_response}
 
 @app.get('/schedule/min-min', response_class=JSONResponse)
-async def schedule():
+async def schedule_min_min():
     post_response = await schedule_logic_min_min()
     return {"error": False, "response": post_response}
     
 @app.get('/schedule/max-min', response_class=JSONResponse)
-async def schedule():
+async def schedule_max_min():
     post_response = await schedule_logic_max_min()
     return {"error": False, "response": post_response}
     
-@app.get('/schedule/fcfs-burst/{gpu_id}', response_class=JSONResponse)
-async def schedule(gpu_id: str):
-    await schedule_logic_fcfs_burst(gpu_id)
+@app.get('/schedule/fcfs-burst', response_class=JSONResponse)
+async def schedule_fcfs_burst():
+    await schedule_logic_fcfs_burst()
     return {"error": False, "response": "Schedule Started"}
 
-@app.get('/schedule/fcfs-normal/{gpu_id}', response_class=JSONResponse)
-async def schedule(gpu_id: str):
-    await schedule_logic_fcfs_normal(gpu_id)
+@app.get('/schedule/fcfs-normal', response_class=JSONResponse)
+async def schedule_fcfs_normal():
+    await schedule_logic_fcfs_normal()
     return {"error": False, "response": "Schedule Started"}
