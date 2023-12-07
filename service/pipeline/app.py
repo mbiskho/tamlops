@@ -223,12 +223,9 @@ async def train(requests: Request):
     req = await requests.json()
     data = req['data']
     typ = data['type']
-    gpu = data['gpu']
-
-
+    
     if typ == 'image':
-        print("[!] Train image")
-        
+        print("[!] Train image") 
         command = [
             'sh', 
             'image.sh', 
@@ -243,7 +240,6 @@ async def train(requests: Request):
         ]
     else:
         print("[!] Train Text")
-
         command = [
             'sh', 
             'text.sh', 
