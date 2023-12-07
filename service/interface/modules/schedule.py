@@ -138,8 +138,8 @@ async def schedule_logic_real_min_min():
                 redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
                 print("Redis Value Datatype:", type(redis_value))
-                print("Redis Check", redis_value == 0)
-                if redis_value == 0:
+                print("Redis Check", redis_value == "0")
+                if redis_value == "0":
                     del task['gpu_usage']
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
@@ -272,8 +272,8 @@ async def schedule_logic_min_min():
                 redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
                 print("Redis Value Datatype:", type(redis_value))
-                print("Redis Check", redis_value == 0)
-                if redis_value == 0:
+                print("Redis Check", redis_value == "0")
+                if redis_value == "0":
                     del task['gpu_usage']
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
@@ -400,7 +400,8 @@ async def schedule_logic_max_min():
             while finished_flag == False:
                 redis_value = get_redis_item(task['gpu'])
                 print("Redis Value:" , redis_value)
-                if redis_value == 0:
+                print("Redis Check", redis_value == "0")
+                if redis_value == "0":
                     del task['gpu_usage']
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
