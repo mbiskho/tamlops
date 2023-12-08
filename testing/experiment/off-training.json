@@ -86,8 +86,8 @@
             "background": false,
             "provider": {
                 "type": "process",
-                "path": "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true",
-                "arguments": "k6 run -o experimental-prometheus-rw load-successrate-testing.js"
+                "path": "k6",
+                "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
             },
             "controls": [
                 {
@@ -107,8 +107,8 @@
             "background": false,
             "provider": {
                 "type": "process",
-                "path": "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true",
-                "arguments": "k6 run -o experimental-prometheus-rw load-testing.js"
+                "path": "k6",
+                "arguments": "run -o experimental-prometheus-rw load-testing.js"
             },
             "controls": [
                 {

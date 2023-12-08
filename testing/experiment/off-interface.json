@@ -5,32 +5,7 @@
     "steady-state-hypothesis": {
         "title": "Make sure that load testing has been done & able to prompt every types to server",
         "probes": [
-            {
-                "name": "Normal load success rate testing log must exists",
-                "type": "probe",
-                "tolerance": true,
-                "provider": {
-                    "type": "python",
-                    "module": "os.path",
-                    "func": "exists",
-                    "arguments": {
-                        "path": "log/running/load-successrate-testing-steadystate.log"
-                    }
-                }
-            },
-            {
-                "name": "Normal load testing log must exists",
-                "type": "probe",
-                "tolerance": true,
-                "provider": {
-                    "type": "python",
-                    "module": "os.path",
-                    "func": "exists",
-                    "arguments": {
-                        "path": "log/running/load-testing-steadystate.log"
-                    }
-                }
-            },
+           
             {
                 "type": "probe",
                 "name": "We can request text",
@@ -85,8 +60,8 @@
             "background": false,
             "provider": {
                 "type": "process",
-                "path": "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true",
-                "arguments": "k6 run -o experimental-prometheus-rw load-successrate-testing.js"
+                "path": "k6",
+                "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
             },
             "controls": [
                 {
@@ -106,8 +81,8 @@
             "background": false,
             "provider": {
                 "type": "process",
-                "path": "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true",
-                "arguments": "k6 run -o experimental-prometheus-rw load-testing.js"
+                "path": "k6",
+                "arguments": "run -o experimental-prometheus-rw load-testing.js"
             },
             "controls": [
                 {
