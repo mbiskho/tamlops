@@ -89,7 +89,7 @@
                 "arguments": "compute instances start --zone us-central1-a proxy-interaface"
             },
             "pauses": {
-                "after": 60
+                "after": 30
             }
         },
         {
