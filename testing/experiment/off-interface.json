@@ -76,7 +76,7 @@
             "provider": {
                 "type": "process",
                 "path": "gcloud",
-                "arguments": "compute instances stop proxy-interaface"
+                "arguments": "compute instances stop interface_proxy_1"
             }
         },
         {
@@ -127,7 +127,7 @@
             "provider": {
                 "type": "process",
                 "path": "gcloud",
-                "arguments": "compute instances start proxy-interaface"
+                "arguments": "compute instances start interface_proxy_1"
             }
         }
         
