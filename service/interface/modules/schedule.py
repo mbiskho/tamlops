@@ -558,7 +558,7 @@ async def schedule_logic_fcfs_normal_gpu(gpu_id):
         params_dict = json.loads(task['params'])
         print(task['id'])
 
-        url = "http://127.0.0.1:6070/train-nogpu"
+        url = "http://127.0.0.1:6070/train"
 
         payload = ''
         if task['type'] == 'text':
@@ -602,6 +602,70 @@ async def schedule_logic_fcfs_normal_gpu(gpu_id):
         response = requests.request("POST", url, headers=headers, data=payload)
         print(response)
         await delete_row_by_id("training_queue", task['id'])
+
+    return {"error": False, "response": "Scheduling Finished"}
+
+
+async def schedule_logic_fcfs_burst_gpu(gpu_id):
+    tasks = await get_from_db()
+    print(tasks)
+
+    if tasks == []:
+        return {"error": True, "response": "There are no data in Queue"} 
+    
+    async with aiohttp.ClientSession() as session:
+        # List to store individual task coroutines
+        post_requests = []
+
+        for task in tasks:
+            print(task)
+            params_dict = json.loads(task['params'])
+            print(task['id'])
+
+            url = "http://127.0.0.1:6070/train-burst"
+
+            payload = ''
+            if task['type'] == 'text':
+                payload = json.dumps({
+                "data": {
+                    "id": task['id'],
+                    "type": task['type'],
+                    "file": task['file'],
+                    "gpu": gpu_id,
+                    "param": {
+                        "per_device_train_batch_size": params_dict['per_device_train_batch_size'],
+                        "per_device_eval_batch_size": params_dict['per_device_eval_batch_size'],
+                        "learning_rate": params_dict['learning_rate'],
+                        "num_train_epochs": params_dict['num_train_epochs']
+                    }
+                }
+            })
+            elif task['type'] == 'image':
+                payload = json.dumps({
+                "data": {
+                    "id": task['id'],
+                    "type": task['type'],
+                    "file": task['file'],
+                    "gpu": gpu_id,
+                    "param": {
+                            'resolution': params_dict['resolution'],
+                            'train_batch_size': params_dict['train_batch_size'],
+                            'num_train_epochs': params_dict['num_train_epochs'],
+                            'max_train_steps': params_dict['max_train_steps'],
+                            'learning_rate': params_dict['learning_rate'],
+                            'gradient_accumulation_steps': params_dict['gradient_accumulation_steps'],
+                    }
+                }
+            })
+            headers = {
+            'Content-Type': 'application/json'
+            }
+
+            post_requests.append(send_post_request_async(session, url, json.dumps(payload), headers))
+            await delete_row_by_id("training_queue", task['id'])
+    
+        # Run all POST requests concurrently using asyncio.gather()
+        await asyncio.gather(*post_requests)
 
     return {"error": False, "response": "Scheduling Finished"}
 
