@@ -1,0 +1,222 @@
+{
+  "chaoslib-version": "1.41.0",
+  "platform": "Linux-5.15.0-1047-kvm-x86_64-with-glibc2.35",
+  "node": "srv420659",
+  "experiment": {
+    "title": "Chaos Offline ML Inference Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Inference is offline (offline)",
+    "tags": [
+      "Kubernetes",
+      "Pod",
+      "RTX 2080",
+      "Inference"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Make sure that load testing has been done & able to prompt every types to server",
+      "probes": [
+        {
+          "name": "Normal load success rate testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-successrate-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning off the Inference pod",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      },
+      {
+        "type": "action",
+        "name": "Run load success rate testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-interface",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-interface"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-inference",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-inference"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        }
+      },
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning on the Inference pods",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-12-08T17:42:26.990019",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": false,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load success rate testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-successrate-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-08T17:42:26.991624",
+          "status": "succeeded",
+          "end": "2023-12-08T17:42:26.992139",
+          "duration": 0.000515,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": false,
+          "start": "2023-12-08T17:42:26.992556",
+          "status": "succeeded",
+          "end": "2023-12-08T17:42:26.993051",
+          "duration": 0.000495,
+          "tolerance_met": false
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [],
+  "rollbacks": [],
+  "end": "2023-12-08T17:42:26.993869",
+  "duration": 0.006439924240112305
+}

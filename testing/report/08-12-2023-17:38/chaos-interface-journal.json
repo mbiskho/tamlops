@@ -1,0 +1,213 @@
+{
+  "chaoslib-version": "1.41.0",
+  "platform": "Linux-5.15.0-1047-kvm-x86_64-with-glibc2.35",
+  "node": "srv420659",
+  "experiment": {
+    "title": "Chaos Offline ML Training Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Inference is offline (offline)",
+    "tags": [
+      "Google Cloud Platform",
+      "Compute Engine",
+      "Docker",
+      "Interface"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Make sure that load testing has been done & able to prompt every types to server",
+      "probes": [
+        {
+          "name": "Normal load success rate testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-successrate-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "Turn off interface VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances stop --zone us-central1-a proxy-interaface"
+        }
+      },
+      {
+        "type": "action",
+        "name": "Run load success rate testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-interface",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-interface"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        }
+      },
+      {
+        "type": "action",
+        "name": "Turn on interface VM on Google Cloud Platform",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances start --zone us-central1-a proxy-interaface"
+        },
+        "pauses": {
+          "after": 60
+        }
+      },
+      {
+        "type": "action",
+        "name": "Turn on docker instance",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "ssh",
+          "arguments": "-i gcp-ta-key muhammad_haqqi01@35.208.32.246 sudo docker container start interface_proxy_1"
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-12-08T17:42:22.689929",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": false,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load success rate testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-successrate-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-08T17:42:22.691417",
+          "status": "succeeded",
+          "end": "2023-12-08T17:42:22.691845",
+          "duration": 0.000428,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": false,
+          "start": "2023-12-08T17:42:22.692259",
+          "status": "succeeded",
+          "end": "2023-12-08T17:42:22.692645",
+          "duration": 0.000386,
+          "tolerance_met": false
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [],
+  "rollbacks": [],
+  "end": "2023-12-08T17:42:22.693617",
+  "duration": 0.006203889846801758
+}

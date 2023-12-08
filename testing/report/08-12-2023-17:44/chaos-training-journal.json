@@ -1,0 +1,257 @@
+{
+  "chaoslib-version": "1.41.0",
+  "platform": "Linux-5.15.0-1047-kvm-x86_64-with-glibc2.35",
+  "node": "srv420659",
+  "experiment": {
+    "title": "Chaos Offline ML Training Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Training is offline (offline)",
+    "tags": [
+      "Kubernetes",
+      "Pod",
+      "DGX-A100",
+      "Training"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Make sure that load testing has been done & able to prompt every types to server",
+      "probes": [
+        {
+          "name": "Normal load success rate testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-successrate-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning off the Training pod",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      },
+      {
+        "type": "action",
+        "name": "Run load success rate testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-interface",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-interface"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        }
+      },
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning on all Training pods",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-12-08T17:54:37.169024",
+  "status": "failed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": false,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load success rate testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-successrate-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-08T17:54:37.170456",
+          "status": "succeeded",
+          "end": "2023-12-08T17:54:37.170885",
+          "duration": 0.000429,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-08T17:54:37.171392",
+          "status": "succeeded",
+          "end": "2023-12-08T17:54:37.171799",
+          "duration": 0.000407,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request text",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 20,
+              "url": "http://35.208.32.246:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "text",
+                "text": "What german name of apple"
+              }
+            }
+          },
+          "output": null,
+          "start": "2023-12-08T17:54:37.172142",
+          "status": "failed",
+          "exception": [
+            "Traceback (most recent call last):\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connection.py\", line 203, in _new_conn\n    sock = connection.create_connection(\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/util/connection.py\", line 85, in create_connection\n    raise err\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/util/connection.py\", line 73, in create_connection\n    sock.connect(sa)\n",
+            "TimeoutError: timed out\n",
+            "\nThe above exception was the direct cause of the following exception:\n\n",
+            "Traceback (most recent call last):\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 790, in urlopen\n    response = self._make_request(\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 496, in _make_request\n    conn.request(\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connection.py\", line 395, in request\n    self.endheaders()\n",
+            "  File \"/usr/lib/python3.10/http/client.py\", line 1278, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n",
+            "  File \"/usr/lib/python3.10/http/client.py\", line 1038, in _send_output\n    self.send(msg)\n",
+            "  File \"/usr/lib/python3.10/http/client.py\", line 976, in send\n    self.connect()\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connection.py\", line 243, in connect\n    self.sock = self._new_conn()\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connection.py\", line 212, in _new_conn\n    raise ConnectTimeoutError(\n",
+            "urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7fc541164b20>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)')\n",
+            "\nThe above exception was the direct cause of the following exception:\n\n",
+            "Traceback (most recent call last):\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/requests/adapters.py\", line 486, in send\n    resp = conn.urlopen(\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connectionpool.py\", line 844, in urlopen\n    retries = retries.increment(\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/util/retry.py\", line 515, in increment\n    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]\n",
+            "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='35.208.32.246', port=8000): Max retries exceeded with url: /inference (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fc541164b20>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)'))\n",
+            "\nDuring handling of the above exception, another exception occurred:\n\n",
+            "Traceback (most recent call last):\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/chaoslib/provider/http.py\", line 59, in run_http_activity\n    r = s.request(\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/requests/sessions.py\", line 589, in request\n    resp = self.send(prep, **send_kwargs)\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/requests/sessions.py\", line 703, in send\n    r = adapter.send(request, **kwargs)\n",
+            "  File \"/root/tamlops/testing/env/lib/python3.10/site-packages/requests/adapters.py\", line 507, in send\n    raise ConnectTimeout(e, request=request)\n",
+            "requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='35.208.32.246', port=8000): Max retries exceeded with url: /inference (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fc541164b20>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)'))\n",
+            "\nDuring handling of the above exception, another exception occurred:\n\n",
+            "chaoslib.exceptions.ActivityFailed: failed to connect to http://35.208.32.246:8000/inference: HTTPConnectionPool(host='35.208.32.246', port=8000): Max retries exceeded with url: /inference (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fc541164b20>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)'))\n"
+          ],
+          "end": "2023-12-08T17:54:57.202987",
+          "duration": 20.030845,
+          "tolerance_met": false
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [],
+  "rollbacks": [],
+  "end": "2023-12-08T17:54:57.203808",
+  "duration": 20.037495851516724
+}
