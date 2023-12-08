@@ -1,0 +1,38 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: load-testing.js
+     output: Prometheus remote write (http://localhost:9090/api/v1/write)
+
+  scenarios: (100.00%) 1 scenario, 32 max VUs, 20m30s max duration (incl. graceful stop):
+           * default: Up to 32 looping VUs for 20m0s over 3 stages (gracefulRampDown: 30s, gracefulStop: 30s)
+
+
+     ✗ status was 200
+      ↳  69% — ✓ 497 / ✗ 220
+
+     checks.........................: 69.31% ✓ 497     ✗ 220
+     data_received..................: 103 kB 85 B/s
+     data_sent......................: 934 kB 772 B/s
+     http_req_blocked...............: avg=127.05ms min=6.21µs   med=213.93ms max=243.18ms p(90)=236.26ms p(95)=237.61ms
+     http_req_connecting............: avg=126.93ms min=0s       med=213.75ms max=243.01ms p(90)=236.09ms p(95)=237.45ms
+     http_req_duration..............: avg=25.59s   min=179.77ms med=21.64s   max=59.79s   p(90)=57.38s   p(95)=59.76s
+       { expected_response:true }...: avg=25.07s   min=1.82s    med=22.6s    max=59.54s   p(90)=47.56s   p(95)=53.26s
+     http_req_failed................: 30.68% ✓ 220     ✗ 497
+     http_req_receiving.............: avg=153.49ms min=0s       med=213.8ms  max=238.21ms p(90)=236.46ms p(95)=237.3ms
+     http_req_sending...............: avg=117.21µs min=26.55µs  med=111.12µs max=1.97ms   p(90)=181.99µs p(95)=229.93µs
+     http_req_tls_handshaking.......: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=25.44s   min=179.71ms med=21.57s   max=59.79s   p(90)=57.14s   p(95)=59.76s
+     http_reqs......................: 717    0.59204/s
+     iteration_duration.............: avg=40.72s   min=15.18s   med=36.64s   max=1m15s    p(90)=1m12s    p(95)=1m15s
+     iterations.....................: 717    0.59204/s
+     vus............................: 1      min=0     max=32
+     vus_max........................: 32     min=32    max=32
+
+
+running (20m11.1s), 00/32 VUs, 717 complete and 1 interrupted iterations
