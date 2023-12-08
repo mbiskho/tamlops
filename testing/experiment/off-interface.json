@@ -63,26 +63,8 @@
                 "path": "k6",
                 "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
             },
-            "controls": [
-                {
-                    "name": "Change CHAOS_TYPE env value to off-interface",
-                    "scope": "before",
-                    "provider": {
-                        "type": "process",
-                        "path": "export",
-                        "arguments": "CHAOS_TYPE=off-interface"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "action",
-            "name": "Run load testing",
-            "background": false,
-            "provider": {
-                "type": "process",
-                "path": "k6",
-                "arguments": "run -o experimental-prometheus-rw load-testing.js"
+            "configuration": {
+                "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
             },
             "controls": [
                 {
@@ -96,6 +78,7 @@
                 }
             ]
         },
+       
         {
             "type": "action",
             "name": "Turn on interface VM on Google Cloud Platform",
@@ -103,9 +86,19 @@
                 "type": "process",
                 "path": "gcloud",
                 "arguments": "compute instances start proxy-interaface"
-            }
-        }
-        
+            },
+            "controls": [
+                {
+                    "name": "Turn on docker instance",
+                    "scope": "after",
+                    "provider": {
+                        "type": "process",
+                        "path": "ssh",
+                        "arguments": "-i gcp-ta-key muhammad_haqqi01@35.208.32.246 sudo docker container start interface_proxy_1"
+                    }
+                }
+            ]
+        }        
     ],
     "rollbacks": []
 }
