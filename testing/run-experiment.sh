@@ -26,7 +26,7 @@ CHAOS_INTERFACE_REPORT_FILE_DIR="${CHAOS_REPORT_LOG_DIR}/chaos-interface-journal
 CHAOS_INFERENCE_REPORT_FILE_DIR="${CHAOS_REPORT_LOG_DIR}/chaos-inference-journal.json"
 CHAOS_TRAINING_REPORT_FILE_DIR="${CHAOS_REPORT_LOG_DIR}/chaos-training-journal.json"
 
-CHAOS_COMBINED_REPORT_FILES_DIR="${CHAOS_REPORT_LOG_DIR}/chaos-report.pdf"
+CHAOS_COMBINED_REPORT_FILES_DIR="${CHAOS_REPORT_LOG_DIR}/chaos-report.md"
 
 # Init commands before testing
 rm -r "${CHAOS_RUNNING_LOG_DIR}"
@@ -49,7 +49,7 @@ chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" run "${CHAOS_INFERENCE_TEST_
 chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" run "${CHAOS_TRAINING_TEST_FILE_DIR}" --journal-path "${CHAOS_TRAINING_REPORT_FILE_DIR}" --hypothesis-strategy before-method-only
 
 # Create reports from chaos experiments
-chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" report --export-format=pdf "${CHAOS_INTERFACE_REPORT_FILE_DIR}" "${CHAOS_INFERENCE_REPORT_FILE_DIR}" "${CHAOS_TRAINING_REPORT_FILE_DIR}""${CHAOS_COMBINED_REPORT_FILES_DIR}"
+chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" report --export-format=md "${CHAOS_INTERFACE_REPORT_FILE_DIR}" "${CHAOS_INFERENCE_REPORT_FILE_DIR}" "${CHAOS_TRAINING_REPORT_FILE_DIR}""${CHAOS_COMBINED_REPORT_FILES_DIR}"
 
 # Move all log from log/running to log/${date}
 rm -r "${CHAOS_FINAL_LOG_DIR}"

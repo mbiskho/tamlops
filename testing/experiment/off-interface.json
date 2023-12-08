@@ -1,6 +1,6 @@
 {
-    "title": "Chaos Offline ML Training Server Experiment",
-    "description": "This experiment is to test the load testing performance & find the errors when ML Inference is offline (offline)",
+    "title": "Chaos Offline Interface Proxy Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when Interface Proxy is turn off (offline)",
     "tags": ["Google Cloud Platform", "Compute Engine", "Docker", "Interface"],
     "steady-state-hypothesis": {
         "title": "Make sure that load testing has been done & able to prompt every types to server",
