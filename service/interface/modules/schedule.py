@@ -144,6 +144,7 @@ async def schedule_logic_real_min_min():
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
                     }))
+                    await delete_row_by_id("training_queue", task['id'])
                     finished_flag = True
                     break
                 time.sleep(5)
@@ -282,6 +283,7 @@ async def schedule_logic_min_min():
                     finished_flag = True
                     check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
                     current_gpu_state = check_gpu['response']
+                    await delete_row_by_id("training_queue", task['id'])
                     break
                 time.sleep(5)
 
@@ -412,6 +414,7 @@ async def schedule_logic_max_min():
                     "data": task
                     }))
                     check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+                    await delete_row_by_id("training_queue", task['id'])
                     current_gpu_state = check_gpu['response']
                     finished_flag = True
                     break
