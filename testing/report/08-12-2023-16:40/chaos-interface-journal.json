@@ -1,0 +1,309 @@
+{
+  "chaoslib-version": "1.41.0",
+  "platform": "Linux-5.15.0-1047-kvm-x86_64-with-glibc2.35",
+  "node": "srv420659",
+  "experiment": {
+    "title": "Chaos Offline ML Training Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Inference is offline (offline)",
+    "tags": [
+      "Google Cloud Platform",
+      "Compute Engine",
+      "Docker",
+      "Interface"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Make sure that load testing has been done & able to prompt every types to server",
+      "probes": [
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "Turn off interface VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances stop --zone us-central1-a proxy-interaface"
+        }
+      },
+      {
+        "type": "action",
+        "name": "Run load success rate testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-interface",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-interface"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Turn on interface VM on Google Cloud Platform",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances start --zone us-central1-a proxy-interaface"
+        },
+        "pauses": {
+          "after": 30
+        }
+      },
+      {
+        "type": "action",
+        "name": "Turn on docker instance",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "ssh",
+          "arguments": "-i gcp-ta-key muhammad_haqqi01@35.208.32.246 sudo docker container start interface_proxy_1"
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-12-08T16:42:18.337557",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request text",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 20,
+              "url": "http://35.208.32.246:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "text",
+                "text": "What german name of apple"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Fri, 08 Dec 2023 16:42:17 GMT",
+              "server": "uvicorn",
+              "content-length": "31",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": null
+            }
+          },
+          "start": "2023-12-08T16:42:18.339227",
+          "status": "succeeded",
+          "end": "2023-12-08T16:42:19.015299",
+          "duration": 0.676072,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request image",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 60,
+              "url": "http://35.208.32.246:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "image",
+                "text": "Make me an image of a cat with hat"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Fri, 08 Dec 2023 16:42:19 GMT",
+              "server": "uvicorn",
+              "content-length": "31",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": null
+            }
+          },
+          "start": "2023-12-08T16:42:19.015761",
+          "status": "succeeded",
+          "end": "2023-12-08T16:42:19.688169",
+          "duration": 0.672408,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "Turn off interface VM on Google Cloud Platform",
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances stop --zone us-central1-a proxy-interaface"
+        }
+      },
+      "output": {
+        "status": 0,
+        "stdout": "",
+        "stderr": "Stopping instance(s) proxy-interaface...\n.......................................................................................................................................................................................................................................................................................................done.\nUpdated [https://compute.googleapis.com/compute/v1/projects/mlops-398205/zones/us-central1-a/instances/proxy-interaface].\n"
+      },
+      "start": "2023-12-08T16:42:19.688956",
+      "status": "succeeded",
+      "end": "2023-12-08T16:43:24.382404",
+      "duration": 64.693448
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Run load success rate testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-interface",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-interface"
+            }
+          }
+        ]
+      },
+      "output": {
+        "status": 0,
+        "stdout": "\n          /\\      |‾‾| /‾‾/   /‾‾/   \n     /\\  /  \\     |  |/  /   /  /    \n    /  \\/    \\    |     (   /   ‾‾\\  \n   /          \\   |  |\\  \\ |  (‾)  | \n  / __________ \\  |__| \\__\\ \\_____/ .io\n\n  execution: local\n     script: load-successrate-testing.js\n     output: Prometheus remote write (http://localhost:9090/api/v1/write)\n\n  scenarios: (100.00%) 1 scenario, 1 max VUs, 1m0s max duration (incl. graceful stop):\n           * 1-user: 1 iterations for each of 1 VUs (maxDuration: 1m0s)\n\n\nrunning (0m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m01.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m02.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m03.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m03.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m04.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m04.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m05.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m05.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m06.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m06.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m07.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m07.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m08.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m08.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m09.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m09.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m10.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m10.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m11.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m11.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m12.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m12.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m13.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m13.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m14.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m14.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m15.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m15.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m16.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m16.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m17.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m17.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m18.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m18.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m19.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m19.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m20.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m20.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m21.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m21.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m22.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m22.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m23.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m23.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m24.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m24.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m25.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m25.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m26.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m26.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m27.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m27.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m28.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m28.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m29.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m29.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m30.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m30.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m31.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m31.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m32.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m32.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m33.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m33.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m34.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m34.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m35.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m35.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m36.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m36.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m37.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m37.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m38.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m38.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m39.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m39.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m40.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m40.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m41.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m41.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m42.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m42.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m43.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m43.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m44.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m44.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m45.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m45.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m45.0s), 0/1 VUs, 1 complete and 0 interrupted iterations\n1-user ✓ [ 100% ] 1 VUs  0m45.0s/1m0s  1/1 iters, 1 per VU\n",
+        "stderr": "time=\"2023-12-08T16:44:33Z\" level=warning msg=\"Request Failed\" error=\"Post \\\"http://35.208.32.246:8000/inference\\\": dial: i/o timeout\"\n"
+      },
+      "start": "2023-12-08T16:43:24.383429",
+      "status": "succeeded",
+      "end": "2023-12-08T16:44:49.512613",
+      "duration": 85.129184
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Turn on interface VM on Google Cloud Platform",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "gcloud",
+          "arguments": "compute instances start --zone us-central1-a proxy-interaface"
+        },
+        "pauses": {
+          "after": 30
+        }
+      },
+      "output": {
+        "status": 0,
+        "stdout": "",
+        "stderr": "Starting instance(s) proxy-interaface...\n.............................................done.\nUpdated [https://compute.googleapis.com/compute/v1/projects/mlops-398205/zones/us-central1-a/instances/proxy-interaface].\nInstance internal IP is 10.128.0.14\nInstance external IP is 35.208.32.246\n"
+      },
+      "start": "2023-12-08T16:44:49.513841",
+      "status": "succeeded",
+      "end": "2023-12-08T16:45:05.077814",
+      "duration": 15.563973
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Turn on docker instance",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "ssh",
+          "arguments": "-i gcp-ta-key muhammad_haqqi01@35.208.32.246 sudo docker container start interface_proxy_1"
+        }
+      },
+      "output": {
+        "status": 255,
+        "stdout": "",
+        "stderr": "Warning: Identity file gcp-ta-key not accessible: No such file or directory.\nmuhammad_haqqi01@35.208.32.246: Permission denied (publickey).\r\n"
+      },
+      "start": "2023-12-08T16:45:35.090141",
+      "status": "succeeded",
+      "end": "2023-12-08T16:45:36.981515",
+      "duration": 1.891374
+    }
+  ],
+  "rollbacks": [],
+  "end": "2023-12-08T16:45:36.982842",
+  "duration": 198.647399187088
+}

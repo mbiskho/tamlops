@@ -1,0 +1,194 @@
+[36m[2023-12-08 16:42:15 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-08 16:42:15 DEBUG] [cli:115][39m Running command 'run'
+[36m[2023-12-08 16:42:15 DEBUG] [cli:119][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2023-12-08 16:42:18 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2023-12-08 16:42:18 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:42:18 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:42:18 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:42:18 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2023-12-08 16:42:18 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2023-12-08 16:42:18 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:42:18 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:42:18 DEBUG] [secret:103][39m Done loading secrets
+[32m[2023-12-08 16:42:18 INFO] [experiment:109][39m Experiment looks valid
+[36m[2023-12-08 16:42:18 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:42:18 DEBUG] [cli:314][39m Runtime strategies: hypothesis - before-method-only / rollbacks - default
+[36m[2023-12-08 16:42:18 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:42:18 DEBUG] [caching:35][39m Cached 6 activities
+[36m[2023-12-08 16:42:18 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:42:18 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:42:18 DEBUG] [secret:103][39m Done loading secrets
+[36m[2023-12-08 16:42:18 DEBUG] [configuration:160][39m Loading dynamic configuration...
+[32m[2023-12-08 16:42:18 INFO] [run:369][39m Running experiment: Chaos Offline ML Training Server Experiment
+[36m[2023-12-08 16:42:18 DEBUG] [__init__:59][39m Initializing controls
+[36m[2023-12-08 16:42:18 DEBUG] [__init__:68][39m Initializing control 'Change CHAOS_TYPE env value to off-interface'
+[32m[2023-12-08 16:42:18 INFO] [run:396][39m Steady-state strategy: before-method-only
+[32m[2023-12-08 16:42:18 INFO] [run:400][39m Rollbacks strategy: default
+[36m[2023-12-08 16:42:18 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:42:18 DEBUG] [run:563][39m Running steady-state hypothesis before the method
+[32m[2023-12-08 16:42:18 INFO] [hypothesis:186][39m Steady state hypothesis: Make sure that load testing has been done & able to prompt every types to server
+[36m[2023-12-08 16:42:18 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[36m[2023-12-08 16:42:18 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:42:18 INFO] [activity:215][39m Probe: We can request text
+[36m[2023-12-08 16:42:19 DEBUG] [activity:237][39m   => succeeded with '{'status': 200, 'headers': {'date': 'Fri, 08 Dec 2023 16:42:17 GMT', 'server': 'uvicorn', 'content-length': '31', 'content-type': 'application/json'}, 'body': {'error': False, 'response': None}}'
+[36m[2023-12-08 16:42:19 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:42:19 DEBUG] [hypothesis:228][39m allowed tolerance is 200
+[36m[2023-12-08 16:42:19 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:42:19 INFO] [activity:215][39m Probe: We can request image
+[36m[2023-12-08 16:42:19 DEBUG] [activity:237][39m   => succeeded with '{'status': 200, 'headers': {'date': 'Fri, 08 Dec 2023 16:42:19 GMT', 'server': 'uvicorn', 'content-length': '31', 'content-type': 'application/json'}, 'body': {'error': False, 'response': None}}'
+[36m[2023-12-08 16:42:19 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:42:19 DEBUG] [hypothesis:228][39m allowed tolerance is 200
+[32m[2023-12-08 16:42:19 INFO] [hypothesis:238][39m Steady state hypothesis is met!
+[36m[2023-12-08 16:42:19 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[32m[2023-12-08 16:42:19 INFO] [run:677][39m Playing your experiment's method now...
+[36m[2023-12-08 16:42:19 DEBUG] [__init__:445][39m No controls to apply on 'method'
+[36m[2023-12-08 16:42:19 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:42:19 INFO] [activity:215][39m Action: Turn off interface VM on Google Cloud Platform
+[36m[2023-12-08 16:42:19 DEBUG] [process:52][39m Running: /usr/bin/gcloud compute instances stop --zone us-central1-a proxy-interaface
+[36m[2023-12-08 16:43:24 DEBUG] [__init__:149][39m Data encoding detected as 'utf-8' with a confidence of 1.0
+[36m[2023-12-08 16:43:24 DEBUG] [__init__:149][39m Data encoding detected as 'ascii' with a confidence of 1.0
+[36m[2023-12-08 16:43:24 DEBUG] [activity:237][39m   => succeeded with '{'status': 0, 'stdout': '', 'stderr': 'Stopping instance(s) proxy-interaface...\n.......................................................................................................................................................................................................................................................................................................done.\nUpdated [https://compute.googleapis.com/compute/v1/projects/mlops-398205/zones/us-central1-a/instances/proxy-interaface].\n'}'
+[36m[2023-12-08 16:43:24 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:43:24 DEBUG] [__init__:455][39m Applying before-control 'Change CHAOS_TYPE env value to off-interface' on 'activity'
+[32m[2023-12-08 16:43:24 INFO] [activity:215][39m Action: Run load success rate testing
+[36m[2023-12-08 16:43:24 DEBUG] [process:52][39m Running: /usr/bin/k6 run -o experimental-prometheus-rw load-successrate-testing.js
+[36m[2023-12-08 16:44:49 DEBUG] [__init__:149][39m Data encoding detected as 'utf-8' with a confidence of 1.0
+[36m[2023-12-08 16:44:49 DEBUG] [__init__:149][39m Data encoding detected as 'ascii' with a confidence of 1.0
+[36m[2023-12-08 16:44:49 DEBUG] [activity:237][39m   => succeeded with '{'status': 0, 'stdout': '\n          /\\      |‾‾| /‾‾/   /‾‾/   \n     /\\  /  \\     |  |/  /   /  /    \n    /  \\/    \\    |     (   /   ‾‾\\  \n   /          \\   |  |\\  \\ |  (‾)  | \n  / __________ \\  |__| \\__\\ \\_____/ .io\n\n  execution: local\n     script: load-successrate-testing.js\n     output: Prometheus remote write (http://localhost:9090/api/v1/write)\n\n  scenarios: (100.00%) 1 scenario, 1 max VUs, 1m0s max duration (incl. graceful stop):\n           * 1-user: 1 iterations for each of 1 VUs (maxDuration: 1m0s)\n\n\nrunning (0m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m01.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m02.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m03.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m03.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m04.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m04.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m05.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m05.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m06.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m06.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m07.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m07.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m08.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m08.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m09.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m09.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m10.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m10.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m11.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m11.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m12.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m12.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m13.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m13.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m14.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m14.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m15.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m15.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m16.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m16.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m17.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m17.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m18.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m18.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m19.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m19.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m20.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m20.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m21.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m21.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m22.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m22.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m23.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m23.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m24.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m24.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m25.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m25.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m26.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m26.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m27.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m27.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m28.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m28.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m29.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m29.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m30.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m30.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m31.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m31.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m32.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m32.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m33.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m33.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m34.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m34.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m35.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m35.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m36.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m36.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m37.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m37.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m38.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m38.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m39.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m39.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m40.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m40.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m41.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m41.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m42.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m42.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m43.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m43.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m44.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m44.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m45.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m45.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m45.0s), 0/1 VUs, 1 complete and 0 interrupted iterations\n1-user ✓ [ 100% ] 1 VUs  0m45.0s/1m0s  1/1 iters, 1 per VU\n', 'stderr': 'time="2023-12-08T16:44:33Z" level=warning msg="Request Failed" error="Post \\"http://35.208.32.246:8000/inference\\": dial: i/o timeout"\n'}'
+[36m[2023-12-08 16:44:49 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:44:49 INFO] [activity:215][39m Action: Turn on interface VM on Google Cloud Platform
+[36m[2023-12-08 16:44:49 DEBUG] [process:52][39m Running: /usr/bin/gcloud compute instances start --zone us-central1-a proxy-interaface
+[36m[2023-12-08 16:45:05 DEBUG] [__init__:149][39m Data encoding detected as 'utf-8' with a confidence of 1.0
+[36m[2023-12-08 16:45:05 DEBUG] [__init__:149][39m Data encoding detected as 'ascii' with a confidence of 1.0
+[36m[2023-12-08 16:45:05 DEBUG] [activity:237][39m   => succeeded with '{'status': 0, 'stdout': '', 'stderr': 'Starting instance(s) proxy-interaface...\n.............................................done.\nUpdated [https://compute.googleapis.com/compute/v1/projects/mlops-398205/zones/us-central1-a/instances/proxy-interaface].\nInstance internal IP is 10.128.0.14\nInstance external IP is 35.208.32.246\n'}'
+[32m[2023-12-08 16:45:05 INFO] [activity:257][39m Pausing after activity for 30s...
+[36m[2023-12-08 16:45:35 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:45:35 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:45:35 INFO] [activity:215][39m Action: Turn on docker instance
+[36m[2023-12-08 16:45:35 DEBUG] [process:52][39m Running: /usr/bin/ssh -i gcp-ta-key muhammad_haqqi01@35.208.32.246 sudo docker container start interface_proxy_1
+[33m[2023-12-08 16:45:36 WARNING] [process:70][39m This process returned a non-zero exit code. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:149][39m Data encoding detected as 'utf-8' with a confidence of 1.0
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:149][39m Data encoding detected as 'ascii' with a confidence of 1.0
+[36m[2023-12-08 16:45:36 DEBUG] [activity:237][39m   => succeeded with '{'status': 255, 'stdout': '', 'stderr': 'Warning: Identity file gcp-ta-key not accessible: No such file or directory.\nmuhammad_haqqi01@35.208.32.246: Permission denied (publickey).\r\n'}'
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:445][39m No controls to apply on 'method'
+[32m[2023-12-08 16:45:36 INFO] [run:966][39m Let's rollback...
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:45:36 INFO] [rollback:32][39m No declared rollbacks, let's move on.
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:45:36 INFO] [run:515][39m Experiment ended with status: completed
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:98][39m Cleaning up controls
+[36m[2023-12-08 16:45:36 DEBUG] [__init__:107][39m Cleaning up control 'Change CHAOS_TYPE env value to off-interface'
+[36m[2023-12-08 16:45:36 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:45:38 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-08 16:45:38 DEBUG] [cli:115][39m Running command 'run'
+[36m[2023-12-08 16:45:38 DEBUG] [cli:119][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2023-12-08 16:45:39 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:45:39 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:45:39 DEBUG] [caching:35][39m Cached 8 activities
+[32m[2023-12-08 16:45:39 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2023-12-08 16:45:39 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:45:39 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:45:39 DEBUG] [secret:103][39m Done loading secrets
+[32m[2023-12-08 16:45:39 INFO] [experiment:109][39m Experiment looks valid
+[36m[2023-12-08 16:45:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:45:39 DEBUG] [cli:314][39m Runtime strategies: hypothesis - before-method-only / rollbacks - default
+[36m[2023-12-08 16:45:39 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:45:39 DEBUG] [caching:35][39m Cached 8 activities
+[36m[2023-12-08 16:45:39 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:45:39 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:45:39 DEBUG] [secret:103][39m Done loading secrets
+[36m[2023-12-08 16:45:39 DEBUG] [configuration:160][39m Loading dynamic configuration...
+[32m[2023-12-08 16:45:39 INFO] [run:369][39m Running experiment: Chaos Offline ML Inference Server Experiment
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:59][39m Initializing controls
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:68][39m Initializing control 'Change CHAOS_TYPE env value to off-interface'
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:68][39m Initializing control 'Change CHAOS_TYPE env value to off-inference'
+[32m[2023-12-08 16:45:39 INFO] [run:396][39m Steady-state strategy: before-method-only
+[32m[2023-12-08 16:45:39 INFO] [run:400][39m Rollbacks strategy: default
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:45:39 DEBUG] [run:563][39m Running steady-state hypothesis before the method
+[32m[2023-12-08 16:45:39 INFO] [hypothesis:186][39m Steady state hypothesis: Make sure that load testing has been done & able to prompt every types to server
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:45:39 INFO] [activity:215][39m Probe: Normal load success rate testing log must exists
+[36m[2023-12-08 16:45:39 DEBUG] [python:33][39m Activity 'Normal load success rate testing log must exists' loaded from '/usr/lib/python3.10/genericpath.py'
+[36m[2023-12-08 16:45:39 DEBUG] [activity:237][39m   => succeeded with 'True'
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:45:39 DEBUG] [hypothesis:228][39m allowed tolerance is True
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:45:39 INFO] [activity:215][39m Probe: Normal load testing log must exists
+[36m[2023-12-08 16:45:39 DEBUG] [python:33][39m Activity 'Normal load testing log must exists' loaded from '/usr/lib/python3.10/genericpath.py'
+[36m[2023-12-08 16:45:39 DEBUG] [activity:237][39m   => succeeded with 'False'
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:45:39 DEBUG] [hypothesis:228][39m allowed tolerance is True
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[31m[2023-12-08 16:45:39 CRITICAL] [run:579][39m Steady state probe 'Normal load testing log must exists' is not in the given tolerance so failing this experiment
+[32m[2023-12-08 16:45:39 INFO] [run:966][39m Let's rollback...
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:45:39 INFO] [rollback:32][39m No declared rollbacks, let's move on.
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:45:39 INFO] [run:515][39m Experiment ended with status: completed
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:98][39m Cleaning up controls
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:107][39m Cleaning up control 'Change CHAOS_TYPE env value to off-interface'
+[36m[2023-12-08 16:45:39 DEBUG] [__init__:107][39m Cleaning up control 'Change CHAOS_TYPE env value to off-inference'
+[36m[2023-12-08 16:45:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:45:40 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-08 16:45:40 DEBUG] [cli:115][39m Running command 'run'
+[36m[2023-12-08 16:45:40 DEBUG] [cli:119][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2023-12-08 16:45:42 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:45:42 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:45:42 DEBUG] [caching:35][39m Cached 8 activities
+[32m[2023-12-08 16:45:42 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2023-12-08 16:45:42 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:45:42 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:45:42 DEBUG] [secret:103][39m Done loading secrets
+[32m[2023-12-08 16:45:42 INFO] [experiment:109][39m Experiment looks valid
+[36m[2023-12-08 16:45:42 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:45:42 DEBUG] [cli:314][39m Runtime strategies: hypothesis - before-method-only / rollbacks - default
+[36m[2023-12-08 16:45:42 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:45:42 DEBUG] [caching:35][39m Cached 8 activities
+[36m[2023-12-08 16:45:42 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:45:42 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:45:42 DEBUG] [secret:103][39m Done loading secrets
+[36m[2023-12-08 16:45:42 DEBUG] [configuration:160][39m Loading dynamic configuration...
+[32m[2023-12-08 16:45:42 INFO] [run:369][39m Running experiment: Chaos Offline ML Training Server Experiment
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:59][39m Initializing controls
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:68][39m Initializing control 'Change CHAOS_TYPE env value to off-interface'
+[32m[2023-12-08 16:45:42 INFO] [run:396][39m Steady-state strategy: before-method-only
+[32m[2023-12-08 16:45:42 INFO] [run:400][39m Rollbacks strategy: default
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:45:42 DEBUG] [run:563][39m Running steady-state hypothesis before the method
+[32m[2023-12-08 16:45:42 INFO] [hypothesis:186][39m Steady state hypothesis: Make sure that load testing has been done & able to prompt every types to server
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:45:42 INFO] [activity:215][39m Probe: Normal load success rate testing log must exists
+[36m[2023-12-08 16:45:42 DEBUG] [python:33][39m Activity 'Normal load success rate testing log must exists' loaded from '/usr/lib/python3.10/genericpath.py'
+[36m[2023-12-08 16:45:42 DEBUG] [activity:237][39m   => succeeded with 'True'
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:45:42 DEBUG] [hypothesis:228][39m allowed tolerance is True
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:45:42 INFO] [activity:215][39m Probe: Normal load testing log must exists
+[36m[2023-12-08 16:45:42 DEBUG] [python:33][39m Activity 'Normal load testing log must exists' loaded from '/usr/lib/python3.10/genericpath.py'
+[36m[2023-12-08 16:45:42 DEBUG] [activity:237][39m   => succeeded with 'False'
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:45:42 DEBUG] [hypothesis:228][39m allowed tolerance is True
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[31m[2023-12-08 16:45:42 CRITICAL] [run:579][39m Steady state probe 'Normal load testing log must exists' is not in the given tolerance so failing this experiment
+[32m[2023-12-08 16:45:42 INFO] [run:966][39m Let's rollback...
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:45:42 INFO] [rollback:32][39m No declared rollbacks, let's move on.
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:45:42 INFO] [run:515][39m Experiment ended with status: completed
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:98][39m Cleaning up controls
+[36m[2023-12-08 16:45:42 DEBUG] [__init__:107][39m Cleaning up control 'Change CHAOS_TYPE env value to off-interface'
+[36m[2023-12-08 16:45:42 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:45:43 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-08 16:45:43 DEBUG] [cli:115][39m Running command 'report'
+[36m[2023-12-08 16:45:43 DEBUG] [cli:119][39m Using settings file '/root/.chaostoolkit/settings.yaml'

@@ -1,0 +1,226 @@
+[36m[2023-12-08 16:58:40 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-08 16:58:40 DEBUG] [cli:115][39m Running command 'run'
+[36m[2023-12-08 16:58:40 DEBUG] [cli:119][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2023-12-08 16:58:41 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2023-12-08 16:58:41 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:58:41 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:58:41 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:58:41 DEBUG] [caching:35][39m Cached 6 activities
+[32m[2023-12-08 16:58:41 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2023-12-08 16:58:41 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:58:41 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:58:41 DEBUG] [secret:103][39m Done loading secrets
+[32m[2023-12-08 16:58:41 INFO] [experiment:109][39m Experiment looks valid
+[36m[2023-12-08 16:58:41 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:58:41 DEBUG] [cli:314][39m Runtime strategies: hypothesis - before-method-only / rollbacks - default
+[36m[2023-12-08 16:58:41 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:58:41 DEBUG] [caching:35][39m Cached 6 activities
+[36m[2023-12-08 16:58:41 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:58:41 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:58:41 DEBUG] [secret:103][39m Done loading secrets
+[36m[2023-12-08 16:58:41 DEBUG] [configuration:160][39m Loading dynamic configuration...
+[32m[2023-12-08 16:58:41 INFO] [run:369][39m Running experiment: Chaos Offline ML Training Server Experiment
+[36m[2023-12-08 16:58:41 DEBUG] [__init__:59][39m Initializing controls
+[36m[2023-12-08 16:58:41 DEBUG] [__init__:68][39m Initializing control 'Change CHAOS_TYPE env value to off-interface'
+[32m[2023-12-08 16:58:41 INFO] [run:396][39m Steady-state strategy: before-method-only
+[32m[2023-12-08 16:58:41 INFO] [run:400][39m Rollbacks strategy: default
+[36m[2023-12-08 16:58:41 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:58:41 DEBUG] [run:563][39m Running steady-state hypothesis before the method
+[32m[2023-12-08 16:58:41 INFO] [hypothesis:186][39m Steady state hypothesis: Make sure that load testing has been done & able to prompt every types to server
+[36m[2023-12-08 16:58:41 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[36m[2023-12-08 16:58:41 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:58:41 INFO] [activity:215][39m Probe: We can request text
+[36m[2023-12-08 16:59:01 DEBUG] [activity:294][39m Activity failed
+    Traceback (most recent call last):
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connection.py", line 203, in _new_conn
+        sock = connection.create_connection(
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+        raise err
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+        sock.connect(sa)
+    TimeoutError: timed out
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+        response = self._make_request(
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 496, in _make_request
+        conn.request(
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connection.py", line 395, in request
+        self.endheaders()
+      File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+        self._send_output(message_body, encode_chunked=encode_chunked)
+      File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+        self.send(msg)
+      File "/usr/lib/python3.10/http/client.py", line 976, in send
+        self.connect()
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connection.py", line 243, in connect
+        self.sock = self._new_conn()
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connection.py", line 212, in _new_conn
+        raise ConnectTimeoutError(
+    urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7f204f349030>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)')
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+        resp = conn.urlopen(
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+        retries = retries.increment(
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/urllib3/util/retry.py", line 515, in increment
+        raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='35.208.32.246', port=8000): Max retries exceeded with url: /inference (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f204f349030>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)'))
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/chaoslib/provider/http.py", line 59, in run_http_activity
+        r = s.request(
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+        resp = self.send(prep, **send_kwargs)
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+        r = adapter.send(request, **kwargs)
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/requests/adapters.py", line 507, in send
+        raise ConnectTimeout(e, request=request)
+    requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='35.208.32.246', port=8000): Max retries exceeded with url: /inference (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f204f349030>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)'))
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/chaoslib/activity.py", line 291, in run_activity
+        result = run_http_activity(activity, configuration, secrets)
+      File "/root/tamlops/testing/env/lib/python3.10/site-packages/chaoslib/provider/http.py", line 96, in run_http_activity
+        raise ActivityFailed(f"failed to connect to {url}: {str(cex)}")
+    chaoslib.exceptions.ActivityFailed: failed to connect to http://35.208.32.246:8000/inference: HTTPConnectionPool(host='35.208.32.246', port=8000): Max retries exceeded with url: /inference (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f204f349030>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)'))
+[31m[2023-12-08 16:59:01 ERROR] [activity:245][39m   => failed: failed to connect to http://35.208.32.246:8000/inference: HTTPConnectionPool(host='35.208.32.246', port=8000): Max retries exceeded with url: /inference (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f204f349030>, 'Connection to 35.208.32.246 timed out. (connect timeout=20)'))
+[36m[2023-12-08 16:59:01 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[33m[2023-12-08 16:59:01 WARNING] [hypothesis:213][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2023-12-08 16:59:01 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[31m[2023-12-08 16:59:01 CRITICAL] [run:579][39m Steady state probe 'We can request text' is not in the given tolerance so failing this experiment
+[32m[2023-12-08 16:59:01 INFO] [run:515][39m Experiment ended with status: failed
+[36m[2023-12-08 16:59:01 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:59:01 DEBUG] [__init__:98][39m Cleaning up controls
+[36m[2023-12-08 16:59:01 DEBUG] [__init__:107][39m Cleaning up control 'Change CHAOS_TYPE env value to off-interface'
+[36m[2023-12-08 16:59:01 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:59:04 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-08 16:59:04 DEBUG] [cli:115][39m Running command 'run'
+[36m[2023-12-08 16:59:04 DEBUG] [cli:119][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2023-12-08 16:59:06 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:59:06 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:59:06 DEBUG] [caching:35][39m Cached 8 activities
+[32m[2023-12-08 16:59:06 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2023-12-08 16:59:06 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:59:06 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:59:06 DEBUG] [secret:103][39m Done loading secrets
+[32m[2023-12-08 16:59:06 INFO] [experiment:109][39m Experiment looks valid
+[36m[2023-12-08 16:59:06 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:59:06 DEBUG] [cli:314][39m Runtime strategies: hypothesis - before-method-only / rollbacks - default
+[36m[2023-12-08 16:59:06 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:59:06 DEBUG] [caching:35][39m Cached 8 activities
+[36m[2023-12-08 16:59:06 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:59:06 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:59:06 DEBUG] [secret:103][39m Done loading secrets
+[36m[2023-12-08 16:59:06 DEBUG] [configuration:160][39m Loading dynamic configuration...
+[32m[2023-12-08 16:59:06 INFO] [run:369][39m Running experiment: Chaos Offline ML Inference Server Experiment
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:59][39m Initializing controls
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:68][39m Initializing control 'Change CHAOS_TYPE env value to off-interface'
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:68][39m Initializing control 'Change CHAOS_TYPE env value to off-inference'
+[32m[2023-12-08 16:59:06 INFO] [run:396][39m Steady-state strategy: before-method-only
+[32m[2023-12-08 16:59:06 INFO] [run:400][39m Rollbacks strategy: default
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:59:06 DEBUG] [run:563][39m Running steady-state hypothesis before the method
+[32m[2023-12-08 16:59:06 INFO] [hypothesis:186][39m Steady state hypothesis: Make sure that load testing has been done & able to prompt every types to server
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:59:06 INFO] [activity:215][39m Probe: Normal load success rate testing log must exists
+[36m[2023-12-08 16:59:06 DEBUG] [python:33][39m Activity 'Normal load success rate testing log must exists' loaded from '/usr/lib/python3.10/genericpath.py'
+[36m[2023-12-08 16:59:06 DEBUG] [activity:237][39m   => succeeded with 'True'
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:59:06 DEBUG] [hypothesis:228][39m allowed tolerance is True
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:59:06 INFO] [activity:215][39m Probe: Normal load testing log must exists
+[36m[2023-12-08 16:59:06 DEBUG] [python:33][39m Activity 'Normal load testing log must exists' loaded from '/usr/lib/python3.10/genericpath.py'
+[36m[2023-12-08 16:59:06 DEBUG] [activity:237][39m   => succeeded with 'False'
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:59:06 DEBUG] [hypothesis:228][39m allowed tolerance is True
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[31m[2023-12-08 16:59:06 CRITICAL] [run:579][39m Steady state probe 'Normal load testing log must exists' is not in the given tolerance so failing this experiment
+[32m[2023-12-08 16:59:06 INFO] [run:966][39m Let's rollback...
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:59:06 INFO] [rollback:32][39m No declared rollbacks, let's move on.
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:59:06 INFO] [run:515][39m Experiment ended with status: completed
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:98][39m Cleaning up controls
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:107][39m Cleaning up control 'Change CHAOS_TYPE env value to off-interface'
+[36m[2023-12-08 16:59:06 DEBUG] [__init__:107][39m Cleaning up control 'Change CHAOS_TYPE env value to off-inference'
+[36m[2023-12-08 16:59:06 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:59:09 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-08 16:59:09 DEBUG] [cli:115][39m Running command 'run'
+[36m[2023-12-08 16:59:09 DEBUG] [cli:119][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2023-12-08 16:59:11 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/root/.chaostoolkit/settings.yaml'.
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'loader'
+[36m[2023-12-08 16:59:11 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:59:11 DEBUG] [caching:35][39m Cached 8 activities
+[32m[2023-12-08 16:59:11 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2023-12-08 16:59:11 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:59:11 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:59:11 DEBUG] [secret:103][39m Done loading secrets
+[32m[2023-12-08 16:59:11 INFO] [experiment:109][39m Experiment looks valid
+[36m[2023-12-08 16:59:11 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:59:11 DEBUG] [cli:314][39m Runtime strategies: hypothesis - before-method-only / rollbacks - default
+[36m[2023-12-08 16:59:11 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:59:11 DEBUG] [caching:35][39m Cached 8 activities
+[36m[2023-12-08 16:59:11 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:59:11 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:59:11 DEBUG] [secret:103][39m Done loading secrets
+[36m[2023-12-08 16:59:11 DEBUG] [configuration:160][39m Loading dynamic configuration...
+[32m[2023-12-08 16:59:11 INFO] [run:369][39m Running experiment: Chaos Offline ML Training Server Experiment
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:59][39m Initializing controls
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:68][39m Initializing control 'Change CHAOS_TYPE env value to off-interface'
+[32m[2023-12-08 16:59:11 INFO] [run:396][39m Steady-state strategy: before-method-only
+[32m[2023-12-08 16:59:11 INFO] [run:400][39m Rollbacks strategy: default
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:59:11 DEBUG] [run:563][39m Running steady-state hypothesis before the method
+[32m[2023-12-08 16:59:11 INFO] [hypothesis:186][39m Steady state hypothesis: Make sure that load testing has been done & able to prompt every types to server
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:59:11 INFO] [activity:215][39m Probe: Normal load success rate testing log must exists
+[36m[2023-12-08 16:59:11 DEBUG] [python:33][39m Activity 'Normal load success rate testing log must exists' loaded from '/usr/lib/python3.10/genericpath.py'
+[36m[2023-12-08 16:59:11 DEBUG] [activity:237][39m   => succeeded with 'True'
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:59:11 DEBUG] [hypothesis:228][39m allowed tolerance is True
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[32m[2023-12-08 16:59:11 INFO] [activity:215][39m Probe: Normal load testing log must exists
+[36m[2023-12-08 16:59:11 DEBUG] [python:33][39m Activity 'Normal load testing log must exists' loaded from '/usr/lib/python3.10/genericpath.py'
+[36m[2023-12-08 16:59:11 DEBUG] [activity:237][39m   => succeeded with 'False'
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'activity'
+[36m[2023-12-08 16:59:11 DEBUG] [hypothesis:228][39m allowed tolerance is True
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'hypothesis'
+[31m[2023-12-08 16:59:11 CRITICAL] [run:579][39m Steady state probe 'Normal load testing log must exists' is not in the given tolerance so failing this experiment
+[32m[2023-12-08 16:59:11 INFO] [run:966][39m Let's rollback...
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:59:11 INFO] [rollback:32][39m No declared rollbacks, let's move on.
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'rollback'
+[32m[2023-12-08 16:59:11 INFO] [run:515][39m Experiment ended with status: completed
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:98][39m Cleaning up controls
+[36m[2023-12-08 16:59:11 DEBUG] [__init__:107][39m Cleaning up control 'Change CHAOS_TYPE env value to off-interface'
+[36m[2023-12-08 16:59:11 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-08 16:59:14 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-08 16:59:14 DEBUG] [cli:115][39m Running command 'report'
+[36m[2023-12-08 16:59:14 DEBUG] [cli:119][39m Using settings file '/root/.chaostoolkit/settings.yaml'
+[36m[2023-12-08 16:59:16 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:59:16 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:59:16 DEBUG] [secret:103][39m Done loading secrets
+[36m[2023-12-08 16:59:16 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:59:16 DEBUG] [caching:35][39m Cached 6 activities
+[36m[2023-12-08 16:59:16 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2023-12-08 16:59:16 DEBUG] [secret:78][39m Loading secrets...
+[36m[2023-12-08 16:59:16 DEBUG] [secret:103][39m Done loading secrets
+[36m[2023-12-08 16:59:16 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-08 16:59:16 DEBUG] [caching:35][39m Cached 11 activities
