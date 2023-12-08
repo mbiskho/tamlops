@@ -1,0 +1,2 @@
+running (20m24.5s), 000/600 VUs, 8867 complete and 264 interrupted iterations
+default ✓ [======================================] 000/600 VUs  20m0s

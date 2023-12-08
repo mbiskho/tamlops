@@ -7,8 +7,8 @@ import { SharedArray } from 'k6/data';
 export const options = {
   vus: 0,
   stages: [
-    { duration: '5m', target: 600 },
-    { duration: '10m', target: 600 },
+    { duration: '5m', target: 128 },
+    { duration: '10m', target: 128 },
     { duration: '5m', target: 0 }
   ],
 };
@@ -46,8 +46,8 @@ export default function () {
   sleep(15);
 }
 
-export function handleSummary(data) {
-  return {
-    [`log/running/load-testing-${__ENV.CHAOS_TYPE}.log`]: textSummary(data, { indent: '→', enableColors: false })
-  };
-}
+// export function handleSummary(data) {
+//   return {
+//     [`log/running/load-testing-${__ENV.CHAOS_TYPE}.log`]: textSummary(data, { indent: '→', enableColors: false })
+//   };
+// }

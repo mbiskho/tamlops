@@ -1,0 +1,35 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: load-successrate-testing.js
+     output: Prometheus remote write (http://localhost:9090/api/v1/write)
+
+  scenarios: (100.00%) 10 scenarios, 512 max VUs, 10m0s max duration (incl. graceful stop):
+           * 1-user: 1 iterations for each of 1 VUs (maxDuration: 1m0s)
+           * 2-users: 1 iterations for each of 2 VUs (maxDuration: 1m0s, startTime: 1m0s)
+           * 4-users: 1 iterations for each of 4 VUs (maxDuration: 1m0s, startTime: 2m0s)
+           * 8-users: 1 iterations for each of 8 VUs (maxDuration: 1m0s, startTime: 3m0s)
+           * 16-users: 1 iterations for each of 16 VUs (maxDuration: 1m0s, startTime: 4m0s)
+           * 32-users: 1 iterations for each of 32 VUs (maxDuration: 1m0s, startTime: 5m0s)
+           * 64-users: 1 iterations for each of 64 VUs (maxDuration: 1m0s, startTime: 6m0s)
+           * 128-users: 1 iterations for each of 128 VUs (maxDuration: 1m0s, startTime: 7m0s)
+           * 256-users: 1 iterations for each of 256 VUs (maxDuration: 1m0s, startTime: 8m0s)
+           * 512-users: 1 iterations for each of 512 VUs (maxDuration: 1m0s, startTime: 9m0s)
+
+running (10m00.1s), 000/512 VUs, 376 complete and 647 interrupted iterations
+1-user    ✓ [======================================] 1 VUs    0m17.6s/1m0s  1/1 iters, 1 per VU
+2-users   ✓ [======================================] 2 VUs    0m21.6s/1m0s  2/2 iters, 1 per VU
+4-users   ✓ [======================================] 4 VUs    0m22.4s/1m0s  4/4 iters, 1 per VU
+8-users   ✓ [======================================] 8 VUs    0m29.3s/1m0s  8/8 iters, 1 per VU
+16-users  ✓ [======================================] 16 VUs   0m44.6s/1m0s  16/16 iters, 1 per VU
+32-users  ✓ [======================================] 32 VUs   1m0s          25/32 iters, 1 per VU
+64-users  ✓ [======================================] 64 VUs   1m0s          24/64 iters, 1 per VU
+128-users ✓ [======================================] 128 VUs  1m0s          126/128 iters, 1 per VU
+256-users ✓ [======================================] 256 VUs  1m0s          153/256 iters, 1 per VU
+512-users ✓ [======================================] 512 VUs  1m0s          276/512 iters, 1 per VU
+
