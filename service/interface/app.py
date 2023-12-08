@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from modules.database import save_training_db, get_from_db
 from modules.gcp import upload_to_gcs
-from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs_burst, schedule_logic_max_min, schedule_logic_fcfs_normal, schedule_logic_real_min_min, schedule_logic_fcfs_normal_gpu
+from modules.schedule import schedule_logic_min_min, schedule_logic_fcfs_burst, schedule_logic_max_min, schedule_logic_fcfs_normal, schedule_logic_real_min_min, schedule_logic_fcfs_normal_gpu, schedule_logic_real_max_min
 from modules.request import send_post_request
 import json
 import requests
@@ -106,6 +106,11 @@ async def inference_burst(requ: Request):
 @app.get('/schedule/real-min-min', response_class=JSONResponse)
 async def schedule_real_min_min():
     post_response = await schedule_logic_real_min_min()
+    return {"error": False, "response": post_response}
+
+@app.get('/schedule/real-max-min', response_class=JSONResponse)
+async def schedule_real_max_min():
+    post_response = await schedule_logic_real_max_min()
     return {"error": False, "response": post_response}
 
 @app.get('/schedule/min-min', response_class=JSONResponse)
