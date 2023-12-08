@@ -1,0 +1,373 @@
+{
+  "chaoslib-version": "1.41.0",
+  "platform": "Linux-5.15.0-1047-kvm-x86_64-with-glibc2.35",
+  "node": "srv420659",
+  "experiment": {
+    "title": "Chaos Offline ML Training Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Training is offline (offline)",
+    "tags": [
+      "Kubernetes",
+      "Pod",
+      "DGX-A100",
+      "Training"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Make sure that load testing has been done & able to prompt every types to server",
+      "probes": [
+        {
+          "name": "Normal load success rate testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-successrate-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning off the Training pod",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      },
+      {
+        "type": "action",
+        "name": "Run load success rate testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-interface",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-interface"
+            }
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        }
+      },
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning on all Training pods",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-12-08T18:14:54.582133",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load success rate testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-successrate-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-08T18:14:54.583436",
+          "status": "succeeded",
+          "end": "2023-12-08T18:14:54.583763",
+          "duration": 0.000327,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-08T18:14:54.584033",
+          "status": "succeeded",
+          "end": "2023-12-08T18:14:54.584303",
+          "duration": 0.00027,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request text",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 20,
+              "url": "http://35.208.32.246:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "text",
+                "text": "What german name of apple"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Fri, 08 Dec 2023 18:14:54 GMT",
+              "server": "uvicorn",
+              "content-length": "31",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": null
+            }
+          },
+          "start": "2023-12-08T18:14:54.584574",
+          "status": "succeeded",
+          "end": "2023-12-08T18:14:55.259455",
+          "duration": 0.674881,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request image",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 60,
+              "url": "http://35.208.32.246:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "image",
+                "text": "Make me an image of a cat with hat"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "date": "Fri, 08 Dec 2023 18:14:55 GMT",
+              "server": "uvicorn",
+              "content-length": "31",
+              "content-type": "application/json"
+            },
+            "body": {
+              "error": false,
+              "response": null
+            }
+          },
+          "start": "2023-12-08T18:14:55.260009",
+          "status": "succeeded",
+          "end": "2023-12-08T18:14:55.933914",
+          "duration": 0.673905,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "Sleep to give time for turning off the Training pod",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      },
+      "output": {
+        "status": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "start": "2023-12-08T18:14:55.934681",
+      "status": "succeeded",
+      "end": "2023-12-08T18:15:55.939237",
+      "duration": 60.004556
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Run load success rate testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
+        },
+        "controls": [
+          {
+            "name": "Change CHAOS_TYPE env value to off-interface",
+            "scope": "before",
+            "provider": {
+              "type": "process",
+              "path": "export",
+              "arguments": "CHAOS_TYPE=off-interface"
+            }
+          }
+        ]
+      },
+      "output": {
+        "status": 0,
+        "stdout": "\n          /\\      |‾‾| /‾‾/   /‾‾/   \n     /\\  /  \\     |  |/  /   /  /    \n    /  \\/    \\    |     (   /   ‾‾\\  \n   /          \\   |  |\\  \\ |  (‾)  | \n  / __________ \\  |__| \\__\\ \\_____/ .io\n\n  execution: local\n     script: load-successrate-testing.js\n     output: Prometheus remote write (http://localhost:9090/api/v1/write)\n\n  scenarios: (100.00%) 1 scenario, 1 max VUs, 1m0s max duration (incl. graceful stop):\n           * 1-user: 1 iterations for each of 1 VUs (maxDuration: 1m0s)\n\n\nrunning (0m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m01.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m02.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m03.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m03.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m04.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m04.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m05.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m05.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m06.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m06.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m07.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m07.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m08.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m08.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m09.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m09.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m10.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m10.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m11.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m11.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m12.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m12.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m13.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m13.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m14.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m14.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m15.0s), 1/1 VUs, 0 complete and 0 interrupted iterations\n1-user   [   0% ] 1 VUs  0m15.0s/1m0s  0/1 iters, 1 per VU\n\nrunning (0m15.7s), 0/1 VUs, 1 complete and 0 interrupted iterations\n1-user ✓ [ 100% ] 1 VUs  0m15.7s/1m0s  1/1 iters, 1 per VU\n",
+        "stderr": ""
+      },
+      "start": "2023-12-08T18:15:55.939572",
+      "status": "succeeded",
+      "end": "2023-12-08T18:16:49.923972",
+      "duration": 53.9844
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        }
+      },
+      "output": {
+        "status": 0,
+        "stdout": "\n          /\\      |‾‾| /‾‾/   /‾‾/   \n     /\\  /  \\     |  |/  /   /  /    \n    /  \\/    \\    |     (   /   ‾‾\\  \n   /          \\   |  |\\  \\ |  (‾)  | \n  / __________ \\  |__| \\__\\ \\_____/ .io\n\n  execution: local\n     script: load-testing.js\n     output: Prometheus remote write (http://localhost:9090/api/v1/write)\n\n  scenarios: (100.00%) 1 scenario, 16 max VUs, 1m30s max duration (incl. graceful stop):\n           * default: Up to 16 looping VUs for 1m0s over 1 stages (gracefulRampDown: 30s, gracefulStop: 30s)\n\n\nrunning (0m01.0s), 00/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [   2% ] 00/16 VUs  0m01.0s/1m00.0s\n\nrunning (0m02.0s), 00/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [   3% ] 00/16 VUs  0m02.0s/1m00.0s\n\nrunning (0m03.0s), 00/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [   5% ] 00/16 VUs  0m03.0s/1m00.0s\n\nrunning (0m04.0s), 01/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [   7% ] 01/16 VUs  0m04.0s/1m00.0s\n\nrunning (0m05.0s), 01/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [   8% ] 01/16 VUs  0m05.0s/1m00.0s\n\nrunning (0m06.0s), 01/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  10% ] 01/16 VUs  0m06.0s/1m00.0s\n\nrunning (0m07.0s), 01/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  12% ] 01/16 VUs  0m07.0s/1m00.0s\n\nrunning (0m08.0s), 02/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  13% ] 02/16 VUs  0m08.0s/1m00.0s\n\nrunning (0m09.0s), 02/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  15% ] 02/16 VUs  0m09.0s/1m00.0s\n\nrunning (0m10.0s), 02/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  17% ] 02/16 VUs  0m10.0s/1m00.0s\n\nrunning (0m11.0s), 02/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  18% ] 02/16 VUs  0m11.0s/1m00.0s\n\nrunning (0m12.0s), 03/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  20% ] 03/16 VUs  0m12.0s/1m00.0s\n\nrunning (0m13.0s), 03/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  22% ] 03/16 VUs  0m13.0s/1m00.0s\n\nrunning (0m14.0s), 03/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  23% ] 03/16 VUs  0m14.0s/1m00.0s\n\nrunning (0m15.0s), 03/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  25% ] 03/16 VUs  0m15.0s/1m00.0s\n\nrunning (0m16.0s), 04/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  27% ] 04/16 VUs  0m16.0s/1m00.0s\n\nrunning (0m17.0s), 04/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  28% ] 04/16 VUs  0m17.0s/1m00.0s\n\nrunning (0m18.0s), 04/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  30% ] 04/16 VUs  0m18.0s/1m00.0s\n\nrunning (0m19.0s), 05/16 VUs, 0 complete and 0 interrupted iterations\ndefault   [  32% ] 05/16 VUs  0m19.0s/1m00.0s\n\nrunning (0m20.0s), 05/16 VUs, 1 complete and 0 interrupted iterations\ndefault   [  33% ] 05/16 VUs  0m20.0s/1m00.0s\n\nrunning (0m21.0s), 05/16 VUs, 1 complete and 0 interrupted iterations\ndefault   [  35% ] 05/16 VUs  0m21.0s/1m00.0s\n\nrunning (0m22.0s), 05/16 VUs, 1 complete and 0 interrupted iterations\ndefault   [  37% ] 05/16 VUs  0m22.0s/1m00.0s\n\nrunning (0m23.0s), 06/16 VUs, 1 complete and 0 interrupted iterations\ndefault   [  38% ] 06/16 VUs  0m23.0s/1m00.0s\n\nrunning (0m24.0s), 06/16 VUs, 2 complete and 0 interrupted iterations\ndefault   [  40% ] 06/16 VUs  0m24.0s/1m00.0s\n\nrunning (0m25.0s), 06/16 VUs, 2 complete and 0 interrupted iterations\ndefault   [  42% ] 06/16 VUs  0m25.0s/1m00.0s\n\nrunning (0m26.0s), 06/16 VUs, 2 complete and 0 interrupted iterations\ndefault   [  43% ] 06/16 VUs  0m26.0s/1m00.0s\n\nrunning (0m27.0s), 07/16 VUs, 3 complete and 0 interrupted iterations\ndefault   [  45% ] 07/16 VUs  0m27.0s/1m00.0s\n\nrunning (0m28.0s), 07/16 VUs, 3 complete and 0 interrupted iterations\ndefault   [  47% ] 07/16 VUs  0m28.0s/1m00.0s\n\nrunning (0m29.0s), 07/16 VUs, 3 complete and 0 interrupted iterations\ndefault   [  48% ] 07/16 VUs  0m29.0s/1m00.0s\n\nrunning (0m30.0s), 07/16 VUs, 3 complete and 0 interrupted iterations\ndefault   [  50% ] 07/16 VUs  0m30.0s/1m00.0s\n\nrunning (0m31.0s), 08/16 VUs, 4 complete and 0 interrupted iterations\ndefault   [  52% ] 08/16 VUs  0m31.0s/1m00.0s\n\nrunning (0m32.0s), 08/16 VUs, 4 complete and 0 interrupted iterations\ndefault   [  53% ] 08/16 VUs  0m32.0s/1m00.0s\n\nrunning (0m33.0s), 08/16 VUs, 4 complete and 0 interrupted iterations\ndefault   [  55% ] 08/16 VUs  0m33.0s/1m00.0s\n\nrunning (0m34.0s), 09/16 VUs, 4 complete and 0 interrupted iterations\ndefault   [  57% ] 09/16 VUs  0m34.0s/1m00.0s\n\nrunning (0m35.0s), 09/16 VUs, 5 complete and 0 interrupted iterations\ndefault   [  58% ] 09/16 VUs  0m35.0s/1m00.0s\n\nrunning (0m36.0s), 09/16 VUs, 6 complete and 0 interrupted iterations\ndefault   [  60% ] 09/16 VUs  0m36.0s/1m00.0s\n\nrunning (0m37.0s), 09/16 VUs, 6 complete and 0 interrupted iterations\ndefault   [  62% ] 09/16 VUs  0m37.0s/1m00.0s\n\nrunning (0m38.0s), 10/16 VUs, 6 complete and 0 interrupted iterations\ndefault   [  63% ] 10/16 VUs  0m38.0s/1m00.0s\n\nrunning (0m39.0s), 10/16 VUs, 8 complete and 0 interrupted iterations\ndefault   [  65% ] 10/16 VUs  0m39.0s/1m00.0s\n\nrunning (0m40.0s), 10/16 VUs, 8 complete and 0 interrupted iterations\ndefault   [  67% ] 10/16 VUs  0m40.0s/1m00.0s\n\nrunning (0m41.0s), 10/16 VUs, 8 complete and 0 interrupted iterations\ndefault   [  68% ] 10/16 VUs  0m41.0s/1m00.0s\n\nrunning (0m42.0s), 11/16 VUs, 9 complete and 0 interrupted iterations\ndefault   [  70% ] 11/16 VUs  0m42.0s/1m00.0s\n\nrunning (0m43.0s), 11/16 VUs, 10 complete and 0 interrupted iterations\ndefault   [  72% ] 11/16 VUs  0m43.0s/1m00.0s\n\nrunning (0m44.0s), 11/16 VUs, 10 complete and 0 interrupted iterations\ndefault   [  73% ] 11/16 VUs  0m44.0s/1m00.0s\n\nrunning (0m45.0s), 11/16 VUs, 10 complete and 0 interrupted iterations\ndefault   [  75% ] 11/16 VUs  0m45.0s/1m00.0s\n\nrunning (0m46.0s), 12/16 VUs, 11 complete and 0 interrupted iterations\ndefault   [  77% ] 12/16 VUs  0m46.0s/1m00.0s\n\nrunning (0m47.0s), 12/16 VUs, 12 complete and 0 interrupted iterations\ndefault   [  78% ] 12/16 VUs  0m47.0s/1m00.0s\n\nrunning (0m48.0s), 12/16 VUs, 12 complete and 0 interrupted iterations\ndefault   [  80% ] 12/16 VUs  0m48.0s/1m00.0s\n\nrunning (0m49.0s), 13/16 VUs, 12 complete and 0 interrupted iterations\ndefault   [  82% ] 13/16 VUs  0m49.0s/1m00.0s\n\nrunning (0m50.0s), 13/16 VUs, 13 complete and 0 interrupted iterations\ndefault   [  83% ] 13/16 VUs  0m50.0s/1m00.0s\n\nrunning (0m51.0s), 13/16 VUs, 15 complete and 0 interrupted iterations\ndefault   [  85% ] 13/16 VUs  0m51.0s/1m00.0s\n\nrunning (0m52.0s), 13/16 VUs, 15 complete and 0 interrupted iterations\ndefault   [  87% ] 13/16 VUs  0m52.0s/1m00.0s\n\nrunning (0m53.0s), 14/16 VUs, 15 complete and 0 interrupted iterations\ndefault   [  88% ] 14/16 VUs  0m53.0s/1m00.0s\n\nrunning (0m54.0s), 14/16 VUs, 17 complete and 0 interrupted iterations\ndefault   [  90% ] 14/16 VUs  0m54.0s/1m00.0s\n\nrunning (0m55.0s), 14/16 VUs, 18 complete and 0 interrupted iterations\ndefault   [  92% ] 14/16 VUs  0m55.0s/1m00.0s\n\nrunning (0m56.0s), 14/16 VUs, 18 complete and 0 interrupted iterations\ndefault   [  93% ] 14/16 VUs  0m56.0s/1m00.0s\n\nrunning (0m57.0s), 15/16 VUs, 19 complete and 0 interrupted iterations\ndefault   [  95% ] 15/16 VUs  0m57.0s/1m00.0s\n\nrunning (0m58.0s), 15/16 VUs, 20 complete and 0 interrupted iterations\ndefault   [  97% ] 15/16 VUs  0m58.0s/1m00.0s\n\nrunning (0m59.0s), 15/16 VUs, 21 complete and 0 interrupted iterations\ndefault   [  98% ] 15/16 VUs  0m59.0s/1m00.0s\n\nrunning (1m00.0s), 15/16 VUs, 21 complete and 0 interrupted iterations\ndefault   [ 100% ] 15/16 VUs  1m00.0s/1m00.0s\n\nrunning (1m01.0s), 14/16 VUs, 22 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m02.0s), 13/16 VUs, 23 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m03.0s), 12/16 VUs, 24 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m04.0s), 12/16 VUs, 24 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m05.0s), 11/16 VUs, 25 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m06.0s), 09/16 VUs, 27 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m07.0s), 08/16 VUs, 28 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m08.0s), 08/16 VUs, 28 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m09.0s), 06/16 VUs, 30 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m10.0s), 05/16 VUs, 31 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m11.0s), 04/16 VUs, 32 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m12.0s), 03/16 VUs, 33 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m13.0s), 02/16 VUs, 34 complete and 0 interrupted iterations\ndefault ↓ [ 100% ] 15/16 VUs  1m0s\n\nrunning (1m13.9s), 00/16 VUs, 36 complete and 0 interrupted iterations\ndefault ✓ [ 100% ] 00/16 VUs  1m0s\n",
+        "stderr": ""
+      },
+      "start": "2023-12-08T18:16:49.924853",
+      "status": "succeeded",
+      "end": "2023-12-08T18:18:41.966923",
+      "duration": 112.04207
+    },
+    {
+      "activity": {
+        "type": "action",
+        "name": "Sleep to give time for turning on all Training pods",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      },
+      "output": {
+        "status": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "start": "2023-12-08T18:18:41.967826",
+      "status": "succeeded",
+      "end": "2023-12-08T18:19:41.974175",
+      "duration": 60.006349
+    }
+  ],
+  "rollbacks": [],
+  "end": "2023-12-08T18:19:41.975559",
+  "duration": 287.3955407142639
+}
