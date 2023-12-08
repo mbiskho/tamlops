@@ -13,3 +13,5 @@ testing/chaostoolkit.log
 # dataset
 /testing/dataset
 /testing/dataset/*
+/testing/gcp-ta-key
+/testing/hello.pdf

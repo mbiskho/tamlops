@@ -46,8 +46,8 @@ export default function () {
   sleep(15);
 }
 
-// export function handleSummary(data) {
-//   return {
-//     [`log/running/load-testing-${__ENV.CHAOS_TYPE}.log`]: textSummary(data, { indent: '→', enableColors: false })
-//   };
-// }
+export function handleSummary(data) {
+  return {
+    [`log/running/load-testing-${__ENV.CHAOS_TYPE}.log`]: textSummary(data, { indent: '→', enableColors: false })
+  };
+}
