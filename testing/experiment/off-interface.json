@@ -51,7 +51,7 @@
             "provider": {
                 "type": "process",
                 "path": "gcloud",
-                "arguments": "compute instances stop proxy-interaface"
+                "arguments": "compute instances stop --zone us-central1-a proxy-interaface"
             }
         },
         {
@@ -85,7 +85,7 @@
             "provider": {
                 "type": "process",
                 "path": "gcloud",
-                "arguments": "compute instances start proxy-interaface"
+                "arguments": "compute instances start --zone us-central1-a proxy-interaface"
             },
             "controls": [
                 {
