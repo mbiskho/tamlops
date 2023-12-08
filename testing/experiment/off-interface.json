@@ -136,7 +136,7 @@
             "provider": {
                 "type": "process",
                 "path": "ssh",
-                "arguments": "-i gcp-ta-key muhammad_haqqi01@35.208.32.246 sudo docker container start interface_proxy_1"
+                "arguments": "-i gcp-ta-key muhammad_haqqi01@35.208.32.246 sudo docker container start interface_proxy_1 postgres"
             }
         }          
     ],
