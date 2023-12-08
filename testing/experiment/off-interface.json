@@ -82,6 +82,7 @@
         {
             "type": "action",
             "name": "Turn on interface VM on Google Cloud Platform",
+            "background": false,
             "provider": {
                 "type": "process",
                 "path": "gcloud",

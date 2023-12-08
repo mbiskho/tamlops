@@ -110,6 +110,9 @@
                 "path": "k6",
                 "arguments": "run -o experimental-prometheus-rw load-testing.js"
             },
+            "configuration": {
+                "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+            },
             "controls": [
                 {
                     "name": "Change CHAOS_TYPE env value to off-inference",
@@ -131,17 +134,9 @@
                 "path": "k6",
                 "arguments": "run -o experimental-prometheus-rw load-testing.js"
             },
-            "controls": [
-                {
-                    "name": "Change CHAOS_TYPE env value to off-inference",
-                    "scope": "before",
-                    "provider": {
-                        "type": "process",
-                        "path": "export",
-                        "arguments": "CHAOS_TYPE=off-inference"
-                    }
-                }
-            ]
+            "configuration": {
+                "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+            }
         },
         {
             "type": "action",
