@@ -1,0 +1,1116 @@
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:10.771, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:10.772, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:10.809, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:10.811, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]timestamp, name
+, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:21.403, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %2023/12/08 09:05:21.403, 11016 MiB, GeForce RTX 2080 Ti, 11015 MiB, P8, 1 MiB, 46
+, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:21.405, GeForce RTX 2080 Ti, P8, 48, 0 %2023/12/08 09:05:21.405, 0 %, GeForce RTX 2080 Ti, 11019 MiB, P8, 11018 MiB, 48, 1 MiB, 0 %
+, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:31.936, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:31.937, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:31.963, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:31.964, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:42.495, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:42.496, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:42.498, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:42.499, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:53.049, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:53.050, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:05:53.056, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:05:53.058, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:03.595, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:06:03.596, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:03.602, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:06:03.603, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:14.144, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:06:14.145, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:14.147, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 11015 MiB, 1 MiB
+2023/12/08 09:06:14.148, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 11018 MiB, 1 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:24.692, GeForce RTX 2080 Ti, P2, 47, 0 %, 0 %, 11016 MiB, 10750 MiB, 266 MiB
+2023/12/08 09:06:24.693, GeForce RTX 2080 Ti, P2, 49, 0 %, 0 %, 11019 MiB, 9035 MiB, 1984 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:24.703, GeForce RTX 2080 Ti, P2, 47, 0 %, 0 %, 11016 MiB, 10730 MiB, 286 MiB
+2023/12/08 09:06:24.704, GeForce RTX 2080 Ti, P2, 49, 0 %, 0 %, 11019 MiB, 9035 MiB, 1984 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:35.243, GeForce RTX 2080 Ti, P2, 48, 0 %, 0 %, 11016 MiB, 9050 MiB, 1966 MiB
+2023/12/08 09:06:35.244, GeForce RTX 2080 Ti, P2, 50, 17 %, 3 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:35.246, GeForce RTX 2080 Ti, P2, 48, 0 %, 0 %, 11016 MiB, 9050 MiB, 1966 MiB
+2023/12/08 09:06:35.247, GeForce RTX 2080 Ti, P2, 49, 17 %, 3 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:45.787, GeForce RTX 2080 Ti, P2, 49, 14 %, 1 %, 11016 MiB, 8632 MiB, 2384 MiB
+2023/12/08 09:06:45.788, GeForce RTX 2080 Ti, P2, 50, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:45.790, GeForce RTX 2080 Ti, P2, 49, 14 %, 1 %, 11016 MiB, 8632 MiB, 2384 MiB
+2023/12/08 09:06:45.791, GeForce RTX 2080 Ti, P2, 50, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:56.340, GeForce RTX 2080 Ti, P2, 49, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:06:56.341, GeForce RTX 2080 Ti, P2, 50, 15 %, 3 %, 11019 MiB, 8633 MiB, 2386 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:06:56.349, GeForce RTX 2080 Ti, P2, 49, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:06:56.349, GeForce RTX 2080 Ti, P2, 50, 15 %, 3 %, 11019 MiB, 8633 MiB, 2386 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:16.376, GeForce RTX 2080 Ti, P2, 49, 0 %, 0 %, 11016 MiB, 8656 MiB, 2360 MiB
+2023/12/08 09:07:16.377, GeForce RTX 2080 Ti, P2, 51, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:16.385, GeForce RTX 2080 Ti, P2, 49, 0 %, 0 %, 11016 MiB, 8656 MiB, 2360 MiB
+2023/12/08 09:07:16.386, GeForce RTX 2080 Ti, P2, 51, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:26.936, GeForce RTX 2080 Ti, P2, 49, 0 %, 0 %, 11016 MiB, 6572 MiB, 4444 MiB
+2023/12/08 09:07:26.938, GeForce RTX 2080 Ti, P2, 51, 13 %, 2 %, 11019 MiB, 6575 MiB, 4444 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:26.940, GeForce RTX 2080 Ti, P2, 49, 0 %, 0 %, 11016 MiB, 6572 MiB, 4444 MiB
+2023/12/08 09:07:26.941, GeForce RTX 2080 Ti, P2, 51, 13 %, 2 %, 11019 MiB, 6575 MiB, 4444 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:37.465, GeForce RTX 2080 Ti, P2, 50, 0 %, 0 %, 11016 MiB, 8656 MiB, 2360 MiB
+2023/12/08 09:07:37.466, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:37.476, GeForce RTX 2080 Ti, P2, 50, 0 %, 0 %, 11016 MiB, 8656 MiB, 2360 MiB
+2023/12/08 09:07:37.477, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:47.995, GeForce RTX 2080 Ti, P2, 50, 11 %, 0 %, 11016 MiB, 8656 MiB, 2360 MiB
+2023/12/08 09:07:47.996, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11019 MiB, 8633 MiB, 2386 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:48.019, GeForce RTX 2080 Ti, P2, 50, 11 %, 0 %, 11016 MiB, 8656 MiB, 2360 MiB
+2023/12/08 09:07:48.021, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11019 MiB, 8633 MiB, 2386 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:58.536, GeForce RTX 2080 Ti, P2, 50, 3 %, 0 %, 11016 MiB, 9650 MiB, 1366 MiB
+2023/12/08 09:07:58.537, GeForce RTX 2080 Ti, P2, 53, 22 %, 1 %, 11019 MiB, 7587 MiB, 3432 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:07:58.544, GeForce RTX 2080 Ti, P2, 50, 3 %, 0 %, 11016 MiB, 9650 MiB, 1366 MiB
+2023/12/08 09:07:58.546, GeForce RTX 2080 Ti, P2, 53, 22 %, 1 %, 11019 MiB, 7587 MiB, 3432 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:09.116, GeForce RTX 2080 Ti, P2, 51, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:08:09.117, GeForce RTX 2080 Ti, P2, 53, 18 %, 3 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:09.120, GeForce RTX 2080 Ti, P2, 51, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:08:09.121, GeForce RTX 2080 Ti, P2, 53, 18 %, 3 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:19.804, GeForce RTX 2080 Ti, P2, 51, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:08:19.805, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:19.809, GeForce RTX 2080 Ti, P2, 51, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:08:19.810, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:30.341, GeForce RTX 2080 Ti, P2, 51, 18 %, 3 %, 11016 MiB, 8652 MiB, 2364 MiB
+2023/12/08 09:08:30.342, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 9381 MiB, 1638 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:30.352, GeForce RTX 2080 Ti, P2, 51, 18 %, 3 %, 11016 MiB, 8652 MiB, 2364 MiB
+2023/12/08 09:08:30.354, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 9633 MiB, 1386 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:40.947, GeForce RTX 2080 Ti, P2, 52, 20 %, 2 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:08:40.948, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 6575 MiB, 4444 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:40.951, GeForce RTX 2080 Ti, P2, 52, 20 %, 2 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:08:40.952, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 6575 MiB, 4444 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:51.516, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8658 MiB, 2358 MiB
+2023/12/08 09:08:51.517, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:08:51.518, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8658 MiB, 2358 MiB
+2023/12/08 09:08:51.519, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:02.023, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8658 MiB, 2358 MiB
+2023/12/08 09:09:02.024, GeForce RTX 2080 Ti, P2, 55, 11 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:02.035, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8658 MiB, 2358 MiB
+2023/12/08 09:09:02.036, GeForce RTX 2080 Ti, P2, 55, 11 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:12.555, GeForce RTX 2080 Ti, P2, 52, 3 %, 1 %, 11016 MiB, 8642 MiB, 2374 MiB
+2023/12/08 09:09:12.556, GeForce RTX 2080 Ti, P2, 52, 3 %, 1 %, 11016 MiB, 8642 MiB, 2374 MiB
+2023/12/08 09:09:12.557, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 6575 MiB, 4444 MiB
+2023/12/08 09:09:12.559, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 6575 MiB, 4444 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:23.074, GeForce RTX 2080 Ti, P2, 53, 8 %, 3 %, 11016 MiB, 8652 MiB, 2364 MiB
+2023/12/08 09:09:23.076, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:23.086, GeForce RTX 2080 Ti, P2, 53, 8 %, 3 %, 11016 MiB, 8652 MiB, 2364 MiB
+2023/12/08 09:09:23.087, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:33.601, GeForce RTX 2080 Ti, P2, 53, 15 %, 2 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:09:33.602, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 9053 MiB, 1966 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:33.606, GeForce RTX 2080 Ti, P2, 53, 15 %, 2 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:09:33.607, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 9033 MiB, 1986 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:44.125, GeForce RTX 2080 Ti, P2, 53, 9 %, 2 %, 11016 MiB, 8632 MiB, 2384 MiB
+2023/12/08 09:09:44.127, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 6575 MiB, 4444 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:44.155, GeForce RTX 2080 Ti, P2, 53, 9 %, 2 %, 11016 MiB, 8632 MiB, 2384 MiB
+2023/12/08 09:09:44.156, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 6575 MiB, 4444 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:54.792, GeForce RTX 2080 Ti, P2, 53, 11 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:09:54.793, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:09:54.796, GeForce RTX 2080 Ti, P2, 53, 11 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:09:54.796, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:05.333, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8658 MiB, 2358 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:05.334, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+2023/12/08 09:10:05.336, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8658 MiB, 2358 MiB
+2023/12/08 09:10:05.337, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:15.866, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:10:15.867, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:10:15.868, GeForce RTX 2080 Ti, P2, 57, 11 %, 2 %, 11019 MiB, 8643 MiB, 2376 MiB
+2023/12/08 09:10:15.870, GeForce RTX 2080 Ti, P2, 57, 11 %, 2 %, 11019 MiB, 8643 MiB, 2376 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:26.402, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8656 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:26.403, GeForce RTX 2080 Ti, P2, 58, 8 %, 2 %, 11019 MiB, 8637 MiB, 2382 MiB
+2023/12/08 09:10:26.404, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8656 MiB, 2360 MiB
+2023/12/08 09:10:26.406, GeForce RTX 2080 Ti, P2, 58, 8 %, 2 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:36.971, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 6572 MiB, 4444 MiB
+2023/12/08 09:10:36.973, GeForce RTX 2080 Ti, P2, 58, 22 %, 1 %, 11019 MiB, 7587 MiB, 3432 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:36.986, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 6572 MiB, 4444 MiB
+2023/12/08 09:10:36.987, GeForce RTX 2080 Ti, P2, 58, 22 %, 1 %, 11019 MiB, 7587 MiB, 3432 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:47.517, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:10:47.518, GeForce RTX 2080 Ti, P2, 58, 16 %, 3 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:47.531, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8634 MiB, 2382 MiB
+2023/12/08 09:10:47.532, GeForce RTX 2080 Ti, P2, 58, 16 %, 3 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:58.074, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8640 MiB, 2376 MiB
+2023/12/08 09:10:58.075, GeForce RTX 2080 Ti, P2, 58, 18 %, 3 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:10:58.077, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8640 MiB, 2376 MiB
+2023/12/08 09:10:58.078, GeForce RTX 2080 Ti, P2, 58, 18 %, 3 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:11:08.621, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:11:08.621, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:11:08.622, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+2023/12/08 09:11:08.624, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:11:19.175, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8830 MiB, 2186 MiB
+2023/12/08 09:11:19.176, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:11:19.178, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8830 MiB, 2186 MiB
+2023/12/08 09:11:19.179, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:11:29.703, GeForce RTX 2080 Ti, P2, 54, 15 %, 2 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:11:29.704, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:11:29.709, GeForce RTX 2080 Ti, P2, 54, 15 %, 2 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:11:29.710, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:11:40.243, GeForce RTX 2080 Ti, P2, 53, 15 %, 2 %, 11016 MiB, 8408 MiB, 2608 MiB
+2023/12/08 09:11:40.245, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8633 MiB, 2386 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:11:40.250, GeForce RTX 2080 Ti, P2, 53, 15 %, 2 %, 11016 MiB, 8408 MiB, 2608 MiB
+2023/12/08 09:11:40.251, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8633 MiB, 2386 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:11:50.794, GeForce RTX 2080 Ti, P2, 55, 9 %, 1 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:11:50.794, GeForce RTX 2080 Ti, P2, 55, 9 %, 1 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:11:50.796, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %2023/12/08 09:11:50.796, 11019 MiB, GeForce RTX 2080 Ti, 8637 MiB, P2, 2382 MiB, 59
+, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:01.310, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 9306 MiB, 1710 MiB
+2023/12/08 09:12:01.311, GeForce RTX 2080 Ti, P2, 59, 4 %, 2 %, 11019 MiB, 8661 MiB, 2358 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:01.329, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 9226 MiB, 1790 MiB
+2023/12/08 09:12:01.330, GeForce RTX 2080 Ti, P2, 59, 4 %, 2 %, 11019 MiB, 8661 MiB, 2358 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:11.855, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 9406 MiB, 1610 MiB
+2023/12/08 09:12:11.857, GeForce RTX 2080 Ti, P2, 61, 0 %, 0 %, 11019 MiB, 7587 MiB, 3432 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:11.878, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 9406 MiB, 1610 MiB
+2023/12/08 09:12:11.880, GeForce RTX 2080 Ti, P2, 61, 0 %, 0 %, 11019 MiB, 7587 MiB, 3432 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:22.412, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:12:22.412, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:12:22.414, GeForce RTX 2080 Ti, P2, 60, 13 %, 1 %, 11019 MiB, 8637 MiB, 2382 MiB
+2023/12/08 09:12:22.415, GeForce RTX 2080 Ti, P2, 60, 13 %, 1 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:32.980, GeForce RTX 2080 Ti, P2, 53, 7 %, 2 %, 11016 MiB, 8414 MiB, 2602 MiB
+2023/12/08 09:12:32.980, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:32.988, GeForce RTX 2080 Ti, P2, 53, 7 %, 2 %, 11016 MiB, 8414 MiB, 2602 MiB
+2023/12/08 09:12:32.989, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:43.511, GeForce RTX 2080 Ti, P2, 54, 23 %, 3 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:12:43.511, GeForce RTX 2080 Ti, P2, 54, 23 %, 3 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:12:43.513, GeForce RTX 2080 Ti, P2, 61, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+2023/12/08 09:12:43.513, GeForce RTX 2080 Ti, P2, 61, 0 %, 0 %, 11019 MiB, 8637 MiB, 2382 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:12:54.236, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB]2023/12/08 09:12:54.237, memory.used [MiB], GeForce RTX 2080 Ti
+, P2, 61, 1 %, 1 %, 11019 MiB, 8659 MiB, 2360 MiB
+2023/12/08 09:12:54.238, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:12:54.239, GeForce RTX 2080 Ti, P2, 61, 1 %, 1 %, 11019 MiB, 8659 MiB, 2360 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:04.779, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:13:04.781, GeForce RTX 2080 Ti, P2, 61, 0 %, 0 %, 11019 MiB, 6451 MiB, 4568 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:04.785, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:13:04.786, GeForce RTX 2080 Ti, P2, 61, 0 %, 0 %, 11019 MiB, 6451 MiB, 4568 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:15.319, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:13:15.320, GeForce RTX 2080 Ti, P2, 59, 15 %, 3 %, 11019 MiB, 6309 MiB, 4710 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:15.326, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:13:15.327, GeForce RTX 2080 Ti, P2, 59, 15 %, 3 %, 11019 MiB, 6309 MiB, 4710 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:25.857, GeForce RTX 2080 Ti, P2, 55, 1 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:13:25.858, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:25.860, GeForce RTX 2080 Ti, P2, 55, 1 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:13:25.861, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:36.444, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 6328 MiB, 4688 MiB
+2023/12/08 09:13:36.445, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:36.490, GeForce RTX 2080 Ti, P2, 55, 15 %, 3 %, 11016 MiB, 6328 MiB, 4688 MiB
+2023/12/08 09:13:36.491, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:46.967, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8386 MiB, 2630 MiB
+2023/12/08 09:13:46.969, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8389 MiB, 2630 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:47.051, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8386 MiB, 2630 MiB
+2023/12/08 09:13:47.052, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8389 MiB, 2630 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:57.518, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:13:57.518, GeForce RTX 2080 Ti, P2, 54, 11 %, 0 %, 11019 MiB, 8401 MiB, 2618 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:13:57.585, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:13:57.586, GeForce RTX 2080 Ti, P2, 54, 11 %, 0 %, 11019 MiB, 8401 MiB, 2618 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:08.057, GeForce RTX 2080 Ti, P2, 55, 2 %, 1 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:14:08.058, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:08.098, GeForce RTX 2080 Ti, P2, 55, 2 %, 1 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:14:08.099, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 9409 MiB, 1610 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:18.605, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:14:18.607, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:18.677, GeForce RTX 2080 Ti, P2, 56, 13 %, 1 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:14:18.678, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:29.155, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:14:29.156, GeForce RTX 2080 Ti, P2, 53, 8 %, 2 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:29.213, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:14:29.214, GeForce RTX 2080 Ti, P2, 53, 8 %, 2 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:39.687, GeForce RTX 2080 Ti, P2, 56, 6 %, 2 %, 11016 MiB, 6328 MiB, 4688 MiB
+2023/12/08 09:14:39.688, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:39.737, GeForce RTX 2080 Ti, P2, 56, 6 %, 2 %, 11016 MiB, 6328 MiB, 4688 MiB
+2023/12/08 09:14:39.738, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:50.240, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:14:50.242, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:14:50.261, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:14:50.262, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:00.792, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:15:00.793, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:15:00.793, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+2023/12/08 09:15:00.795, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:11.313, GeForce RTX 2080 Ti, P2, 58, 19 %, 1 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:15:11.314, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:11.326, GeForce RTX 2080 Ti, P2, 58, 19 %, 1 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:15:11.327, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:21.850, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8396 MiB, 2620 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:21.851, GeForce RTX 2080 Ti, P2, 54, 18 %, 3 %, 11019 MiB, 8411 MiB, 2608 MiB
+2023/12/08 09:15:21.852, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:15:21.854, GeForce RTX 2080 Ti, P2, 54, 18 %, 3 %, 11019 MiB, 8411 MiB, 2608 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:32.369, GeForce RTX 2080 Ti, P2, 57, 1 %, 0 %, 11016 MiB, 8386 MiB, 2630 MiB
+2023/12/08 09:15:32.371, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8733 MiB, 2286 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:32.375, GeForce RTX 2080 Ti, P2, 57, 1 %, 0 %, 11016 MiB, 8386 MiB, 2630 MiB
+2023/12/08 09:15:32.376, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8873 MiB, 2146 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:42.902, GeForce RTX 2080 Ti, P2, 58, 11 %, 3 %, 11016 MiB, 8390 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:42.903, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+2023/12/08 09:15:42.904, GeForce RTX 2080 Ti, P2, 58, 11 %, 3 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:15:42.906, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:53.406, GeForce RTX 2080 Ti, P2, 58, 3 %, 0 %, 11016 MiB, 8466 MiB, 2550 MiB
+2023/12/08 09:15:53.407, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:15:53.428, GeForce RTX 2080 Ti, P2, 58, 3 %, 0 %, 11016 MiB, 8338 MiB, 2678 MiB
+2023/12/08 09:15:53.431, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:04.013, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:16:04.014, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:04.016, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:16:04.018, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:14.550, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:16:14.551, GeForce RTX 2080 Ti, P2, 56, 1 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:14.572, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:16:14.573, GeForce RTX 2080 Ti, P2, 56, 1 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:25.088, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:16:25.089, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:25.116, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:16:25.117, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:35.605, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8830 MiB, 2186 MiB
+2023/12/08 09:16:35.606, GeForce RTX 2080 Ti, P2, 57, 7 %, 1 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:35.620, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8830 MiB, 2186 MiB
+2023/12/08 09:16:35.621, GeForce RTX 2080 Ti, P2, 57, 7 %, 1 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:46.140, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:16:46.141, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:46.150, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:16:46.151, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:56.682, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:16:56.683, GeForce RTX 2080 Ti, P2, 58, 11 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:16:56.686, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:16:56.688, GeForce RTX 2080 Ti, P2, 58, 11 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:07.677, GeForce RTX 2080 Ti, P2, 52, 2 %, 1 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:17:07.678, GeForce RTX 2080 Ti, P2, 58, 9 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:07.723, GeForce RTX 2080 Ti, P2, 52, 2 %, 1 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:17:07.724, GeForce RTX 2080 Ti, P2, 58, 9 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:27.451, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:17:27.452, GeForce RTX 2080 Ti, P2, 59, 16 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:27.465, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:17:27.466, GeForce RTX 2080 Ti, P2, 59, 16 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:37.985, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8398 MiB, 2618 MiB
+2023/12/08 09:17:37.986, GeForce RTX 2080 Ti, P2, 59, 11 %, 0 %, 11019 MiB, 8411 MiB, 2608 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:37.988, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8398 MiB, 2618 MiB
+2023/12/08 09:17:37.990, GeForce RTX 2080 Ti, P2, 59, 11 %, 0 %, 11019 MiB, 8411 MiB, 2608 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:48.504, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8414 MiB, 2602 MiB
+2023/12/08 09:17:48.505, GeForce RTX 2080 Ti, P2, 61, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:48.514, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8414 MiB, 2602 MiB
+2023/12/08 09:17:48.514, GeForce RTX 2080 Ti, P2, 61, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:59.031, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:17:59.032, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:17:59.041, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:17:59.042, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:09.569, GeForce RTX 2080 Ti, P2, 53, 16 %, 3 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:09.570, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 8413 MiB, 2606 MiB
+2023/12/08 09:18:09.571, GeForce RTX 2080 Ti, P2, 53, 16 %, 3 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:18:09.572, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 8413 MiB, 2606 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:20.091, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:18:20.092, GeForce RTX 2080 Ti, P2, 61, 6 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:20.099, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:18:20.100, GeForce RTX 2080 Ti, P2, 61, 6 %, 0 %, 11019 MiB, 7343 MiB, 3676 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:30.648, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8408 MiB, 2608 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:30.649, GeForce RTX 2080 Ti, P2, 61, 17 %, 3 %, 11019 MiB, 8393 MiB, 2626 MiB
+2023/12/08 09:18:30.650, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8408 MiB, 2608 MiB
+2023/12/08 09:18:30.652, GeForce RTX 2080 Ti, P2, 61, 17 %, 3 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:41.221, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:18:41.221, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:18:41.222, GeForce RTX 2080 Ti, P2, 60, 17 %, 3 %, 11019 MiB, 8415 MiB, 2604 MiB
+2023/12/08 09:18:41.223, GeForce RTX 2080 Ti, P2, 60, 17 %, 3 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:51.740, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:18:51.741, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 9409 MiB, 1610 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:18:51.749, GeForce RTX 2080 Ti, P2, 52, 0 %, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:18:51.750, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 9409 MiB, 1610 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:02.286, GeForce RTX 2080 Ti, P2, 52, 11 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:02.287, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8413 MiB, 2606 MiB
+2023/12/08 09:19:02.287, GeForce RTX 2080 Ti, P2, 52, 11 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:19:02.289, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8413 MiB, 2606 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:12.835, GeForce RTX 2080 Ti, P2, 53, 15 %, 2 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:19:12.836, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:12.839, GeForce RTX 2080 Ti, P2, 53, 15 %, 2 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:19:12.840, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:23.376, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8414 MiB, 2602 MiB
+2023/12/08 09:19:23.377, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:23.385, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8414 MiB, 2602 MiB
+2023/12/08 09:19:23.386, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%]2023/12/08 09:19:33.900, memory.total [MiB], GeForce RTX 2080 Ti, memory.free [MiB], P2, memory.used [MiB], 54
+, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:19:33.901, GeForce RTX 2080 Ti, P2, 59, 11 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:19:33.901, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:19:33.904, GeForce RTX 2080 Ti, P2, 59, 11 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:44.407, GeForce RTX 2080 Ti, P2, 54, 3 %, 1 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:19:44.408, GeForce RTX 2080 Ti, P2, 60, 8 %, 0 %, 11019 MiB, 8401 MiB, 2618 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:44.430, GeForce RTX 2080 Ti, P2, 54, 3 %, 1 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:19:44.431, GeForce RTX 2080 Ti, P2, 60, 8 %, 0 %, 11019 MiB, 8399 MiB, 2620 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:54.925, GeForce RTX 2080 Ti, P2, 55, 6 %, 2 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:19:54.926, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:19:54.928, GeForce RTX 2080 Ti, P2, 55, 6 %, 2 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:19:54.929, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:05.427, GeForce RTX 2080 Ti, P2, 55, 16 %, 2 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:20:05.429, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 9409 MiB, 1610 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:05.435, GeForce RTX 2080 Ti, P2, 55, 16 %, 2 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:20:05.436, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 9389 MiB, 1630 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:15.953, GeForce RTX 2080 Ti, P2, 56, 16 %, 3 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:20:15.954, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:15.958, GeForce RTX 2080 Ti, P2, 56, 16 %, 3 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:20:15.959, GeForce RTX 2080 Ti, P2, 60, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:26.475, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:20:26.476, GeForce RTX 2080 Ti, P2, 62, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:26.479, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:20:26.480, GeForce RTX 2080 Ti, P2, 62, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:37.001, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8414 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:37.002, GeForce RTX 2080 Ti, P2, 61, 14 %, 2 %, 11019 MiB, 8393 MiB, 2626 MiB
+2023/12/08 09:20:37.002, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8414 MiB, 2602 MiB
+2023/12/08 09:20:37.004, GeForce RTX 2080 Ti, P2, 61, 14 %, 2 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%]2023/12/08 09:20:47.535, utilization.memory [%], GeForce RTX 2080 Ti, memory.total [MiB], P2, memory.free [MiB], 56, memory.used [MiB], 4 %
+, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:20:47.536, GeForce RTX 2080 Ti, P2, 59, 9 %, 0 %, 11019 MiB, 6331 MiB, 4688 MiB
+2023/12/08 09:20:47.536, GeForce RTX 2080 Ti, P2, 56, 4 %, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:20:47.538, GeForce RTX 2080 Ti, P2, 59, 9 %, 0 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:58.072, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:20:58.074, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:20:58.091, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:20:58.092, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:08.605, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8408 MiB, 2608 MiB
+2023/12/08 09:21:08.606, GeForce RTX 2080 Ti, P2, 58, 6 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:08.610, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 8408 MiB, 2608 MiB
+2023/12/08 09:21:08.610, GeForce RTX 2080 Ti, P2, 58, 6 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:19.147, GeForce RTX 2080 Ti, P2, 72, 99 %, 37 %, 11016 MiB, 6968 MiB, 4048 MiB
+2023/12/08 09:21:19.149, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:19.153, GeForce RTX 2080 Ti, P2, 72, 99 %, 37 %, 11016 MiB, 6968 MiB, 4048 MiB
+2023/12/08 09:21:19.154, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:29.673, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:21:29.674, GeForce RTX 2080 Ti, P2, 57, 16 %, 3 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:29.678, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 6448 MiB, 4568 MiB
+2023/12/08 09:21:29.680, GeForce RTX 2080 Ti, P2, 57, 16 %, 3 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:40.207, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:21:40.208, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:40.226, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:21:40.227, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:50.717, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:21:50.718, GeForce RTX 2080 Ti, P2, 72, 99 %, 37 %, 11019 MiB, 6971 MiB, 4048 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:21:50.731, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:21:50.732, GeForce RTX 2080 Ti, P2, 72, 99 %, 37 %, 11019 MiB, 6971 MiB, 4048 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:01.258, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:22:01.260, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8827 MiB, 2192 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:01.273, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:22:01.274, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8827 MiB, 2192 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:11.789, GeForce RTX 2080 Ti, P2, 54, 3 %, 1 %, 11016 MiB, 8408 MiB, 2608 MiB
+2023/12/08 09:22:11.790, GeForce RTX 2080 Ti, P2, 56, 4 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:11.798, GeForce RTX 2080 Ti, P2, 55, 3 %, 1 %, 11016 MiB, 8408 MiB, 2608 MiB
+2023/12/08 09:22:11.799, GeForce RTX 2080 Ti, P2, 56, 4 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:22.329, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:22:22.330, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:22.335, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:22:22.336, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:32.843, GeForce RTX 2080 Ti, P2, 54, 13 %, 3 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:22:32.844, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:32.847, GeForce RTX 2080 Ti, P2, 54, 13 %, 3 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:22:32.848, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:43.393, GeForce RTX 2080 Ti, P2, 53, 16 %, 1 %, 11016 MiB, 7680 MiB, 3336 MiB
+2023/12/08 09:22:43.394, GeForce RTX 2080 Ti, P2, 53, 3 %, 1 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:43.419, GeForce RTX 2080 Ti, P2, 53, 16 %, 1 %, 11016 MiB, 7560 MiB, 3456 MiB
+2023/12/08 09:22:43.421, GeForce RTX 2080 Ti, P2, 53, 3 %, 1 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:53.937, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:22:53.939, GeForce RTX 2080 Ti, P2, 53, 2 %, 1 %, 11019 MiB, 8413 MiB, 2606 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:22:53.952, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:22:53.954, GeForce RTX 2080 Ti, P2, 53, 2 %, 1 %, 11019 MiB, 8413 MiB, 2606 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:04.461, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 7340 MiB, 3676 MiB
+2023/12/08 09:23:04.462, GeForce RTX 2080 Ti, P2, 53, 9 %, 3 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:04.487, GeForce RTX 2080 Ti, P2, 53, 0 %, 0 %, 11016 MiB, 7320 MiB, 3696 MiB
+2023/12/08 09:23:04.488, GeForce RTX 2080 Ti, P2, 53, 9 %, 3 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:14.986, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:23:14.987, GeForce RTX 2080 Ti, P2, 52, 16 %, 2 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:15.005, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:23:15.006, GeForce RTX 2080 Ti, P2, 52, 16 %, 2 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:25.509, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:23:25.510, GeForce RTX 2080 Ti, P2, 53, 3 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:25.514, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:23:25.515, GeForce RTX 2080 Ti, P2, 53, 3 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:36.017, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:23:36.019, GeForce RTX 2080 Ti, P2, 54, 9 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:36.044, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:23:36.046, GeForce RTX 2080 Ti, P2, 54, 9 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:46.536, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:23:46.538, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:46.563, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:23:46.565, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:57.055, GeForce RTX 2080 Ti, P2, 55, 18 %, 3 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:23:57.056, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8401 MiB, 2618 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:23:57.070, GeForce RTX 2080 Ti, P2, 55, 18 %, 3 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:23:57.071, GeForce RTX 2080 Ti, P2, 54, 0 %, 0 %, 11019 MiB, 8401 MiB, 2618 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:24:07.608, GeForce RTX 2080 Ti, P2, 55, 18 %, 3 %, 11016 MiB, 8386 MiB, 2630 MiB
+2023/12/08 09:24:07.608, GeForce RTX 2080 Ti, P2, 55, 18 %, 3 %, 11016 MiB, 8386 MiB, 2630 MiB
+2023/12/08 09:24:07.609, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:24:07.610, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:24:18.142, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:24:18.143, GeForce RTX 2080 Ti, P2, 55, 2 %, 1 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:24:18.145, GeForce RTX 2080 Ti, P2, 55, 0 %, 0 %, 11016 MiB, 8390 MiB, 2626 MiB
+2023/12/08 09:24:18.146, GeForce RTX 2080 Ti, P2, 55, 2 %, 1 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:24:28.679, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 6328 MiB, 4688 MiB
+2023/12/08 09:24:28.680, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:24:28.692, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11016 MiB, 6328 MiB, 4688 MiB
+2023/12/08 09:24:28.693, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 6331 MiB, 4688 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:24:39.208, GeForce RTX 2080 Ti, P2, 56, 12 %, 3 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:24:39.210, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 9033 MiB, 1986 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:24:39.215, GeForce RTX 2080 Ti, P2, 56, 12 %, 3 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:24:39.216, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 9289 MiB, 1730 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:24:49.728, GeForce RTX 2080 Ti, P2, 56, 3 %, 1 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:24:49.728, GeForce RTX 2080 Ti, P2, 56, 3 %, 1 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:24:49.729, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 8401 MiB, 2618 MiB
+2023/12/08 09:24:49.730, GeForce RTX 2080 Ti, P2, 56, 0 %, 0 %, 11019 MiB, 8401 MiB, 2618 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:00.255, GeForce RTX 2080 Ti, P2, 57, 4 %, 2 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:25:00.256, GeForce RTX 2080 Ti, P2, 57, 3 %, 0 %, 11019 MiB, 9405 MiB, 1614 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:00.259, GeForce RTX 2080 Ti, P2, 57, 4 %, 2 %, 11016 MiB, 8388 MiB, 2628 MiB
+2023/12/08 09:25:00.261, GeForce RTX 2080 Ti, P2, 57, 3 %, 0 %, 11019 MiB, 9405 MiB, 1614 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:10.815, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 6328 MiB, 4688 MiB
+2023/12/08 09:25:10.816, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11019 MiB, 8413 MiB, 2606 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:10.849, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 6328 MiB, 4688 MiB
+2023/12/08 09:25:10.850, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11019 MiB, 8413 MiB, 2606 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:21.341, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8398 MiB, 2618 MiB
+2023/12/08 09:25:21.343, GeForce RTX 2080 Ti, P2, 58, 11 %, 0 %, 11019 MiB, 8417 MiB, 2602 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:21.386, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8398 MiB, 2618 MiB
+2023/12/08 09:25:21.387, GeForce RTX 2080 Ti, P2, 58, 11 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:31.904, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:25:31.904, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:25:31.905, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+2023/12/08 09:25:31.906, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8415 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:42.513, GeForce RTX 2080 Ti, P2, 58, 2 %, 0 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:25:42.514, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:42.516, GeForce RTX 2080 Ti, P2, 58, 2 %, 0 %, 11016 MiB, 8396 MiB, 2620 MiB
+2023/12/08 09:25:42.517, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:25:53.057, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:25:53.058, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB2023/12/08 09:25:53.058
+, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+2023/12/08 09:25:53.060, GeForce RTX 2080 Ti, P2, 58, 0 %, 0 %, 11019 MiB, 8393 MiB, 2626 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:03.609, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:03.610, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:03.612, GeForce RTX 2080 Ti, P2, 57, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:03.613, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:14.144, GeForce RTX 2080 Ti, P8, 55, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:14.145, GeForce RTX 2080 Ti, P8, 55, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:14.145, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:26:14.147, GeForce RTX 2080 Ti, P2, 59, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:24.721, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:24.723, GeForce RTX 2080 Ti, P8, 57, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:24.728, GeForce RTX 2080 Ti, P8, 55, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:24.729, GeForce RTX 2080 Ti, P8, 57, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%]2023/12/08 09:26:35.287, utilization.memory [%], GeForce RTX 2080 Ti, memory.total [MiB], P8, memory.free [MiB], 54, memory.used [MiB], 0 %
+, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:35.288, GeForce RTX 2080 Ti, P8, 56, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:26:35.288, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:35.291, GeForce RTX 2080 Ti, P8, 56, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:45.842, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:45.844, GeForce RTX 2080 Ti, P8, 56, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:45.847, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:45.848, GeForce RTX 2080 Ti, P8, 56, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:56.385, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:26:56.387, GeForce RTX 2080 Ti, P8, 56, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:26:56.387, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:26:56.389, GeForce RTX 2080 Ti, P8, 56, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:06.931, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:06.933, GeForce RTX 2080 Ti, P8, 56, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:06.938, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:06.939, GeForce RTX 2080 Ti, P8, 56, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:18.121, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:18.122, GeForce RTX 2080 Ti, P8, 55, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:18.124, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:18.126, GeForce RTX 2080 Ti, P8, 55, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:36.299, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:36.299, GeForce RTX 2080 Ti, P8, 55, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:36.342, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:36.343, GeForce RTX 2080 Ti, P8, 55, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:46.889, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:46.891, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:46.893, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:46.894, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:57.436, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:57.438, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:27:57.452, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:27:57.454, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:28:08.043, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp2023/12/08 09:28:08.044, name, GeForce RTX 2080 Ti, pstate, P8, temperature.gpu, 54, utilization.gpu [%], 0 %, utilization.memory [%], 0 %, memory.total [MiB], 11019 MiB, memory.free [MiB], 8391 MiB, memory.used [MiB], 2628 MiB
+
+2023/12/08 09:28:08.046, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:08.047, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:28:18.585, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:18.586, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:28:18.600, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:18.601, GeForce RTX 2080 Ti, P8, 54, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:28:29.134, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:29.135, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:28:29.154, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:29.155, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:28:39.677, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:39.678, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:28:39.694, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:39.695, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]2023/12/08 09:28:50.263
+, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:50.265, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:28:50.264, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:28:50.267, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]2023/12/08 09:29:00.806
+, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:00.807, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB2023/12/08 09:29:00.807
+, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:00.810, GeForce RTX 2080 Ti, P8, 53, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:29:11.386, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:11.387, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:11.387, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:29:11.389, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:29:21.931, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:21.933, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:29:21.935, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:21.936, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:29:32.497, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:32.498, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:29:32.502, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:32.503, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:29:43.054, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:43.055, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:29:43.070, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:43.072, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:29:53.606, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:53.608, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:29:53.608, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:29:53.610, GeForce RTX 2080 Ti, P8, 52, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:04.171, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:30:04.172, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:04.180, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:30:04.181, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:14.749, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:14.750, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:30:14.752, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:30:14.753, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:25.308, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:25.309, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:30:25.309, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:30:25.312, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:35.875, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:35.876, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:30:35.877, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:30:35.880, GeForce RTX 2080 Ti, P8, 51, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:46.420, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:30:46.421, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:46.430, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:30:46.431, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:56.957, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:30:56.958, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:30:56.959, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:30:56.961, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:07.501, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:07.502, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:07.505, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:07.506, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:18.096, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:18.097, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:18.100, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:18.101, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:28.643, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:28.644, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:28.646, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:28.647, GeForce RTX 2080 Ti, P8, 50, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:39.187, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:39.188, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:39.195, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:39.196, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:49.745, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:31:49.746, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:31:49.748, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:31:49.750, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:00.299, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:00.300, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:00.305, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:00.306, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:10.854, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:10.855, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:10.860, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:10.861, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:21.400, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:21.401, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:21.439, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:21.440, GeForce RTX 2080 Ti, P8, 49, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:31.956, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:31.957, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:31.981, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:31.982, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:42.589, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:42.591, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:42.593, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:42.594, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:53.140, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:53.141, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:32:53.148, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:32:53.149, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:03.707, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:03.708, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:03.723, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:03.724, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:14.263, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:14.264, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:33:14.265, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:14.267, GeForce RTX 2080 Ti, P8, 48, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:24.832, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:24.833, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:24.836, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:24.836, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:35.410, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:35.411, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:35.413, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:35.413, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:45.965, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:45.966, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:45.974, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:45.974, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:56.531, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:56.532, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:33:56.550, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:33:56.551, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:07.070, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:07.071, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:07.085, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:07.085, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:17.943, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:17.944, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:17.981, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:17.982, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:28.509, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:28.511, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:28.515, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:28.516, GeForce RTX 2080 Ti, P8, 47, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:39.042, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:39.044, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:34:39.044, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:39.047, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:49.604, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:49.605, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:34:49.653, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:34:49.654, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:35:00.197, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:00.198, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:35:00.214, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:00.215, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB]2023/12/08 09:35:10.779, memory.used [MiB], GeForce RTX 2080 Ti
+, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:10.780, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB2023/12/08 09:35:10.780
+, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:10.782, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:35:21.327, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:21.328, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:35:21.335, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:21.337, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:35:31.886, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:31.887, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:35:31.889, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:31.890, GeForce RTX 2080 Ti, P8, 46, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:35:42.455, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:42.455, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:42.456, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:35:42.457, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:35:53.005, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:53.005, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:35:53.007, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:35:53.007, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:03.548, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:03.549, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:03.552, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:03.553, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:14.122, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:14.123, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:14.127, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:14.128, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:24.697, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:24.697, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:24.698, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:36:24.699, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:35.235, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:35.236, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:35.244, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:35.245, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:45.787, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:45.788, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:45.791, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:45.792, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:36:56.339, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:36:56.340, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB2023/12/08 09:36:56.340, 8412 MiB, GeForce RTX 2080 Ti, 2604 MiB, P8
+, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:36:56.343, GeForce RTX 2080 Ti, P8, 45, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:06.893, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:06.893, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:06.895, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+2023/12/08 09:37:06.895, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:17.446, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:17.448, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:17.459, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:17.461, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:28.354, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:28.356, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:28.388, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:28.389, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:46.559, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:46.560, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:46.679, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:46.680, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:57.182, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:57.183, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:37:57.211, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:37:57.212, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:38:07.740, GeForce RTX 2080 Ti, P8, 42, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:38:07.741, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:38:07.749, GeForce RTX 2080 Ti, P8, 43, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:38:07.750, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:38:18.277, GeForce RTX 2080 Ti, P8, 42, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:38:18.278, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/08 09:38:18.283, GeForce RTX 2080 Ti, P8, 42, 0 %, 0 %, 11016 MiB, 8412 MiB, 2604 MiB
+2023/12/08 09:38:18.284, GeForce RTX 2080 Ti, P8, 44, 0 %, 0 %, 11019 MiB, 8391 MiB, 2628 MiB

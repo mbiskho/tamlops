@@ -1,0 +1,996 @@
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          7m18s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m14s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          7m18s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m14s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          7m29s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m25s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          7m29s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m25s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          7m39s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m35s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          7m39s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m35s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          7m50s   10.233.69.165   node-02   <none>NAME                           <none>        
+        inference-deployment-b8bcbb89d-gn4xl      READY1/1        STATUSRunning       RESTARTS0           AGE       7m46sIP           10.233.69.166         NODEnode-02         NOMINATED NODE<none>           READINESS GATES   
+<none>inference-deployment-b8bcbb89d-7r6sn
+   1/1     Running   0          7m50s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m46s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m      10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m56s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m      10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          7m56s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m11s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m7s    10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m11s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m7s    10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m21s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m17s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m21s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m17s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m32s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m28s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m32s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m28s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m43s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m39s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m43s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m39s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m53s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0        NAME          8m49s                   10.233.69.166              node-02READY      <none>STATUS               RESTARTS<none>   
+AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          8m53s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          8m49s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE    IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m4s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m     10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE    IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m4s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m     10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m14s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m10s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m14s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m10s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   NAMEAGE                     IP                                 NODEREADY         NOMINATED NODESTATUS       READINESS GATESRESTARTS
+   inference-deployment-b8bcbb89d-7r6snAGE        1/1IP             Running         NODE0              NOMINATED NODE     9m25sREADINESS GATES   
+10.233.69.165inference-deployment-b8bcbb89d-7r6sn      node-021/1        <none>Running              0<none>        
+  inference-deployment-b8bcbb89d-gn4xl9m25s      1/110.233.69.165        Runningnode-02      0<none>                     9m21s<none>   
+10.233.69.166inference-deployment-b8bcbb89d-gn4xl      node-021/1        <none>Running              0<none>        
+  9m21s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m35s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m31s   10.233.69.166   node-02   <none>        NAME           <none>        
+                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m35s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m31s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m46s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m42s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m46s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m42s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m56s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m52s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE     IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          9m56s   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          9m52s   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          10m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          10m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          11m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          11m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   NAMEnode-02                   <none>                              <none>READY
+   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          12m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          12m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          13m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          13m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          13m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          13m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NAMENODE                      NOMINATED NODE                   READINESS GATES   
+READYinference-deployment-b8bcbb89d-7r6sn      STATUS1/1         RESTARTSRunning      AGE0           IP          13m         NODE10.233.69.165         NOMINATED NODEnode-02      READINESS GATES<none>
+        inference-deployment-b8bcbb89d-7r6sn      <none>1/1
+     inference-deployment-b8bcbb89d-gn4xlRunning      1/10             Running     13m0           10.233.69.165     13mnode-02      10.233.69.166<none>           node-02      <none><none>
+        inference-deployment-b8bcbb89d-gn4xl      <none>1/1
+     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUSNAME            RESTARTS                   AGE              IPREADY                 STATUSNODE          RESTARTSNOMINATED NODE      AGEREADINESS GATES   
+IPinference-deployment-b8bcbb89d-7r6sn                 1/1NODE           RunningNOMINATED NODE      0READINESS GATES        
+  inference-deployment-b8bcbb89d-7r6sn13m      1/110.233.69.165        Runningnode-02      0<none>                     13m<none>   
+10.233.69.165inference-deployment-b8bcbb89d-gn4xl      node-021/1        <none>Running              0<none>        
+  inference-deployment-b8bcbb89d-gn4xl13m      1/110.233.69.166        Runningnode-02      0<none>                     13m<none>   
+10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          13m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          13m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          13m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          13m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          13m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          14m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          14m   10.233.69.166   node-02   <none>           <none>
+NAMENAME                                                                      READYREADY      STATUSSTATUS        RESTARTSRESTARTS      AGEAGE      IPIP                            NODENODE            NOMINATED NODENOMINATED NODE      READINESS GATESREADINESS GATES
+
+inference-deployment-b8bcbb89d-7r6sninference-deployment-b8bcbb89d-7r6sn      1/11/1          RunningRunning      00                    15m15m      10.233.69.16510.233.69.165      node-02node-02      <none><none>                      <none><none>
+
+inference-deployment-b8bcbb89d-gn4xlinference-deployment-b8bcbb89d-gn4xl      1/11/1          RunningRunning      00                    15m15m      10.233.69.16610.233.69.166      node-02node-02      <none><none>                      <none><none>
+
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          15m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          15m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          15m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          15m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          15m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          15m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          15m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          15m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          15m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          16m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          16m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          17m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          17m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME        NAME                                                           READY      READYSTATUS       STATUSRESTARTS       RESTARTSAGE      AGEIP           IP              NODE            NODENOMINATED NODE         NOMINATED NODEREADINESS GATES   
+READINESS GATESinference-deployment-b8bcbb89d-7r6sn
+   inference-deployment-b8bcbb89d-7r6sn1/1        1/1Running        Running0           0          17m     17m10.233.69.165      10.233.69.165node-02      node-02   <none><none>                      <none><none>
+
+inference-deployment-b8bcbb89d-gn4xlinference-deployment-b8bcbb89d-gn4xl      1/11/1          RunningRunning      00                    17m17m      10.233.69.16610.233.69.166      node-02node-02      <none><none>                      <none><none>
+
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          17m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          17m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          17m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          17m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1NAME             Running                   0                     READY17m      STATUS10.233.69.165       RESTARTSnode-02      AGE<none>           IP           <none>      
+NODEinference-deployment-b8bcbb89d-gn4xl         NOMINATED NODE1/1        READINESS GATESRunning
+   inference-deployment-b8bcbb89d-7r6sn0           1/1       17mRunning      10.233.69.1660           node-02     17m<none>           10.233.69.165      <none>node-02
+   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          17m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          17m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          17m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          18m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          18m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          19m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          19m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   NAME10.233.69.166                   node-02                   <none>           READY      <none>STATUS
+    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   NAMEREADINESS GATES        
+        inference-deployment-b8bcbb89d-7r6sn                   1/1        READYRunning      STATUS0            RESTARTS     20mAGE      10.233.69.165IP           node-02         NODE<none>              NOMINATED NODE      <none>READINESS GATES
+
+inference-deployment-b8bcbb89d-gn4xlinference-deployment-b8bcbb89d-7r6sn      1/11/1          RunningRunning      00                    20m20m      10.233.69.16610.233.69.165      node-02node-02      <none><none>                      <none><none>
+
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          20m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          20m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          21m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          21m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          22m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          22m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          23m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          23m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          23m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          23m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          23m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          23m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          23m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          23m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     NAMERunning                   0                             23mREADY      10.233.69.165STATUS       node-02RESTARTS      <none>AGE              IP<none>        
+      inference-deployment-b8bcbb89d-gn4xlNODE         1/1NOMINATED NODE        RunningREADINESS GATES   
+0inference-deployment-b8bcbb89d-7r6sn             1/123m        Running10.233.69.166      0node-02             <none>23m              10.233.69.165<none>   
+node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          23m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          23m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          23m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          23m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          23m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1NAME             Running                   0                     READY23m      STATUS10.233.69.165       RESTARTSnode-02      AGE<none>           IP           <none>      
+NODEinference-deployment-b8bcbb89d-gn4xl         NOMINATED NODE1/1        READINESS GATESRunning
+   inference-deployment-b8bcbb89d-7r6sn0           1/1       23mRunning      10.233.69.1660           node-02     23m<none>           10.233.69.165      <none>node-02
+   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          23m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   NAMESTATUS                    RESTARTS                   AGE      READYIP           STATUS          NODERESTARTS         NOMINATED NODEAGE      READINESS GATESIP
+        inference-deployment-b8bcbb89d-7r6sn         NODE1/1           NOMINATED NODERunning      READINESS GATES0
+        inference-deployment-b8bcbb89d-7r6sn     23m1/1        10.233.69.165Running      node-020           <none>          23m      <none>10.233.69.165
+   inference-deployment-b8bcbb89d-gn4xlnode-02      1/1<none>             Running      <none>0
+        inference-deployment-b8bcbb89d-gn4xl     23m1/1        10.233.69.166Running      node-020           <none>          23m      <none>10.233.69.166
+   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   NAMEIP                                      NODE                 NOMINATED NODEREADY      READINESS GATESSTATUS
+    inference-deployment-b8bcbb89d-7r6snRESTARTS      1/1AGE        RunningIP           0              NODE        24mNOMINATED NODE      10.233.69.165READINESS GATES   
+node-02inference-deployment-b8bcbb89d-7r6sn      <none>1/1                Running<none>   
+0inference-deployment-b8bcbb89d-gn4xl             1/124m        Running10.233.69.165      0node-02             <none>24m              10.233.69.166<none>   
+node-02inference-deployment-b8bcbb89d-gn4xl      <none>1/1                Running<none>   
+0          24m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          24m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          24m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          24m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          24m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          24m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          24m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          24m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          24m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          24m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1NAME             Running                   0                     READY24m      STATUS10.233.69.166       RESTARTSnode-02      AGE<none>           IP           <none>      
+NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          24m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          24m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          24m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          24m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          24m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          24m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          25m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          25m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODENAME           READINESS GATES        
+        inference-deployment-b8bcbb89d-7r6sn              1/1READY        RunningSTATUS       0RESTARTS             AGE26m      IP10.233.69.165                 node-02NODE         <none>NOMINATED NODE              READINESS GATES<none>
+
+inference-deployment-b8bcbb89d-7r6sninference-deployment-b8bcbb89d-gn4xl      1/11/1          RunningRunning      00                    26m26m      10.233.69.16510.233.69.166      node-02node-02      <none><none>                      <none><none>
+
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          26m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          26m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUSNAME            RESTARTS                   AGE              IPREADY                 STATUSNODE          RESTARTSNOMINATED NODE      AGEREADINESS GATES   
+IPinference-deployment-b8bcbb89d-7r6sn                 1/1NODE           RunningNOMINATED NODE      0READINESS GATES        
+  inference-deployment-b8bcbb89d-7r6sn27m      1/110.233.69.165        Runningnode-02      0<none>                     27m<none>   
+10.233.69.165inference-deployment-b8bcbb89d-gn4xl      node-021/1        <none>Running              0<none>        
+  inference-deployment-b8bcbb89d-gn4xl27m      1/110.233.69.166        Runningnode-02      0<none>                     27m<none>   
+10.233.69.166   node-02   <none>           <none>
+NAME                NAME                                           READY              STATUSREADY       RESTARTSSTATUS       AGERESTARTS      IPAGE                 IPNODE                    NOMINATED NODENODE         READINESS GATESNOMINATED NODE
+   inference-deployment-b8bcbb89d-7r6snREADINESS GATES   
+1/1inference-deployment-b8bcbb89d-7r6sn        Running1/1        0Running             027m             10.233.69.16527m      node-0210.233.69.165      <none>node-02              <none><none>        
+   inference-deployment-b8bcbb89d-gn4xl<none>   
+1/1inference-deployment-b8bcbb89d-gn4xl        Running1/1        0Running             027m             10.233.69.16627m      node-0210.233.69.166      <none>node-02              <none><none>        
+   <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          27m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          27m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          27m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          27m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          27m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          27m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          27m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          27m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          27m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          27m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          27m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          27m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODENAME              NOMINATED NODE                   READINESS GATES        
+   inference-deployment-b8bcbb89d-7r6snREADY      1/1STATUS         RunningRESTARTS      0AGE             IP27m                 10.233.69.165NODE         node-02NOMINATED NODE      <none>READINESS GATES        
+   inference-deployment-b8bcbb89d-7r6sn<none>   
+1/1inference-deployment-b8bcbb89d-gn4xl        Running1/1        0Running             027m             10.233.69.16527m      node-0210.233.69.166      <none>node-02              <none><none>        
+   inference-deployment-b8bcbb89d-gn4xl<none>   
+1/1     Running   0          27m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          NAME28m                   10.233.69.166                   node-02      READY<none>           STATUS       <none>RESTARTS
+   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          28m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          28m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          29m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          29m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          30m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          30m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>NAME
+        inference-deployment-b8bcbb89d-gn4xl                   1/1                RunningREADY      0STATUS              RESTARTS31m      AGE10.233.69.166      IPnode-02                 <none>NODE                 NOMINATED NODE<none>   
+READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          31m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          31m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          32m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          32m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     RunningNAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1        0Running             033m             10.233.69.16633m      node-0210.233.69.166      <none>node-02              <none><none>        
+   <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          33m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          33m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          34m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          34m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          NAME35m                   10.233.69.166                   node-02      READY<none>           STATUS       <none>RESTARTS
+   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          35m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          35m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          36m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          36m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0        NAME          36m                   10.233.69.166              node-02READY      <none>STATUS               RESTARTS<none>   
+AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          36m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          36m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          36m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          36m   10.233.69.166   node-02   <none>           <none>
+NAME                                   READY   STATUS    RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+inference-deployment-b8bcbb89d-7r6sn   1/1     Running   0          36m   10.233.69.165   node-02   <none>           <none>
+inference-deployment-b8bcbb89d-gn4xl   1/1     Running   0          36m   10.233.69.166   node-02   <none>           <none>
