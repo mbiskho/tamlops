@@ -65,6 +65,9 @@ async def inference(requ: Request):
     try:
         response = requests.request("POST", URL, headers=headers, data=payload) 
         res = response.text
+
+        if typ == "image":
+            res = "object"
     except requests.exceptions.Timeout:
         print("Request timed out")
     except requests.exceptions.RequestException as e:
@@ -94,7 +97,10 @@ async def inference_burst(requ: Request):
 
 
     response = requests.request("POST", URL, headers=headers, data=payload) 
+
     res = response.text
+    if typ == "image":
+        res = "object"
     return {"error": False, "response": res}
 
 @app.get('/schedule/real-min-min', response_class=JSONResponse)
