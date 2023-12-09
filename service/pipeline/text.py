@@ -149,7 +149,7 @@ def main():
     inp = parse_args()
 
     wandb.init(
-        project="tamlops-text2text",
+        project="generative-model",
         config={
         "model": "Google Flan T5",
         "per_device_train_batch_size": inp.per_device_train_batch_size,

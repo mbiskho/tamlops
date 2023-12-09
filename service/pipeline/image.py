@@ -305,7 +305,7 @@ def main():
 
 
     wandb.init(
-        project="tamlops-text2image",
+        project="generative-model",
         config={
           "model": "Stable Diffsuion",
             "resolution": inp.resolution, # 512
