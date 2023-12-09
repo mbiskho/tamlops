@@ -1,0 +1,42 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: train.js
+     output: -
+
+  scenarios: (100.00%) 6 scenarios, 21 max VUs, 13m30s max duration (incl. graceful stop):
+           * 1-user: 1 iterations for each of 1 VUs (maxDuration: 10m0s, gracefulStop: 1m0s)
+           * 2-users: 1 iterations for each of 2 VUs (maxDuration: 10m0s, startTime: 30s, gracefulStop: 1m0s)
+           * 3-users: 1 iterations for each of 3 VUs (maxDuration: 10m0s, startTime: 1m0s, gracefulStop: 1m0s)
+           * 4-users: 1 iterations for each of 4 VUs (maxDuration: 10m0s, startTime: 1m30s, gracefulStop: 1m0s)
+           * 5-users: 1 iterations for each of 5 VUs (maxDuration: 10m0s, startTime: 2m0s, gracefulStop: 1m0s)
+           * 6-users: 1 iterations for each of 6 VUs (maxDuration: 10m0s, startTime: 2m30s, gracefulStop: 1m0s)
+
+WARN[0211] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+WARN[0211] Request Failed                                error="Post \"http://35.208.32.246:8000/training\": request timeout"
+
+     ✗ status was 200
+      ↳  90% — ✓ 19 / ✗ 2
+
+     checks.........................: 90.47% ✓ 19       ✗ 2
+     data_received..................: 5.8 kB 27 B/s
+     data_sent......................: 17 MB  83 kB/s
+     http_req_blocked...............: avg=220.86ms min=209.6ms  med=218.92ms max=237.1ms  p(90)=226.27ms p(95)=227.52ms
+     http_req_connecting............: avg=220.69ms min=209.45ms med=218.76ms max=236.97ms p(90)=225.99ms p(95)=227.36ms
+     http_req_duration..............: avg=20.61s   min=1.5s     med=8.56s    max=59.78s   p(90)=45.27s   p(95)=59.78s
+       { expected_response:true }...: avg=16.49s   min=1.5s     med=5.04s    max=45.27s   p(90)=42.43s   p(95)=42.71s
+     http_req_failed................: 9.52%  ✓ 2        ✗ 19
+     http_req_receiving.............: avg=199.58ms min=0s       med=216.75ms max=236.79ms p(90)=225.74ms p(95)=226.96ms
+     http_req_sending...............: avg=8.32s    min=216.21ms med=713.7ms  max=39.72s   p(90)=39.69s   p(95)=39.7s
+     http_req_tls_handshaking.......: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=12.09s   min=1.06s    med=3.43s    max=41.79s   p(90)=41.49s   p(95)=41.52s
+     http_reqs......................: 21     0.099989/s
+     iteration_duration.............: avg=20.84s   min=1.72s    med=8.79s    max=1m0s     p(90)=45.49s   p(95)=1m0s
+     iterations.....................: 21     0.099989/s
+     vus............................: 2      min=0      max=6
+     vus_max........................: 21     min=21     max=21

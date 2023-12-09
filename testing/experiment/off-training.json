@@ -91,12 +91,12 @@
             },
             "controls": [
                 {
-                    "name": "Change CHAOS_TYPE env value to off-interface",
+                    "name": "Change CHAOS_TYPE env value to off-training",
                     "scope": "before",
                     "provider": {
                         "type": "process",
                         "path": "export",
-                        "arguments": "CHAOS_TYPE=off-interface"
+                        "arguments": "CHAOS_TYPE=off-training"
                     }
                 }
             ]
