@@ -71,12 +71,12 @@ def collect_data():
             cpu_thread_utilization
         ]
         print(data)
-        file_name = "system_data.csv"
+        file_name = "system.csv"
 
         with open(file_name, 'a', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(data)
-        time.sleep(5)  # Sleep for 5 seconds before collecting data again
+        time.sleep(3) 
 
 initialize_csv()
 collect_data()
