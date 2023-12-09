@@ -2,6 +2,7 @@
 
 # Run env
 source ~/tamlops/testing/env/bin/activate
+cd ~/tamlops/testing
 
 # Echo
 echo "-----------------------------------------------------------------------------"
