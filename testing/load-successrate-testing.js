@@ -65,6 +65,6 @@ export default function () {
 
 export function handleSummary(data) {
   return {
-    [`log/special/load-successrate-testing-${__ENV.CHAOS_TYPE}.log`]: textSummary(data, { indent: '→', enableColors: false })
+    [`log/running/load-successrate-testing-${__ENV.CHAOS_TYPE}.log`]: textSummary(data, { indent: '→', enableColors: false })
   };
 }
