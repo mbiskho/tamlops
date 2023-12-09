@@ -4,8 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
+    # ports:
+    #   - "8000:8000"
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://127.0.0.1:8000/"]
       interval: 30s
