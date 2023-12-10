@@ -1,0 +1,227 @@
+{
+  "chaoslib-version": "1.41.0",
+  "platform": "Linux-5.15.0-1047-kvm-x86_64-with-glibc2.35",
+  "node": "srv420659",
+  "experiment": {
+    "title": "Chaos Offline ML Training Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Training is offline (offline)",
+    "tags": [
+      "Kubernetes",
+      "Pod",
+      "DGX-A100",
+      "Training"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Make sure that load testing has been done & able to prompt every types to server",
+      "probes": [
+        {
+          "name": "Normal load success rate testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-successrate-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning off the Training pod",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      },
+      {
+        "type": "action",
+        "name": "Run load success rate testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        }
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        }
+      },
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning on all Training pods",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-12-10T05:37:06.216782",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": false,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load success rate testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-successrate-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-10T05:37:06.218129",
+          "status": "succeeded",
+          "end": "2023-12-10T05:37:06.218561",
+          "duration": 0.000432,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-10T05:37:06.218993",
+          "status": "succeeded",
+          "end": "2023-12-10T05:37:06.219343",
+          "duration": 0.00035,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request text",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 20,
+              "url": "http://35.208.32.246:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "text",
+                "text": "What german name of apple"
+              }
+            }
+          },
+          "output": {
+            "status": 500,
+            "headers": {
+              "date": "Sun, 10 Dec 2023 05:37:06 GMT",
+              "server": "uvicorn",
+              "content-length": "273",
+              "content-type": "application/json"
+            },
+            "body": {
+              "detail": "HTTPConnectionPool(host='127.0.0.1', port=5060): Max retries exceeded with url: /inference-text (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb95aedbdf0>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+            }
+          },
+          "start": "2023-12-10T05:37:06.219640",
+          "status": "succeeded",
+          "end": "2023-12-10T05:37:06.938037",
+          "duration": 0.718397,
+          "tolerance_met": false
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [],
+  "rollbacks": [],
+  "end": "2023-12-10T05:37:06.939235",
+  "duration": 0.7245419025421143
+}

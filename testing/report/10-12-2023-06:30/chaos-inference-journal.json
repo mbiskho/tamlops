@@ -1,0 +1,180 @@
+{
+  "chaoslib-version": "1.41.0",
+  "platform": "Linux-5.15.0-1047-kvm-x86_64-with-glibc2.35",
+  "node": "srv420659",
+  "experiment": {
+    "title": "Chaos Offline ML Inference Server Experiment",
+    "description": "This experiment is to test the load testing performance & find the errors when ML Inference is offline (offline)",
+    "tags": [
+      "Kubernetes",
+      "Pod",
+      "RTX 2080",
+      "Inference"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Make sure that load testing has been done & able to prompt every types to server",
+      "probes": [
+        {
+          "name": "Normal load testing log must exists",
+          "type": "probe",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "os.path",
+            "func": "exists",
+            "arguments": {
+              "path": "log/running/load-testing-steadystate.log"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request text",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 20,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "text",
+              "text": "What german name of apple"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "name": "We can request image",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 60,
+            "url": "http://35.208.32.246:8000/inference",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "arguments": {
+              "type": "image",
+              "text": "Make me an image of a cat with hat"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning off the Inference pod",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      },
+      {
+        "type": "action",
+        "name": "Run load testing",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "k6",
+          "arguments": "run -o experimental-prometheus-rw load-testing.js"
+        },
+        "configuration": {
+          "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+        }
+      },
+      {
+        "type": "action",
+        "name": "Sleep to give time for turning on the Inference pods",
+        "background": false,
+        "provider": {
+          "type": "process",
+          "path": "sleep",
+          "arguments": "60"
+        }
+      }
+    ],
+    "rollbacks": [],
+    "dry": null
+  },
+  "start": "2023-12-10T07:14:39.835322",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": false,
+      "probes": [
+        {
+          "activity": {
+            "name": "Normal load testing log must exists",
+            "type": "probe",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "os.path",
+              "func": "exists",
+              "arguments": {
+                "path": "log/running/load-testing-steadystate.log"
+              }
+            }
+          },
+          "output": true,
+          "start": "2023-12-10T07:14:39.836562",
+          "status": "succeeded",
+          "end": "2023-12-10T07:14:39.837108",
+          "duration": 0.000546,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "We can request text",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 20,
+              "url": "http://35.208.32.246:8000/inference",
+              "method": "POST",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "arguments": {
+                "type": "text",
+                "text": "What german name of apple"
+              }
+            }
+          },
+          "output": {
+            "status": 500,
+            "headers": {
+              "date": "Sun, 10 Dec 2023 07:14:40 GMT",
+              "server": "uvicorn",
+              "content-length": "273",
+              "content-type": "application/json"
+            },
+            "body": {
+              "detail": "HTTPConnectionPool(host='127.0.0.1', port=5060): Max retries exceeded with url: /inference-text (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa773b1a830>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+            }
+          },
+          "start": "2023-12-10T07:14:39.837534",
+          "status": "succeeded",
+          "end": "2023-12-10T07:14:40.557789",
+          "duration": 0.720255,
+          "tolerance_met": false
+        }
+      ]
+    },
+    "after": null,
+    "during": []
+  },
+  "run": [],
+  "rollbacks": [],
+  "end": "2023-12-10T07:14:40.558864",
+  "duration": 0.7279415130615234
+}
