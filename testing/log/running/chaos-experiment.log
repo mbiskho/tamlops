@@ -704,3 +704,12 @@
 [36m[2023-12-10 10:56:56 DEBUG] [__init__:445][39m No controls to apply on 'experiment'
 [36m[2023-12-10 10:56:56 DEBUG] [__init__:98][39m Cleaning up controls
 [36m[2023-12-10 10:56:56 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2023-12-10 21:09:51 DEBUG] [cli:114][39m ###############################################################################
+[36m[2023-12-10 21:09:51 DEBUG] [cli:115][39m Running command 'report'
+[36m[2023-12-10 21:09:51 DEBUG] [cli:119][39m Using settings file '/home/muhammad_kik/.chaostoolkit/settings.yaml'
+[36m[2023-12-10 21:09:53 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-10 21:09:53 DEBUG] [caching:35][39m Cached 7 activities
+[36m[2023-12-10 21:09:54 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-10 21:09:54 DEBUG] [caching:35][39m Cached 9 activities
+[36m[2023-12-10 21:09:54 DEBUG] [caching:24][39m Building activity cache...
+[36m[2023-12-10 21:09:54 DEBUG] [caching:35][39m Cached 11 activities

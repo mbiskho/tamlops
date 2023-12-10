@@ -18,3 +18,6 @@
 →    iterations.....................: 558    0.462491/s
 →    vus............................: 1      min=0      max=16
 →    vus_max........................: 16     min=16     max=16
+
+chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" report --export-format=md "${CHAOS_INTERFACE_REPORT_FILE_DIR}" "${CHAOS_INFERENCE_REPORT_FILE_DIR}" "${CHAOS_TRAINING_REPORT_FILE_DIR}" "${CHAOS_COMBINED_REPORT_FILES_DIR}"
+chaos --log-file "log/running/chaos-experiment.log" report --export-format=md "report/10-12-2023-06:30/chaos-interface-journal.json" "report/10-12-2023-06:30/chaos-inference-journal.json" "report/10-12-2023-06:30/chaos-training-journal.json" journal.md
