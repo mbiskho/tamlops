@@ -1,0 +1,766 @@
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m49s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m49s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m49s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m51s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m51s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m52s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m52s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m53s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m54s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m54s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m55s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m56s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m56s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m58s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          2m58s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE   IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m    10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE   IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m    10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m1s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m2s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m2s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m2s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m4s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m4s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m4s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m6s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m6s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m6s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m7s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m8s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m8s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m8s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m10s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m10s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m11s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m12s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m13s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m13s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m15s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m15s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m15s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m17s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m17s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m17s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m19s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m19s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m19s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m23s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m23s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m24s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m25s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m25s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m27s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m27s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m28s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m29s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m29s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m30s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m32s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m32s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m34s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m34s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m35s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m36s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m36s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m38s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m38s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m38s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m44s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m44s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m44s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m46s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m46s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m46s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m50s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m51s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m51s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m51s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m52s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m53s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m56s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          3m59s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE   IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m    10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m1s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m1s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m2s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m3s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m3s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m3s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m5s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m5s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m5s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m7s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m7s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m8s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m9s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m9s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m10s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m10s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m12s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m12s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m12s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m12s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m14s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m14s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m15s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m16s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m17s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m17s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m17s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m19s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m19s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m23s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m23s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m24s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m24s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m28s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m28s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m28s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m30s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m35s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m35s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m36s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m38s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m38s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m43s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m44s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m44s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m45s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m47s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m47s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m47s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m49s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m49s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m53s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m54s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m54s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m55s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          4m59s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE   IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m    10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m4s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m5s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m6s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m6s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m8s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m8s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m9s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m9s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m10s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m11s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m11s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m11s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m13s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m13s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m14s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m15s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m16s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m16s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m16s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m18s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m18s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m19s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m19s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m22s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m24s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m24s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m25s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m25s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m27s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m27s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m28s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m30s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m30s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m34s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m34s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m36s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m36s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m39s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m39s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m41s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m43s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m44s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m45s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m45s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m46s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m47s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m49s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m50s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m50s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m51s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m52s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m53s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m54s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m54s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          5m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m1s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m3s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m5s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m5s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m7s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m10s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m11s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m13s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m14s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m18s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m18s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m20s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m20s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m23s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m23s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m23s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m25s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m28s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m29s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m29s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m29s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m32s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m32s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m35s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m36s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m36s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m36s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m39s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m39s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m39s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m41s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m43s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m45s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m45s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m46s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m47s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          6m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m4s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m5s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m5s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m7s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m7s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m8s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m9s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m10s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m10s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m12s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m12s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m13s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m13s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m15s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m15s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m15s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m17s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m17s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m18s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m18s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m18s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m20s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m20s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m20s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m21s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m22s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m22s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m22s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m24s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m24s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m24s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m26s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m27s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m28s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m28s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m29s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m30s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m31s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m32s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m33s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m34s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m35s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m35s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m35s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m37s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m39s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m40s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m42s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m43s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m44s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m44s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m45s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m46s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m46s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m47s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m48s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m49s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m50s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m50s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m51s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m52s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m53s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m53s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m55s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m55s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m55s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m55s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m57s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m59s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m59s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE     IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          7m59s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE   IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          8m    10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          8m1s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          8m1s   10.233.88.131   dgx-a100   <none>           <none>
+NAME                                                 READY   STATUS    RESTARTS   AGE    IP              NODE       NOMINATED NODE   READINESS GATES
+bismakhomeini-trainning-deployment-b84bc6db8-kwnx5   1/1     Running   0          8m2s   10.233.88.131   dgx-a100   <none>           <none>
