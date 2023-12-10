@@ -80,3 +80,4 @@ def collect_data():
 
 initialize_csv()
 collect_data()
+
