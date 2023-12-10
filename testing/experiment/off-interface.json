@@ -90,18 +90,7 @@
             },
             "configuration": {
                 "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
-            },
-            "controls": [
-                {
-                    "name": "Change CHAOS_TYPE env value to off-interface",
-                    "scope": "before",
-                    "provider": {
-                        "type": "process",
-                        "path": "export",
-                        "arguments": "CHAOS_TYPE=off-interface"
-                    }
-                }
-            ]
+            }
         },
         {
             "type": "action",

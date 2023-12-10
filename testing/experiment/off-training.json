@@ -89,17 +89,9 @@
                 "path": "k6",
                 "arguments": "run -o experimental-prometheus-rw load-successrate-testing.js"
             },
-            "controls": [
-                {
-                    "name": "Change CHAOS_TYPE env value to off-training",
-                    "scope": "before",
-                    "provider": {
-                        "type": "process",
-                        "path": "export",
-                        "arguments": "CHAOS_TYPE=off-training"
-                    }
-                }
-            ]
+            "configuration": {
+                "K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM": true
+            }
         },
         {
             "type": "action",

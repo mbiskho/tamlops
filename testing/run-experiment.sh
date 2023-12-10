@@ -46,14 +46,17 @@ K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true k6 run -o experimental-prometheu
 mkdir "${CHAOS_REPORT_LOG_DIR}"
 
 # Run chaos experiment: turn off interface
+export CHAOS_TYPE="off-interface"
 chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" run "${CHAOS_INTERFACE_TEST_FILE_DIR}" --journal-path "${CHAOS_INTERFACE_REPORT_FILE_DIR}" --hypothesis-strategy before-method-only
 # Run chaos experiment: turn off ML Inference
+export CHAOS_TYPE="off-inference"
 chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" run "${CHAOS_INFERENCE_TEST_FILE_DIR}" --journal-path "${CHAOS_INFERENCE_REPORT_FILE_DIR}" --hypothesis-strategy before-method-only
 # Run chaos experiment: turn off ML Training
+export CHAOS_TYPE="off-training"
 chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" run "${CHAOS_TRAINING_TEST_FILE_DIR}" --journal-path "${CHAOS_TRAINING_REPORT_FILE_DIR}" --hypothesis-strategy before-method-only
 
 # Create reports from chaos experiments
-chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" report --export-format=md "${CHAOS_INTERFACE_REPORT_FILE_DIR}" "${CHAOS_INFERENCE_REPORT_FILE_DIR}" "${CHAOS_TRAINING_REPORT_FILE_DIR}""${CHAOS_COMBINED_REPORT_FILES_DIR}"
+chaos --log-file "${CHAOS_EXPERIMENT_LOG_FILE_DIR}" report --export-format=md "${CHAOS_INTERFACE_REPORT_FILE_DIR}" "${CHAOS_INFERENCE_REPORT_FILE_DIR}" "${CHAOS_TRAINING_REPORT_FILE_DIR}" "${CHAOS_COMBINED_REPORT_FILES_DIR}"
 
 # Move all log from log/running to log/${date}
 rm -r "${CHAOS_FINAL_LOG_DIR}"
