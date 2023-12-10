@@ -70,8 +70,10 @@ async def inference(requ: Request):
             res = "object"
     except requests.exceptions.Timeout:
         print("Request timed out")
+        raise HTTPException(status_code=500, detail=str(e))
     except requests.exceptions.RequestException as e:
         print("Request exception:", e)
+        raise HTTPException(status_code=500, detail=str(e))
 
     return {"error": False, "response": res}
 
