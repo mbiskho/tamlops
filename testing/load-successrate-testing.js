@@ -60,11 +60,10 @@ export default function () {
   const res = http.post('http://35.208.32.246:8000/inference', JSON.stringify(data))
 
   check(res, { 'status was 200': (r) => r.status == 200 });
-  sleep(15);
 }
 
 export function handleSummary(data) {
   return {
-    [`log/running/load-successrate-testing-${__ENV.CHAOS_TYPE}.log`]: textSummary(data, { indent: '→', enableColors: false })
+    [`log/success-rate/load-successrate-testing.log`]: textSummary(data, { indent: '→', enableColors: false })
   };
 }
