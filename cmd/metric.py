@@ -4,7 +4,7 @@ import csv
 import time
 
 def initialize_csv():
-    file_name = "system_data.csv"
+    file_name = "system.csv"
     header = [
         "cpu_usage",
         "cpu_core_count",
