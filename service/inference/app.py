@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request,  Header, Form
 from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
-from modules.inference import inference_image, inference_text, inference_image_burst, inference_text_burst
+from modules.inference import inference_image, inference_text, inference_image_burst, inference_text_burst, inference_image_generate
 from modules.gpu import get_gpu_info
 import threading
 
@@ -53,27 +53,43 @@ async def image(requests: Request):
     return Response(content=response, media_type="raw")
 
 
-@app.post("/inference-text-burst", response_class=JSONResponse)
-async def text(requests: Request):
+@app.post('/generate', response_class=JSONResponse)
+async def generate(requests: Request):
     req = await requests.json()
     typ = req['type']
     text = req['text']
     print('Request \n', req)
-    print("[!] Inference Text")
     print("Text: ", text)
-    th = threading.Thread(target=inference_text_burst, args=(text, ""))
-    th.start()
-    return "OK"
+    response = ""
+    if typ == "image":
+        response = await inference_image_generate(text)
+    else:
+        response = await inference_text(text)
+    return response
 
-@app.post("/inference-image-burst", response_class=Response)
-async def image(requests: Request):
-    req = await requests.json()
-    typ = req['type']
-    text = req['text']
-    print('Request \n', req)
-    print("[!] Inference Image")
-    print("Text: ", text)
-    th = threading.Thread(target=inference_image_burst, args=(text, ""))
-    th.start()
-    return None
+
+
+# @app.post("/inference-text-burst", response_class=JSONResponse)
+# async def text(requests: Request):
+#     req = await requests.json()
+#     typ = req['type']
+#     text = req['text']
+#     print('Request \n', req)
+#     print("[!] Inference Text")
+#     print("Text: ", text)
+#     th = threading.Thread(target=inference_text_burst, args=(text, ""))
+#     th.start()
+#     return "OK"
+
+# @app.post("/inference-image-burst", response_class=Response)
+# async def image(requests: Request):
+#     req = await requests.json()
+#     typ = req['type']
+#     text = req['text']
+#     print('Request \n', req)
+#     print("[!] Inference Image")
+#     print("Text: ", text)
+#     th = threading.Thread(target=inference_image_burst, args=(text, ""))
+#     th.start()
+#     return None
 
