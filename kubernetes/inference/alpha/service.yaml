@@ -7,7 +7,6 @@ spec:
     app: alfa-inference
   ports:
     - protocol: TCP
-      port: 8000   # Port your container is listening on
+      port: 3001    # Port exposed externally
       targetPort: 8000   # Port your container is listening on
-      nodePort: 3031   # NodePort that will expose your service externally
-  type: NodePort
+  type: ClusterIP
