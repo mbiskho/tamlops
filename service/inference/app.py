@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request,  Header, Form
 from fastapi.responses import JSONResponse, HTMLResponse, ORJSONResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
-from modules.inference import inference_image, inference_text, inference_image_burst, inference_text_burst, inference_image_generate
+from modules.inference import inference_image, inference_text, inference_image_generate
 from modules.gpu import get_gpu_info
 import threading
 
