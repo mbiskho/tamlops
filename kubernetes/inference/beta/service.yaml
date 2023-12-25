@@ -7,6 +7,6 @@ spec:
     app: beta-inference
   ports:
     - protocol: TCP
-      port: 3001    # Port exposed externally
+      port: 3002   # Port exposed externally
       targetPort: 8000   # Port your container is listening on
   type: ClusterIP
