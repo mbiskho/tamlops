@@ -20,7 +20,7 @@ def remove_pad_and_end_tags(text):
 
 def upload_to_bucket(blob_name, path_to_file):
     bucket_name = 'tamlops-inference'
-    storage_client = storage.Client.from_service_account_json('../keys/gcloud.json')
+    storage_client = storage.Client.from_service_account_json('gcloud.json')
     bucket = storage_client.get_bucket(bucket_name)
     blob = bucket.blob(blob_name)
     blob.upload_from_filename(path_to_file)
