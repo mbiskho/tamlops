@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inference-loadbalancer
+spec:
+  replicas: 3  # Number of desired pods
+  selector:
+    matchLabels:
+      app: inference-loadbalancer
+  template:
+    metadata:
+      labels:
+        app: inference-loadbalancer
+    spec:
+      containers:
+      - name: inference-loadbalancer
+        image: mbiskho/inference-loadbalancer
+        ports:
+        - containerPort: 4000
+        env:
+        - name: ALFA_BASE_URL
+          value: "http://10.233.42.92:8000" 
+        - name: BETA_BASE_URL
+          value: "http://10.233.7.193:8000"
