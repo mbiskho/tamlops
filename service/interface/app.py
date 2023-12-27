@@ -41,7 +41,7 @@ async def training(file: UploadFile = File(...), type: str = Form(...), params: 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/inference", response_class=JSONResponse)
+@app.post("/inference/test", response_class=JSONResponse)
 async def inference(requ: Request):
     req = await requ.json()
     res = None
@@ -56,18 +56,38 @@ async def inference(requ: Request):
     headers = {
         'Content-Type': 'application/json'
     }
-
-    if typ == "image":
-        URL = "http://127.0.0.1:5060/inference-image"
-    else:
-        URL = "http://127.0.0.1:5060/inference-text"
-
+    URL = "http://127.0.0.1:4000/test"
     try:
         response = requests.request("POST", URL, headers=headers, data=payload) 
         res = response.text
+    except requests.exceptions.Timeout:
+        print("Request timed out")
+        raise HTTPException(status_code=500, detail=str(e))
+    except requests.exceptions.RequestException as e:
+        print("Request exception:", e)
+        raise HTTPException(status_code=500, detail=str(e))
 
-        if typ == "image":
-            res = "object"
+    return {"error": False, "response": res}
+
+@app.post("/inference/generate", response_class=JSONResponse)
+async def inference(requ: Request):
+    req = await requ.json()
+    res = None
+    typ = req['type']
+    text = req['text']
+    URL = ""
+    payload = json.dumps({
+        "type": typ,
+        "text": text
+    })
+    response = ""
+    headers = {
+        'Content-Type': 'application/json'
+    }
+    URL = "http://127.0.0.1:4000/generate"
+    try:
+        response = requests.request("POST", URL, headers=headers, data=payload) 
+        res = response.text
     except requests.exceptions.Timeout:
         print("Request timed out")
         raise HTTPException(status_code=500, detail=str(e))
