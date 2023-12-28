@@ -57,7 +57,7 @@ export default function () {
     }
   }
 
-  const res = http.post('http://35.208.32.246:8000/inference', JSON.stringify(data))
+  const res = http.post('http://34.42.105.222:8000/inference/test', JSON.stringify(data))
 
   check(res, { 'status was 200': (r) => r.status == 200 });
 }
