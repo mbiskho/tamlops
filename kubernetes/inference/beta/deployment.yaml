@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beta-inference-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: beta-inference
+  template:
+    metadata:
+      labels:
+        app: beta-inference
+    spec:
+      containers:
+      - name: inference-container
+        image: mbiskho/tamlops-inference
+        ports:
+        - containerPort: 8000
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+        # readinessProbe:
+        #   httpGet:
+        #     path: /health
+        #     port: 8000
+        #   initialDelaySeconds: 15
+        #   periodSeconds: 20
+        # livenessProbe:
+        #   httpGet:
+        #     path: /health
+        #     port: 8000
+        #   initialDelaySeconds: 15
+        #   periodSeconds: 20

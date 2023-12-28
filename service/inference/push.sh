@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker push mbiskho/tamlops-inference
+sudo docker push mbiskho/tamlops-inference

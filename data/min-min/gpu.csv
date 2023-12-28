@@ -1,0 +1,1986 @@
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:40.086, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.088, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.091, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.094, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.096, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.098, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.100, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.103, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:40.550, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.553, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.556, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.560, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.563, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.567, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.570, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.573, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:40.849, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.852, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.856, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.859, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.863, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.866, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.869, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:40.873, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:41.138, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:41.141, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:41.144, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:41.147, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:41.150, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:41.885, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.323, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.334, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:42.776, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.780, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.783, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.787, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.790, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.793, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.796, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:42.800, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:43.264, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.270, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.276, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.280, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.284, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.288, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.292, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.295, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:43.544, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.548, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.551, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.554, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.557, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.560, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.563, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:43.566, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:45.016, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.018, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.020, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.023, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.026, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.028, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.029, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.033, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:45.281, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.285, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.289, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.292, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.295, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.299, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.302, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.306, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:45.570, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.574, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.577, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.580, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.583, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.585, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.590, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:45.593, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:47.000, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.017, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.033, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.077, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.108, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.150, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.188, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.218, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:47.522, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.525, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.528, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.531, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.534, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.537, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.541, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.544, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:47.795, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.798, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.801, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.804, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.807, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.810, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.813, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:47.816, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:49.298, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.324, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.359, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.387, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.435, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.470, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.484, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.494, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:49.983, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.986, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.990, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.996, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:49.999, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.002, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.006, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.010, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:50.368, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.371, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.375, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.378, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.382, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.385, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.388, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:50.391, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:52.026, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.028, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.030, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.033, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.035, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.037, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.039, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.042, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:52.299, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.302, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.305, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.309, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.312, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.315, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.319, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.322, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:52.572, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.576, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.579, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.583, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.586, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.590, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.593, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:52.597, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:54.169, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.186, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.217, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.258, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.298, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.327, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:02:54.362, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:02:54.376, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:54.669, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.675, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.679, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.682, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.687, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.691, A100-SXM4-40GB, P0, 31, 9 %, 0 %, 40537 MiB, 39782 MiB, 755 MiB
+2023/12/10 15:02:54.695, A100-SXM4-40GB, P0, 31, 2 %, 0 %, 40537 MiB, 39522 MiB, 1015 MiB
+2023/12/10 15:02:54.700, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:54.951, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.954, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.958, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.961, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.964, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:54.967, A100-SXM4-40GB, P0, 31, 16 %, 0 %, 40537 MiB, 39106 MiB, 1431 MiB
+2023/12/10 15:02:54.970, A100-SXM4-40GB, P0, 31, 25 %, 0 %, 40537 MiB, 39106 MiB, 1431 MiB
+2023/12/10 15:02:54.973, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:56.354, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.356, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.358, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.360, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.364, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.370, A100-SXM4-40GB, P0, 32, 8 %, 0 %, 40537 MiB, 38954 MiB, 1583 MiB
+2023/12/10 15:02:56.383, A100-SXM4-40GB, P0, 31, 1 %, 0 %, 40537 MiB, 38894 MiB, 1643 MiB
+2023/12/10 15:02:56.404, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:56.830, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.833, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.837, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.841, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.844, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:56.847, A100-SXM4-40GB, P0, 32, 6 %, 2 %, 40537 MiB, 36600 MiB, 3937 MiB
+2023/12/10 15:02:56.851, A100-SXM4-40GB, P0, 31, 10 %, 2 %, 40537 MiB, 36600 MiB, 3937 MiB
+2023/12/10 15:02:56.855, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:57.316, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.319, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.322, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.326, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.330, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.333, A100-SXM4-40GB, P0, 32, 13 %, 7 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:57.337, A100-SXM4-40GB, P0, 32, 4 %, 4 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:57.340, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:57.593, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.596, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.599, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.601, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.605, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:57.608, A100-SXM4-40GB, P0, 34, 63 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:57.612, A100-SXM4-40GB, P0, 33, 62 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:57.615, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:59.116, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.118, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.120, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.123, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.126, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.129, A100-SXM4-40GB, P0, 36, 59 %, 34 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:59.131, A100-SXM4-40GB, P0, 35, 55 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:59.133, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:59.392, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.395, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.398, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.401, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.405, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.408, A100-SXM4-40GB, P0, 36, 58 %, 35 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:59.412, A100-SXM4-40GB, P0, 35, 56 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:59.415, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:02:59.673, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.676, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.679, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.682, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.685, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:02:59.689, A100-SXM4-40GB, P0, 36, 58 %, 37 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:59.692, A100-SXM4-40GB, P0, 36, 61 %, 40 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:02:59.695, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:01.232, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.272, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.297, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.309, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.321, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.327, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:01.365, A100-SXM4-40GB, P0, 33, 1 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:01.369, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:01.649, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.653, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.656, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.659, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.666, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.673, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:01.678, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:01.681, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:01.942, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.947, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.952, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.955, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.958, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:01.961, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:01.964, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:01.968, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:03.453, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.459, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.464, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.470, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.475, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.482, A100-SXM4-40GB, P0, 32, 9 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:03.488, A100-SXM4-40GB, P0, 32, 6 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:03.492, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:03.784, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.788, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.791, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.794, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.797, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:03.801, A100-SXM4-40GB, P0, 32, 10 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:03.805, A100-SXM4-40GB, P0, 32, 6 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:03.808, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:04.289, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:04.292, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:04.295, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:04.299, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:04.302, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:04.306, A100-SXM4-40GB, P0, 32, 9 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:04.309, A100-SXM4-40GB, P0, 32, 2 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:04.312, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:04.698, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:05.673, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:05.695, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:05.718, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:05.749, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:05.782, A100-SXM4-40GB, P0, 36, 53 %, 31 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:05.808, A100-SXM4-40GB, P0, 35, 56 %, 33 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:05.834, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:06.305, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.310, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.316, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.323, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.329, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.339, A100-SXM4-40GB, P0, 36, 54 %, 31 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:06.347, A100-SXM4-40GB, P0, 35, 56 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:06.354, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:06.678, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.684, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.693, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.698, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.704, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:06.710, A100-SXM4-40GB, P0, 36, 54 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:06.716, A100-SXM4-40GB, P0, 36, 58 %, 36 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:06.722, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:07.173, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.182, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.190, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.198, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.208, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.215, A100-SXM4-40GB, P0, 36, 54 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:07.221, A100-SXM4-40GB, P0, 36, 57 %, 33 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:07.229, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:07.570, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.580, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.588, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.596, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.603, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:07.611, A100-SXM4-40GB, P0, 36, 54 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:07.618, A100-SXM4-40GB, P0, 36, 55 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:07.626, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:08.017, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.031, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.048, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.063, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.081, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.113, A100-SXM4-40GB, P0, 37, 50 %, 30 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:08.139, A100-SXM4-40GB, P0, 36, 58 %, 35 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:08.164, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:08.661, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.670, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.678, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.687, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.696, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:08.705, A100-SXM4-40GB, P0, 35, 35 %, 10 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:08.713, A100-SXM4-40GB, P0, 34, 10 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:08.722, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:11.923, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:12.483, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:12.521, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:12.562, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:12.593, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:12.647, A100-SXM4-40GB, P0, 34, 52 %, 15 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:12.700, A100-SXM4-40GB, P0, 33, 20 %, 5 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:12.747, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:13.280, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.291, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.301, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.312, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.323, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.336, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:13.349, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:13.358, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:13.771, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.782, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.796, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.810, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.831, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:13.841, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:13.852, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:13.862, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:14.278, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:14.289, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:14.299, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:14.310, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:14.323, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:14.341, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:14.351, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:14.361, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:15.968, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:15.977, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:15.988, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:15.999, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:16.009, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:16.064, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:16.075, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:16.086, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:16.670, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:16.683, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:16.693, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:16.702, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:16.713, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:16.723, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:16.733, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:16.753, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:18.282, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.310, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.332, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.348, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.358, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.371, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:18.390, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:18.405, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:18.807, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.816, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.825, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.834, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.843, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:18.855, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:18.863, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:18.873, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:21.818, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:21.828, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:21.842, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:21.852, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:21.868, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:21.879, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:21.890, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:22.043, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:24.729, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:24.738, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:24.746, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:24.756, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:24.765, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:24.774, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:24.783, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:24.794, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:25.191, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.194, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.197, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.200, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.203, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.207, A100-SXM4-40GB, P0, 33, 83 %, 2 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:25.211, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:25.214, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:25.462, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.465, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.469, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.472, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.475, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.479, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:25.488, A100-SXM4-40GB, P0, 33, 13 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:25.498, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:25.746, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:25.896, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:26.876, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:26.886, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:26.890, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:26.901, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:26.909, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:26.913, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:27.357, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.466, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.470, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.474, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.477, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.482, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:27.485, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:27.497, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:27.910, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.915, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.919, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.923, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.928, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:27.932, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:27.935, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:27.939, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:28.188, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:28.192, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:28.197, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:28.201, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:28.206, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:28.221, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:28.225, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:28.230, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:29.722, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:29.725, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:29.728, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:29.731, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:29.736, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:29.741, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:29.744, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:29.747, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:29.999, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.002, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.006, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.009, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.012, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.016, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:30.020, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:30.023, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:30.275, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.278, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.281, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.284, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.288, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.291, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:30.295, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:30.298, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:30.712, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.719, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.726, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.732, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.737, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:30.745, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:30.753, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:30.758, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:31.023, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:31.027, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:31.030, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:31.033, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:31.464, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:32.204, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:32.231, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:32.259, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:32.773, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:32.776, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:32.779, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:32.782, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:32.785, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:32.788, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:32.791, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:32.794, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:33.062, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.065, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.068, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.071, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.074, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.077, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:33.081, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:33.085, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:33.435, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.439, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.443, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.449, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.452, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:33.455, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:33.458, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:33.461, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:35.029, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.031, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.033, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.037, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.040, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.043, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:35.046, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:35.049, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:35.378, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.381, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.385, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.388, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.392, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.394, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:35.398, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:35.401, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:35.660, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.664, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.667, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.671, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.674, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:35.677, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:35.680, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:35.683, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:37.294, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.310, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.321, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.332, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.335, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.338, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:37.342, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:37.345, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:37.844, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.847, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.850, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.853, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.855, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:37.859, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:37.862, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:37.865, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:38.127, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.135, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.142, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.147, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.154, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.170, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:38.188, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:38.197, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:38.467, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.473, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.478, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.484, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.491, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:38.496, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:38.500, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:38.505, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:40.404, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:40.421, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:40.427, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:03:40.431, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:40.466, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:40.472, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:40.477, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:40.481, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:40.766, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:40.769, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:40.773, A100-SXM4-40GB, P0, 28, 6 %, 0 %, 40537 MiB, 39862 MiB, 675 MiB
+2023/12/10 15:03:40.777, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:40.780, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:40.784, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:40.788, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:40.791, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:41.064, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:41.069, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:41.074, A100-SXM4-40GB, P0, 28, 21 %, 0 %, 40537 MiB, 39106 MiB, 1431 MiB
+2023/12/10 15:03:41.079, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:03:41.084, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:41.089, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:41.094, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:41.100, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:42.532, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:42.570, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:42.658, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 39000 MiB, 1537 MiB
+2023/12/10 15:03:42.715, A100-SXM4-40GB, P0, 28, 4 %, 0 %, 40537 MiB, 39202 MiB, 1335 MiB
+2023/12/10 15:03:42.736, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:03:42.811, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:42.929, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:43.011, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:43.606, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:43.672, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:43.678, A100-SXM4-40GB, P0, 28, 3 %, 0 %, 40537 MiB, 36740 MiB, 3797 MiB
+2023/12/10 15:03:43.684, A100-SXM4-40GB, P0, 28, 7 %, 0 %, 40537 MiB, 38894 MiB, 1643 MiB
+2023/12/10 15:03:43.688, A100-SXM4-40GB, P0, 32, 7 %, 0 %, 40537 MiB, 39242 MiB, 1295 MiB
+2023/12/10 15:03:43.693, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:43.698, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:43.702, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:44.075, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:44.079, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:44.082, A100-SXM4-40GB, P0, 29, 10 %, 9 %, 40537 MiB, 34366 MiB, 6171 MiB
+2023/12/10 15:03:44.085, A100-SXM4-40GB, P0, 29, 16 %, 4 %, 40537 MiB, 36362 MiB, 4175 MiB
+2023/12/10 15:03:44.089, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 39086 MiB, 1451 MiB
+2023/12/10 15:03:44.093, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:44.097, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:44.101, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:44.365, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:44.369, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:44.372, A100-SXM4-40GB, P0, 31, 56 %, 23 %, 40537 MiB, 34366 MiB, 6171 MiB
+2023/12/10 15:03:44.375, A100-SXM4-40GB, P0, 30, 20 %, 13 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:44.378, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 39086 MiB, 1451 MiB
+2023/12/10 15:03:44.382, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:44.386, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:44.389, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:46.209, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:46.214, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:46.219, A100-SXM4-40GB, P0, 33, 61 %, 34 %, 40537 MiB, 33230 MiB, 7307 MiB
+2023/12/10 15:03:46.266, A100-SXM4-40GB, P0, 33, 55 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:46.288, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 37298 MiB, 3239 MiB
+2023/12/10 15:03:46.294, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:46.299, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:46.301, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:46.697, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:46.701, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:46.706, A100-SXM4-40GB, P0, 33, 56 %, 32 %, 40537 MiB, 32994 MiB, 7543 MiB
+2023/12/10 15:03:46.711, A100-SXM4-40GB, P0, 33, 56 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:46.716, A100-SXM4-40GB, P0, 32, 9 %, 1 %, 40537 MiB, 35258 MiB, 5279 MiB
+2023/12/10 15:03:46.720, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:46.725, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:46.730, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:46.996, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:46.999, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:47.003, A100-SXM4-40GB, P0, 33, 61 %, 37 %, 40537 MiB, 32992 MiB, 7545 MiB
+2023/12/10 15:03:47.006, A100-SXM4-40GB, P0, 34, 58 %, 34 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:47.011, A100-SXM4-40GB, P0, 34, 44 %, 23 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:47.015, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:47.018, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:47.022, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:48.470, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:48.511, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:48.560, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 31164 MiB, 9373 MiB
+2023/12/10 15:03:48.603, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:48.639, A100-SXM4-40GB, P0, 36, 56 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:48.724, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:48.801, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:48.865, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:49.394, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:49.465, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:03:49.484, A100-SXM4-40GB, P0, 29, 11 %, 5 %, 40537 MiB, 28906 MiB, 11631 MiB
+2023/12/10 15:03:49.499, A100-SXM4-40GB, P0, 30, 5 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:49.507, A100-SXM4-40GB, P0, 37, 56 %, 33 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:49.512, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:49.515, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:49.518, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:49.962, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:03:49.975, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:03:49.999, A100-SXM4-40GB, P0, 32, 54 %, 22 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:50.012, A100-SXM4-40GB, P0, 30, 7 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:50.021, A100-SXM4-40GB, P0, 37, 56 %, 32 %, 40537 MiB, 34424 MiB, 6113 MiB
+2023/12/10 15:03:50.031, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:50.038, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:50.048, A100-SXM4-40GB, P0, 31, 1 %, 0 %, 40537 MiB, 40458 MiB, 79 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:50.345, A100-SXM4-40GB, P0, 28, 5 %, 0 %, 40537 MiB, 39108 MiB, 1429 MiB
+2023/12/10 15:03:50.350, A100-SXM4-40GB, P0, 27, 8 %, 0 %, 40537 MiB, 39698 MiB, 839 MiB
+2023/12/10 15:03:50.354, A100-SXM4-40GB, P0, 32, 58 %, 31 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:50.358, A100-SXM4-40GB, P0, 29, 7 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:50.361, A100-SXM4-40GB, P0, 35, 53 %, 4 %, 40537 MiB, 32902 MiB, 7635 MiB
+2023/12/10 15:03:50.365, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:50.369, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:50.375, A100-SXM4-40GB, P0, 31, 9 %, 0 %, 40537 MiB, 38916 MiB, 1621 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:51.745, A100-SXM4-40GB, P0, 28, 2 %, 0 %, 40537 MiB, 37496 MiB, 3041 MiB
+2023/12/10 15:03:51.770, A100-SXM4-40GB, P0, 27, 0 %, 0 %, 40537 MiB, 38318 MiB, 2219 MiB
+2023/12/10 15:03:51.827, A100-SXM4-40GB, P0, 34, 94 %, 47 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:51.874, A100-SXM4-40GB, P0, 31, 46 %, 20 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:51.907, A100-SXM4-40GB, P0, 33, 7 %, 0 %, 40537 MiB, 31212 MiB, 9325 MiB
+2023/12/10 15:03:51.960, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:52.068, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:52.154, A100-SXM4-40GB, P0, 31, 6 %, 0 %, 40537 MiB, 37174 MiB, 3363 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:52.685, A100-SXM4-40GB, P0, 28, 2 %, 0 %, 40537 MiB, 36362 MiB, 4175 MiB
+2023/12/10 15:03:52.690, A100-SXM4-40GB, P0, 27, 23 %, 0 %, 40537 MiB, 36540 MiB, 3997 MiB
+2023/12/10 15:03:52.695, A100-SXM4-40GB, P0, 35, 95 %, 51 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:52.700, A100-SXM4-40GB, P0, 33, 54 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:52.705, A100-SXM4-40GB, P0, 33, 16 %, 0 %, 40537 MiB, 30322 MiB, 10215 MiB
+2023/12/10 15:03:52.711, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:52.716, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:52.721, A100-SXM4-40GB, P0, 31, 9 %, 0 %, 40537 MiB, 36134 MiB, 4403 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:53.015, A100-SXM4-40GB, P0, 28, 15 %, 0 %, 40537 MiB, 35438 MiB, 5099 MiB
+2023/12/10 15:03:53.019, A100-SXM4-40GB, P0, 27, 17 %, 0 %, 40537 MiB, 35714 MiB, 4823 MiB
+2023/12/10 15:03:53.024, A100-SXM4-40GB, P0, 35, 93 %, 49 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:53.029, A100-SXM4-40GB, P0, 34, 58 %, 36 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:53.033, A100-SXM4-40GB, P0, 33, 24 %, 0 %, 40537 MiB, 29466 MiB, 11071 MiB
+2023/12/10 15:03:53.037, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:53.042, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:53.046, A100-SXM4-40GB, P0, 31, 15 %, 0 %, 40537 MiB, 35230 MiB, 5307 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:53.338, A100-SXM4-40GB, P0, 28, 10 %, 0 %, 40537 MiB, 34994 MiB, 5543 MiB
+2023/12/10 15:03:53.342, A100-SXM4-40GB, P0, 27, 12 %, 0 %, 40537 MiB, 35068 MiB, 5469 MiB
+2023/12/10 15:03:53.345, A100-SXM4-40GB, P0, 36, 94 %, 50 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:53.349, A100-SXM4-40GB, P0, 34, 56 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:53.353, A100-SXM4-40GB, P0, 33, 26 %, 0 %, 40537 MiB, 28976 MiB, 11561 MiB
+2023/12/10 15:03:53.356, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:53.360, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:53.365, A100-SXM4-40GB, P0, 31, 6 %, 0 %, 40537 MiB, 34958 MiB, 5579 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:55.283, A100-SXM4-40GB, P0, 28, 1 %, 0 %, 40537 MiB, 34688 MiB, 5849 MiB
+2023/12/10 15:03:55.286, A100-SXM4-40GB, P0, 27, 1 %, 0 %, 40537 MiB, 34678 MiB, 5859 MiB
+2023/12/10 15:03:55.289, A100-SXM4-40GB, P0, 34, 62 %, 38 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:55.293, A100-SXM4-40GB, P0, 32, 40 %, 14 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:55.296, A100-SXM4-40GB, P0, 37, 62 %, 33 %, 40537 MiB, 28586 MiB, 11951 MiB
+2023/12/10 15:03:55.300, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:55.306, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:55.309, A100-SXM4-40GB, P0, 31, 1 %, 0 %, 40537 MiB, 34666 MiB, 5871 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:55.609, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 34688 MiB, 5849 MiB
+2023/12/10 15:03:55.616, A100-SXM4-40GB, P0, 28, 10 %, 4 %, 40537 MiB, 31604 MiB, 8933 MiB
+2023/12/10 15:03:55.619, A100-SXM4-40GB, P0, 35, 57 %, 32 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:55.623, A100-SXM4-40GB, P0, 31, 10 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:55.626, A100-SXM4-40GB, P0, 37, 73 %, 37 %, 40537 MiB, 25512 MiB, 15025 MiB
+2023/12/10 15:03:55.632, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:55.637, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:55.643, A100-SXM4-40GB, P0, 32, 17 %, 9 %, 40537 MiB, 31456 MiB, 9081 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:56.000, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 34678 MiB, 5859 MiB
+2023/12/10 15:03:56.006, A100-SXM4-40GB, P0, 28, 3 %, 2 %, 40537 MiB, 24904 MiB, 15633 MiB
+2023/12/10 15:03:56.012, A100-SXM4-40GB, P0, 32, 13 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:56.015, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:56.019, A100-SXM4-40GB, P0, 37, 71 %, 34 %, 40537 MiB, 18812 MiB, 21725 MiB
+2023/12/10 15:03:56.025, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:56.030, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:56.037, A100-SXM4-40GB, P0, 31, 3 %, 2 %, 40537 MiB, 24868 MiB, 15669 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:56.321, A100-SXM4-40GB, P0, 28, 15 %, 5 %, 40537 MiB, 30948 MiB, 9589 MiB
+2023/12/10 15:03:56.329, A100-SXM4-40GB, P0, 28, 28 %, 19 %, 40537 MiB, 21542 MiB, 18995 MiB
+2023/12/10 15:03:56.336, A100-SXM4-40GB, P0, 31, 22 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:56.344, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:56.351, A100-SXM4-40GB, P0, 38, 69 %, 46 %, 40537 MiB, 15472 MiB, 25065 MiB
+2023/12/10 15:03:56.359, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:56.365, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:56.369, A100-SXM4-40GB, P0, 32, 10 %, 10 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:56.660, A100-SXM4-40GB, P0, 28, 16 %, 16 %, 40537 MiB, 21642 MiB, 18895 MiB
+2023/12/10 15:03:56.665, A100-SXM4-40GB, P0, 31, 67 %, 47 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:03:56.668, A100-SXM4-40GB, P0, 31, 8 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:56.671, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:56.674, A100-SXM4-40GB, P0, 39, 96 %, 60 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:03:56.677, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:56.680, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:56.683, A100-SXM4-40GB, P0, 34, 77 %, 62 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:58.505, A100-SXM4-40GB, P0, 31, 74 %, 59 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:03:58.510, A100-SXM4-40GB, P0, 32, 65 %, 50 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:03:58.513, A100-SXM4-40GB, P0, 34, 58 %, 32 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:58.520, A100-SXM4-40GB, P0, 30, 6 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:58.564, A100-SXM4-40GB, P0, 39, 68 %, 50 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:03:58.567, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:58.568, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:58.571, A100-SXM4-40GB, P0, 36, 70 %, 53 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:58.841, A100-SXM4-40GB, P0, 32, 64 %, 47 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:03:58.844, A100-SXM4-40GB, P0, 32, 69 %, 54 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:03:58.847, A100-SXM4-40GB, P0, 34, 58 %, 33 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:58.850, A100-SXM4-40GB, P0, 30, 3 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:58.853, A100-SXM4-40GB, P0, 39, 67 %, 48 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:03:58.856, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:58.859, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:58.862, A100-SXM4-40GB, P0, 36, 68 %, 50 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:03:59.109, A100-SXM4-40GB, P0, 32, 65 %, 48 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:03:59.113, A100-SXM4-40GB, P0, 32, 67 %, 52 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:03:59.116, A100-SXM4-40GB, P0, 34, 59 %, 33 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:03:59.120, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:03:59.123, A100-SXM4-40GB, P0, 38, 75 %, 55 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:03:59.126, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:59.130, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:03:59.133, A100-SXM4-40GB, P0, 37, 73 %, 54 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:00.409, A100-SXM4-40GB, P0, 33, 68 %, 53 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:00.411, A100-SXM4-40GB, P0, 33, 64 %, 48 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:00.414, A100-SXM4-40GB, P0, 35, 54 %, 32 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:00.423, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:00.425, A100-SXM4-40GB, P0, 39, 75 %, 54 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:00.427, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:00.431, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:00.433, A100-SXM4-40GB, P0, 36, 68 %, 50 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:00.958, A100-SXM4-40GB, P0, 33, 73 %, 58 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:00.963, A100-SXM4-40GB, P0, 33, 77 %, 61 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:00.969, A100-SXM4-40GB, P0, 32, 16 %, 1 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:00.983, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:00.986, A100-SXM4-40GB, P0, 40, 75 %, 57 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:00.991, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:00.994, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:00.999, A100-SXM4-40GB, P0, 37, 74 %, 56 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:01.404, A100-SXM4-40GB, P0, 34, 68 %, 50 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:01.408, A100-SXM4-40GB, P0, 33, 64 %, 49 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:01.464, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:01.478, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:01.483, A100-SXM4-40GB, P0, 40, 96 %, 55 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:01.486, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:01.490, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:01.495, A100-SXM4-40GB, P0, 37, 68 %, 53 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:01.933, A100-SXM4-40GB, P0, 34, 72 %, 54 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:01.936, A100-SXM4-40GB, P0, 33, 69 %, 50 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:01.939, A100-SXM4-40GB, P0, 31, 1 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:01.942, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:01.945, A100-SXM4-40GB, P0, 41, 99 %, 61 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:01.948, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:01.951, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:01.954, A100-SXM4-40GB, P0, 37, 66 %, 49 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:03.386, A100-SXM4-40GB, P0, 34, 64 %, 47 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:03.422, A100-SXM4-40GB, P0, 34, 68 %, 49 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:03.462, A100-SXM4-40GB, P0, 30, 10 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:03.499, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:03.511, A100-SXM4-40GB, P0, 41, 99 %, 61 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:03.577, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:03.651, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:03.705, A100-SXM4-40GB, P0, 38, 70 %, 50 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:04.207, A100-SXM4-40GB, P0, 33, 48 %, 32 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:04.213, A100-SXM4-40GB, P0, 33, 49 %, 34 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:04.227, A100-SXM4-40GB, P0, 33, 40 %, 26 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:04.231, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:04.237, A100-SXM4-40GB, P0, 40, 95 %, 66 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:04.241, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:04.246, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:04.251, A100-SXM4-40GB, P0, 37, 51 %, 40 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:04.606, A100-SXM4-40GB, P0, 34, 54 %, 41 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:04.611, A100-SXM4-40GB, P0, 34, 64 %, 49 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:04.614, A100-SXM4-40GB, P0, 34, 42 %, 27 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:04.617, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:04.622, A100-SXM4-40GB, P0, 42, 88 %, 50 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:04.625, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:04.629, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:04.633, A100-SXM4-40GB, P0, 38, 60 %, 46 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:05.077, A100-SXM4-40GB, P0, 34, 72 %, 53 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:05.081, A100-SXM4-40GB, P0, 34, 77 %, 63 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:05.084, A100-SXM4-40GB, P0, 34, 62 %, 35 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:05.086, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:05.089, A100-SXM4-40GB, P0, 41, 99 %, 64 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:05.093, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:05.096, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:05.100, A100-SXM4-40GB, P0, 38, 68 %, 50 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:06.694, A100-SXM4-40GB, P0, 34, 65 %, 48 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:06.696, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:06.697, A100-SXM4-40GB, P0, 35, 56 %, 33 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:06.699, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:06.702, A100-SXM4-40GB, P0, 40, 67 %, 48 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:06.705, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:06.707, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:06.708, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:06.967, A100-SXM4-40GB, P0, 34, 81 %, 67 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:06.972, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:06.975, A100-SXM4-40GB, P0, 35, 57 %, 32 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:06.978, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:06.982, A100-SXM4-40GB, P0, 41, 76 %, 56 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:06.985, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:06.988, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:06.991, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:07.299, A100-SXM4-40GB, P0, 32, 6 %, 5 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:07.304, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:07.309, A100-SXM4-40GB, P0, 35, 61 %, 35 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:07.313, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:07.318, A100-SXM4-40GB, P0, 38, 27 %, 19 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:07.447, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:08.433, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:08.454, A100-SXM4-40GB, P0, 34, 21 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:09.146, A100-SXM4-40GB, P0, 30, 19 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:09.154, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:09.161, A100-SXM4-40GB, P0, 31, 5 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:09.169, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:09.177, A100-SXM4-40GB, P0, 36, 29 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:09.184, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:09.191, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:09.202, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:09.683, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:09.692, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:09.700, A100-SXM4-40GB, P0, 31, 5 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:09.708, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:09.718, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:09.728, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:09.766, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:09.776, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:10.366, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:10.390, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:10.404, A100-SXM4-40GB, P0, 31, 6 %, 0 %, 40537 MiB, 28350 MiB, 12187 MiB
+2023/12/10 15:04:10.415, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:10.469, A100-SXM4-40GB, P0, 39, 64 %, 32 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:10.490, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:10.512, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:10.533, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:11.553, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:11.581, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:11.596, A100-SXM4-40GB, P0, 35, 89 %, 36 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:11.608, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:11.619, A100-SXM4-40GB, P0, 40, 61 %, 36 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:11.636, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:11.652, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:11.664, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:12.177, A100-SXM4-40GB, P0, 30, 14 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:12.194, A100-SXM4-40GB, P0, 29, 12 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:12.211, A100-SXM4-40GB, P0, 35, 62 %, 38 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:12.222, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:12.235, A100-SXM4-40GB, P0, 40, 64 %, 34 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:12.247, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:12.259, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:12.272, A100-SXM4-40GB, P0, 33, 19 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:12.780, A100-SXM4-40GB, P0, 30, 9 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:12.794, A100-SXM4-40GB, P0, 29, 8 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:12.806, A100-SXM4-40GB, P0, 35, 57 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:12.822, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:12.840, A100-SXM4-40GB, P0, 41, 66 %, 35 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:12.856, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:12.869, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:12.886, A100-SXM4-40GB, P0, 33, 17 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:13.502, A100-SXM4-40GB, P0, 30, 9 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:13.519, A100-SXM4-40GB, P0, 29, 9 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:13.537, A100-SXM4-40GB, P0, 35, 58 %, 35 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:13.559, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:13.584, A100-SXM4-40GB, P0, 38, 39 %, 6 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:13.612, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:13.642, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:13.677, A100-SXM4-40GB, P0, 33, 18 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:15.676, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:15.699, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:15.726, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:15.753, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:15.774, A100-SXM4-40GB, P0, 36, 4 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:15.886, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:15.932, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:15.971, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:16.869, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:16.891, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:16.919, A100-SXM4-40GB, P0, 31, 5 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:16.938, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:16.960, A100-SXM4-40GB, P0, 36, 9 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:16.978, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:18.003, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:18.883, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:20.836, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:20.858, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:20.880, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:21.579, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:22.025, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:22.057, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:22.089, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:22.119, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:22.897, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:22.923, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:23.905, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:24.064, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:24.093, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:24.120, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:24.142, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:24.160, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:24.723, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:24.736, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:24.750, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:24.769, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:24.793, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:24.807, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:24.820, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:24.835, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:26.433, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:26.447, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:26.460, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:26.474, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:26.488, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:26.506, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:26.524, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:26.539, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:28.179, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:28.196, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:28.209, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:28.232, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:28.251, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:28.266, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:28.536, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:29.391, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:29.952, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:29.969, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:29.982, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:29.995, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:30.031, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:30.050, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:30.069, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:30.084, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:31.845, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:31.858, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:31.871, A100-SXM4-40GB, P0, 30, 1 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:04:31.886, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:31.898, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:31.911, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:31.922, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:31.935, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:33.550, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:33.576, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:33.594, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:33.613, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:33.631, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:33.652, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:33.672, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:33.698, A100-SXM4-40GB, P0, 33, 1 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:36.652, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:36.679, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:36.704, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:36.725, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:36.747, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:36.767, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:36.871, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:36.888, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:37.746, A100-SXM4-40GB, P0, 30, 61 %, 2 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:37.760, A100-SXM4-40GB, P0, 29, 89 %, 2 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:37.775, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:37.787, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:37.793, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:37.798, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:37.805, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:37.812, A100-SXM4-40GB, P0, 33, 100 %, 3 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:39.379, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.382, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.384, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.386, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.390, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:39.393, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.396, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.403, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:39.654, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.658, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.661, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.666, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.669, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:39.672, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.676, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.679, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:39.977, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.983, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.988, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.992, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:39.997, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:40.006, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:40.014, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:40.025, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:40.583, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:40.590, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:40.595, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:40.599, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:40.604, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:40.608, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40512 MiB, 25 MiB
+2023/12/10 15:04:40.610, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:40.617, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:42.144, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.146, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.149, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.152, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.154, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:42.156, A100-SXM4-40GB, P0, 32, 5 %, 0 %, 40537 MiB, 39534 MiB, 1003 MiB
+2023/12/10 15:04:42.158, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.161, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:42.525, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.529, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.532, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.535, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.538, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:42.542, A100-SXM4-40GB, P0, 32, 18 %, 0 %, 40537 MiB, 37738 MiB, 2799 MiB
+2023/12/10 15:04:42.545, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.549, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:42.834, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.837, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.841, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.845, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.848, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:42.851, A100-SXM4-40GB, P0, 32, 15 %, 0 %, 40537 MiB, 36734 MiB, 3803 MiB
+2023/12/10 15:04:42.855, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:42.859, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:44.332, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:44.359, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:44.381, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:44.438, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:44.487, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:44.515, A100-SXM4-40GB, P0, 32, 7 %, 0 %, 40537 MiB, 35630 MiB, 4907 MiB
+2023/12/10 15:04:44.548, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:44.578, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:45.110, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.117, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.126, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.131, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:04:45.137, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:45.151, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 35068 MiB, 5469 MiB
+2023/12/10 15:04:45.161, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.165, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:45.428, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.433, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.438, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.442, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 39978 MiB, 559 MiB
+2023/12/10 15:04:45.447, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:45.452, A100-SXM4-40GB, P0, 32, 8 %, 0 %, 40537 MiB, 34958 MiB, 5579 MiB
+2023/12/10 15:04:45.456, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.460, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:45.716, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.720, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.723, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.726, A100-SXM4-40GB, P0, 29, 22 %, 0 %, 40537 MiB, 38474 MiB, 2063 MiB
+2023/12/10 15:04:45.729, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:45.732, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34954 MiB, 5583 MiB
+2023/12/10 15:04:45.736, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:45.741, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:47.695, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:47.700, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:47.707, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:47.721, A100-SXM4-40GB, P0, 29, 7 %, 0 %, 40537 MiB, 36734 MiB, 3803 MiB
+2023/12/10 15:04:47.767, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:47.774, A100-SXM4-40GB, P0, 33, 7 %, 4 %, 40537 MiB, 31524 MiB, 9013 MiB
+2023/12/10 15:04:47.781, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:47.788, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:48.103, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.107, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.112, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.116, A100-SXM4-40GB, P0, 29, 9 %, 0 %, 40537 MiB, 35994 MiB, 4543 MiB
+2023/12/10 15:04:48.120, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:48.125, A100-SXM4-40GB, P0, 32, 2 %, 1 %, 40537 MiB, 26056 MiB, 14481 MiB
+2023/12/10 15:04:48.130, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.136, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:48.446, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.452, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.457, A100-SXM4-40GB, P0, 29, 1 %, 0 %, 40537 MiB, 40458 MiB, 79 MiB
+2023/12/10 15:04:48.461, A100-SXM4-40GB, P0, 29, 13 %, 0 %, 40537 MiB, 35102 MiB, 5435 MiB
+2023/12/10 15:04:48.465, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:48.471, A100-SXM4-40GB, P0, 33, 16 %, 15 %, 40537 MiB, 21564 MiB, 18973 MiB
+2023/12/10 15:04:48.474, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.480, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:48.785, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.791, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:48.796, A100-SXM4-40GB, P0, 29, 15 %, 0 %, 40537 MiB, 38532 MiB, 2005 MiB
+2023/12/10 15:04:48.802, A100-SXM4-40GB, P0, 29, 6 %, 0 %, 40537 MiB, 34958 MiB, 5579 MiB
+2023/12/10 15:04:48.819, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:48.824, A100-SXM4-40GB, P0, 35, 67 %, 47 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:48.829, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40446 MiB, 91 MiB
+2023/12/10 15:04:48.834, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:49.091, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:49.400, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:50.226, A100-SXM4-40GB, P0, 29, 1 %, 0 %, 40537 MiB, 36518 MiB, 4019 MiB
+2023/12/10 15:04:50.263, A100-SXM4-40GB, P0, 29, 1 %, 0 %, 40537 MiB, 34850 MiB, 5687 MiB
+2023/12/10 15:04:50.322, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:50.381, A100-SXM4-40GB, P0, 37, 66 %, 48 %, 40537 MiB, 21508 MiB, 19029 MiB
+2023/12/10 15:04:50.437, A100-SXM4-40GB, P0, 32, 13 %, 0 %, 40537 MiB, 37132 MiB, 3405 MiB
+2023/12/10 15:04:50.459, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:51.304, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:51.309, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:51.315, A100-SXM4-40GB, P0, 29, 6 %, 0 %, 40537 MiB, 35522 MiB, 5015 MiB
+2023/12/10 15:04:51.318, A100-SXM4-40GB, P0, 29, 6 %, 3 %, 40537 MiB, 31644 MiB, 8893 MiB
+2023/12/10 15:04:51.323, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:51.327, A100-SXM4-40GB, P0, 37, 70 %, 48 %, 40537 MiB, 20668 MiB, 19869 MiB
+2023/12/10 15:04:51.331, A100-SXM4-40GB, P0, 32, 10 %, 0 %, 40537 MiB, 35154 MiB, 5383 MiB
+2023/12/10 15:04:51.336, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:51.646, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:51.655, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:51.662, A100-SXM4-40GB, P0, 29, 1 %, 0 %, 40537 MiB, 34994 MiB, 5543 MiB
+2023/12/10 15:04:51.668, A100-SXM4-40GB, P0, 29, 9 %, 6 %, 40537 MiB, 25020 MiB, 15517 MiB
+2023/12/10 15:04:51.678, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:51.684, A100-SXM4-40GB, P0, 37, 80 %, 50 %, 40537 MiB, 20092 MiB, 20445 MiB
+2023/12/10 15:04:51.688, A100-SXM4-40GB, P0, 33, 28 %, 2 %, 40537 MiB, 32352 MiB, 8185 MiB
+2023/12/10 15:04:51.694, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:51.996, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:52.000, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:52.003, A100-SXM4-40GB, P0, 29, 8 %, 0 %, 40537 MiB, 34958 MiB, 5579 MiB
+2023/12/10 15:04:52.006, A100-SXM4-40GB, P0, 29, 26 %, 25 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:52.009, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:52.013, A100-SXM4-40GB, P0, 38, 75 %, 55 %, 40537 MiB, 20072 MiB, 20465 MiB
+2023/12/10 15:04:52.016, A100-SXM4-40GB, P0, 33, 37 %, 10 %, 40537 MiB, 29370 MiB, 11167 MiB
+2023/12/10 15:04:52.019, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:52.335, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:52.342, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:52.351, A100-SXM4-40GB, P0, 29, 15 %, 4 %, 40537 MiB, 34630 MiB, 5907 MiB
+2023/12/10 15:04:52.357, A100-SXM4-40GB, P0, 32, 67 %, 49 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:52.364, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:52.371, A100-SXM4-40GB, P0, 37, 82 %, 56 %, 40537 MiB, 18280 MiB, 22257 MiB
+2023/12/10 15:04:52.377, A100-SXM4-40GB, P0, 35, 54 %, 23 %, 40537 MiB, 28866 MiB, 11671 MiB
+2023/12/10 15:04:52.383, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:54.563, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:54.573, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:54.585, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 27992 MiB, 12545 MiB
+2023/12/10 15:04:54.599, A100-SXM4-40GB, P0, 34, 71 %, 52 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:54.616, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:54.627, A100-SXM4-40GB, P0, 38, 77 %, 60 %, 40537 MiB, 15776 MiB, 24761 MiB
+2023/12/10 15:04:54.667, A100-SXM4-40GB, P0, 36, 66 %, 33 %, 40537 MiB, 28538 MiB, 11999 MiB
+2023/12/10 15:04:54.689, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:55.120, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:55.125, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:55.129, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21564 MiB, 18973 MiB
+2023/12/10 15:04:55.134, A100-SXM4-40GB, P0, 34, 70 %, 55 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:55.139, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:55.145, A100-SXM4-40GB, P0, 39, 98 %, 56 %, 40537 MiB, 14436 MiB, 26101 MiB
+2023/12/10 15:04:55.153, A100-SXM4-40GB, P0, 37, 73 %, 38 %, 40537 MiB, 21468 MiB, 19069 MiB
+2023/12/10 15:04:55.158, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:55.451, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:55.466, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:55.471, A100-SXM4-40GB, P0, 31, 42 %, 25 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:55.474, A100-SXM4-40GB, P0, 34, 73 %, 58 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:55.477, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:55.481, A100-SXM4-40GB, P0, 40, 98 %, 63 %, 40537 MiB, 14000 MiB, 26537 MiB
+2023/12/10 15:04:55.492, A100-SXM4-40GB, P0, 37, 73 %, 46 %, 40537 MiB, 15472 MiB, 25065 MiB
+2023/12/10 15:04:55.495, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:55.762, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:55.765, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:04:55.769, A100-SXM4-40GB, P0, 32, 69 %, 55 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:55.772, A100-SXM4-40GB, P0, 34, 68 %, 53 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:55.775, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:55.777, A100-SXM4-40GB, P0, 40, 98 %, 61 %, 40537 MiB, 13980 MiB, 26557 MiB
+2023/12/10 15:04:55.780, A100-SXM4-40GB, P0, 37, 73 %, 32 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:04:55.783, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:58.037, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40458 MiB, 79 MiB
+2023/12/10 15:04:58.049, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+2023/12/10 15:04:58.060, A100-SXM4-40GB, P0, 34, 71 %, 53 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:58.070, A100-SXM4-40GB, P0, 35, 62 %, 47 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:58.080, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:58.093, A100-SXM4-40GB, P0, 41, 100 %, 68 %, 40537 MiB, 12702 MiB, 27835 MiB
+2023/12/10 15:04:58.104, A100-SXM4-40GB, P0, 38, 71 %, 50 %, 40537 MiB, 15416 MiB, 25121 MiB
+2023/12/10 15:04:58.122, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 40522 MiB, 15 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:58.458, A100-SXM4-40GB, P0, 29, 19 %, 0 %, 40537 MiB, 39106 MiB, 1431 MiB
+2023/12/10 15:04:58.462, A100-SXM4-40GB, P0, 28, 4 %, 0 %, 40537 MiB, 39582 MiB, 955 MiB
+2023/12/10 15:04:58.466, A100-SXM4-40GB, P0, 34, 75 %, 61 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:58.470, A100-SXM4-40GB, P0, 35, 68 %, 50 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:58.475, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:58.481, A100-SXM4-40GB, P0, 41, 99 %, 55 %, 40537 MiB, 11554 MiB, 28983 MiB
+2023/12/10 15:04:58.486, A100-SXM4-40GB, P0, 38, 72 %, 53 %, 40537 MiB, 14596 MiB, 25941 MiB
+2023/12/10 15:04:58.492, A100-SXM4-40GB, P0, 32, 13 %, 0 %, 40537 MiB, 39662 MiB, 875 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:04:58.743, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 39106 MiB, 1431 MiB
+2023/12/10 15:04:58.748, A100-SXM4-40GB, P0, 28, 27 %, 0 %, 40537 MiB, 39106 MiB, 1431 MiB
+2023/12/10 15:04:58.751, A100-SXM4-40GB, P0, 34, 63 %, 47 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:58.754, A100-SXM4-40GB, P0, 35, 67 %, 49 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:04:58.758, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:04:58.761, A100-SXM4-40GB, P0, 40, 77 %, 44 %, 40537 MiB, 9528 MiB, 31009 MiB
+2023/12/10 15:04:58.765, A100-SXM4-40GB, P0, 38, 89 %, 60 %, 40537 MiB, 14000 MiB, 26537 MiB
+2023/12/10 15:04:58.769, A100-SXM4-40GB, P0, 32, 17 %, 0 %, 40537 MiB, 39106 MiB, 1431 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:00.189, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 39010 MiB, 1527 MiB
+2023/12/10 15:05:00.246, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 38980 MiB, 1557 MiB
+2023/12/10 15:05:00.320, A100-SXM4-40GB, P0, 34, 68 %, 52 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:00.343, A100-SXM4-40GB, P0, 36, 65 %, 48 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:00.450, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:00.595, A100-SXM4-40GB, P0, 40, 59 %, 34 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:00.693, A100-SXM4-40GB, P0, 40, 94 %, 64 %, 40537 MiB, 13680 MiB, 26857 MiB
+2023/12/10 15:05:00.799, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 38738 MiB, 1799 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:01.286, A100-SXM4-40GB, P0, 29, 3 %, 1 %, 40537 MiB, 36986 MiB, 3551 MiB
+2023/12/10 15:05:01.295, A100-SXM4-40GB, P0, 28, 3 %, 1 %, 40537 MiB, 36958 MiB, 3579 MiB
+2023/12/10 15:05:01.304, A100-SXM4-40GB, P0, 35, 71 %, 54 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:01.313, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:01.322, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:01.331, A100-SXM4-40GB, P0, 40, 58 %, 33 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:01.338, A100-SXM4-40GB, P0, 40, 97 %, 55 %, 40537 MiB, 11800 MiB, 28737 MiB
+2023/12/10 15:05:01.347, A100-SXM4-40GB, P0, 32, 2 %, 0 %, 40537 MiB, 36852 MiB, 3685 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:01.666, A100-SXM4-40GB, P0, 29, 17 %, 6 %, 40537 MiB, 34634 MiB, 5903 MiB
+2023/12/10 15:05:01.673, A100-SXM4-40GB, P0, 29, 16 %, 9 %, 40537 MiB, 34614 MiB, 5923 MiB
+2023/12/10 15:05:01.680, A100-SXM4-40GB, P0, 35, 77 %, 62 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:01.685, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:01.690, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:01.694, A100-SXM4-40GB, P0, 40, 65 %, 32 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:01.698, A100-SXM4-40GB, P0, 40, 100 %, 58 %, 40537 MiB, 9696 MiB, 30841 MiB
+2023/12/10 15:05:01.702, A100-SXM4-40GB, P0, 33, 14 %, 10 %, 40537 MiB, 34614 MiB, 5923 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:01.954, A100-SXM4-40GB, P0, 31, 61 %, 31 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:01.957, A100-SXM4-40GB, P0, 29, 40 %, 22 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:01.961, A100-SXM4-40GB, P0, 35, 67 %, 48 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:01.966, A100-SXM4-40GB, P0, 32, 10 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:01.973, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:01.976, A100-SXM4-40GB, P0, 40, 65 %, 36 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:01.980, A100-SXM4-40GB, P0, 40, 100 %, 56 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:01.983, A100-SXM4-40GB, P0, 35, 59 %, 31 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:03.835, A100-SXM4-40GB, P0, 33, 57 %, 33 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:03.837, A100-SXM4-40GB, P0, 33, 55 %, 33 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:03.838, A100-SXM4-40GB, P0, 36, 65 %, 48 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:03.840, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:03.843, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:03.846, A100-SXM4-40GB, P0, 39, 56 %, 33 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:03.848, A100-SXM4-40GB, P0, 41, 100 %, 67 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:03.850, A100-SXM4-40GB, P0, 35, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:04.317, A100-SXM4-40GB, P0, 33, 57 %, 35 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:04.320, A100-SXM4-40GB, P0, 33, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:04.323, A100-SXM4-40GB, P0, 33, 38 %, 36 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:04.326, A100-SXM4-40GB, P0, 31, 9 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:04.329, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:04.333, A100-SXM4-40GB, P0, 40, 58 %, 32 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:04.336, A100-SXM4-40GB, P0, 41, 99 %, 52 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:04.339, A100-SXM4-40GB, P0, 36, 53 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:04.603, A100-SXM4-40GB, P0, 34, 55 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:05.001, A100-SXM4-40GB, P0, 33, 52 %, 31 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:05.674, A100-SXM4-40GB, P0, 32, 6 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:05.695, A100-SXM4-40GB, P0, 31, 11 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:05.716, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:05.720, A100-SXM4-40GB, P0, 40, 64 %, 35 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:05.724, A100-SXM4-40GB, P0, 41, 96 %, 55 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:05.726, A100-SXM4-40GB, P0, 37, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:06.515, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:06.517, A100-SXM4-40GB, P0, 33, 53 %, 33 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:06.518, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:06.520, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:06.526, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:06.529, A100-SXM4-40GB, P0, 40, 60 %, 34 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:06.533, A100-SXM4-40GB, P0, 41, 96 %, 55 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:06.537, A100-SXM4-40GB, P0, 37, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:07.185, A100-SXM4-40GB, P0, 30, 4 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:07.189, A100-SXM4-40GB, P0, 33, 53 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:07.193, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:07.196, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:07.199, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:07.202, A100-SXM4-40GB, P0, 40, 62 %, 35 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:07.207, A100-SXM4-40GB, P0, 41, 95 %, 54 %, 40537 MiB, 9336 MiB, 31201 MiB
+2023/12/10 15:05:07.211, A100-SXM4-40GB, P0, 38, 54 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:07.564, A100-SXM4-40GB, P0, 30, 7 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:07.578, A100-SXM4-40GB, P0, 33, 54 %, 34 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:07.583, A100-SXM4-40GB, P0, 31, 8 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:07.591, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:07.598, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:24.310, A100-SXM4-40GB, P0, 30, 4 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:24.314, A100-SXM4-40GB, P0, 30, 4 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:24.318, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:24.322, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:24.326, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:24.329, A100-SXM4-40GB, P0, 41, 56 %, 33 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:24.333, A100-SXM4-40GB, P0, 37, 3 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:05:24.336, A100-SXM4-40GB, P0, 35, 4 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:24.662, A100-SXM4-40GB, P0, 30, 6 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:24.665, A100-SXM4-40GB, P0, 30, 3 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:24.670, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:24.673, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:24.678, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:24.685, A100-SXM4-40GB, P0, 39, 21 %, 5 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:24.769, A100-SXM4-40GB, P0, 37, 5 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:05:24.773, A100-SXM4-40GB, P0, 35, 5 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:26.412, A100-SXM4-40GB, P0, 30, 9 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:26.417, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:26.422, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:26.425, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:26.427, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:26.429, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:26.431, A100-SXM4-40GB, P0, 36, 2 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:05:26.434, A100-SXM4-40GB, P0, 36, 26 %, 12 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:26.671, A100-SXM4-40GB, P0, 30, 4 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:26.674, A100-SXM4-40GB, P0, 30, 1 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:26.677, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:26.680, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:26.683, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:26.686, A100-SXM4-40GB, P0, 37, 2 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:26.689, A100-SXM4-40GB, P0, 36, 3 %, 0 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:05:26.694, A100-SXM4-40GB, P0, 38, 55 %, 35 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:27.020, A100-SXM4-40GB, P0, 31, 38 %, 18 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:27.023, A100-SXM4-40GB, P0, 31, 49 %, 29 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:27.026, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:27.029, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:27.033, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:27.036, A100-SXM4-40GB, P0, 37, 5 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:27.039, A100-SXM4-40GB, P0, 37, 50 %, 21 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:05:27.042, A100-SXM4-40GB, P0, 38, 47 %, 26 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:28.750, A100-SXM4-40GB, P0, 35, 55 %, 33 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:28.766, A100-SXM4-40GB, P0, 34, 53 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:28.778, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 21520 MiB, 19017 MiB
+2023/12/10 15:05:28.787, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:28.797, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:28.867, A100-SXM4-40GB, P0, 37, 6 %, 1 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:28.875, A100-SXM4-40GB, P0, 40, 62 %, 40 %, 40537 MiB, 15428 MiB, 25109 MiB
+2023/12/10 15:05:28.882, A100-SXM4-40GB, P0, 39, 58 %, 37 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:29.429, A100-SXM4-40GB, P0, 34, 55 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:29.432, A100-SXM4-40GB, P0, 34, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:29.436, A100-SXM4-40GB, P0, 30, 83 %, 2 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:29.439, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:29.442, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:29.446, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:29.449, A100-SXM4-40GB, P0, 41, 95 %, 37 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:29.452, A100-SXM4-40GB, P0, 39, 55 %, 33 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:29.698, A100-SXM4-40GB, P0, 34, 55 %, 32 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:29.701, A100-SXM4-40GB, P0, 35, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:29.705, A100-SXM4-40GB, P0, 30, 100 %, 3 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:29.708, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:29.711, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:29.714, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:29.717, A100-SXM4-40GB, P0, 41, 100 %, 42 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:29.721, A100-SXM4-40GB, P0, 39, 58 %, 35 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:31.100, A100-SXM4-40GB, P0, 32, 15 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:31.102, A100-SXM4-40GB, P0, 35, 53 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:31.105, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:31.108, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:31.110, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:31.114, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:31.117, A100-SXM4-40GB, P0, 38, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:31.119, A100-SXM4-40GB, P0, 40, 59 %, 36 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:31.418, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:31.430, A100-SXM4-40GB, P0, 34, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:31.457, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:31.484, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:31.504, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:31.531, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:31.565, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:31.601, A100-SXM4-40GB, P0, 40, 54 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:32.028, A100-SXM4-40GB, P0, 31, 5 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:32.031, A100-SXM4-40GB, P0, 35, 53 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:32.034, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:32.037, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:32.041, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:32.044, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:32.047, A100-SXM4-40GB, P0, 37, 3 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:32.050, A100-SXM4-40GB, P0, 40, 54 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:32.353, A100-SXM4-40GB, P0, 31, 12 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:32.357, A100-SXM4-40GB, P0, 35, 53 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:32.360, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:32.363, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:32.366, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:32.370, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:32.374, A100-SXM4-40GB, P0, 37, 7 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:32.378, A100-SXM4-40GB, P0, 40, 55 %, 33 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:32.720, A100-SXM4-40GB, P0, 31, 10 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:32.985, A100-SXM4-40GB, P0, 35, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:33.847, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:33.874, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:33.899, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:33.928, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:33.950, A100-SXM4-40GB, P0, 36, 2 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:33.963, A100-SXM4-40GB, P0, 37, 7 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:34.351, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:34.354, A100-SXM4-40GB, P0, 34, 45 %, 17 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:34.357, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:34.360, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:34.363, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:34.366, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:34.369, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:34.373, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:34.612, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:34.615, A100-SXM4-40GB, P0, 33, 18 %, 3 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:34.618, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:34.621, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:34.627, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:34.630, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:34.633, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:34.636, A100-SXM4-40GB, P0, 37, 2 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:35.984, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:35.986, A100-SXM4-40GB, P0, 32, 3 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:35.990, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:35.991, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:35.996, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:35.999, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:36.002, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:36.004, A100-SXM4-40GB, P0, 36, 5 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:36.529, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:36.532, A100-SXM4-40GB, P0, 31, 4 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:36.536, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:36.539, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:36.542, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:36.545, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:36.549, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:36.552, A100-SXM4-40GB, P0, 36, 5 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:36.987, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:36.989, A100-SXM4-40GB, P0, 31, 5 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:36.992, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:36.996, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:37.000, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:37.004, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:37.006, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:37.010, A100-SXM4-40GB, P0, 35, 3 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:37.275, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:37.279, A100-SXM4-40GB, P0, 31, 7 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:37.284, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:37.288, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:37.291, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:37.295, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:37.300, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:37.305, A100-SXM4-40GB, P0, 37, 5 %, 2 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:37.586, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:37.589, A100-SXM4-40GB, P0, 31, 8 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:37.592, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:37.599, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:37.602, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:37.605, A100-SXM4-40GB, P0, 36, 1 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:37.608, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:37.612, A100-SXM4-40GB, P0, 39, 55 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:38.935, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:38.938, A100-SXM4-40GB, P0, 34, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:38.940, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:38.943, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:38.946, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:38.948, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:38.950, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:38.952, A100-SXM4-40GB, P0, 40, 57 %, 33 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:39.200, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:39.203, A100-SXM4-40GB, P0, 35, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:39.206, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:39.209, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:39.213, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:39.216, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:39.220, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:39.223, A100-SXM4-40GB, P0, 40, 59 %, 38 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:39.465, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:39.468, A100-SXM4-40GB, P0, 35, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:39.472, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:39.478, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:39.482, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:39.485, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:39.489, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:39.492, A100-SXM4-40GB, P0, 40, 57 %, 34 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:40.816, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:40.817, A100-SXM4-40GB, P0, 35, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:40.819, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:40.821, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:40.823, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:40.825, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:40.827, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:40.829, A100-SXM4-40GB, P0, 41, 58 %, 34 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:41.149, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:41.153, A100-SXM4-40GB, P0, 36, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:41.156, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:41.160, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:41.163, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:41.168, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:41.172, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:41.176, A100-SXM4-40GB, P0, 41, 60 %, 37 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:41.541, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:41.544, A100-SXM4-40GB, P0, 35, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:41.548, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:41.551, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:41.554, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:41.558, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:41.561, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:41.564, A100-SXM4-40GB, P0, 41, 56 %, 33 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:41.828, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:41.831, A100-SXM4-40GB, P0, 36, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:41.835, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:41.838, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:41.841, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:41.844, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:41.847, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:41.850, A100-SXM4-40GB, P0, 41, 58 %, 34 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:43.305, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:43.307, A100-SXM4-40GB, P0, 35, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:43.309, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:43.311, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:43.313, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:43.316, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:43.318, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:43.320, A100-SXM4-40GB, P0, 41, 58 %, 37 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:43.555, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:43.557, A100-SXM4-40GB, P0, 36, 52 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:43.560, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:43.563, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:43.566, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:43.569, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:43.572, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:43.575, A100-SXM4-40GB, P0, 40, 56 %, 33 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:43.814, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:43.818, A100-SXM4-40GB, P0, 35, 53 %, 32 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:43.821, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:43.824, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:43.827, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:43.831, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:43.834, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:43.837, A100-SXM4-40GB, P0, 41, 47 %, 18 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:45.225, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:45.227, A100-SXM4-40GB, P0, 34, 45 %, 17 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:45.239, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:45.244, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:45.248, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:45.252, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:45.257, A100-SXM4-40GB, P0, 35, 1 %, 0 %, 40537 MiB, 34443 MiB, 6094 MiB
+2023/12/10 15:05:45.262, A100-SXM4-40GB, P0, 37, 9 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:45.719, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:45.722, A100-SXM4-40GB, P0, 33, 4 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:45.725, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:45.728, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:45.732, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:45.735, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:45.739, A100-SXM4-40GB, P0, 36, 66 %, 2 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:45.742, A100-SXM4-40GB, P0, 37, 8 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:45.986, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:45.990, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:45.993, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:45.997, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:46.000, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:46.004, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:46.007, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:46.010, A100-SXM4-40GB, P0, 36, 7 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:47.339, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34442 MiB, 6095 MiB
+2023/12/10 15:05:47.353, A100-SXM4-40GB, P0, 32, 5 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:47.366, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:47.376, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:47.379, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:47.383, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:47.386, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:47.391, A100-SXM4-40GB, P0, 37, 3 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:47.744, A100-SXM4-40GB, P0, 30, 86 %, 2 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:47.748, A100-SXM4-40GB, P0, 31, 7 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:47.751, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:47.755, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:47.758, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:47.762, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:47.766, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:47.770, A100-SXM4-40GB, P0, 37, 51 %, 17 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:48.029, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:48.032, A100-SXM4-40GB, P0, 31, 7 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:48.035, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:48.038, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:48.041, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:48.044, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:48.047, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:48.050, A100-SXM4-40GB, P0, 37, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:49.614, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:49.636, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:49.661, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:49.671, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:49.674, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:49.678, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:49.681, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:49.683, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:49.933, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:49.936, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:49.940, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:49.943, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:49.946, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:49.949, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:49.953, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:49.956, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:50.211, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:50.214, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:50.218, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:50.221, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:50.224, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:50.228, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:50.231, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:50.235, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:50.482, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:50.486, A100-SXM4-40GB, P0, 32, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:50.490, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:50.503, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:50.507, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:50.510, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:50.514, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:50.517, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:51.823, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:51.825, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:51.827, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:51.828, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:51.830, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:51.832, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:51.834, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:51.835, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:52.078, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:52.081, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:52.085, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:52.088, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:52.091, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:52.095, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:52.098, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:52.102, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:52.345, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:52.348, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:52.352, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:52.355, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:52.358, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:52.361, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:52.365, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:52.368, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:53.829, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:53.830, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:53.832, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:53.834, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:53.836, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:53.838, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:53.840, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:53.841, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:54.178, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.182, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:54.185, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.188, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.191, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.194, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.197, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.201, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:54.486, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.490, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:54.495, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.499, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.502, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.506, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.509, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.513, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:54.755, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.758, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:54.761, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.764, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:54.767, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.770, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.773, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:54.776, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:56.024, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.025, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:56.027, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.029, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.032, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.034, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.035, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.037, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:56.283, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.286, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:56.290, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.293, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.296, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.299, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.303, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.306, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:56.558, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.561, A100-SXM4-40GB, P0, 31, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:56.564, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.567, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:56.571, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.574, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.578, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:56.581, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:58.064, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:58.068, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:58.072, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:58.077, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:58.081, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:58.086, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:58.091, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:58.097, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:59.235, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:59.238, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:59.241, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:59.245, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:59.248, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:59.251, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:59.254, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:59.257, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:05:59.506, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:59.509, A100-SXM4-40GB, P0, 30, 0 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:05:59.513, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:59.516, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:05:59.519, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:59.522, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:59.526, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:05:59.530, A100-SXM4-40GB, P0, 36, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:06:01.039, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:06:01.043, A100-SXM4-40GB, P0, 30, 1 %, 0 %, 40537 MiB, 34422 MiB, 6115 MiB
+2023/12/10 15:06:01.046, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:06:01.050, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:06:01.054, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:06:01.057, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:06:01.061, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:06:01.064, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+timestamp, name, pstate, temperature.gpu, utilization.gpu [%], utilization.memory [%], memory.total [MiB], memory.free [MiB], memory.used [MiB]
+2023/12/10 15:06:01.318, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:06:01.320, A100-SXM4-40GB, P0, 31, 52 %, 1 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:06:01.324, A100-SXM4-40GB, P0, 28, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:06:01.328, A100-SXM4-40GB, P0, 29, 0 %, 0 %, 40537 MiB, 40534 MiB, 3 MiB
+2023/12/10 15:06:01.331, A100-SXM4-40GB, P0, 33, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:06:01.335, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:06:01.338, A100-SXM4-40GB, P0, 34, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB
+2023/12/10 15:06:01.342, A100-SXM4-40GB, P0, 35, 0 %, 0 %, 40537 MiB, 40537 MiB, 0 MiB

@@ -1,3 +1,0 @@
-GPU : 1
-name start : true-morning-177
-name end : morning-surf-188

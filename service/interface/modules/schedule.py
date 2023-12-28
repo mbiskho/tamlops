@@ -410,18 +410,19 @@ async def schedule_logic_min_min():
             print("[!] GPU Memory Full")     
             finished_flag = False
             while finished_flag == False:
-                redis_value = get_redis_item(task['gpu'])
-                print("Redis Value:" , redis_value)
-                print("Redis Value Datatype:", type(redis_value))
-                print("Redis Check", redis_value == "0")
-                if redis_value == "0":
+                check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+                current_gpu_state = check_gpu['response']
+                #Find maximum available GPU
+                maximum_available_gpu = 0
+                for current_gpu in current_gpu_state:
+                    if current_gpu['memory_free'] > maximum_available_gpu:
+                        maximum_available_gpu = current_gpu['memory_free']
+                if maximum_available_gpu > task['gpu_usage']:
                     del task['gpu_usage']
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
                     }))
                     finished_flag = True
-                    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
-                    current_gpu_state = check_gpu['response']
                     await delete_row_by_id("training_queue", task['id'])
                     break
                 time.sleep(5)
@@ -544,18 +545,20 @@ async def schedule_logic_max_min():
             print("[!] GPU Memory Full")     
             finished_flag = False
             while finished_flag == False:
-                redis_value = get_redis_item(task['gpu'])
-                print("Redis Value:" , redis_value)
-                print("Redis Check", redis_value == "0")
-                if redis_value == "0":
+                check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
+                current_gpu_state = check_gpu['response']
+                #Find maximum available GPU
+                maximum_available_gpu = 0
+                for current_gpu in current_gpu_state:
+                    if current_gpu['memory_free'] > maximum_available_gpu:
+                        maximum_available_gpu = current_gpu['memory_free']
+                if maximum_available_gpu > task['gpu_usage']:
                     del task['gpu_usage']
                     response = requests.request("POST", url, headers=headers, data=json.dumps({
                     "data": task
                     }))
-                    check_gpu = await send_get_request('http://127.0.0.1:6070/check-gpu')
-                    await delete_row_by_id("training_queue", task['id'])
-                    current_gpu_state = check_gpu['response']
                     finished_flag = True
+                    await delete_row_by_id("training_queue", task['id'])
                     break
                 time.sleep(5)
     
