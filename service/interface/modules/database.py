@@ -2,7 +2,7 @@ import asyncpg
 import os
 import json
 
-DB = "postgres://postgres:postgres@156.67.216.68:5432/postgres"
+DB = "postgres://postgres:pass@156.67.216.68:5432/postgres"
 
 async def save_training_db(type, file, size, params):
     conn = await asyncpg.connect(DB)
