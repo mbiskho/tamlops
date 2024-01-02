@@ -25,7 +25,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": 20,
-                    "url": "http://35.208.32.246:8000/inference",
+                    "url": "http://34.42.105.222:8000/inference/test",
                     "method": "POST",
                     "headers": {
                         "Content-Type": "application/json"
@@ -43,7 +43,7 @@
                 "provider": {
                     "type": "http",
                     "timeout": 60,
-                    "url": "http://35.208.32.246:8000/inference",
+                    "url": "http://34.42.105.222:8000/inference/test",
                     "method": "POST",
                     "headers": {
                         "Content-Type": "application/json"
@@ -63,7 +63,7 @@
             "provider": {
                 "type": "process",
                 "path": "gcloud",
-                "arguments": "compute instances stop --zone us-central1-a proxy-interaface"
+                "arguments": "compute instances stop --zone us-central1-a instance-1"
             }
         },
         {
@@ -86,7 +86,7 @@
             "provider": {
                 "type": "process",
                 "path": "gcloud",
-                "arguments": "compute instances start --zone us-central1-a proxy-interaface"
+                "arguments": "compute instances start --zone us-central1-a instance-1"
             },
             "pauses": {
                 "after": 60
